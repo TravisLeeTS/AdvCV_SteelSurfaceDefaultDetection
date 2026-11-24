@@ -1,0 +1,2058 @@
+{
+  "split": "test",
+  "image": "inclusion_11",
+  "image_sha": "26f65a8837796443967138e5addc16cc21d481795dbdf63da8baf6579d4bbf5b",
+  "comparisons": [
+    {
+      "configuration": "A0-openvino-one-256",
+      "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+      "reference": "A0-openvino-one-256",
+      "boxes": [
+        [
+          23.702646255493164,
+          40.10305404663086,
+          87.41932678222656,
+          200.0,
+          0.8674730062484741,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A0-openvino-one-320",
+      "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+      "reference": "A0-openvino-one-320",
+      "boxes": [
+        [
+          26.5799560546875,
+          40.110321044921875,
+          84.50328063964844,
+          200.0,
+          0.9048328995704651,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A0-openvino-one-480",
+      "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+      "reference": "A0-openvino-one-480",
+      "boxes": [
+        [
+          30.492332458496094,
+          41.370391845703125,
+          76.09888458251953,
+          198.23707580566406,
+          0.7262097597122192,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A0-openvino-one-640",
+      "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+      "reference": "A0-openvino-one-640",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A0-openvino-dense-480",
+      "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+      "reference": "A0-openvino-dense-480",
+      "boxes": [
+        [
+          30.908058166503906,
+          38.61325454711914,
+          77.86286163330078,
+          198.28599548339844,
+          0.7325760126113892,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A0-pytorch-one-480",
+      "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+      "reference": "A0-pytorch-one-480",
+      "boxes": [
+        [
+          30.49233627319336,
+          41.370338439941406,
+          76.09889221191406,
+          198.23712158203125,
+          0.7262176275253296,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A0-pytorch-dense-480",
+      "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+      "reference": "A0-pytorch-dense-480",
+      "boxes": [
+        [
+          30.908071517944336,
+          38.61320495605469,
+          77.86287689208984,
+          198.28602600097656,
+          0.732576310634613,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A1-openvino-one-256",
+      "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+      "reference": "A1-openvino-one-256",
+      "boxes": [
+        [
+          30.366832733154297,
+          47.7806282043457,
+          82.82660675048828,
+          199.39051818847656,
+          0.9170187711715698,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A1-openvino-one-320",
+      "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+      "reference": "A1-openvino-one-320",
+      "boxes": [
+        [
+          31.701396942138672,
+          39.08794403076172,
+          84.06956481933594,
+          200.0,
+          0.9225005507469177,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A1-openvino-one-480",
+      "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+      "reference": "A1-openvino-one-480",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A1-openvino-one-640",
+      "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+      "reference": "A1-openvino-one-640",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A1-openvino-dense-480",
+      "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+      "reference": "A1-openvino-dense-480",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A1-pytorch-one-480",
+      "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+      "reference": "A1-pytorch-one-480",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A1-pytorch-dense-480",
+      "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+      "reference": "A1-pytorch-dense-480",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A2-openvino-one-256",
+      "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+      "reference": "A2-openvino-one-256",
+      "boxes": [
+        [
+          29.32813835144043,
+          45.23142623901367,
+          81.4462661743164,
+          199.3004913330078,
+          0.7933304309844971,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A2-openvino-one-320",
+      "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+      "reference": "A2-openvino-one-320",
+      "boxes": [
+        [
+          28.85357666015625,
+          50.123085021972656,
+          83.84066772460938,
+          199.4636688232422,
+          0.912377119064331,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A2-openvino-one-480",
+      "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+      "reference": "A2-openvino-one-480",
+      "boxes": [
+        [
+          34.91788101196289,
+          50.71455383300781,
+          79.50125122070312,
+          200.0,
+          0.8519787788391113,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A2-openvino-one-640",
+      "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+      "reference": "A2-openvino-one-640",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A2-openvino-dense-480",
+      "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+      "reference": "A2-openvino-dense-480",
+      "boxes": [
+        [
+          34.35197830200195,
+          50.543739318847656,
+          79.87800598144531,
+          200.0,
+          0.7427729368209839,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A2-pytorch-one-480",
+      "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+      "reference": "A2-pytorch-one-480",
+      "boxes": [
+        [
+          34.917869567871094,
+          50.714603424072266,
+          79.50125885009766,
+          200.0,
+          0.8519788980484009,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "A2-pytorch-dense-480",
+      "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+      "reference": "A2-pytorch-dense-480",
+      "boxes": [
+        [
+          34.35197067260742,
+          50.54378128051758,
+          79.87801361083984,
+          200.0,
+          0.7427733540534973,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B0-openvino-one-256",
+      "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+      "reference": "B0-openvino-one-256",
+      "boxes": [
+        [
+          29.52492332458496,
+          36.71303939819336,
+          88.15968322753906,
+          200.0,
+          0.7730951905250549,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B0-openvino-one-320",
+      "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+      "reference": "B0-openvino-one-320",
+      "boxes": [
+        [
+          27.53859519958496,
+          42.026546478271484,
+          86.56692504882812,
+          199.90786743164062,
+          0.898047149181366,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B0-openvino-one-480",
+      "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+      "reference": "B0-openvino-one-480",
+      "boxes": [
+        [
+          31.835115432739258,
+          32.65333557128906,
+          83.23475646972656,
+          200.0,
+          0.8835845589637756,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B0-openvino-one-640",
+      "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+      "reference": "B0-openvino-one-640",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B0-openvino-dense-480",
+      "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+      "reference": "B0-openvino-dense-480",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B1-openvino-one-256",
+      "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+      "reference": "B1-openvino-one-256",
+      "boxes": [
+        [
+          29.431396484375,
+          33.36566162109375,
+          85.55850219726562,
+          200.0,
+          0.7473065853118896,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B1-openvino-one-320",
+      "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+      "reference": "B1-openvino-one-320",
+      "boxes": [
+        [
+          28.151979446411133,
+          46.43716812133789,
+          83.55266571044922,
+          200.0,
+          0.8892427682876587,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B1-openvino-one-480",
+      "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+      "reference": "B1-openvino-one-480",
+      "boxes": [
+        [
+          31.5739688873291,
+          48.51565933227539,
+          80.68338775634766,
+          200.0,
+          0.7803144454956055,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B1-openvino-one-640",
+      "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+      "reference": "B1-openvino-one-640",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B1-openvino-dense-480",
+      "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+      "reference": "B1-openvino-dense-480",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B2-openvino-one-256",
+      "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+      "reference": "B2-openvino-one-256",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B2-openvino-one-320",
+      "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+      "reference": "B2-openvino-one-320",
+      "boxes": [
+        [
+          25.25020980834961,
+          48.5367546081543,
+          82.66270446777344,
+          198.8311767578125,
+          0.8986930847167969,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B2-openvino-one-480",
+      "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+      "reference": "B2-openvino-one-480",
+      "boxes": [
+        [
+          29.72793197631836,
+          41.19207763671875,
+          76.94744873046875,
+          199.17471313476562,
+          0.8806231617927551,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B2-openvino-one-640",
+      "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+      "reference": "B2-openvino-one-640",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B2-openvino-dense-480",
+      "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+      "reference": "B2-openvino-dense-480",
+      "boxes": [
+        [
+          29.309385299682617,
+          46.13778305053711,
+          77.08518981933594,
+          199.70802307128906,
+          0.7506662011146545,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C0-openvino-one-256",
+      "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+      "reference": "C0-openvino-one-256",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C0-openvino-one-320",
+      "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+      "reference": "C0-openvino-one-320",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C0-openvino-one-480",
+      "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+      "reference": "C0-openvino-one-480",
+      "boxes": [
+        [
+          37.08498764038086,
+          97.48844909667969,
+          82.85391235351562,
+          199.81375122070312,
+          0.7876021265983582,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C0-openvino-one-640",
+      "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+      "reference": "C0-openvino-one-640",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C0-openvino-dense-480",
+      "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+      "reference": "C0-openvino-dense-480",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C1-openvino-one-256",
+      "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+      "reference": "C1-openvino-one-256",
+      "boxes": [
+        [
+          24.48154067993164,
+          45.503299713134766,
+          83.54667663574219,
+          200.0,
+          0.8150482177734375,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C1-openvino-one-320",
+      "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+      "reference": "C1-openvino-one-320",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C1-openvino-one-480",
+      "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+      "reference": "C1-openvino-one-480",
+      "boxes": [
+        [
+          33.39554214477539,
+          52.07711410522461,
+          82.81636047363281,
+          200.0,
+          0.8916955590248108,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C1-openvino-one-640",
+      "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+      "reference": "C1-openvino-one-640",
+      "boxes": [
+        [
+          30.157976150512695,
+          53.148536682128906,
+          80.2376937866211,
+          199.1238555908203,
+          0.8538191318511963,
+          1.0
+        ],
+        [
+          34.25242233276367,
+          58.14136505126953,
+          83.40401458740234,
+          199.9910125732422,
+          0.843020498752594,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 2,
+        "exported": 2,
+        "matches": 2,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C1-openvino-dense-480",
+      "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+      "reference": "C1-openvino-dense-480",
+      "boxes": [
+        [
+          33.64027404785156,
+          51.900150299072266,
+          83.2959213256836,
+          199.6644744873047,
+          0.7768881320953369,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C2-openvino-one-256",
+      "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+      "reference": "C2-openvino-one-256",
+      "boxes": [
+        [
+          27.76382064819336,
+          37.80009078979492,
+          90.16093444824219,
+          200.0,
+          0.9204169511795044,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C2-openvino-one-320",
+      "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+      "reference": "C2-openvino-one-320",
+      "boxes": [
+        [
+          26.90220832824707,
+          42.9551887512207,
+          85.26860809326172,
+          200.0,
+          0.937214195728302,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C2-openvino-one-480",
+      "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+      "reference": "C2-openvino-one-480",
+      "boxes": [
+        [
+          32.18128204345703,
+          42.1341552734375,
+          79.51032257080078,
+          200.0,
+          0.8868798017501831,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C2-openvino-one-640",
+      "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+      "reference": "C2-openvino-one-640",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "C2-openvino-dense-480",
+      "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+      "reference": "C2-openvino-dense-480",
+      "boxes": [
+        [
+          32.21421432495117,
+          41.2734260559082,
+          80.04608154296875,
+          199.94248962402344,
+          0.8210023045539856,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D0-openvino-one-256",
+      "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+      "reference": "D0-openvino-one-256",
+      "boxes": [
+        [
+          23.30360221862793,
+          40.1606330871582,
+          85.85637664794922,
+          200.0,
+          0.8027923107147217,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D0-openvino-one-320",
+      "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+      "reference": "D0-openvino-one-320",
+      "boxes": [
+        [
+          26.913013458251953,
+          45.484580993652344,
+          82.3574447631836,
+          200.0,
+          0.9130915403366089,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D0-openvino-one-480",
+      "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+      "reference": "D0-openvino-one-480",
+      "boxes": [
+        [
+          30.443647384643555,
+          39.27330017089844,
+          80.42218017578125,
+          199.7605743408203,
+          0.84492427110672,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D0-openvino-one-640",
+      "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+      "reference": "D0-openvino-one-640",
+      "boxes": [
+        [
+          31.663063049316406,
+          42.38788604736328,
+          78.32534790039062,
+          198.3761444091797,
+          0.8971336483955383,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D0-openvino-dense-480",
+      "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+      "reference": "D0-openvino-dense-480",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D1-openvino-one-256",
+      "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+      "reference": "D1-openvino-one-256",
+      "boxes": [
+        [
+          27.691707611083984,
+          28.317869186401367,
+          87.76598358154297,
+          199.66351318359375,
+          0.8189222812652588,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D1-openvino-one-320",
+      "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+      "reference": "D1-openvino-one-320",
+      "boxes": [
+        [
+          30.27815818786621,
+          41.549072265625,
+          85.5392837524414,
+          200.0,
+          0.8406975269317627,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D1-openvino-one-480",
+      "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+      "reference": "D1-openvino-one-480",
+      "boxes": [
+        [
+          31.869937896728516,
+          55.82755661010742,
+          80.3453369140625,
+          199.80503845214844,
+          0.8773618340492249,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D1-openvino-one-640",
+      "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+      "reference": "D1-openvino-one-640",
+      "boxes": [
+        [
+          32.285335540771484,
+          53.54717254638672,
+          78.53324890136719,
+          200.0,
+          0.8877900838851929,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D1-openvino-dense-480",
+      "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+      "reference": "D1-openvino-dense-480",
+      "boxes": [
+        [
+          32.23579406738281,
+          52.27412796020508,
+          80.8024673461914,
+          199.94754028320312,
+          0.7892574071884155,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D2-openvino-one-256",
+      "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+      "reference": "D2-openvino-one-256",
+      "boxes": [
+        [
+          28.387344360351562,
+          33.2005500793457,
+          80.80062103271484,
+          200.0,
+          0.9098802804946899,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D2-openvino-one-320",
+      "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+      "reference": "D2-openvino-one-320",
+      "boxes": [
+        [
+          31.665376663208008,
+          45.86477279663086,
+          80.59822082519531,
+          199.59693908691406,
+          0.9230387806892395,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D2-openvino-one-480",
+      "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+      "reference": "D2-openvino-one-480",
+      "boxes": [
+        [
+          31.580663681030273,
+          50.55803680419922,
+          78.10067749023438,
+          200.0,
+          0.8188562393188477,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D2-openvino-one-640",
+      "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+      "reference": "D2-openvino-one-640",
+      "boxes": [
+        [
+          34.570396423339844,
+          51.827144622802734,
+          77.9992446899414,
+          199.27157592773438,
+          0.9005159735679626,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "D2-openvino-dense-480",
+      "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+      "reference": "D2-openvino-dense-480",
+      "boxes": [
+        [
+          31.422039031982422,
+          50.72194290161133,
+          77.82780456542969,
+          199.78041076660156,
+          0.7863208651542664,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E0-openvino-one-256",
+      "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+      "reference": "E0-openvino-one-256",
+      "boxes": [
+        [
+          30.54259490966797,
+          52.33218002319336,
+          74.21781921386719,
+          196.11941528320312,
+          0.7997145056724548,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E0-openvino-one-320",
+      "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+      "reference": "E0-openvino-one-320",
+      "boxes": [
+        [
+          32.2631721496582,
+          40.981109619140625,
+          83.4404296875,
+          199.82630920410156,
+          0.8578867316246033,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E0-openvino-one-480",
+      "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+      "reference": "E0-openvino-one-480",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E0-openvino-one-640",
+      "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+      "reference": "E0-openvino-one-640",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E0-openvino-dense-480",
+      "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+      "reference": "E0-openvino-dense-480",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E0-pytorch-one-480",
+      "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+      "reference": "E0-pytorch-one-480",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E0-pytorch-dense-480",
+      "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+      "reference": "E0-pytorch-dense-480",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E1-openvino-one-256",
+      "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+      "reference": "E1-openvino-one-256",
+      "boxes": [
+        [
+          22.444395065307617,
+          24.446672439575195,
+          87.72501373291016,
+          200.0,
+          0.7059882879257202,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E1-openvino-one-320",
+      "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+      "reference": "E1-openvino-one-320",
+      "boxes": [
+        [
+          25.25511932373047,
+          25.87543487548828,
+          84.15619659423828,
+          198.9342803955078,
+          0.9067408442497253,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E1-openvino-one-480",
+      "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+      "reference": "E1-openvino-one-480",
+      "boxes": [
+        [
+          32.585968017578125,
+          46.15904998779297,
+          80.34965515136719,
+          199.26515197753906,
+          0.866996169090271,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E1-openvino-one-640",
+      "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+      "reference": "E1-openvino-one-640",
+      "boxes": [
+        [
+          27.959461212158203,
+          51.182254791259766,
+          66.72166442871094,
+          188.36215209960938,
+          0.7873674035072327,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E1-openvino-dense-480",
+      "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+      "reference": "E1-openvino-dense-480",
+      "boxes": [
+        [
+          32.54685592651367,
+          45.500911712646484,
+          79.49066925048828,
+          199.4581756591797,
+          0.8788512349128723,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E1-pytorch-one-480",
+      "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+      "reference": "E1-pytorch-one-480",
+      "boxes": [
+        [
+          32.58597183227539,
+          46.1590576171875,
+          80.34965515136719,
+          199.26515197753906,
+          0.8669964075088501,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E1-pytorch-dense-480",
+      "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+      "reference": "E1-pytorch-dense-480",
+      "boxes": [
+        [
+          32.54685974121094,
+          45.50096893310547,
+          79.49066925048828,
+          199.4581756591797,
+          0.8788512349128723,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E2-openvino-one-256",
+      "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+      "reference": "E2-openvino-one-256",
+      "boxes": [
+        [
+          26.91146469116211,
+          44.79658889770508,
+          84.79769134521484,
+          196.04635620117188,
+          0.8809313178062439,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E2-openvino-one-320",
+      "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+      "reference": "E2-openvino-one-320",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E2-openvino-one-480",
+      "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+      "reference": "E2-openvino-one-480",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E2-openvino-one-640",
+      "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+      "reference": "E2-openvino-one-640",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E2-openvino-dense-480",
+      "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+      "reference": "E2-openvino-dense-480",
+      "boxes": [
+        [
+          36.7587890625,
+          44.03587341308594,
+          77.65129852294922,
+          200.0,
+          0.7332526445388794,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E2-pytorch-one-480",
+      "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+      "reference": "E2-pytorch-one-480",
+      "boxes": [],
+      "parity": {
+        "native": 0,
+        "exported": 0,
+        "matches": 0,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "E2-pytorch-dense-480",
+      "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+      "reference": "E2-pytorch-dense-480",
+      "boxes": [
+        [
+          36.75880432128906,
+          44.035770416259766,
+          77.65129852294922,
+          200.0,
+          0.733252763748169,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 0.0,
+        "min_iou": 1.0
+      }
+    },
+    {
+      "configuration": "B0-pytorch-one-480",
+      "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+      "reference": "B0-openvino-one-480",
+      "boxes": [
+        [
+          31.83509635925293,
+          32.65330505371094,
+          83.23474884033203,
+          200.0,
+          0.8835840225219727,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 5.364418029785156e-07,
+        "min_iou": 0.9999993443489075
+      }
+    },
+    {
+      "configuration": "B1-pytorch-one-480",
+      "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+      "reference": "B1-openvino-one-480",
+      "boxes": [
+        [
+          31.573993682861328,
+          48.51571273803711,
+          80.68338012695312,
+          200.0,
+          0.7803150415420532,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 5.960464477539062e-07,
+        "min_iou": 0.9999988079071045
+      }
+    },
+    {
+      "configuration": "B2-pytorch-one-480",
+      "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+      "reference": "B2-openvino-one-480",
+      "boxes": [
+        [
+          29.727928161621094,
+          41.191951751708984,
+          76.94742584228516,
+          199.17471313476562,
+          0.8806222081184387,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 9.5367431640625e-07,
+        "min_iou": 0.9999985694885254
+      }
+    },
+    {
+      "configuration": "C0-pytorch-one-480",
+      "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+      "reference": "C0-openvino-one-480",
+      "boxes": [
+        [
+          37.084983825683594,
+          97.48847198486328,
+          82.85389709472656,
+          199.81375122070312,
+          0.7876019477844238,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 1.7881393432617188e-07,
+        "min_iou": 0.9999994039535522
+      }
+    },
+    {
+      "configuration": "C1-pytorch-one-480",
+      "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+      "reference": "C1-openvino-one-480",
+      "boxes": [
+        [
+          33.395530700683594,
+          52.077125549316406,
+          82.81636047363281,
+          200.0,
+          0.8916957378387451,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 1.7881393432617188e-07,
+        "min_iou": 0.9999997615814209
+      }
+    },
+    {
+      "configuration": "C2-pytorch-one-480",
+      "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+      "reference": "C2-openvino-one-480",
+      "boxes": [
+        [
+          32.181331634521484,
+          42.1341552734375,
+          79.51034545898438,
+          200.0,
+          0.8868796825408936,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 1.1920928955078125e-07,
+        "min_iou": 0.9999985694885254
+      }
+    },
+    {
+      "configuration": "D0-pytorch-one-480",
+      "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+      "reference": "D0-openvino-one-480",
+      "boxes": [
+        [
+          30.443655014038086,
+          39.27335739135742,
+          80.42218017578125,
+          199.7605743408203,
+          0.8449245095252991,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 2.384185791015625e-07,
+        "min_iou": 0.9999995231628418
+      }
+    },
+    {
+      "configuration": "D1-pytorch-one-480",
+      "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+      "reference": "D1-openvino-one-480",
+      "boxes": [
+        [
+          31.86994171142578,
+          55.82759475708008,
+          80.34532928466797,
+          199.80503845214844,
+          0.8773617148399353,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 1.1920928955078125e-07,
+        "min_iou": 0.9999995827674866
+      }
+    },
+    {
+      "configuration": "D2-pytorch-one-480",
+      "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+      "reference": "D2-openvino-one-480",
+      "boxes": [
+        [
+          31.58067512512207,
+          50.55799865722656,
+          78.10067749023438,
+          200.0,
+          0.8188591003417969,
+          1.0
+        ]
+      ],
+      "parity": {
+        "native": 1,
+        "exported": 1,
+        "matches": 1,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 2.86102294921875e-06,
+        "min_iou": 0.9999995827674866
+      }
+    }
+  ]
+}

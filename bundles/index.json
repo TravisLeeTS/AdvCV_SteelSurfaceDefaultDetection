@@ -318,6 +318,7 @@
     "tests/test_matched_objects.py": "4d74a42ed0c77bb4a1e413ab22b0bb26554f5447a5d5631df4e6c355a7b626f5",
     "tests/test_protocol.py": "b2596ec248d7bfa1cdc4dcd5025e766f9f5dd85ae666e5dfe0d240509538f230",
     "validation/factorial-check.json": "f2e61ab43b1860601b19595aac46d3d90e14d82675a4edad8e56963863ef2cf9",
+    "validation/inference-replay.json": "04df471594a4afb917f4b6a41a1bc18dd8463f7cd25f2c15bec44cc492c64569",
     "validation/research-metrics-check.json": "7aaf2bcf16627de18eef0b401a4380e99df04a36c0a7afacfc55ba1a13854b57"
   },
   "archives": {

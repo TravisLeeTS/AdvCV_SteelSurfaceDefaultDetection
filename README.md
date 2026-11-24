@@ -44,6 +44,8 @@ Each ID has training seeds 0, 1 and 2. Each checkpoint has five complete static 
 
 The last command compares fresh detections on the same image across all 75 graphs and every native checkpoint. It includes the published A/E native head controls. Where the study measured only an OpenVINO cell, the native run is checked against that run's paired OpenVINO detections. The comparison uses the study's class, geometry and score tolerances. It writes the actual boxes and comparison results to `.review/replay-test-inclusion_11.json`. The five bundled image IDs are `inclusion_11`, `crazing_10`, `crazing_122`, `crazing_15` and `crazing_201`.
 
+On a separate checkout with only the five bundled images and a fresh installation of the pinned environment, all 96 configurations matched the archived operating boxes on `inclusion_11`. The receipt identifies each checkpoint, comparison source and detection. [Fresh inference results](validation/inference-replay.json)
+
 ## Open the interactive demo or use all images
 
 The viewer lets you change the image, detector, head and input size. Install the full dataset once to browse all 360 held-out images or select a validation example. The loader checks the publisher archive and each of the 1,800 images against the frozen manifests. The paper used 1,080 training, 360 validation and 360 test images. [NEU-DET download and citation](https://faculty.neu.edu.cn/songkc/en/zdylm/263265/) · [Split and archive hashes](data/split.json)
