@@ -1,0 +1,100 @@
+% Measured exhibits for Lee Ting Sen's MLR 512 project. IEEEtran template in reference/.
+\RequirePackage[T1]{fontenc}
+\documentclass[journal,onecolumn]{IEEEtran}
+\usepackage{amsmath,graphicx,booktabs}
+\usepackage[hidelinks]{hyperref}
+\graphicspath{{generated/}}
+\hypersetup{pdftitle={Steel Surface Inspection: Experimental Evidence for Five Detectors},pdfauthor={Lee Ting Sen}}
+\input{generated/expanded_values}
+\newcommand{\exhibit}[1]{\section*{#1}}
+\newcommand{\blocktitle}[1]{\par\smallskip\noindent{\bfseries #1}\par\smallskip}
+\newcommand{\fig}[2]{\begin{center}\includegraphics[width=#1\textwidth]{#2}\end{center}}
+\newcommand{\tab}[1]{\begin{center}\small\input{generated/#1}\end{center}}
+\newcommand{\nextpage}{\clearpage}
+\begin{document}
+\markboth{MLR 512, Advanced Computer Vision}{Lee Ting Sen, Five-Detector Evidence}
+\title{Steel Surface Inspection on a CPU\\Experimental Evidence for Five Detectors}
+\author{Lee Ting Sen\\American University of Sharjah}
+\maketitle
+\exhibit{Study design and grouped images}
+The experiment asks whether partial convolution saves processing time, whether two learned fusion gates change its effect on quality, and how input size and detection head affect inspection. Fifteen training runs pair seeds 0, 1 and 2 across five architectures. The selected artifact is \selectedName{}, seed 0 at \selectedSide{} pixels on the OpenVINO one-to-one path.
+\begin{center}\begin{tabular}{llll}
+\toprule ID & Detector & PConv & Learned top-down gates\\ \midrule
+A & Stock YOLO26n & No & No\\
+B & YOLO26n with partial convolution & Yes & No\\
+C & YOLO26n with learned fusion & No & Yes\\
+D & YOLO26n with both treatments & Yes & Yes\\
+E & Stock YOLOv10n & No & No\\ \bottomrule
+\end{tabular}\end{center}
+\blocktitle{NEU-DET annotations}
+\tab{audit}
+The public archive contains 1,800 grayscale images and 4,189 boxes. Grouping holds likely overlapping views together. Every architecture uses exactly the same training, validation and test manifests. The six classes are crazing, inclusion, patches, pitted surface, rolled-in scale and scratches.
+\blocktitle{When the comparisons were specified}
+The earlier A/B/E results were available when the six C/D runs were added. The gate definition and difference-in-differences analysis were recorded before training C or D. Nine preliminary validation sessions were archived after Windows servicing. The reported study uses a fresh 87-cell timing rotation per split. Held-out evaluation began after the expanded validation freeze.
+\nextpage
+\exhibit{Paired training and learned fusion}
+A and B supply the ungated backbones. A gate pools each branch at the top-down P4 and P3 joins and predicts two scalar weights. Twice the softmax normalizes them to sum to two. Zero-initialized output projections start both weights at one. C matched A and D matched B exactly on both native heads at initialization for all three seeds.
+\fig{.90}{training_curves.pdf}
+\blocktitle{Training and checkpoint selection}
+Each run used 200 epochs, a 480-pixel canvas, mixed precision, AdamW and batch 16. Loss components for YOLO26n and YOLOv10n have different definitions. All fifteen runs use the same native one-to-one validation mAP at 480 for checkpoint selection. Ties retain the earliest epoch.
+\tab{training_summary}
+\blocktitle{Gate weights after training}
+For six validation images from each of the six image categories, the two gates of each selected C/D checkpoint produced image-dependent weights. Across all 36 images and six checkpoints, the weight on the top-down input spanned \gatePfour{} at P4 and \gatePthree{} at P3. Both hidden and output projections received finite gradients and changed weights during the first epoch.
+\nextpage
+\exhibit{Validation choice and measured cost}
+Eligibility was checked at seed 0 and on the paired three-seed mean. At 480 pixels a candidate could lose at most 1 percentage point of mAP and 2 points of recall in any class versus A. The false-positive budget was 0.10 per annotated image. A size also had to stay within 2 points of each priority-class AP50 at its architecture's 480 reference. The table gives seed-0 measurements.
+\tab{validation_decision}
+\blocktitle{What the rule selected}
+\selectionEvidence{}
+\blocktitle{Held-out cost at 480}
+\tab{architecture_cost}
+Active parameters cover the selected one-to-one inference path. The FLOP counter counts two operations per multiply--accumulate for convolutions and matrix products. Pooling, branch scaling, activations, decoding, ranking and postprocessing are outside this count. Pipeline latency includes preprocessing through final boxes. AP and latency are means of the three seed estimates.
+\nextpage
+\exhibit{Fusion gains on the two backbones}
+The primary response is mean AP over IoU 0.50--0.95 on OpenVINO at 480. The difference between the gain from B to D and the gain from A to C estimates the interaction. D minus A measures the overall effect of the combined adaptation. Each row below gives changes in percentage points and the signed change in pipeline p95 in milliseconds.
+\tab{fusion}
+\fig{.80}{fusion_contrasts.pdf}
+\blocktitle{What happened to operating recall}
+\tab{pconv_recall}
+\fusionEvidence{}
+\nextpage
+\exhibit{Four inference sizes on the same captured pixels}
+Cr and RS give crazing and rolled-in-scale AP50 in percent. The p95 column gives decoded-image-to-box latency in milliseconds. Small marks show individual seeds and connected marks show three-seed means. All four sizes use the same decoded $200\times200$ images. Each 480-pixel one-to-one graph also serves the head comparison.
+\begin{center}\footnotesize\setlength{\tabcolsep}{6pt}\input{generated/resolution}\end{center}
+\fig{.93}{test_crazing_size.pdf}
+\fig{.93}{test_rolled_in_scale_size.pdf}
+\nextpage
+\exhibit{Two heads from one checkpoint}
+OV means OpenVINO and PT means native PyTorch CPU. A positive paired saving favors one-to-one. NMS time covers suppression on filtered candidates. All other head-path differences remain inside the full-pipeline comparison. The quality delta is one-to-one minus dense in percentage points.
+\tab{head_tradeoff}
+\blocktitle{Which objects changed for YOLOv10n?}
+\tab{yolov10_matched}
+\fig{.62}{yolov10_head_cases.pdf}
+Gold outlines the indicated annotation. Solid cyan marks an accepted detection. Dashed cyan marks a same-class candidate below the operating threshold. Each pair uses YOLOv10n seed 0 on the same image at 480 pixels, with a frozen cutoff of \headCutoff{}.
+\nextpage
+\exhibit{From a score to a matched or missed object}
+The upper examples follow one annotated object across four static input sizes. Each label gives the class score and the IoU against the same original-coordinate annotation. A larger input resamples the same source pixels.
+\begin{center}
+\includegraphics[width=.48\textwidth]{size_change_crazing.png}\hfill
+\includegraphics[width=.48\textwidth]{size_change_rolled_in_scale.png}
+\end{center}
+\blocktitle{Selected detector at its frozen cutoff}
+\begin{center}
+\includegraphics[width=.49\textwidth]{success.png}\hfill\includegraphics[width=.49\textwidth]{miss.png}\\
+\smallskip\includegraphics[width=.49\textwidth]{false_positive.png}
+\end{center}
+The left and right images of each pair are the original annotations and the accepted predictions. A false positive counts each unmatched detection on an annotated image.
+\nextpage
+\exhibit{Selected checkpoint at the alarm threshold}
+Validation selected \selectedName{}, seed~0 at \selectedSide{} pixels. AP50 integrates across scores. Operating recall uses the frozen cutoff of \selectedCutoff{} and IoU of at least 0.50. Intervals use 1,000 resamples of the 334 held-out image groups.
+\tab{selected_operating}
+\blocktitle{Illustrative software time budgets}
+\tab{latency_budgets}
+Each of the three sessions contains 1,000 synchronous requests after 200 warm-ups. The interval starts with a decoded image and ends at boxes in original coordinates. A field deadline also requires camera, transport, queue and actuation measurements.
+\blocktitle{Independent verification}
+\verificationEvidence{}
+\blocktitle{Data and methods}
+The original steel data are described by He et al.~\cite{he2020}. The architecture comparisons build on FasterNet~\cite{chen2023}, steel-surface fusion experiments~\cite{yu2025}, and the YOLOv10 dual-assignment method~\cite{wang2024}. The course survey~\cite{ting2026survey} motivated the paired size and head measurements.
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

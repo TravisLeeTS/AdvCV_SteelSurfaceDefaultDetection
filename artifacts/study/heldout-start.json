@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-11-23T23:56:43.486896+00:00",
+  "identity": {
+    "freeze_sha": "7473543d2af3962819fdbde60f4eff6744ff55a5d45c2f116b68ecd0b9127735",
+    "inventory_sha": "27c69c321ff344ddf24d55bdd0823ab6a74edf1dd710970bfa6a190acb7ee6d0",
+    "models": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "boundary": "after validation freeze verification, before reading test images or evaluating any test cell"
+}

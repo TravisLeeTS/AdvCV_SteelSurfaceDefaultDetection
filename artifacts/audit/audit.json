@@ -1,0 +1,27 @@
+{
+  "archive_sha": "cf04bb0b05d364f23e05031b191b20b908a0e5eb11466df74ee7fba98ec835d5",
+  "archive_url": "https://drive.usercontent.google.com/download?id=1qrdZlaDi272eA79b0uCwwqPrm2Q_WI3k&export=download&confirm=t",
+  "publisher": "https://faculty.neu.edu.cn/songkc/en/zdylm/263265/",
+  "images": 1800,
+  "boxes": 4189,
+  "groups": 1660,
+  "exact_duplicate_extras": 1,
+  "near_pairs": 161,
+  "grouping": "Union exact pixels, 63-bit DCT hash Hamming <=8, and translated matches (thumbnail NCC >=0.88; 100x100 center NCC >=0.95; full overlapping region NCC >=0.92).",
+  "acquisition_groups": "Acquisition identifiers absent from publisher XML.",
+  "channels": "Publisher JPEGs decode to three equal channels. Training and inference repeat one grayscale plane.",
+  "coordinates": "VOC 1-based inclusive endpoints to zero-based half-open [xmin-1,ymin-1,xmax,ymax].",
+  "max_roundtrip_error_px": 1.52587890625e-05,
+  "split_seed": 2026,
+  "split_files": {
+    "train": "52f2de893351650355682666682850cbae8e1e4f7f88c4f0d4c22229eba28f93",
+    "val": "98d75c8b9a5aed0d1d63a1edc8a2073f33c9b999e6272067eac52ae3ddc6ff11",
+    "test": "0e0ce6666994cc4af1684744683c0656e87f1113e213bf12a054c33602835561"
+  },
+  "split_hash": "091bf58a97f2aabe6ab417f4f2c395e676d58ac8c4e8e051b25ea7232c99436a",
+  "counts": {
+    "train": 1080,
+    "val": 360,
+    "test": 360
+  }
+}

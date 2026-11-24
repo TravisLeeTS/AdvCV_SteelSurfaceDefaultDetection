@@ -1,0 +1,31 @@
+{
+  "registered_utc": "2026-11-23T16:57:48.335958+00:00",
+  "design": "A/B/C/D/E; paired training seeds 0, 1 and 2, 200 epochs at 480.",
+  "old_freeze_sha256": "e77f4dd251c3f8fe416c6a533d6d5ddbf0a25011bdd7f31449da71293ac7f705",
+  "old_protocol_sha256": "52379c4c04ef8a337538b7fdca89e7fd30f7baacb4d8fe26277a83f92fdce1e8",
+  "old_report_sha256": "81dac6f5a7c7f71c24204585900ff759d602a1bd2926716b2086c0d002ace4d1",
+  "prior_runs": {
+    "A0": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+    "A1": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+    "A2": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+    "B0": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+    "B1": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+    "B2": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+    "E0": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+    "E1": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+    "E2": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc"
+  },
+  "prior_exposure": "The A/B/E test results were seen before the user requested this extension. The validation split and thresholds and the held-out split are unchanged. No C/D test result exists at registration.",
+  "primary": "At OpenVINO FP32, 480, one-to-one, Q is mAP50\u201395. Interaction in pp = 100*((D-B)-(C-A)), with seedwise differences and their mean.",
+  "secondary": [
+    "B-A",
+    "C-A",
+    "D-B",
+    "D-C",
+    "D-A"
+  ],
+  "gate": "At top-down P4/P3 concat: global average pooling, shared per-site two-layer MLP with descriptor width/16 and ReLU, zero final weights/bias, 2*softmax. Both backbones use identical gate initialization for each seed.",
+  "latency": "Measure every checkpoint in the same new 87-cell rotation per split, including the nine existing checkpoint files; three sessions with 200 warmups and 1000 timed observations per boundary.",
+  "uncertainty": "Matched group bootstrap, 1000 shared draws at seed 5122026, seed-specific estimates and equal-seed paired mean; test-set intervals are conditional on trained seeds.",
+  "scope": "60 one-to-one resolution cells and 21 matched head pairs per split; PyTorch runtime comparison A/E."
+}

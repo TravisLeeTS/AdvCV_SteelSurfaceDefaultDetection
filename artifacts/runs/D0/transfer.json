@@ -1,0 +1,199 @@
+{
+  "source": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt",
+  "source_sha": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+  "paired_initial_sha": "60ca9dec671c863e3d671405ba99624348c58128becbd58fa60883e53e81fae1",
+  "copied_tensors": 606,
+  "freshly_initialized": [
+    "model.23.cv3.0.0.1.conv.weight",
+    "model.23.cv3.0.0.1.bn.weight",
+    "model.23.cv3.0.0.1.bn.bias",
+    "model.23.cv3.0.0.1.bn.running_mean",
+    "model.23.cv3.0.0.1.bn.running_var",
+    "model.23.cv3.0.1.0.conv.weight",
+    "model.23.cv3.0.1.0.bn.weight",
+    "model.23.cv3.0.1.0.bn.bias",
+    "model.23.cv3.0.1.0.bn.running_mean",
+    "model.23.cv3.0.1.0.bn.running_var",
+    "model.23.cv3.0.1.1.conv.weight",
+    "model.23.cv3.0.1.1.bn.weight",
+    "model.23.cv3.0.1.1.bn.bias",
+    "model.23.cv3.0.1.1.bn.running_mean",
+    "model.23.cv3.0.1.1.bn.running_var",
+    "model.23.cv3.0.2.weight",
+    "model.23.cv3.0.2.bias",
+    "model.23.cv3.1.0.1.conv.weight",
+    "model.23.cv3.1.0.1.bn.weight",
+    "model.23.cv3.1.0.1.bn.bias",
+    "model.23.cv3.1.0.1.bn.running_mean",
+    "model.23.cv3.1.0.1.bn.running_var",
+    "model.23.cv3.1.1.0.conv.weight",
+    "model.23.cv3.1.1.0.bn.weight",
+    "model.23.cv3.1.1.0.bn.bias",
+    "model.23.cv3.1.1.0.bn.running_mean",
+    "model.23.cv3.1.1.0.bn.running_var",
+    "model.23.cv3.1.1.1.conv.weight",
+    "model.23.cv3.1.1.1.bn.weight",
+    "model.23.cv3.1.1.1.bn.bias",
+    "model.23.cv3.1.1.1.bn.running_mean",
+    "model.23.cv3.1.1.1.bn.running_var",
+    "model.23.cv3.1.2.weight",
+    "model.23.cv3.1.2.bias",
+    "model.23.cv3.2.0.1.conv.weight",
+    "model.23.cv3.2.0.1.bn.weight",
+    "model.23.cv3.2.0.1.bn.bias",
+    "model.23.cv3.2.0.1.bn.running_mean",
+    "model.23.cv3.2.0.1.bn.running_var",
+    "model.23.cv3.2.1.0.conv.weight",
+    "model.23.cv3.2.1.0.bn.weight",
+    "model.23.cv3.2.1.0.bn.bias",
+    "model.23.cv3.2.1.0.bn.running_mean",
+    "model.23.cv3.2.1.0.bn.running_var",
+    "model.23.cv3.2.1.1.conv.weight",
+    "model.23.cv3.2.1.1.bn.weight",
+    "model.23.cv3.2.1.1.bn.bias",
+    "model.23.cv3.2.1.1.bn.running_mean",
+    "model.23.cv3.2.1.1.bn.running_var",
+    "model.23.cv3.2.2.weight",
+    "model.23.cv3.2.2.bias",
+    "model.23.one2one_cv3.0.0.1.conv.weight",
+    "model.23.one2one_cv3.0.0.1.bn.weight",
+    "model.23.one2one_cv3.0.0.1.bn.bias",
+    "model.23.one2one_cv3.0.0.1.bn.running_mean",
+    "model.23.one2one_cv3.0.0.1.bn.running_var",
+    "model.23.one2one_cv3.0.1.0.conv.weight",
+    "model.23.one2one_cv3.0.1.0.bn.weight",
+    "model.23.one2one_cv3.0.1.0.bn.bias",
+    "model.23.one2one_cv3.0.1.0.bn.running_mean",
+    "model.23.one2one_cv3.0.1.0.bn.running_var",
+    "model.23.one2one_cv3.0.1.1.conv.weight",
+    "model.23.one2one_cv3.0.1.1.bn.weight",
+    "model.23.one2one_cv3.0.1.1.bn.bias",
+    "model.23.one2one_cv3.0.1.1.bn.running_mean",
+    "model.23.one2one_cv3.0.1.1.bn.running_var",
+    "model.23.one2one_cv3.0.2.weight",
+    "model.23.one2one_cv3.0.2.bias",
+    "model.23.one2one_cv3.1.0.1.conv.weight",
+    "model.23.one2one_cv3.1.0.1.bn.weight",
+    "model.23.one2one_cv3.1.0.1.bn.bias",
+    "model.23.one2one_cv3.1.0.1.bn.running_mean",
+    "model.23.one2one_cv3.1.0.1.bn.running_var",
+    "model.23.one2one_cv3.1.1.0.conv.weight",
+    "model.23.one2one_cv3.1.1.0.bn.weight",
+    "model.23.one2one_cv3.1.1.0.bn.bias",
+    "model.23.one2one_cv3.1.1.0.bn.running_mean",
+    "model.23.one2one_cv3.1.1.0.bn.running_var",
+    "model.23.one2one_cv3.1.1.1.conv.weight",
+    "model.23.one2one_cv3.1.1.1.bn.weight",
+    "model.23.one2one_cv3.1.1.1.bn.bias",
+    "model.23.one2one_cv3.1.1.1.bn.running_mean",
+    "model.23.one2one_cv3.1.1.1.bn.running_var",
+    "model.23.one2one_cv3.1.2.weight",
+    "model.23.one2one_cv3.1.2.bias",
+    "model.23.one2one_cv3.2.0.1.conv.weight",
+    "model.23.one2one_cv3.2.0.1.bn.weight",
+    "model.23.one2one_cv3.2.0.1.bn.bias",
+    "model.23.one2one_cv3.2.0.1.bn.running_mean",
+    "model.23.one2one_cv3.2.0.1.bn.running_var",
+    "model.23.one2one_cv3.2.1.0.conv.weight",
+    "model.23.one2one_cv3.2.1.0.bn.weight",
+    "model.23.one2one_cv3.2.1.0.bn.bias",
+    "model.23.one2one_cv3.2.1.0.bn.running_mean",
+    "model.23.one2one_cv3.2.1.0.bn.running_var",
+    "model.23.one2one_cv3.2.1.1.conv.weight",
+    "model.23.one2one_cv3.2.1.1.bn.weight",
+    "model.23.one2one_cv3.2.1.1.bn.bias",
+    "model.23.one2one_cv3.2.1.1.bn.running_mean",
+    "model.23.one2one_cv3.2.1.1.bn.running_var",
+    "model.23.one2one_cv3.2.2.weight",
+    "model.23.one2one_cv3.2.2.bias"
+  ],
+  "replacements": [
+    {
+      "path": "model.6.m.0.m.0.cv2.conv",
+      "dense_shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "new_shape": [
+        8,
+        8,
+        3,
+        3
+      ],
+      "source_slice": "[:8, :8, :, :]"
+    },
+    {
+      "path": "model.6.m.0.m.1.cv2.conv",
+      "dense_shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "new_shape": [
+        8,
+        8,
+        3,
+        3
+      ],
+      "source_slice": "[:8, :8, :, :]"
+    },
+    {
+      "path": "model.8.m.0.m.0.cv2.conv",
+      "dense_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "new_shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "source_slice": "[:16, :16, :, :]"
+    },
+    {
+      "path": "model.8.m.0.m.1.cv2.conv",
+      "dense_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "new_shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "source_slice": "[:16, :16, :, :]"
+    }
+  ],
+  "gates": [
+    {
+      "path": "model.12",
+      "inputs": [
+        -1,
+        6
+      ],
+      "descriptor_channels": 384,
+      "hidden_channels": 24,
+      "parameters": 9290
+    },
+    {
+      "path": "model.15",
+      "inputs": [
+        -1,
+        4
+      ],
+      "descriptor_channels": 256,
+      "hidden_channels": 16,
+      "parameters": 4146
+    }
+  ],
+  "gate_seed": 512000
+}

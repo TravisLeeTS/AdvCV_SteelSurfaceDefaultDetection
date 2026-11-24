@@ -1,0 +1,25 @@
+{
+  "epoch": 1,
+  "max_weight_changes": {
+    "model.6.m.0.m.0.cv2.conv.kernel.weight": 0.004127040505409241,
+    "model.6.m.0.m.1.cv2.conv.kernel.weight": 0.004587659612298012,
+    "model.8.m.0.m.0.cv2.conv.kernel.weight": 0.006372164003551006,
+    "model.8.m.0.m.1.cv2.conv.kernel.weight": 0.005206444300711155,
+    "model.23.cv2.0.2.weight": 0.006349943578243256,
+    "model.23.one2one_cv2.0.2.weight": 0.005145905539393425,
+    "model.23.cv3.0.2.weight": 0.012760341167449951,
+    "model.23.one2one_cv3.0.2.weight": 0.013436175882816315
+  },
+  "grad_norm": {
+    "model.6.m.0.m.0.cv2.conv.kernel.weight": 94.111083984375,
+    "model.6.m.0.m.1.cv2.conv.kernel.weight": 66.08020782470703,
+    "model.8.m.0.m.0.cv2.conv.kernel.weight": 86.84269714355469,
+    "model.8.m.0.m.1.cv2.conv.kernel.weight": 112.2715072631836,
+    "model.23.cv2.0.2.weight": 1.1628574132919312,
+    "model.23.cv3.0.2.weight": 2.7796456813812256,
+    "model.23.one2one_cv3.0.2.weight": 3.038207530975342,
+    "model.23.one2one_cv2.0.2.weight": 0.3172410726547241
+  },
+  "criterion": "E2ELoss",
+  "validation_head": "one2one"
+}

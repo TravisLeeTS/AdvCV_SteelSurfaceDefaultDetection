@@ -1,0 +1,507 @@
+{
+  "evaluator": "pycocotools 2.0.11",
+  "settings": "All area, six classes, 101 recall points, IoU 0.50 to 0.95, maxDets 300, stored 0.001 score floor.",
+  "cells": 174,
+  "class_operating_rows": 1044,
+  "matched_class_rows": 612,
+  "paired_recall_intervals_reproduced": 768,
+  "maximum_absolute_ap_difference": 0.00019262846751763596,
+  "ap_differences_above_1e_10": [
+    {
+      "cell": "val/A2-openvino-one-256",
+      "metric": "map50",
+      "coco_minus_study": 4.476482983462038e-06
+    },
+    {
+      "cell": "val/A2-openvino-one-256",
+      "metric": "map5095",
+      "coco_minus_study": 3.614989730366114e-06
+    },
+    {
+      "cell": "val/A2-openvino-one-256",
+      "metric": "patches_ap50",
+      "coco_minus_study": 2.6858897900550183e-05
+    },
+    {
+      "cell": "val/A2-openvino-one-320",
+      "metric": "map50",
+      "coco_minus_study": 7.760281195090535e-06
+    },
+    {
+      "cell": "val/A2-openvino-one-320",
+      "metric": "map5095",
+      "coco_minus_study": 4.124742924216385e-06
+    },
+    {
+      "cell": "val/A2-openvino-one-320",
+      "metric": "patches_ap50",
+      "coco_minus_study": 4.656168717009912e-05
+    },
+    {
+      "cell": "val/A2-openvino-one-480",
+      "metric": "map50",
+      "coco_minus_study": 2.4978189209212687e-06
+    },
+    {
+      "cell": "val/A2-openvino-one-480",
+      "metric": "map5095",
+      "coco_minus_study": 1.4980732468972136e-06
+    },
+    {
+      "cell": "val/A2-openvino-one-480",
+      "metric": "inclusion_ap50",
+      "coco_minus_study": 2.203313409165908e-06
+    },
+    {
+      "cell": "val/A2-openvino-one-480",
+      "metric": "patches_ap50",
+      "coco_minus_study": 1.2783600116694771e-05
+    },
+    {
+      "cell": "val/A2-openvino-one-640",
+      "metric": "map50",
+      "coco_minus_study": 7.458265371962369e-08
+    },
+    {
+      "cell": "val/A2-openvino-one-640",
+      "metric": "map5095",
+      "coco_minus_study": 6.725206308511034e-08
+    },
+    {
+      "cell": "val/A2-openvino-one-640",
+      "metric": "inclusion_ap50",
+      "coco_minus_study": 4.4749592231774216e-07
+    },
+    {
+      "cell": "val/A2-pytorch-one-480",
+      "metric": "map50",
+      "coco_minus_study": 2.4985814742750634e-06
+    },
+    {
+      "cell": "val/A2-pytorch-one-480",
+      "metric": "map5095",
+      "coco_minus_study": 1.4983132242130104e-06
+    },
+    {
+      "cell": "val/A2-pytorch-one-480",
+      "metric": "inclusion_ap50",
+      "coco_minus_study": 2.203313409165908e-06
+    },
+    {
+      "cell": "val/A2-pytorch-one-480",
+      "metric": "patches_ap50",
+      "coco_minus_study": 1.278817543681754e-05
+    },
+    {
+      "cell": "val/B1-openvino-one-640",
+      "metric": "map5095",
+      "coco_minus_study": 5.314947798540359e-08
+    },
+    {
+      "cell": "val/C0-openvino-one-256",
+      "metric": "map50",
+      "coco_minus_study": 1.6765599933910025e-06
+    },
+    {
+      "cell": "val/C0-openvino-one-256",
+      "metric": "map5095",
+      "coco_minus_study": 8.266042861304612e-07
+    },
+    {
+      "cell": "val/C0-openvino-one-256",
+      "metric": "inclusion_ap50",
+      "coco_minus_study": 1.0059359960234993e-05
+    },
+    {
+      "cell": "test/A2-openvino-one-256",
+      "metric": "map50",
+      "coco_minus_study": 2.1527116472297436e-05
+    },
+    {
+      "cell": "test/A2-openvino-one-256",
+      "metric": "map5095",
+      "coco_minus_study": 9.905934225146185e-06
+    },
+    {
+      "cell": "test/A2-openvino-one-256",
+      "metric": "inclusion_ap50",
+      "coco_minus_study": 8.798752335692495e-05
+    },
+    {
+      "cell": "test/A2-openvino-one-256",
+      "metric": "patches_ap50",
+      "coco_minus_study": 4.1175175476082515e-05
+    },
+    {
+      "cell": "test/A2-openvino-one-320",
+      "metric": "map50",
+      "coco_minus_study": 1.9025239673231553e-05
+    },
+    {
+      "cell": "test/A2-openvino-one-320",
+      "metric": "map5095",
+      "coco_minus_study": 1.096774113040766e-05
+    },
+    {
+      "cell": "test/A2-openvino-one-320",
+      "metric": "inclusion_ap50",
+      "coco_minus_study": 9.109712003196879e-05
+    },
+    {
+      "cell": "test/A2-openvino-one-320",
+      "metric": "patches_ap50",
+      "coco_minus_study": 2.3054318007975638e-05
+    },
+    {
+      "cell": "test/A2-openvino-one-480",
+      "metric": "map50",
+      "coco_minus_study": 4.1569812322395094e-06
+    },
+    {
+      "cell": "test/A2-openvino-one-480",
+      "metric": "map5095",
+      "coco_minus_study": 2.836572677078486e-06
+    },
+    {
+      "cell": "test/A2-openvino-one-480",
+      "metric": "inclusion_ap50",
+      "coco_minus_study": 1.547352955777459e-05
+    },
+    {
+      "cell": "test/A2-openvino-one-480",
+      "metric": "patches_ap50",
+      "coco_minus_study": 9.468357835884511e-06
+    },
+    {
+      "cell": "test/A2-openvino-one-640",
+      "metric": "map50",
+      "coco_minus_study": 7.719878795109381e-07
+    },
+    {
+      "cell": "test/A2-openvino-one-640",
+      "metric": "map5095",
+      "coco_minus_study": 6.4315490405642e-07
+    },
+    {
+      "cell": "test/A2-openvino-one-640",
+      "metric": "inclusion_ap50",
+      "coco_minus_study": 4.631927277287673e-06
+    },
+    {
+      "cell": "test/A2-pytorch-one-480",
+      "metric": "map50",
+      "coco_minus_study": 4.1569812322395094e-06
+    },
+    {
+      "cell": "test/A2-pytorch-one-480",
+      "metric": "map5095",
+      "coco_minus_study": 2.836572677078486e-06
+    },
+    {
+      "cell": "test/A2-pytorch-one-480",
+      "metric": "inclusion_ap50",
+      "coco_minus_study": 1.547352955777459e-05
+    },
+    {
+      "cell": "test/A2-pytorch-one-480",
+      "metric": "patches_ap50",
+      "coco_minus_study": 9.468357835884511e-06
+    },
+    {
+      "cell": "test/B0-openvino-one-256",
+      "metric": "map5095",
+      "coco_minus_study": 0.0001259015496694882
+    },
+    {
+      "cell": "test/B1-openvino-one-256",
+      "metric": "map5095",
+      "coco_minus_study": 0.00019262846751763596
+    },
+    {
+      "cell": "test/C0-openvino-one-480",
+      "metric": "map50",
+      "coco_minus_study": 1.7344405700558951e-07
+    },
+    {
+      "cell": "test/C0-openvino-one-480",
+      "metric": "map5095",
+      "coco_minus_study": 1.406633018397052e-07
+    },
+    {
+      "cell": "test/C0-openvino-one-480",
+      "metric": "inclusion_ap50",
+      "coco_minus_study": 1.0406643424776263e-06
+    },
+    {
+      "cell": "test/C0-openvino-one-640",
+      "metric": "map5095",
+      "coco_minus_study": 3.1968460378895e-08
+    },
+    {
+      "cell": "test/D0-openvino-one-256",
+      "metric": "map5095",
+      "coco_minus_study": 6.607695180321782e-05
+    }
+  ],
+  "geometry_totals": {
+    "inverted_at_ap_floor": 68,
+    "zero_area_at_ap_floor": 33,
+    "nonpositive_dimension_at_cutoff": 0
+  },
+  "geometry_by_cell": {
+    "val/A2-openvino-one-256": {
+      "inverted_at_ap_floor": 6,
+      "zero_area_at_ap_floor": 0,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/A2-openvino-one-320": {
+      "inverted_at_ap_floor": 3,
+      "zero_area_at_ap_floor": 1,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/A2-openvino-one-480": {
+      "inverted_at_ap_floor": 5,
+      "zero_area_at_ap_floor": 0,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/A2-openvino-one-640": {
+      "inverted_at_ap_floor": 2,
+      "zero_area_at_ap_floor": 0,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/A2-pytorch-one-480": {
+      "inverted_at_ap_floor": 5,
+      "zero_area_at_ap_floor": 0,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/B1-openvino-one-480": {
+      "inverted_at_ap_floor": 0,
+      "zero_area_at_ap_floor": 1,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/B1-openvino-one-640": {
+      "inverted_at_ap_floor": 1,
+      "zero_area_at_ap_floor": 0,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/C0-openvino-one-256": {
+      "inverted_at_ap_floor": 2,
+      "zero_area_at_ap_floor": 0,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/C0-openvino-one-480": {
+      "inverted_at_ap_floor": 1,
+      "zero_area_at_ap_floor": 0,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/C0-openvino-one-640": {
+      "inverted_at_ap_floor": 0,
+      "zero_area_at_ap_floor": 1,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/C1-openvino-dense-480": {
+      "inverted_at_ap_floor": 0,
+      "zero_area_at_ap_floor": 5,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/D1-openvino-one-256": {
+      "inverted_at_ap_floor": 0,
+      "zero_area_at_ap_floor": 2,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/D1-openvino-one-320": {
+      "inverted_at_ap_floor": 0,
+      "zero_area_at_ap_floor": 1,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/D1-openvino-one-480": {
+      "inverted_at_ap_floor": 0,
+      "zero_area_at_ap_floor": 3,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/D1-openvino-one-640": {
+      "inverted_at_ap_floor": 0,
+      "zero_area_at_ap_floor": 1,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "val/D1-openvino-dense-480": {
+      "inverted_at_ap_floor": 0,
+      "zero_area_at_ap_floor": 3,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "test/A2-openvino-one-256": {
+      "inverted_at_ap_floor": 6,
+      "zero_area_at_ap_floor": 0,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "test/A2-openvino-one-320": {
+      "inverted_at_ap_floor": 4,
+      "zero_area_at_ap_floor": 1,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "test/A2-openvino-one-480": {
+      "inverted_at_ap_floor": 9,
+      "zero_area_at_ap_floor": 0,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "test/A2-openvino-one-640": {
+      "inverted_at_ap_floor": 10,
+      "zero_area_at_ap_floor": 0,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "test/A2-pytorch-one-480": {
+      "inverted_at_ap_floor": 9,
+      "zero_area_at_ap_floor": 0,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "test/B1-openvino-one-640": {
+      "inverted_at_ap_floor": 0,
+      "zero_area_at_ap_floor": 2,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "test/C0-openvino-one-480": {
+      "inverted_at_ap_floor": 1,
+      "zero_area_at_ap_floor": 1,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "test/C0-openvino-one-640": {
+      "inverted_at_ap_floor": 4,
+      "zero_area_at_ap_floor": 1,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "test/C1-openvino-dense-480": {
+      "inverted_at_ap_floor": 0,
+      "zero_area_at_ap_floor": 5,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "test/D1-openvino-one-256": {
+      "inverted_at_ap_floor": 0,
+      "zero_area_at_ap_floor": 1,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "test/D1-openvino-one-480": {
+      "inverted_at_ap_floor": 0,
+      "zero_area_at_ap_floor": 2,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "test/D1-openvino-one-640": {
+      "inverted_at_ap_floor": 0,
+      "zero_area_at_ap_floor": 1,
+      "nonpositive_dimension_at_cutoff": 0
+    },
+    "test/D1-openvino-dense-480": {
+      "inverted_at_ap_floor": 0,
+      "zero_area_at_ap_floor": 1,
+      "nonpositive_dimension_at_cutoff": 0
+    }
+  },
+  "sensitivity_maximum_absolute_ap_difference_per_cell": {
+    "val/A2-openvino-one-256": {
+      "retain_inverted_as_false_positives": 5.551115123125783e-17,
+      "also_use_float32_box_iou": 5.551115123125783e-17
+    },
+    "val/A2-openvino-one-320": {
+      "retain_inverted_as_false_positives": 1.1102230246251565e-16,
+      "also_use_float32_box_iou": 1.1102230246251565e-16
+    },
+    "val/A2-openvino-one-480": {
+      "retain_inverted_as_false_positives": 1.1102230246251565e-16,
+      "also_use_float32_box_iou": 1.1102230246251565e-16
+    },
+    "val/A2-openvino-one-640": {
+      "retain_inverted_as_false_positives": 1.1102230246251565e-16,
+      "also_use_float32_box_iou": 1.1102230246251565e-16
+    },
+    "val/A2-pytorch-one-480": {
+      "retain_inverted_as_false_positives": 0.0,
+      "also_use_float32_box_iou": 0.0
+    },
+    "val/B1-openvino-one-640": {
+      "retain_inverted_as_false_positives": 1.1102230246251565e-16,
+      "also_use_float32_box_iou": 1.1102230246251565e-16
+    },
+    "val/C0-openvino-one-256": {
+      "retain_inverted_as_false_positives": 2.7755575615628914e-17,
+      "also_use_float32_box_iou": 2.7755575615628914e-17
+    },
+    "test/A2-openvino-one-256": {
+      "retain_inverted_as_false_positives": 1.1102230246251565e-16,
+      "also_use_float32_box_iou": 1.1102230246251565e-16
+    },
+    "test/A2-openvino-one-320": {
+      "retain_inverted_as_false_positives": 1.1102230246251565e-16,
+      "also_use_float32_box_iou": 1.1102230246251565e-16
+    },
+    "test/A2-openvino-one-480": {
+      "retain_inverted_as_false_positives": 5.551115123125783e-17,
+      "also_use_float32_box_iou": 5.551115123125783e-17
+    },
+    "test/A2-openvino-one-640": {
+      "retain_inverted_as_false_positives": 1.1102230246251565e-16,
+      "also_use_float32_box_iou": 1.1102230246251565e-16
+    },
+    "test/A2-pytorch-one-480": {
+      "retain_inverted_as_false_positives": 5.551115123125783e-17,
+      "also_use_float32_box_iou": 5.551115123125783e-17
+    },
+    "test/B0-openvino-one-256": {
+      "retain_inverted_as_false_positives": 0.0001259015496694882,
+      "also_use_float32_box_iou": 0.0
+    },
+    "test/B1-openvino-one-256": {
+      "retain_inverted_as_false_positives": 0.00019262846751763596,
+      "also_use_float32_box_iou": 5.551115123125783e-17
+    },
+    "test/C0-openvino-one-480": {
+      "retain_inverted_as_false_positives": 1.1102230246251565e-16,
+      "also_use_float32_box_iou": 1.1102230246251565e-16
+    },
+    "test/C0-openvino-one-640": {
+      "retain_inverted_as_false_positives": 0.0,
+      "also_use_float32_box_iou": 0.0
+    },
+    "test/D0-openvino-one-256": {
+      "retain_inverted_as_false_positives": 6.607695180321782e-05,
+      "also_use_float32_box_iou": 2.7755575615628914e-17
+    }
+  },
+  "frozen_validation_eligibility": {
+    "model": "A",
+    "side": 480,
+    "verdict": "480 supported",
+    "architecture": {
+      "A": true,
+      "B": false,
+      "C": false,
+      "D": false,
+      "E": false
+    },
+    "size": {
+      "256": false,
+      "320": false,
+      "480": true,
+      "640": false
+    }
+  },
+  "standard_coco_validation_eligibility": {
+    "model": "A",
+    "side": 480,
+    "verdict": "480 supported",
+    "architecture": {
+      "A": true,
+      "B": false,
+      "C": false,
+      "D": false,
+      "E": false
+    },
+    "size": {
+      "256": false,
+      "320": false,
+      "480": true,
+      "640": false
+    }
+  },
+  "operating_counts_method": "Independent score-ordered scalar IoU matching to the best unused same-class annotation.",
+  "matched_objects_sha256": "4ec7da6162a2957ccbd01307623155811001f106623d4d6f192339a958a828a7",
+  "study_freeze_sha256": "7473543d2af3962819fdbde60f4eff6744ff55a5d45c2f116b68ecd0b9127735"
+}

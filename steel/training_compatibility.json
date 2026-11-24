@@ -1,0 +1,27 @@
+[
+  {
+    "from": "d9a9454b1892f9ec0d45e0b1284cac20bff2f694debf76dddd21222429c3df2f",
+    "to": "e3c8fbd63b55705550b18fd3066e441fa728b1ae0794b654057a87ef529f0c4c",
+    "reason": "Identical dataset, initialization, numerical forward/backward, optimizer, objective, schedule, selection, and augmentation. Revision adds atomic replace retry, checkpoint recovery, per-run lock and first-epoch gradient observation over all batches."
+  },
+  {
+    "from": "d9a9454b1892f9ec0d45e0b1284cac20bff2f694debf76dddd21222429c3df2f",
+    "to": "540e674e025a6bc7b6f0dd5e0a0f2197d3b8b4996e4be028c5b6023481a37e02",
+    "reason": "Only external dense deployment suppression changed. Training validation selects the one-to-one branch, which is unchanged. All completed checkpoint hashes stay fixed."
+  },
+  {
+    "from": "e3c8fbd63b55705550b18fd3066e441fa728b1ae0794b654057a87ef529f0c4c",
+    "to": "540e674e025a6bc7b6f0dd5e0a0f2197d3b8b4996e4be028c5b6023481a37e02",
+    "reason": "Only external dense deployment suppression changed. Training validation selects the one-to-one branch, which is unchanged. All completed checkpoint hashes stay fixed."
+  },
+  {
+    "from": "d9a9454b1892f9ec0d45e0b1284cac20bff2f694debf76dddd21222429c3df2f",
+    "to": "30da614ae1b893b02443c5c84a8af38387d1cdfd96c05e359850450e77b73644",
+    "reason": "C and D alone add new gate modules and gradient probes. A/B/E retain their original state layout, six-class initialization, training and one-to-one validation. The original inputs and completed checkpoint bytes are verified before reuse."
+  },
+  {
+    "from": "e3c8fbd63b55705550b18fd3066e441fa728b1ae0794b654057a87ef529f0c4c",
+    "to": "30da614ae1b893b02443c5c84a8af38387d1cdfd96c05e359850450e77b73644",
+    "reason": "C and D alone add new gate modules and probes. The original A/B/E training settings and complete checkpoint hashes are required for reuse."
+  }
+]

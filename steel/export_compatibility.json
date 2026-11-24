@@ -1,0 +1,19 @@
+[
+  {
+    "from": "fa8c842c04b0777d3fc5ac725f84e15ff48e7763a3921c2a3ed386523f3ea63c",
+    "to": "43b2079ba74f4ae8fef5e0c6e8c92b4d6d5b1fd3e2f191e96e9a624122ebc382",
+    "reason": "Only directory publication and its log placement changed. The same trace, IR serialization, parity, parameters, exact serialized file hashes and reopened branch/shape checks apply. Completed directories stay immutable."
+  },
+  {
+    "from": "43b2079ba74f4ae8fef5e0c6e8c92b4d6d5b1fd3e2f191e96e9a624122ebc382",
+    "to": "ae4aa059bd572c023d3ba020bf25ea0f9716edb1c1c48ca97d506f4f0e4db5d3",
+    "reason": "The learned graph and serialization are unchanged. Reopen each original XML/BIN and compare both raw outputs and current external postprocessing with the native model on the prespecified validation sample.",
+    "scope": "external-dense-postprocessing"
+  },
+  {
+    "from": "fa8c842c04b0777d3fc5ac725f84e15ff48e7763a3921c2a3ed386523f3ea63c",
+    "to": "ae4aa059bd572c023d3ba020bf25ea0f9716edb1c1c48ca97d506f4f0e4db5d3",
+    "reason": "The learned graph and serialization are unchanged. Reopen each original XML/BIN and compare both raw outputs and current external postprocessing with the native model on the prespecified validation sample.",
+    "scope": "external-dense-postprocessing"
+  }
+]

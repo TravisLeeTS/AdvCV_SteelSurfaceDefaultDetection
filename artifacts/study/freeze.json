@@ -1,0 +1,1190 @@
+{
+  "frozen_utc": "2026-11-23T23:56:29.074867+00:00",
+  "models": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "split_sha": "091bf58a97f2aabe6ab417f4f2c395e676d58ac8c4e8e051b25ea7232c99436a",
+  "checkpoints": {
+    "A0": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+    "A1": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+    "A2": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+    "B0": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+    "B1": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+    "B2": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+    "C0": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+    "C1": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+    "C2": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+    "D0": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+    "D1": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+    "D2": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+    "E0": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+    "E1": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+    "E2": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc"
+  },
+  "thresholds": {
+    "A0": "45d1fe65f9b54d2c48d76857e970dd10d882995c9be3166361d02a67f0f78401",
+    "A1": "f4e343f6464bd378150fc9f90d6486777d897e85d0a051ddb48b3b49db720f4e",
+    "A2": "3542fbaf6cb9618bb435ef79929c2cb07f25807ddcf1730bef981f379462cbcd",
+    "B0": "8974d6ac05015645ed01746be1f7810fe4b3ef657387312e30e0286e87c47fe4",
+    "B1": "88d2b65a8510fef50025afa47203d7cbd43e8f305542e8aae9bbd016c0acec50",
+    "B2": "1986614e9cee2c98d859403f96cfa5b677b74c715ffdb5cc86c656e9a73e59e6",
+    "C0": "d3d3fc74984f443f70d961a0b2343f78dfd9adc2a3f01ac42d8bd9317205f6ad",
+    "C1": "c7b0e26fcefd616b51927981543c261b1dcffb197acc7bfae788f50273f99302",
+    "C2": "f15b87edf601a21087407df97a5db25624e0b89f982bbb9ded56d6a8396537eb",
+    "D0": "2e1b5a16de65b58e008a2f5d15dc799084c29d4a8d53c3897c6d2a95d2043883",
+    "D1": "253e4a1645b3f9756a145f8986db706340b68407c55f0f96b3dff941d85b8434",
+    "D2": "45e16c6b4330d95ed204d03ec9c5cc9f5f5189cc729832693cf75bb5716b7378",
+    "E0": "b68f885140edbee407483676ba304d9e2484551b40454bb93311e37e5dd6304a",
+    "E1": "ee79a76c123458c0132c63d87766fece26d315f5caf14e3a9c38a63b46a23987",
+    "E2": "821dd6858755d1db9e3c4d6a1f3926cb87680ffbc29714c1c256991a116a719e"
+  },
+  "cutoffs": {
+    "A0": 0.6858391165733337,
+    "A1": 0.8443508744239807,
+    "A2": 0.7360888123512268,
+    "B0": 0.7729088664054871,
+    "B1": 0.723359227180481,
+    "B2": 0.6531738042831421,
+    "C0": 0.7704393863677979,
+    "C1": 0.7584497928619385,
+    "C2": 0.7868845462799072,
+    "D0": 0.7868204116821289,
+    "D1": 0.7633301019668579,
+    "D2": 0.7821453809738159,
+    "E0": 0.7922124266624451,
+    "E1": 0.6513373255729675,
+    "E2": 0.6665282249450684
+  },
+  "analysis_revision": "039b34b3d89183a137ecb7b81c2c095643543fd085cb20d2ee6d05a697275abe",
+  "numerical_revision": "f24498441312a326e444fed0d38c48b3b301e84b9946a0388049c101290ef638",
+  "validation_evidence": {
+    "val/A0-openvino-one-256/cell.json": "79848b8909b9290af950c0a5bd52e8ceaeef10234ad3ec81ad8107390eded535",
+    "val/A0-openvino-one-256/quality.json": "9ae5e8dfb82702de564ccb81163742e21d758601efb6cad1c1920d7354f57435",
+    "val/A0-openvino-one-256/stage-trace.json": "b1760f928663c7b483298f090897d1d706dbb5cc30a1549606138711920d49f3",
+    "val/A0-openvino-one-256/session-0.json": "7a7428f287a0ef3de6e3dbc05eed3339c754167b20b7e26d5782daa3a4bdb4e6",
+    "val/A0-openvino-one-256/session-1.json": "e759ce42ea5600684c5ae9b1cc7075510d2f315a9f9afbfaf80b4a6ee80e0a96",
+    "val/A0-openvino-one-256/session-2.json": "e674febbff3ff3333b58fb6ec17d08ed1999dd34f38f7a638d9fbdab28524d8c",
+    "val/A0-openvino-one-320/cell.json": "96c6139c6ace81472256233c530fea92dc24b0315a9bf6054200624301f84c4f",
+    "val/A0-openvino-one-320/quality.json": "48a6789f4b2dac808515706fd27ee509850a1de7df09379af9f64bbf6599b3d6",
+    "val/A0-openvino-one-320/stage-trace.json": "587de55eaa98e408003d4eea75c5c8fd9ceba05bb822e0ff70ad659979814671",
+    "val/A0-openvino-one-320/session-0.json": "37ea5d2ce86ef5f876a3cb727a7a5b2132c2434b9ac71d7f5ad58e0dcead17c4",
+    "val/A0-openvino-one-320/session-1.json": "11c6650c3e457a4b03ea9275a345b477598d186c92538493964b79c18d103e43",
+    "val/A0-openvino-one-320/session-2.json": "8d0205e37d69c4a19618d1c2c2cf31dd4989f555310dd8285bcbe3781cd281d6",
+    "val/A0-openvino-one-480/cell.json": "186fbbce441cf3610457569a6b7c6632b677b13d159591e65c4f1e7443bcb0bc",
+    "val/A0-openvino-one-480/quality.json": "dbdae63055a8b8c40c5f12acf81a54e7578d0caf02bd396564024c6a1bd8f39d",
+    "val/A0-openvino-one-480/stage-trace.json": "d48164cb9dd49a7ac42e7d7dfda8a62cf24d4d56a89024cdb9074e57b38386bc",
+    "val/A0-openvino-one-480/session-0.json": "63774d7d3afa78eb2956c1eec714960b108b3156d3a3cc2ba0c889cccfca8e2e",
+    "val/A0-openvino-one-480/session-1.json": "75cef3bb6fc9eca8e70e4cd920101725e406e7f60e8e004108efd55abb0a43a6",
+    "val/A0-openvino-one-480/session-2.json": "3d55b17fa9e4ad0fca61c3cb0b8a9daeb02f65cfe8cb689f99aeed92a81b0c9c",
+    "val/A0-openvino-one-640/cell.json": "62b4211a06d64d4ef47cc9e81930fd8e10ea56f13f8a520ce8c948c2de0e78ee",
+    "val/A0-openvino-one-640/quality.json": "bfcaca8b26a91acec1fc8e60f76e056bb0ce32bdd817cf82d01eef1d879aa29a",
+    "val/A0-openvino-one-640/stage-trace.json": "ce171899e52d39f0d8f36bf7e1a05cc45dbc0e9095e19617c336410901ce5e02",
+    "val/A0-openvino-one-640/session-0.json": "2eff8a498856cb79736821c12d1574b1ec713e209630016de32b8c516216016a",
+    "val/A0-openvino-one-640/session-1.json": "144e1c95c65e6a682bc2a1366d8b368ff2f7848f5c8204af7d7f01a04763ce4f",
+    "val/A0-openvino-one-640/session-2.json": "512fc63a129fe981360d9057b65582db036b5f32a50e4898716adbe9f4c8ff7f",
+    "val/A0-openvino-dense-480/cell.json": "bd5cfd016b5e3200da030ca1fa701499b62a2dc75a513fcedef1242d42b436ca",
+    "val/A0-openvino-dense-480/quality.json": "228730c0cdab1ed050659e6f226fd5ff04c2a2765f40aa675c58ff375cdb99fe",
+    "val/A0-openvino-dense-480/stage-trace.json": "cd0a591165e97153f2ec8ac9cca93255183020474081183ec39ae4b1a0a88282",
+    "val/A0-openvino-dense-480/session-0.json": "97b50be24cad457b5cac88954335b44890e80d5de33cae057cb34c6e6da3b83e",
+    "val/A0-openvino-dense-480/session-1.json": "1a8c12aa5ef8543a920579b901bee8b952cee6971bbb7b8d6db37df531f57bb8",
+    "val/A0-openvino-dense-480/session-2.json": "ab9e63889732912a0d001b8053e6a83517c3c7f590411e8d8e46885c49f34767",
+    "val/A0-pytorch-one-480/cell.json": "511f5291fc8ae7baea0e3d968fc0801705bc5de323e5cd6abc0c2a6ef94fb31e",
+    "val/A0-pytorch-one-480/quality.json": "0d874251b8eb71068cd0551ba36ddec72eb7e9a6b686aeb22276e22e972a1f76",
+    "val/A0-pytorch-one-480/stage-trace.json": "8f0e8bfdd4b5087a97da40d2459893a06207651ca124b04573cca7874aefa624",
+    "val/A0-pytorch-one-480/session-0.json": "b999248fdb83a14d2ee8eb498e170eb689c7782deeeec422501108bfdc613d07",
+    "val/A0-pytorch-one-480/session-1.json": "e647a586660b974006a16bf0ffec989887a7d80a0a7acf4fb91d25ca09e72506",
+    "val/A0-pytorch-one-480/session-2.json": "74cf0983ec28384b423200b0a4e9a274b63af4765d465907d3de48131a86f467",
+    "val/A0-pytorch-dense-480/cell.json": "33faa4d99f1a9702669610015ebf3e3d4aac6c53c6e7da1ca5ab33ff0b314afb",
+    "val/A0-pytorch-dense-480/quality.json": "5e082df3fee6d109b7e7b31db95f23f8f92f762a6e6e5e0e3867e7cabfbd3af9",
+    "val/A0-pytorch-dense-480/stage-trace.json": "49e7943bda70aaf23613951d696235e1cca786c178d9e2aded07d594256de809",
+    "val/A0-pytorch-dense-480/session-0.json": "98322709498f64a01afb5b8bb0fa7d53e771530ececd1a6d90eeedbdd31267cb",
+    "val/A0-pytorch-dense-480/session-1.json": "53e6c54be3c612ce114362df4215a9cb70032a9998d43049f06ac80188ba67cf",
+    "val/A0-pytorch-dense-480/session-2.json": "99fc65e6ef8f0a110094325c66eb1d5e14fdd72cdcd0c17733329cbc87af3065",
+    "val/A1-openvino-one-256/cell.json": "15da100068083c60c4c6a80b8470604f1e5b46e2debe33e191012f6a31c59d5a",
+    "val/A1-openvino-one-256/quality.json": "d9df497356589a4dfbec13d025a6f9ce67a2ea3061aba351a8d6f8a216f3c80a",
+    "val/A1-openvino-one-256/stage-trace.json": "3ecede3ff5fd14789844e1a52b35caee273336e08f58dc7a3f1792bec7c857c1",
+    "val/A1-openvino-one-256/session-0.json": "66b2a564b97e30c0ec5a87e391016c938b280ccca13b6c5abc9855228dfc83d9",
+    "val/A1-openvino-one-256/session-1.json": "7f0838b1a724e590a8ff99711e35c9ba08b1dc3a67f493629b0ea07d9d9e130f",
+    "val/A1-openvino-one-256/session-2.json": "3019e7ce8ab1c1004562679f644236c852dbda185f069e3a7e4b8bc50f8c1a72",
+    "val/A1-openvino-one-320/cell.json": "ea69ae578cf0219a77d23f62e6dbd6689b5a02cff655c1af5337881af6ce3879",
+    "val/A1-openvino-one-320/quality.json": "a51317f0746ca41c68c57e692a001d2770e07074e8cb7119c2b153f878d6c072",
+    "val/A1-openvino-one-320/stage-trace.json": "4aaa75da5d9d006e528b8c1fcc56de38fb764c395ac1ff04a39884ac6f3e479e",
+    "val/A1-openvino-one-320/session-0.json": "23a4c12e6ab52ec341b5379e17633d39870c503a4416731397fc995278eaebcf",
+    "val/A1-openvino-one-320/session-1.json": "51cc507cefb76066022c39651fa3c2edd6409db4f03f6e346805a8d77e99d1e0",
+    "val/A1-openvino-one-320/session-2.json": "fe45f12ad632e8b512277145171793d16f5cf1977d8526304d47f6e375db4384",
+    "val/A1-openvino-one-480/cell.json": "0702f30fa314bae862442e02b6643884b460a77c72d9f84b15521c425c7cc81b",
+    "val/A1-openvino-one-480/quality.json": "f258a888762044c6c5442911f97f10aa81e84e22e790a7dfa698d31fbb31d8ef",
+    "val/A1-openvino-one-480/stage-trace.json": "2cc0a19fa12fdb1444886fbaece341ac8397cd665ebb03f34f5cdac9046ed7e4",
+    "val/A1-openvino-one-480/session-0.json": "498a872373dede84ab0c6a547b1b398fa377118fc38ca41639b541a3d1ce6d99",
+    "val/A1-openvino-one-480/session-1.json": "08d3ace8406f7cba12ce1c2c822b401d699a73098654f2937959e71db3608233",
+    "val/A1-openvino-one-480/session-2.json": "d8694226a3271061acb8494d9910b3b2f9ac09aca23429c9ec271a2f22a30bff",
+    "val/A1-openvino-one-640/cell.json": "9c5b93ce6a7773ef25457ba7989c8da278c866cbf08c3de456be0344cdf6bc1e",
+    "val/A1-openvino-one-640/quality.json": "83953fd9a460d84637f2f8833d02b1b9d9b305a46a341077158a1621ab1f378a",
+    "val/A1-openvino-one-640/stage-trace.json": "07e61aa6ad11ede86b2f08e7f65f7d69af0eec7f94e8e012e0fc9e37c587d4bc",
+    "val/A1-openvino-one-640/session-0.json": "894e0a1412b5d164a7a5e26a9fc3e557045c244ec11a3bb6f5d740b04a26484a",
+    "val/A1-openvino-one-640/session-1.json": "4598c593417ad20c19ce2b89d929264177b70d51dd948e172488ffb9d961df61",
+    "val/A1-openvino-one-640/session-2.json": "1266ebf3c23f4f464b09711471544313a0c4de29477daf25cdb5b05b2fae1113",
+    "val/A1-openvino-dense-480/cell.json": "c9739d19bf5f876e6b2caa4e366c836227a957f53ba15a52a0c2141edb3f8174",
+    "val/A1-openvino-dense-480/quality.json": "4318636557a2c98e1fcd8bf64077642756cc7d857c90900f72c55d1748178697",
+    "val/A1-openvino-dense-480/stage-trace.json": "73fb141fdb6dcd9b00944d30d20f0a9705eb6b44e4f3f4799694a901b8f1d865",
+    "val/A1-openvino-dense-480/session-0.json": "05c027671388ce215f206e99286cbe1f58ce7107cb49542ecdde270e8524eafa",
+    "val/A1-openvino-dense-480/session-1.json": "b7f11387198f1ccd4e7fa1aa2bc73834a4ac51748a407ef628bbddd46e64396a",
+    "val/A1-openvino-dense-480/session-2.json": "528421f86ba0b8fa295ec44068442efcc8d8386dadb04b915b16029818f2a2b2",
+    "val/A1-pytorch-one-480/cell.json": "b642bf46421d96de1c81e7672d53ba5cd929b2eb0753edffe4d9b2b3cf8f9855",
+    "val/A1-pytorch-one-480/quality.json": "cbcdf1cba94c5bc4f9390dc8888fadff1b368568f7186c90c5e18ed8375b7c87",
+    "val/A1-pytorch-one-480/stage-trace.json": "fa0e145c7ffa9e67e58b7e740bbbdb3e6201eec922fa67f1a9e238611de38a1c",
+    "val/A1-pytorch-one-480/session-0.json": "c383e98e90cf2c088d514ba16d7d3bfe41c743922f38c1749ae0809ad0d2c466",
+    "val/A1-pytorch-one-480/session-1.json": "ccbc4f9d4c3121ffe2b67d8e3217b46d5707daacf89aebc6eb6283f157dc6e92",
+    "val/A1-pytorch-one-480/session-2.json": "4354f18457207c0db8cbf7d40cf67b88d6d138aa33b00b3adf447576587d3f53",
+    "val/A1-pytorch-dense-480/cell.json": "34eec666253ffa6ed06a00f62cee009352ddd5894f382a40a43b99a1d5225049",
+    "val/A1-pytorch-dense-480/quality.json": "3a90fd2ac72ea902e2f4f988b68443f5c1b4b3bd01a6f703aedecf183c733b52",
+    "val/A1-pytorch-dense-480/stage-trace.json": "f4c9bb48aa458b719b4fa711d448895dc96af0892826a0d087382d7e95d10269",
+    "val/A1-pytorch-dense-480/session-0.json": "de5b6cd46bece67133f2e1feed6bb836e8e1e9694df5174d1f8c46dcb3df0503",
+    "val/A1-pytorch-dense-480/session-1.json": "7c6a8f976d223b03edf28081a5ae2aa1b91b31c4be97e57c8b11f17ce01470af",
+    "val/A1-pytorch-dense-480/session-2.json": "b74ceb41d55be6bd71d8c41ec2b900d83e99d8f3c9d8ac038e1685ec0f1cdb9d",
+    "val/A2-openvino-one-256/cell.json": "23f2b9ce4ada1e786339df71f685878e17f184493cfc46e032ad14a405f0742d",
+    "val/A2-openvino-one-256/quality.json": "57f98f755daed7885071e30f3997338484962e932aea5604c3086a28272bf12d",
+    "val/A2-openvino-one-256/stage-trace.json": "3bba44be0a45b6cad54bf7fed539ccec519a8cb25411b91e4d74d0c0e69f5f90",
+    "val/A2-openvino-one-256/session-0.json": "e5c60655353b35c2bd91f858c04380172254ae4df4ac05e93b4c237510ba8c26",
+    "val/A2-openvino-one-256/session-1.json": "30ef7c10294324c6714dc809cb82f2aff21b4ab21c1f4fe62438aec08fb0c5f3",
+    "val/A2-openvino-one-256/session-2.json": "a727412e8d5edd0177313c5bbf983f1a3cb623a0fd3d252e88f943c2abbdd6e3",
+    "val/A2-openvino-one-320/cell.json": "357ef0115c81d9c6da83ba7997b762ce46afc52831735d791a89cae5fdb5475a",
+    "val/A2-openvino-one-320/quality.json": "e4f2c5507d4d4a713404871f8ad0c8c73fb8cd96d8ccc747edd307336c609f04",
+    "val/A2-openvino-one-320/stage-trace.json": "8cb0846cf8129793074f58904aeee0c5ef816643f0f4a97c919856471dc967c0",
+    "val/A2-openvino-one-320/session-0.json": "83a7b3965ba959ae907b8bac999b5f111cd53c324baa27f146d8c75cc873e160",
+    "val/A2-openvino-one-320/session-1.json": "625595a4c4faab844effe7a696052e440f4a9cb5dc7844835d4238d3ab3516ec",
+    "val/A2-openvino-one-320/session-2.json": "dc3c9851b8f1372ad38ceffae2f31bf0f6e61486f7f67add3148fffc6d542d23",
+    "val/A2-openvino-one-480/cell.json": "897705884625a0b01606fb207375b8426c774f37fc282ec6c2a613c2e17cc05b",
+    "val/A2-openvino-one-480/quality.json": "86cc0366cd87a67c39273e40755a04a5561e08c9257660e036f490ebe8fcd25b",
+    "val/A2-openvino-one-480/stage-trace.json": "9b93b07a9b729167433bd7865e0f9e7b5fcacbf69a0728666cde35fe4222992b",
+    "val/A2-openvino-one-480/session-0.json": "421f4563260d6af5868eb5b603a485c8f7cb3599922669e6fe71240e0a651da5",
+    "val/A2-openvino-one-480/session-1.json": "f4bcbc1a4ed84faec14528c1541b106a23fa4f6254686c067cbd126f0a6e0020",
+    "val/A2-openvino-one-480/session-2.json": "0f0b3c0e60bfb97ff83f187b82522c1fcaceb93fe19a4eed4014b1b8a6f13f82",
+    "val/A2-openvino-one-640/cell.json": "b142181f30c16387fd5485eb0cfd519586fadfdf776755d11d8b0db7701fce85",
+    "val/A2-openvino-one-640/quality.json": "55bdba3fbf268cd731c9b4400d848691b7fddb10b871aa07282ff3c80dd3b7ed",
+    "val/A2-openvino-one-640/stage-trace.json": "74d6d8abe1f5b1f2de66dd77fcef047b40ca07cd0e82a4babfa50a7419a06748",
+    "val/A2-openvino-one-640/session-0.json": "5ab50167ec54d753b54a863f968229c475dcae15fec5178fc8e62974a608fb1a",
+    "val/A2-openvino-one-640/session-1.json": "30df95a64f92b800946c5f677ab8efe5b9ce7902d789d2f6109287b9b954e6cd",
+    "val/A2-openvino-one-640/session-2.json": "28bc89a823e8b1de65c88d5e6640bc45149525bdd105c0d0394e5fb132bbc120",
+    "val/A2-openvino-dense-480/cell.json": "b4bfed43b781a96e6cc3aa51c2535707951ef8618964471ee6e24dcd7df75a83",
+    "val/A2-openvino-dense-480/quality.json": "a47efb067e4646e52591bd1bcaa57f07115e54a5c3ed078f57ee7c3a43291d9b",
+    "val/A2-openvino-dense-480/stage-trace.json": "4e12bd70d4e0bcbeb49b8a9adbd907b91a17f66500dcaef719f61654d4ceddef",
+    "val/A2-openvino-dense-480/session-0.json": "1421bd84efa306e7b46af721b28a0c0492dfec18c968dabb9db4828d01151551",
+    "val/A2-openvino-dense-480/session-1.json": "8514be0ec9d0995b34faf26219094fb0f015346fbf7197c38389d9e8ed921f85",
+    "val/A2-openvino-dense-480/session-2.json": "0faa84b9706191d4d7f8d0c80fd5d0b3d32880f13046362df041a87afeba0388",
+    "val/A2-pytorch-one-480/cell.json": "c78b44aa6169f181b39842d703b45e36a3a2b9b092d58b35a71236ea77c26f25",
+    "val/A2-pytorch-one-480/quality.json": "a1d8fe89cf3850ce50c1b9ef051f74ae0e05e55743a5755b61fb6a3ebf617528",
+    "val/A2-pytorch-one-480/stage-trace.json": "5c86def57c8706a0c3237fef1604aca6007b493d250ee127eb48ef011a5ce8f5",
+    "val/A2-pytorch-one-480/session-0.json": "fdbfd6c40633aa463cda1fb5740c94a5e2eb29574a842e434a52361c93f49d83",
+    "val/A2-pytorch-one-480/session-1.json": "13de75bc37246c3208f227fec1d7be60fca4134720dc1d66e382fdc0a94fc210",
+    "val/A2-pytorch-one-480/session-2.json": "6f0119a10e8452a05a27b7169735a4676a55fcf1c2376f0b0575b6029ca6b16a",
+    "val/A2-pytorch-dense-480/cell.json": "08f5c316f56bd4a4d9df05cdc8a1342df5707dac20b303ddb664cbbe79b8c2fb",
+    "val/A2-pytorch-dense-480/quality.json": "e3a44dba5f5fd854f6d4820cc1128564ec84aa6980cfeebf446040a133e2787c",
+    "val/A2-pytorch-dense-480/stage-trace.json": "732223bdf629433a97dead3326521f67524276f54fe896f82152a64c4113c7ab",
+    "val/A2-pytorch-dense-480/session-0.json": "fa42b0f993ee6ad11aa09c122a856e034ff45f3547aad10d79edb39646a72cd3",
+    "val/A2-pytorch-dense-480/session-1.json": "670210eefff526452cf4d28848a44490d7b56fca6598e08dedb4ecf808aad92c",
+    "val/A2-pytorch-dense-480/session-2.json": "f00770b97a6a28a2b1a0dea245847a8fab3c78f13f5e36aa363629a7c3e23aea",
+    "val/B0-openvino-one-256/cell.json": "a622910797cff84e59ca44f671fb7abda572b5025d2d84adbbc97d34da2c3574",
+    "val/B0-openvino-one-256/quality.json": "dfb67ef3699eaee60b5ed9b9f9b2673a1dc0521b32a749bebebf791464dc17ca",
+    "val/B0-openvino-one-256/stage-trace.json": "92b4decb03db89daeac493324e73a1403405763b651f9ec641444f134f5c0ba6",
+    "val/B0-openvino-one-256/session-0.json": "e509eee277ed0f802c5bd751680c45bc2dfd8af245856c94edf6e46a3aca0faf",
+    "val/B0-openvino-one-256/session-1.json": "7da51a2d5599e83f5f1f8e9d8d88783a40dad3cbf9ee3539ff76bf6bbf506b90",
+    "val/B0-openvino-one-256/session-2.json": "3542d1552922e063bdf2f558a64ac9ba67f67eaff6564c215ef4c63c8d35c6e3",
+    "val/B0-openvino-one-320/cell.json": "ae426125fdec8b55b4c5b3aef6414c9e99806ac56e214d8c2fb41b6cccd62b18",
+    "val/B0-openvino-one-320/quality.json": "faf97aceb935d9117b00f36c3e07de792969ba891e182b951d09678fb8d0c4f2",
+    "val/B0-openvino-one-320/stage-trace.json": "966d89f1e90738f7c68bbc4f16872cc532ce1e504800b9eb1804a6ffebc1417d",
+    "val/B0-openvino-one-320/session-0.json": "da11be51d20c18c24c7edace15b960a9b2baf603ca359c99b860920c4747c72b",
+    "val/B0-openvino-one-320/session-1.json": "f1fb7aab489c4f85ee0e26d1a569c552e21ece4aa5f4c86d75aa7a29d4f164a0",
+    "val/B0-openvino-one-320/session-2.json": "6483cd53bb7ba93cfdde58ffc9eb1fe02b7fb621601c500dcb393816894f36b3",
+    "val/B0-openvino-one-480/cell.json": "0c07ecc98bd8de66d1c83b874bec549ce2ffbd0bb773e3545c63a0328cf2335a",
+    "val/B0-openvino-one-480/quality.json": "9bdacc16e81edb773799f626e76761bdbcac44c1381320004bd79c18b491e9ce",
+    "val/B0-openvino-one-480/stage-trace.json": "37f7350b2636eefc8915fe055f77ad764a09b3d6697a81c4bdde94ccf9ef9558",
+    "val/B0-openvino-one-480/session-0.json": "cecac412d26e61b1a28650ace52381222b8d963031a16bf342f1d52ba4484e06",
+    "val/B0-openvino-one-480/session-1.json": "a63115364b52e264dd1863c1f0531bbded3fff49f71e40a046c41b08a89dbf3a",
+    "val/B0-openvino-one-480/session-2.json": "ae09b7f9e7f65d0b5a3d03894619cd34c61ac1ce7a1741513a396990d4ec7743",
+    "val/B0-openvino-one-640/cell.json": "773299276708fdd243dff1ee2716b83953d22d29e1871debaa355d9b675c8065",
+    "val/B0-openvino-one-640/quality.json": "4a52122c09d3f5000a65efa581643a3cafc64e26090485360f126ae2f64e1bf7",
+    "val/B0-openvino-one-640/stage-trace.json": "11e0892a28f45823791ad1e62c8545a54636f6ef5d7570b73adfc557e5750e85",
+    "val/B0-openvino-one-640/session-0.json": "1cda76c90d9f1cae0ee2e5e53386ce42160f9d2e51dd9d9c000a2c982bf00b8b",
+    "val/B0-openvino-one-640/session-1.json": "f93a383d9cf305865f409b8da1b0e1ac346651855ca64947ce3b3df96ab3fe27",
+    "val/B0-openvino-one-640/session-2.json": "31ee48781ecc9a9f7c40f13a27a8e820519514f6256a642d6dc102203125f7b2",
+    "val/B0-openvino-dense-480/cell.json": "7901308f6bb57026ba1361160f2e04fcaaee9caa256a80619adefff9e28cf7ca",
+    "val/B0-openvino-dense-480/quality.json": "5cf91f03102e1c7c4171cd41a1164e974bb37014898b056937f3fc751e219593",
+    "val/B0-openvino-dense-480/stage-trace.json": "888eef70b7a9e88344ce1dd563ae668c7b6619b7a29ba284175b4e1e67c6420b",
+    "val/B0-openvino-dense-480/session-0.json": "6bfacc494315e3409ab7091c6827f4804cd50f5973cf2d7d39795554fea584b9",
+    "val/B0-openvino-dense-480/session-1.json": "dd0523fd1becafeae2400452849db1fab34d3564bd6638cdab8304e2f72299ad",
+    "val/B0-openvino-dense-480/session-2.json": "9862c653f9b0f39a0f481686c3c348c470a5dab3266c8fa6fb6c085f0ad2130a",
+    "val/B1-openvino-one-256/cell.json": "5a1c2910395f17b9e7ad5cb36c9f8d18f17bbaec8ded6ca53d6340798c35c6b2",
+    "val/B1-openvino-one-256/quality.json": "7175a6f0cb37ff9d90f79f337bfa85a676784b46ace8ac723072a36c47a346ac",
+    "val/B1-openvino-one-256/stage-trace.json": "87674505481d7b4543f2a1a9458d501b81fde033d94750ed4e2a8f3377469bbd",
+    "val/B1-openvino-one-256/session-0.json": "8a82e310238488f390f6c38764777c21cccba4bc1d28500880c73713ad456cac",
+    "val/B1-openvino-one-256/session-1.json": "482cbb4a515030f14fca9fa5507aa132e7071fce1904cb481a848dc1fb8aa1c1",
+    "val/B1-openvino-one-256/session-2.json": "48ccd09bc3ecc53bbc3e53776e1c96dde2a9f79d95879e45c8259fbe85509288",
+    "val/B1-openvino-one-320/cell.json": "d09e610da73e24b5706770943b3d1c5052bf992e253b19be05676df322a3e873",
+    "val/B1-openvino-one-320/quality.json": "4c8b18abfcdd203e4693c663295cd8500df877871a54fb3fb9df674334440eef",
+    "val/B1-openvino-one-320/stage-trace.json": "f336a4712d63996f5ae2acd4945b28a61ade5adf925416fd44f78ff2dcd9f04c",
+    "val/B1-openvino-one-320/session-0.json": "8a57218400176bae3600349c5ea53129bc8535514d4c46e2e2fb46685784e98b",
+    "val/B1-openvino-one-320/session-1.json": "80fba01b9f6ecf26be6b44725b188510896980fb7bf5835a917ed64dfbcde661",
+    "val/B1-openvino-one-320/session-2.json": "21902d85d96a1113c22165debccbb63e32fa8c6b665f4d59735db5e31bb7f809",
+    "val/B1-openvino-one-480/cell.json": "b9a121c5e7564476ab6ab6b091dc07d6ca16d6dde7453d2de0715116ba22a96f",
+    "val/B1-openvino-one-480/quality.json": "c83758ffe3f0347abb7eb22c32798757ea062f9b4e33f927b51fed6a03736e62",
+    "val/B1-openvino-one-480/stage-trace.json": "16ba287d9c712450598ac9991359366fce0663683e5bbc1bf0c0849686aa2f11",
+    "val/B1-openvino-one-480/session-0.json": "21bf7f70a9f30e440c56cbd629512f53164bddbef369b544c13a0b64246d4958",
+    "val/B1-openvino-one-480/session-1.json": "6703e9c654f6861e4cbedab1eaca00ef15ccc27113204412f8704af33835d5d8",
+    "val/B1-openvino-one-480/session-2.json": "0939e9da6b81338402d20fbb8a05ebff63e8f74efc226d20b48b14f580811682",
+    "val/B1-openvino-one-640/cell.json": "73b7fcee766724dc3448dafee0f61ffb95540ac9d546474095b250077a2febb6",
+    "val/B1-openvino-one-640/quality.json": "10a073e566bc68d22c407b5204052f54887351554a7893824d3aa66bef3845a2",
+    "val/B1-openvino-one-640/stage-trace.json": "392d6d86a713eb4f3b34610dfbb7f0102a17b3d4f94bc050ab6cc2004e67a59d",
+    "val/B1-openvino-one-640/session-0.json": "4c008596026f536b2cde1900599502c1a7d8c6b765dfcde8868e92ec47cfa93c",
+    "val/B1-openvino-one-640/session-1.json": "cf7c0e5f1f7d445c4b988093558dd12802af737999ba9b5391d87bcdcb7d568e",
+    "val/B1-openvino-one-640/session-2.json": "b5c6a5919d44139af66fdbcef0b28c22f92ce5f240cba7968f7b571ccc847f70",
+    "val/B1-openvino-dense-480/cell.json": "d60d3bb63308684c9a218c47a577c8820bcb64ed6cc2bc499032f400cfcb23dd",
+    "val/B1-openvino-dense-480/quality.json": "ae25b129d2f09e0911351e117476027075e60bfecfe9dac801d11f1c66e498f9",
+    "val/B1-openvino-dense-480/stage-trace.json": "f868a0d70b30c26d2da8ddb2073686f3630b36f91a7aad3215ad44d402b004fa",
+    "val/B1-openvino-dense-480/session-0.json": "aff61b8f5726b2a199f0bd8fc832f96435fbd8b8e6848ea9c9f8cda82578802b",
+    "val/B1-openvino-dense-480/session-1.json": "5c3f84bbd442e848ade2701dc1a7c58f2b2d00543a796b2d8e63483c19780760",
+    "val/B1-openvino-dense-480/session-2.json": "ba409cfa730336478a93d04b695fab0c6a7e1217cf0e874fade54bef416537b2",
+    "val/B2-openvino-one-256/cell.json": "37e5f93284fe1cba95910256776f6064d983588b982ba6f6db106292d5d96d34",
+    "val/B2-openvino-one-256/quality.json": "580b043ab629507c63818ddd68089b65bbaa3048d8ca40de8db432da7ff7c2fc",
+    "val/B2-openvino-one-256/stage-trace.json": "2bd94c4dedb1e5c675508005ce0815764f8e4ba7028c3761b62b6ca76b850359",
+    "val/B2-openvino-one-256/session-0.json": "e74894b9628ab5c3aa9ab5bf2fe3b0592e23c72414c839e34c44ad564bcd78d7",
+    "val/B2-openvino-one-256/session-1.json": "ed4db6ea6e22f0acb3a761918fe3780e364f278ebed90c08a7535890336fa149",
+    "val/B2-openvino-one-256/session-2.json": "60d1b46d5ea4f8f90bd350f3d92f501735233c8e9c187015d476d87e876a7991",
+    "val/B2-openvino-one-320/cell.json": "479a242bf9764517bb32e26d8d6691095b38429938430dc14a64103fa832f801",
+    "val/B2-openvino-one-320/quality.json": "62e5a49100bbc696591bd25732f6ea554d9f6128e050ab292ae9f14ec892f9e5",
+    "val/B2-openvino-one-320/stage-trace.json": "fb28505ae3667dea7928499c90f66fb3f05e6ac2a82f71a938365bd420e4a89d",
+    "val/B2-openvino-one-320/session-0.json": "c7761b63650c029fa7c7a7574e4d4162fd8ff6bb135e53d9c10ef411d2b801ea",
+    "val/B2-openvino-one-320/session-1.json": "190f53e7b0cd8df56192baf6342684209e6c2dff36648d33b7c8226fb92a642c",
+    "val/B2-openvino-one-320/session-2.json": "53bd573c08eec787841f28ef586e1250475102ccd505ca70d6090f50eb1832b0",
+    "val/B2-openvino-one-480/cell.json": "eb727d64647275d83213deee68964244e0a03c8138cdef4414e69542c2f573bb",
+    "val/B2-openvino-one-480/quality.json": "3db40a9876a7ffd83311fdb7472cfd2b56d8c8fbdd14be0da83731ec034b8b65",
+    "val/B2-openvino-one-480/stage-trace.json": "5c334fe734e5f3266baefa7db1ef82ba0d025729db1c487f439bb494cbfa0ac9",
+    "val/B2-openvino-one-480/session-0.json": "6783ef412ae80f918b534786451b2bc7e48eba33c80709e050327862a6a02edb",
+    "val/B2-openvino-one-480/session-1.json": "cf6e0e9803ca2e403784a6a1df8e5d4b68ae3969c95cf8169062aa0340946aec",
+    "val/B2-openvino-one-480/session-2.json": "cde6e4221d38658dd5da92eeab406414686a53917e34e542aa06f5fe3359d402",
+    "val/B2-openvino-one-640/cell.json": "26b3916f8cf4e12308132fd3798a388e9aa115a730c57393643b672edbdd73a3",
+    "val/B2-openvino-one-640/quality.json": "132b639ff4d11947104d2cb071304ba7eb8838ec93534f7aaaac1d019058c4e4",
+    "val/B2-openvino-one-640/stage-trace.json": "74b0497fc5e5c61faf2973fb2529f8b735df138ec6dc309f010a35c66fd2b5c3",
+    "val/B2-openvino-one-640/session-0.json": "50e557c3b39bb2466c69850f44a195a3c61f85ec807b3ea45ed293b2f6cb57d9",
+    "val/B2-openvino-one-640/session-1.json": "f52e7abac0237d11f1f3179f179b3969046afca861a1dd40b3081b96e601f3c6",
+    "val/B2-openvino-one-640/session-2.json": "e4d51cf2916a77ee7dbd9dc31613c436d398c4f538c7cfb0673d9588514dc15f",
+    "val/B2-openvino-dense-480/cell.json": "ee68f0106b78dcde360caa142358ddd090a71d69da60675b0c70455152c10fc9",
+    "val/B2-openvino-dense-480/quality.json": "7a4c02c000fe402394419b052eda2b2afc89e64531189750ae952044f1643e8f",
+    "val/B2-openvino-dense-480/stage-trace.json": "136da38793d1630c6862bf03c81d026f5097ede5059ae1897d8194573b634374",
+    "val/B2-openvino-dense-480/session-0.json": "5d7032813c30372ce749d768f8dcf2490712ffa536f31c41430f800c39d6b7ef",
+    "val/B2-openvino-dense-480/session-1.json": "2304f0cb9c00a7551f16b24105180aa152ea60657dff6995348069862b2c5abb",
+    "val/B2-openvino-dense-480/session-2.json": "0bf7bb1e2f5e18148ba646cd016d941b960f7720b2dfb2dda5a0c85ce0553890",
+    "val/C0-openvino-one-256/cell.json": "a751267ba96b98e65e67c0d72f989cd5d9871b11404acecf66ea2eef6ebb2f0f",
+    "val/C0-openvino-one-256/quality.json": "20a0fc0709c770edacd007f99ec3395e34e9dee5c2e68dbab7ef83df9229064a",
+    "val/C0-openvino-one-256/stage-trace.json": "ca54634330b69cebde91308f16e7b5a4d94ec044e23beed8c1525d1cd03d9642",
+    "val/C0-openvino-one-256/session-0.json": "41fe9900e7662729b015339abb99eeab44921d467a54336ccf8516df2b9eefb8",
+    "val/C0-openvino-one-256/session-1.json": "1d0951b23e55e6586a620db3671e726051f86e57522dba86f9d4918b73f4eb46",
+    "val/C0-openvino-one-256/session-2.json": "501e3f696077085759237654e98ae0649c3047844eddfc3c7c159fcaacdbed9b",
+    "val/C0-openvino-one-320/cell.json": "5f0240095a224d80fb9386a448a4a4398d8d1bfc3ee05f607faf9a188c915160",
+    "val/C0-openvino-one-320/quality.json": "27c8314f1323d19a5bd392b84e5ee97d221b1a070c708da1a9d4fb65f9eaf57b",
+    "val/C0-openvino-one-320/stage-trace.json": "d153ec05121191d3f771330a2f15da7e669a4a381abf23f4c92cd01f0c4722f0",
+    "val/C0-openvino-one-320/session-0.json": "9bf665ed4d07600584ecf8c88bfd58a49ce5cc85cbe62ab75679c8641c21271d",
+    "val/C0-openvino-one-320/session-1.json": "7c23453c0d2c2cf16d86cff5b4023ca7df05f9604915c4be249000ffd4dec072",
+    "val/C0-openvino-one-320/session-2.json": "f44f63493566da39193d82de4a56c2028a722a8a3f8ed08c42e76bf814a7df25",
+    "val/C0-openvino-one-480/cell.json": "e2a0263a280e13f1416d693eee442cb8f0fbe205e804058887a64df6862045ba",
+    "val/C0-openvino-one-480/quality.json": "a6eaf026aaafa948c86e2866b3492dc52d3a0909529891f8a91a15ff62124ed5",
+    "val/C0-openvino-one-480/stage-trace.json": "f8863f15ef5d8fe598fcba614c9f4a009b1fd73050bd679afa28d8017885244c",
+    "val/C0-openvino-one-480/session-0.json": "e6a5f203659d1a74095a9a594042d856c82bd6e440858aac89a81cfbd2a439e2",
+    "val/C0-openvino-one-480/session-1.json": "8b363e1f127c7fb47a93333b43571571613aa9bc3bd6274b792b598ea29fb4ed",
+    "val/C0-openvino-one-480/session-2.json": "65504167ec776a1f236812fc94113f82a9534fa234f23bda8466beb26d67b922",
+    "val/C0-openvino-one-640/cell.json": "2a65bfac0313ba3d2c6143fc79d37fa73f0ac3ae82899521aa615b0a7c05d972",
+    "val/C0-openvino-one-640/quality.json": "ae9d4b266040e4bcb2f632a99fe3d6033cbaed756cf8f14b1b3a8cf4ea745c90",
+    "val/C0-openvino-one-640/stage-trace.json": "f5e8ad3e1bafdbe34466fc33eb1cc2b4c479d8665218e7788adcefe81ddda799",
+    "val/C0-openvino-one-640/session-0.json": "3cc6cf4465d67c2d013a014867f7153f9f3efc9ff061f507abb9307bf67ef8d4",
+    "val/C0-openvino-one-640/session-1.json": "e2467eae4e613413d9b1dee7a2e25c650886d58c6c777d6604357d78c9c80936",
+    "val/C0-openvino-one-640/session-2.json": "4859ac7a0850f8f92d64e414f87864835b7b356b65001d9e2e6a25e2b9729138",
+    "val/C0-openvino-dense-480/cell.json": "6ec9b7fd93b83875a4625c47d6f3131f241e6c7c8a958fb2dea4356580c7a49f",
+    "val/C0-openvino-dense-480/quality.json": "cb6609230959518e510c932071b06e1ec3b1d4ccd1623b7b5924b0dfa1893683",
+    "val/C0-openvino-dense-480/stage-trace.json": "d802e730d1b9558a68159a7f95897e21a93f11bb4513a658a792b6481ef84daa",
+    "val/C0-openvino-dense-480/session-0.json": "6485c30fb55077b9d027330f2f2d508c57a382dcbdead1ca32f9a5d0e747e524",
+    "val/C0-openvino-dense-480/session-1.json": "df3051c4ff9c0c7a7db350e577f370031f0e329fc49ce26027afd0007e26ef9f",
+    "val/C0-openvino-dense-480/session-2.json": "9e896ec3b58ef216404ca0305c1eebf4f9515bf44ebc76be269ad40aeb092573",
+    "val/C1-openvino-one-256/cell.json": "c5e26e7732c1880ad6b91d6cff547e95f8ba9ad2bcfa9cd8dde950ea58d063c6",
+    "val/C1-openvino-one-256/quality.json": "32d6734723701809718ae0fc425ce5869d702f533ec513a45e26c736d7ec4399",
+    "val/C1-openvino-one-256/stage-trace.json": "f452df3ae72a2139e9eb3a961e223c152c08a02a427ef666377945885d08dd44",
+    "val/C1-openvino-one-256/session-0.json": "9b28e1b4a423c39eb9d84b89f205ebee260a52234ea7258dcd0a29949b8f8ebf",
+    "val/C1-openvino-one-256/session-1.json": "b0b84bb8f41b4d2efb2475bb0e122c1848e5ed64fe2fac747a405b21069cae41",
+    "val/C1-openvino-one-256/session-2.json": "2f457b31129ce5c22b94d9fc6d7572bdcc7c0babfd1f0a2f4ca0bd45a1116c6d",
+    "val/C1-openvino-one-320/cell.json": "167083d5b404b4e90836d26a17a7cbda2466166ec4692b78832ff4be43f06a3c",
+    "val/C1-openvino-one-320/quality.json": "f50bbef9fd82b1b9712de7df52b3c66259292147188f5f1a91cacbaf80770dfc",
+    "val/C1-openvino-one-320/stage-trace.json": "1e40d36d6b2fe5ad6048d4af89d3f71c22aa6c4e20ce84b26f4ad56f5545a3f0",
+    "val/C1-openvino-one-320/session-0.json": "743eccf3b7762acefa32b371ee841e0d212bbce81beb825c27f28730b73e9082",
+    "val/C1-openvino-one-320/session-1.json": "10e70c5a1f882feef00348a4630776f1f21424555dfcf7bdca1301d913bdca15",
+    "val/C1-openvino-one-320/session-2.json": "198e5703004faa7f265ec399a297000f897ba7ab68aaa4885c6b0723f6480546",
+    "val/C1-openvino-one-480/cell.json": "6cafa854ce662838440708259f39a04a8e35a907b76a1ee7d08c3024b7c73df5",
+    "val/C1-openvino-one-480/quality.json": "c1807f0db821433d208d510c7fe7b2c6a7f06affbd71dd03b06c500b8cdda6bf",
+    "val/C1-openvino-one-480/stage-trace.json": "b8911bed70b1efd2ba58f3738f00072a2b6f296f845507f1d533dcb285b03314",
+    "val/C1-openvino-one-480/session-0.json": "6fe04bb207890612808046c8413a1f5f24a121ec7439d68a487a36c57dce154f",
+    "val/C1-openvino-one-480/session-1.json": "7be37424533748c64c8b0e364df1b30529663bd54b2aa41ee31c641f5e9a71b8",
+    "val/C1-openvino-one-480/session-2.json": "17367b4f375e5c48d11f9af1eabb270ac4cc9e5db6235062eceaf934a7e2e460",
+    "val/C1-openvino-one-640/cell.json": "7b29dc4d24ec632df904f9d18f2e8b4358393e0f6b89310df17f1b828b15be1d",
+    "val/C1-openvino-one-640/quality.json": "c6f60a5573c9eb2609d4d793034bca950d3876cc14e3e3488c2f4a541e17d04b",
+    "val/C1-openvino-one-640/stage-trace.json": "db41f364624f5a13dc514b9c7b4ef96b11b9a8ea5c21f22cb43c8491689d97f8",
+    "val/C1-openvino-one-640/session-0.json": "4836aefeba18f2bc447cdccfad681675850cc46dc4e82458ee90d435e1f2886a",
+    "val/C1-openvino-one-640/session-1.json": "5aa2827ed7593671317a6adaf6ac18569c0f245c42d8ea3da035408d51510f5b",
+    "val/C1-openvino-one-640/session-2.json": "af2f2c55859f3ea96047b822cff1210dbe46ce26e6b6cd9d50436c36a5cc8b20",
+    "val/C1-openvino-dense-480/cell.json": "623c624a5e4f20eacdc826c37dae0befcbd49fd53dd5964a0fe5c73712b019d5",
+    "val/C1-openvino-dense-480/quality.json": "cf42c5dfd9e8536bae9cc91995c292dae2eba6d34363189964150e2a1e53963c",
+    "val/C1-openvino-dense-480/stage-trace.json": "a7dda19dc110a14729a99a642b608750c193f2ca8166dad2be7e7461fab4b38f",
+    "val/C1-openvino-dense-480/session-0.json": "ca7f46de2d62097a570ca474152648222e8852036ff8d265e9bf7ddad7a6d8d3",
+    "val/C1-openvino-dense-480/session-1.json": "a988121f6c60e63963dd97e1856031e02c0ce2379aaef6474579ceb70ebc7b1c",
+    "val/C1-openvino-dense-480/session-2.json": "615945f93439904ff07ab1078c0a0991e0b266c20065d7cea61cc2881cf4e6e4",
+    "val/C2-openvino-one-256/cell.json": "d1abb6abee6bb18aba324433cbaa6e92edfcd4889e7d5445ea1703801b2e238c",
+    "val/C2-openvino-one-256/quality.json": "496305569cfb3bb2571cd611a7e4fdcd4938518eb5af45ccb6d548658c67c97f",
+    "val/C2-openvino-one-256/stage-trace.json": "41118590f0f17bc25349a251581c9b2648a04774c456d9d361139f2cab6e0fe7",
+    "val/C2-openvino-one-256/session-0.json": "8d345dbe7a397e97ec949419ef6d81ec05797287cb959b05410b6387bbc974ae",
+    "val/C2-openvino-one-256/session-1.json": "3aa5ea9fd6a778dfd6ac22dea105b326b77fb17b49a7c08d55c54616f0c9ff0f",
+    "val/C2-openvino-one-256/session-2.json": "0ca01079f771466633d1638b6f6d3d4a02b925231cf12402ae7bf56cc6f67bcb",
+    "val/C2-openvino-one-320/cell.json": "a4f3385e7697b0c96ab4f39feee2b908de6b99fa42f7b4c542a4fe3206356ee5",
+    "val/C2-openvino-one-320/quality.json": "539e3841819e9d63e50065c813f10729ff9a9b2f6d0b3a43fc6b27e179bed311",
+    "val/C2-openvino-one-320/stage-trace.json": "82c2765eec7676e418795816dedd804affca10710c48d923a849903dbd457963",
+    "val/C2-openvino-one-320/session-0.json": "98fb9311ca69be7a915be874103eb669e5167f29dbaf2eee1ad1c4d9383091e2",
+    "val/C2-openvino-one-320/session-1.json": "84e10db33b12d421d1f4d87dc1ad64eac3ccfce1ce7c14ef782ec84800de3012",
+    "val/C2-openvino-one-320/session-2.json": "ed96c1cce1dbcf2270f0e029b021db3b704b417f8217aabd416f755f761cd27c",
+    "val/C2-openvino-one-480/cell.json": "78cd274a958f6403ebffb37443ce33f09ed6bfe8e198f7bacad7f176598a4b89",
+    "val/C2-openvino-one-480/quality.json": "e691f002c6b4ed6125d92a637886b24e71ea3091244f07911bc50e8774d1a86e",
+    "val/C2-openvino-one-480/stage-trace.json": "79e99e22d83a69198bbde8e4d0cb4d4ea8a8e6c15ccd728d5080e1279e33f9e3",
+    "val/C2-openvino-one-480/session-0.json": "1281b32a4b45a0fe21a0ca429ac5b3d5506c7f4dfcc2ba540f763a2d0b0c90ce",
+    "val/C2-openvino-one-480/session-1.json": "f86eeb0602e114587cfd593f7db30422f18ee53d85fe86a5fa6bdb0f950a1eae",
+    "val/C2-openvino-one-480/session-2.json": "91d70ed9453686e5119e3f25ddc7200bd24d6d74465cccdd2c7911873d48d5e6",
+    "val/C2-openvino-one-640/cell.json": "b35fba2901e5aeb52acd3a52c81e14e55918822e448ceb312d1e635971089c28",
+    "val/C2-openvino-one-640/quality.json": "112f2ea01c3f5e2270a5b403c7694c3c8438382e26d88f10608eb47a15fc23d5",
+    "val/C2-openvino-one-640/stage-trace.json": "ade87f6d35af4efb72a487eefffa86b648efa4588dbd3688d7d7059bacb0ae10",
+    "val/C2-openvino-one-640/session-0.json": "8611ef6a58dc0f676154983eb588048cf9eada81ee4539764608b621b967807b",
+    "val/C2-openvino-one-640/session-1.json": "9c788df8a48e0bbdb34a062e0347575a2e5d61d04dc4564b780b2e6aa1ff7ad1",
+    "val/C2-openvino-one-640/session-2.json": "5bf129dc7558a706efd9d614f92ec44d93118a7cb281e21d9603b425afd35f39",
+    "val/C2-openvino-dense-480/cell.json": "332423f6486137c4d63f92bec87238a84090323a5def14cb57e3371e597243d8",
+    "val/C2-openvino-dense-480/quality.json": "16090a4351c25733328c13807156108d52bd417231adb4fbbd80231a55ad006d",
+    "val/C2-openvino-dense-480/stage-trace.json": "c64ba294cfb5a45c495c2173695b891f41c9cd6cf77847d271926ad83624d3c2",
+    "val/C2-openvino-dense-480/session-0.json": "c82dbfd12429c7c37e167e4454a313828939506328736a103fc410e3acc13e6c",
+    "val/C2-openvino-dense-480/session-1.json": "4f2ed31daae58a88270577cb5531ae4cf0c361fd5a8203946e9433ed82aa4d4a",
+    "val/C2-openvino-dense-480/session-2.json": "dd50b84a48fc15f87f0073b29e143c618e388000d8bdaeceb3db7282463df0a9",
+    "val/D0-openvino-one-256/cell.json": "d1b435943c72abcb99e311f8aafb904d3304256ee80693d6d64f86e5ccf8db1b",
+    "val/D0-openvino-one-256/quality.json": "de12a146d7bb1eadb99f5febca5f338d07f95e9b4ec8926ea63a99ae3ac1c104",
+    "val/D0-openvino-one-256/stage-trace.json": "1d9d1b622f5a8166f3ee139601b0a1edd4003b22dd4752def811899f97414708",
+    "val/D0-openvino-one-256/session-0.json": "6ef44fb780c8e2cd8ef9db241e5752412ba1c53fd8066c90b413a8a0c7eedc04",
+    "val/D0-openvino-one-256/session-1.json": "8c6a780115b7e83f5f3bc23fa247a94c8f7e4e6cdf4a45f740b9e19f97cfc8e1",
+    "val/D0-openvino-one-256/session-2.json": "ec1077cdec76b54569c4a1c82c2db082c95076f7d9b2f0768a793c4b6ea2e44b",
+    "val/D0-openvino-one-320/cell.json": "2ca65b9ecfc84c832c355e6d0d15ce37b32c0e9636029e5a956a9c0eeeb62efe",
+    "val/D0-openvino-one-320/quality.json": "8b051d1ac88f04810c1f79074f332c379c6d6ef962ce573c6c8a7e1fe741bcb4",
+    "val/D0-openvino-one-320/stage-trace.json": "11cd529b00e48a54ac7d9cb1d012bee2f5bfa788579e4f29acd56c46d40b1232",
+    "val/D0-openvino-one-320/session-0.json": "b853507fe21fb309b54b38ad1cdd2eb53d2dad9facc5ee0b46db0a3ddd1707ad",
+    "val/D0-openvino-one-320/session-1.json": "dd77284f605c23ee6807c8b61368d83a58cf1ba4fee52235b9e39095d982768c",
+    "val/D0-openvino-one-320/session-2.json": "ccc30013e5f70d92cdf581aeedfc5a05d5732c117572b83eb78f6bf2cd31bca5",
+    "val/D0-openvino-one-480/cell.json": "175f49037bc512cff7bac57fa1b210f798ea18c686b608472fa0a9528a70898d",
+    "val/D0-openvino-one-480/quality.json": "416700e0966dbf8f3d7275081065c4c402f50ee47ea6c14cd112f1a6704be96e",
+    "val/D0-openvino-one-480/stage-trace.json": "2332345480112d9419950a45fc9659923e520db606261048a09f72759c7cb35c",
+    "val/D0-openvino-one-480/session-0.json": "8bd3b8bc2ba55e0fb700b1acb5ff003c3cbb9b513615e550932e65b37c597c70",
+    "val/D0-openvino-one-480/session-1.json": "1754f051371108fbb20767f9b4da669dbe8f390471905db899f11ca44dd9be7f",
+    "val/D0-openvino-one-480/session-2.json": "1a3d541ee87d12c660dd3bde58307c3521661fd06808cd5dc7abbf300cabdc33",
+    "val/D0-openvino-one-640/cell.json": "8c407095a5c38bf0638c111b1319f9d12daa54e1900d200da1063d3e65464e73",
+    "val/D0-openvino-one-640/quality.json": "7e2f1aabf207457e74bbb1251d640bf43d83598bd42ac75777dffe0c8c17391d",
+    "val/D0-openvino-one-640/stage-trace.json": "75948e24290bf0964fea946a6eb97a15ab3b830d2aadfea2f1e09d70d8787b67",
+    "val/D0-openvino-one-640/session-0.json": "f405724a46a6513ffd68d8f3d97cacfa35bec16fb0c7941ca290d82d624cea69",
+    "val/D0-openvino-one-640/session-1.json": "b3eb2cdb18411f1087d1e96c7ea90a9af000e391e35e88af1e0e88c316e1d7d3",
+    "val/D0-openvino-one-640/session-2.json": "30ebf88800ac7227d83879c5ce17d8139712138f59c06c30524aaf1c3d6862e0",
+    "val/D0-openvino-dense-480/cell.json": "6893a90aab2a39332f754dfb7f6beac30f09394381189bb8420e5bb75ec45914",
+    "val/D0-openvino-dense-480/quality.json": "dafd75a58bf1f7144b574a471ca9938073d1583b99b3d4890b011c16c06f1e6d",
+    "val/D0-openvino-dense-480/stage-trace.json": "f1d9436be04f947cd090f704a6927b3acced64515e59ccd6915ee53e8391757b",
+    "val/D0-openvino-dense-480/session-0.json": "b6e26c43e0d676ea38fd12e441d17a720a8aea47203e1a73fff16eddb42ec3b3",
+    "val/D0-openvino-dense-480/session-1.json": "ba3e94696c4da64384c724add2348cda8a67b2b8b981c9756a2132537b409251",
+    "val/D0-openvino-dense-480/session-2.json": "5d13ece4f2d077110ce2327ff55ce5ba78797636dab4627052ea161a1f9ff2e7",
+    "val/D1-openvino-one-256/cell.json": "4f14f82cf66f0d190bda4596f4a086f30e98fb6628b37ed8116078e1c108ba94",
+    "val/D1-openvino-one-256/quality.json": "58373673609a1b429621275f1c8731b762f20868868842e5a89457c099579c06",
+    "val/D1-openvino-one-256/stage-trace.json": "c9f07ceadcebd8511fd3ef86967aaf55f08db545a52915a7438586a235973223",
+    "val/D1-openvino-one-256/session-0.json": "7fef8427cce96388916a2bbf2a6c3328b8638b59aca704b43d73efb236574811",
+    "val/D1-openvino-one-256/session-1.json": "a16711cd64b8e07aa15bb57ab0ce2bcdb0ad76f77216c569da03ef38bd99c516",
+    "val/D1-openvino-one-256/session-2.json": "874d6aba2e53f07c3ee08b9c35724b8fcacd5cad0689fa178bcadc54f332ee6f",
+    "val/D1-openvino-one-320/cell.json": "103c3f29479faabfe1bb15695327f8503838d50e49440b9a9ea25a9abaf17738",
+    "val/D1-openvino-one-320/quality.json": "9f37b01cb2577216184cb2cbcc1655349fb993b4e58b285b77b820f7fb8884e2",
+    "val/D1-openvino-one-320/stage-trace.json": "e0124f2183c251419dc3e72b6dc89ac415064b03fc74c92fc8ae4020c594fd05",
+    "val/D1-openvino-one-320/session-0.json": "30fe9a0682a516376604fc39cd9727e21854ef40ee077311b1a7a7e8f5ca41ea",
+    "val/D1-openvino-one-320/session-1.json": "ec614f21635b9fa600212e033c80edcda3bb70158b046f4efd25c19e48ccbc85",
+    "val/D1-openvino-one-320/session-2.json": "2d32bea3f52601046a8e6e9796630ec375f388b2ce73cd04fb1112f0b5d6758b",
+    "val/D1-openvino-one-480/cell.json": "5b96d1e5b288c39cb05cae7022ebc7fdf05bc270e597d8db0c3bd0e382514d8a",
+    "val/D1-openvino-one-480/quality.json": "383036e381b7e810011573f8ab22ee93455b06aa600108329b2ce26119f786b0",
+    "val/D1-openvino-one-480/stage-trace.json": "667463023fd4b184d51888dee008af47b4d69d53241cfa8f49c2bdbd6211b391",
+    "val/D1-openvino-one-480/session-0.json": "42671135fc87239f90afa7f8f405375c93abf415da2a858bf87ddaddd5ad0693",
+    "val/D1-openvino-one-480/session-1.json": "72e20ac1c46c6d9876f431a9b7fe101205e601f630f25da849bd6e1cdb7a6a1b",
+    "val/D1-openvino-one-480/session-2.json": "0e2e868a7175c50b3e5d622335a8f87715f3768bed2ae2cb86d37bb6fe2cdc24",
+    "val/D1-openvino-one-640/cell.json": "1e5692d00da20ce35177548df3aa6d21b4e5f99d4315e6bfeedb437b3d7023f1",
+    "val/D1-openvino-one-640/quality.json": "22ef3d81b96f059466c8a4895017cc86af7187e8bf76dff96e0486b42b7ee0ba",
+    "val/D1-openvino-one-640/stage-trace.json": "772c74d2b8f880f5d7cbfa221070a1fd076e6e903764c284b3c36aa30a548d0b",
+    "val/D1-openvino-one-640/session-0.json": "319f502a2bbdd7db0bbbf34eb33d1407481f309ee8a1aee9b8c2fd4ed6952807",
+    "val/D1-openvino-one-640/session-1.json": "c73fd48ce85fd2b4927fcb647cf3b396125cbce89e3a87d1234a20751f4710ba",
+    "val/D1-openvino-one-640/session-2.json": "63c9343da4319a94d4dedc411ce28ff0c8e5f14ed0b1007057937716a0058d35",
+    "val/D1-openvino-dense-480/cell.json": "5aa2da58e740bcb7ff18e2053783da2061140c57176d7c699dab8d307dd13441",
+    "val/D1-openvino-dense-480/quality.json": "6be682d722d439e23cfff35d484e6c665f2eeacf48b571bf5be0b29b98d45893",
+    "val/D1-openvino-dense-480/stage-trace.json": "bd37396001114548abaaff1a6b92b5c244c519bf2ed0d823b64a8b372815ef49",
+    "val/D1-openvino-dense-480/session-0.json": "40ca3eac178a9e0ab829829347a1ceaf2ae0a695af55acd98d1fb03e5560275c",
+    "val/D1-openvino-dense-480/session-1.json": "f74a7285f4e0bc01bf2d33fccc4ef0a7d222ae0615076c02a383ea335d2f0b91",
+    "val/D1-openvino-dense-480/session-2.json": "f639a3a0dfd025c30a35866dc3c755c2c3658f85eff4a1d37eeeb029c7f18d1a",
+    "val/D2-openvino-one-256/cell.json": "7a3a89e793282b14806277c6ed1c95891146385472522bf2bb13b08afec752b3",
+    "val/D2-openvino-one-256/quality.json": "0436aef87de02d220a28a55ace3f644d231a56771e6913c0d63ec6f505dfdf2c",
+    "val/D2-openvino-one-256/stage-trace.json": "4825956e9370b79a4e4e2bfff44240c24073e6789603a3c6a7b2eec956de4ded",
+    "val/D2-openvino-one-256/session-0.json": "d8b0004f3555854d403f173c623b3b47aac95b786756bcc5e1970ac422d82f00",
+    "val/D2-openvino-one-256/session-1.json": "c141aa3b79cb658df03cc2496750487e59847df42f4de503e0694ad290444996",
+    "val/D2-openvino-one-256/session-2.json": "3517ee44cfe64d53bf3c4ae00d380d0d62239206b9d0e9f4677cbe596dc6b23b",
+    "val/D2-openvino-one-320/cell.json": "ef9abd865c7ecbd76d9f8cf963c5d79351a20e3bcb7847c1477e0f2d7b652ca7",
+    "val/D2-openvino-one-320/quality.json": "f33053e6a37938ae5b0329390d49aa7b318cad0cf82fb10ffe8da26ce8e1ede9",
+    "val/D2-openvino-one-320/stage-trace.json": "cce2a0bc93d53202e26cb731ec72767a85fc58f6954a6e110dc7b7dc0c706392",
+    "val/D2-openvino-one-320/session-0.json": "de8a900fcd70f70503c764868d496a84a17bd0d5924a43ff05afa38a09e8f50f",
+    "val/D2-openvino-one-320/session-1.json": "dadced50b9385f2784b105135f3b4506db08011b8f8a49c4732cd05e9e7bef96",
+    "val/D2-openvino-one-320/session-2.json": "0034c776b039ac9f7346c48f18aae02371eeb980ad8380a2aaacc692371976d9",
+    "val/D2-openvino-one-480/cell.json": "3bb09f213799671d11169358f4108f4102cf12088cfef2f2f954ad228f5187c0",
+    "val/D2-openvino-one-480/quality.json": "86c33d9deb9459868d30ff3b7f9471260b1e22451c4691669a14327c9397684e",
+    "val/D2-openvino-one-480/stage-trace.json": "065fbc417e5f754e8a0924f51ac2f20ee1b0c92b542f1434aad6a7b1566e7c08",
+    "val/D2-openvino-one-480/session-0.json": "4b5ee5b34e486d78cd014903bcc3c87ac4f7a6697b385af7e4d0c190f14edf1d",
+    "val/D2-openvino-one-480/session-1.json": "0e3b39ce4432b332e673956fcf8aeee0a4b76bac81968cf073dfe6c036b79a73",
+    "val/D2-openvino-one-480/session-2.json": "b638d1ac84d67e55a29a1743085d9e5dad16a82029f5557750b39dce82574aca",
+    "val/D2-openvino-one-640/cell.json": "3d8533516e83054273abf90fb645f8333a4a50df5eade3b58e38ea42127eb73e",
+    "val/D2-openvino-one-640/quality.json": "b65c5d45927c9a018851661045cc82c9ca7f0b44a942827fc112ebc026ed8747",
+    "val/D2-openvino-one-640/stage-trace.json": "ea0794bf0a56e95c2a5881ce7f7c5b1f97ace520332363532ce14ea56a5d9b5a",
+    "val/D2-openvino-one-640/session-0.json": "b1783b02c2e1677d60e9f9c1d7b21d61d591bab776f5f81006d27178ad8c0d6e",
+    "val/D2-openvino-one-640/session-1.json": "0127ac53ce82440bc8f5ca019015226a4e066c22310308244b214e6df34a4b7c",
+    "val/D2-openvino-one-640/session-2.json": "c1c21204f63388a49e702ab743f509478025431dac733ae2e48f58311a4eb1f5",
+    "val/D2-openvino-dense-480/cell.json": "599775a83514b56dbdc6c0ba8230c259bb019cec930ce25e4bd21463ef46d6ad",
+    "val/D2-openvino-dense-480/quality.json": "30decc4febc427d891e5de97c09b687721acffb8e66a474eb57598516ea67d90",
+    "val/D2-openvino-dense-480/stage-trace.json": "e8d431a3bf1cb5ee0bcb262faaca93fd820219a3684095edf545919733cfc8b0",
+    "val/D2-openvino-dense-480/session-0.json": "d31c2d2f688f20a6f5e1b58be86794cf7cd7f961de7226ff1e88bae201cce10b",
+    "val/D2-openvino-dense-480/session-1.json": "868f54fcb335746f1046daf1ae127ed2d21e7704be192efe32bea116583ecfee",
+    "val/D2-openvino-dense-480/session-2.json": "463d6b88a6fb20c1f4516409181e89d4258d9ba5e9682b3a0337eadfbb30a6ff",
+    "val/E0-openvino-one-256/cell.json": "c5c5df5903e31840a002ea208e87d5c735135741018b509daa923e14646cf3dc",
+    "val/E0-openvino-one-256/quality.json": "7cd2f51ce1e9477b0666548bd59566830d99b26724ed3c7eac89db742e33c065",
+    "val/E0-openvino-one-256/stage-trace.json": "ff95129b83af0407e0a6701abff264c6fc27b25ae03a2e7ae3aa1373af0c9dd6",
+    "val/E0-openvino-one-256/session-0.json": "61b422a98581f2c15ccd662064a3777b868dd3e21f2cf3e8d12133b12b77bbe4",
+    "val/E0-openvino-one-256/session-1.json": "629a06a691d0069b771c30d022d0ffe877b0b9fcc24267e7466c85cabff5e246",
+    "val/E0-openvino-one-256/session-2.json": "1ac7c9fa9dafec65a3a8c3a2bdb6d0abd16f1869d1c3c222fabd3f48f1df69bf",
+    "val/E0-openvino-one-320/cell.json": "9c0ad1d2dd2d68dcc4843386bb0a85be0afc0b74e74b2e32704ae9f0cc528ee0",
+    "val/E0-openvino-one-320/quality.json": "1922154df57d8e52b6ce52ddd5cbd006a0ff305a906326a5d9612f371dc6ef22",
+    "val/E0-openvino-one-320/stage-trace.json": "d3ae80d3d4e0649f8a8e9123756b7e452b5dd82e6f236b657b378ba0ce2a6320",
+    "val/E0-openvino-one-320/session-0.json": "42c4d7c381260bc129ecd597d006febe6670493d516cd001753fcaf4177300b7",
+    "val/E0-openvino-one-320/session-1.json": "bf181354ed9c1a6528d684a32776cd4398e264b46d875f0eca0a30592f87c766",
+    "val/E0-openvino-one-320/session-2.json": "3fede0b561ad9efbdb6f7e9d95b4574e74616ea1a9b7f8ef6261fdc3e7ca1af9",
+    "val/E0-openvino-one-480/cell.json": "6518045e714e9e9765637b737688a52c1503e03c50d6e067323bd0f719f531aa",
+    "val/E0-openvino-one-480/quality.json": "d1db928dee96457374221a8e828b6162c767f86dcec70d929af1641b3216f3ad",
+    "val/E0-openvino-one-480/stage-trace.json": "59ac02edffe678266e3e505f12c79d26ab825dd5add882bfdf448371ac342f27",
+    "val/E0-openvino-one-480/session-0.json": "7a6c25f5adad8f0f2645167c2b9abe7475c10815d338681c8cff3d6279953b6b",
+    "val/E0-openvino-one-480/session-1.json": "355c2e85d9a998f0dced332f1bf3a264def0c17c8d05f46f797560d17e7ac386",
+    "val/E0-openvino-one-480/session-2.json": "36bb7ae05b7b98a77b276419aa1a223f786360333e6ae396d5da8e8c54b2afad",
+    "val/E0-openvino-one-640/cell.json": "336e397e5cdc22b16207af9ab0497b98b83eb6dc95f57181408705d6c740e4fe",
+    "val/E0-openvino-one-640/quality.json": "f3655dc962929fbfb7c0ead6fa137b1d66d6f1d8ed39e883c333dea1ac0c5c48",
+    "val/E0-openvino-one-640/stage-trace.json": "59cf59e164e74644fbcb52d658580a81890647ba6c4ae684be3a34c91c3f4065",
+    "val/E0-openvino-one-640/session-0.json": "d8b9c75611f393d87ba6a80d164021c4ef1ea33e328fc81af94251e6da47999b",
+    "val/E0-openvino-one-640/session-1.json": "9c8652ef8482b5b88674a5c6e3860a26714d6594121fe46ea02137894936ac6f",
+    "val/E0-openvino-one-640/session-2.json": "f5949a509040997e54c126788c8424c0bf65b30f56efd8bdefd5d85c5e1bc4f6",
+    "val/E0-openvino-dense-480/cell.json": "26ea14fc542b594bca59f578e0551d5fe646db98aa06db8857bd855900be6a98",
+    "val/E0-openvino-dense-480/quality.json": "ad346b1146103987daea443d610f945486344196117e3d72f1992c0bb9b13498",
+    "val/E0-openvino-dense-480/stage-trace.json": "065228da9af7a6fefc5409e02fe239f961c5202daaba0ec2b34d10f7ba1dea0a",
+    "val/E0-openvino-dense-480/session-0.json": "d390f1e70bfe6656f20b5acc4f00d593f8409421842d969d32d53f21aef8eecf",
+    "val/E0-openvino-dense-480/session-1.json": "99b3dffbf00bc851e1d49d0809f12df486f1178f8aa3afa91a3f4490a53beb72",
+    "val/E0-openvino-dense-480/session-2.json": "60f868b5d831a3505a638316c3f64266d9688ef6a734d39f05bd37aa7a3a981e",
+    "val/E0-pytorch-one-480/cell.json": "abd98183046e9a4f779f33647910af62c078740bcef14a2b371b3c698d2a5a91",
+    "val/E0-pytorch-one-480/quality.json": "b6c4f8f0ff19a4fed29259e99747fef9ceb0bd1bd60d958abca25be27283b233",
+    "val/E0-pytorch-one-480/stage-trace.json": "2f91a60f8557a8b05192ffb1a062171af50cc5e88e962420f018b22dfab15cbb",
+    "val/E0-pytorch-one-480/session-0.json": "74771464a139db8f9d3e468fe3e99adf973d406eac51d20aa06239ea5a348316",
+    "val/E0-pytorch-one-480/session-1.json": "9946524159db4903c8e3ef48ef2d2b3b01f4fdb1a6dc52b23fb08808efc363f6",
+    "val/E0-pytorch-one-480/session-2.json": "a6f397951aaa2133e2ef56b80b1079d31d9f3af71c9144af7dcbc3960558a6c1",
+    "val/E0-pytorch-dense-480/cell.json": "c9eb5b3999a1addb48a8189138ce5655abb1bc4a513b480718376a6f9e57c240",
+    "val/E0-pytorch-dense-480/quality.json": "98d86186cb5eb5799524c6910ac142b567f255620669e6d0d267af2eeddb2dec",
+    "val/E0-pytorch-dense-480/stage-trace.json": "822765997e6b8043a99382d6b192e50fa98685b41426fe2ed50a9bbe76799d31",
+    "val/E0-pytorch-dense-480/session-0.json": "d5703d277c118cc7b3139b108d4cb2892961c74e9db44c208b6ff7c3340cdf0d",
+    "val/E0-pytorch-dense-480/session-1.json": "bc77aba0c23fb39ccd87fd461a937e0e977598b17c66e670d58b5bd83f918e52",
+    "val/E0-pytorch-dense-480/session-2.json": "63e83b531fb40ed4892aba768996daba89603fc20ae53e8fac1c71c98896535b",
+    "val/E1-openvino-one-256/cell.json": "408b91b37a0953159d1d89a2a42c11f7fdf06df69690cd6589fb9f2d85392d19",
+    "val/E1-openvino-one-256/quality.json": "2c25eda52be28f3fdfecf9cc809fd29070ce50cb67930c784ba1f879b7918160",
+    "val/E1-openvino-one-256/stage-trace.json": "18aa3b7ac970f2ad4cad216bf4c55a6416c2ca18b95ba57c2311dea4f225e9b9",
+    "val/E1-openvino-one-256/session-0.json": "d6e37c5c5673df2e96a5523ec55a979255990916b5d39222e894097590077ee4",
+    "val/E1-openvino-one-256/session-1.json": "966b6ebdc48c68dfdf1a238d79510c21f9877c3b0891892d10b1228d19c99096",
+    "val/E1-openvino-one-256/session-2.json": "ad151b1990df9fb74e2e14d1323d2e5370400ab6a9f1f9213283ea3e4ccfa941",
+    "val/E1-openvino-one-320/cell.json": "f5b367746fea12ed50f9cd24561fcb751894486f29a9672f1293cfe9ac8e2110",
+    "val/E1-openvino-one-320/quality.json": "0161a7d415ac7a0c19723b191695e3f9d9fb186e3e410475166f7643ef9d7d9d",
+    "val/E1-openvino-one-320/stage-trace.json": "a722c6ae8d2e06fe598f6ed5779bef0bd5236ee335bda24ad867f5b4f6849ded",
+    "val/E1-openvino-one-320/session-0.json": "0033d26c9287c1224453af5f5325007871f8c3492134d56b33788d6786070097",
+    "val/E1-openvino-one-320/session-1.json": "be8b9ce73bc946f7ef1736140b7de6065b1c940e4e33c4f22305a5db9fcfd830",
+    "val/E1-openvino-one-320/session-2.json": "645e4d7bcf38d4640e143e6a2a03ecdd77d000412c870c856708cf46ea47c4de",
+    "val/E1-openvino-one-480/cell.json": "28b606ebef52e74cf1cccc04299fa9b96603a5e0ac24c41475b6ff3e891955a8",
+    "val/E1-openvino-one-480/quality.json": "440c1d6f3f8fb15ecbfda9fb08f4b6a0362e2564e6b2b3847a8910295ce3bd5e",
+    "val/E1-openvino-one-480/stage-trace.json": "d5d3f1d58dfd13769ab2d8553feb429e2c77d7e82f2fd104685cdec9edecab7c",
+    "val/E1-openvino-one-480/session-0.json": "e890b87cec7cf41099449a957d498950849bef9ad51f48e535c9a1cec1afcc72",
+    "val/E1-openvino-one-480/session-1.json": "27c842182c2a571401ed7adef3bb5e617bdc8ca87d941ee37e48e8edf59f0f5d",
+    "val/E1-openvino-one-480/session-2.json": "914a568ac04552e2634a1ec531c3c7196a7b62f973715bfad7fa4a2dc081c9fd",
+    "val/E1-openvino-one-640/cell.json": "57a42edcb283804a8df21edd5d952842649d5cde632302ca496ad97dcaf35b6b",
+    "val/E1-openvino-one-640/quality.json": "e6395c795ed8984aa8ccec7fe24ab2789a76bd47fcbfd4c707d7040964798d78",
+    "val/E1-openvino-one-640/stage-trace.json": "221905ee6426f938487fa3e69f9a73f1af42a245b6bf2a9b494e186de87911e9",
+    "val/E1-openvino-one-640/session-0.json": "f6beee17d6d8bc8020818893b5955cda583e77fe2f6bacdb35c21cc084b44e72",
+    "val/E1-openvino-one-640/session-1.json": "a9b8ae40f0c411d95fcfa885d917c72fc1d484d02354f4ae833797e2c1c0382f",
+    "val/E1-openvino-one-640/session-2.json": "49eac2f3500a992a591db7c3c4fd214e57f4358e6589186677521ab190ebb5b3",
+    "val/E1-openvino-dense-480/cell.json": "da27cc01e6cb52cce2fd58c7c797c423046da2c9435dba6c886051fc378f1699",
+    "val/E1-openvino-dense-480/quality.json": "6f5867355153ad60a36b4d1cf5d29799a4ecdec1459642e2dc1143a19cbf30cd",
+    "val/E1-openvino-dense-480/stage-trace.json": "469e59d2ed6d2d9b33b47ead7b026beb8c6a4a0129e644d148c0e01cf9546db4",
+    "val/E1-openvino-dense-480/session-0.json": "389e3fcd7d1b1a481a2823c6261e28a01ed6bc71bbfaae12af7678605d79d174",
+    "val/E1-openvino-dense-480/session-1.json": "0f2706ef198141816eb4b63c4e835a8db995506f5e17db2b5c52b3b246f05dae",
+    "val/E1-openvino-dense-480/session-2.json": "d93e81488a9eaf91d02f50e462d4117cd80559e0a69af399e99c09dfbfc3693f",
+    "val/E1-pytorch-one-480/cell.json": "340b678ed8b99fc6cecca91524953d7c5ca3c2555f14a42fc0ec600772031e86",
+    "val/E1-pytorch-one-480/quality.json": "2e05d78413e150ee08f71d6d7eb690cd921d66a6db75336d640f88f95c137e1f",
+    "val/E1-pytorch-one-480/stage-trace.json": "2266e39dcb3fb9caf53d577ddea0243043b6a39a6f0ffc67b5f646b1ef2befb7",
+    "val/E1-pytorch-one-480/session-0.json": "bd464b3475af3fb70cbfa5819ebf52faca9add5474a317ee1ea55cd98769c353",
+    "val/E1-pytorch-one-480/session-1.json": "c7f064014fff6edce3f14ab709236e5fd6c2f20e674bcbe315ee07c5a967a773",
+    "val/E1-pytorch-one-480/session-2.json": "8cf9ed3d616a29aa0c6b9ef80187fd8c806450eb3eff85f20ad1767b17dc1e80",
+    "val/E1-pytorch-dense-480/cell.json": "54eae5dc4575fc14257373cc7e5eb051eeccb3b50a1d994b078788778edf00b4",
+    "val/E1-pytorch-dense-480/quality.json": "5ae26a831000865059c35fd78e920e160bc57011e0518c54a786b973ce972abd",
+    "val/E1-pytorch-dense-480/stage-trace.json": "5d86ae5ef7355cd142666e9aed5946d530e5194e8ddd0f9c7f22a17bcede00e3",
+    "val/E1-pytorch-dense-480/session-0.json": "6e8a829a247932cca0db802ae073b9a3816bf8f36b58f2140f2bc42214fc91c6",
+    "val/E1-pytorch-dense-480/session-1.json": "de30b0877fecdeddfda7aa7418b1a7204f35d13cd6c7ebced844d372e8dac3b8",
+    "val/E1-pytorch-dense-480/session-2.json": "dd4a3cb565a7eed22c6da4129807f06f000ca5d7bb0275416055563cdb01541d",
+    "val/E2-openvino-one-256/cell.json": "abedca1ec9b2af00138779f97ae41d5564ef2428d9f782418a4b24f71aa8f95c",
+    "val/E2-openvino-one-256/quality.json": "96a8f2a0641a8fd6d22fa43d3815d914fc7cb1845321e0a305964267ddfa55ef",
+    "val/E2-openvino-one-256/stage-trace.json": "20ec7287f193b512f0da6b01fff69da8fcd7e3094b11019c7e1da087259dcdbc",
+    "val/E2-openvino-one-256/session-0.json": "bd2445ddcaed50c72c5c2f7ce0067dc66c37e775f66b8b1f9f6088db0d3eca14",
+    "val/E2-openvino-one-256/session-1.json": "9daafaa8ecf5eab9bfea80f9677618067301e99fc26d575ee554728a0ae27c13",
+    "val/E2-openvino-one-256/session-2.json": "8935805eb5de76fd09fdf851e8ba926964bc6807dbf4794433268632d87f8697",
+    "val/E2-openvino-one-320/cell.json": "52d8aaf09ea29ae8def2092cf73eb9165d45fc8ab1139416203ca629273b9952",
+    "val/E2-openvino-one-320/quality.json": "198fd653c06361b328578cb81338b2bac17db6f6d5ecc2bee2a1c32fd480ed4c",
+    "val/E2-openvino-one-320/stage-trace.json": "bba7d53ee6565be6520b7129d6564e9c74a55508c83eb4ee3ccc9a652b1c3fd3",
+    "val/E2-openvino-one-320/session-0.json": "d6aab31e551c63fec32603a3f2a9137f4983c77d855a3c44a75315c3371e5f44",
+    "val/E2-openvino-one-320/session-1.json": "5ae22f22a1a1b5e0949148d89c5f4fe3f28d53318fb992e316ba691f95bae2ed",
+    "val/E2-openvino-one-320/session-2.json": "d41ea467d55e4e84ea80bc0a6426277035d4d2a52182e2a9279efa24b35ea4f4",
+    "val/E2-openvino-one-480/cell.json": "9944811ee92fb0ee4dd4040e1d510b66e6bd50faadac7d0c30d54c8eae2e0e43",
+    "val/E2-openvino-one-480/quality.json": "863b79299ae9f8403de9426ad728c10df1edf5ab2f7ff086f3624e855d74f789",
+    "val/E2-openvino-one-480/stage-trace.json": "2b1aae7e80328e6f5c866254f9e1ef94eb18e74716428b5028fb014bb947c083",
+    "val/E2-openvino-one-480/session-0.json": "d5570d94cd398e93cbfc38afd0d2db2dd7e8dd1b082721392b5d8303bc1285fb",
+    "val/E2-openvino-one-480/session-1.json": "1e0ce8ea462580b78f8ea97781d6818833f2b076f398b63d7e26a459ffe1d658",
+    "val/E2-openvino-one-480/session-2.json": "699f32639e3524ff8fc0fa5c458dee65f125c172deeec3278089c616fb2a7b0b",
+    "val/E2-openvino-one-640/cell.json": "b05aeb13cccf15d7aa5e1ae8f4b9a1094f89efadcf4647d678b98d0b2168e67c",
+    "val/E2-openvino-one-640/quality.json": "09e82fa04b3e9f867d9daf41dcffba57631c7386be72ada51939d554c3c73ea9",
+    "val/E2-openvino-one-640/stage-trace.json": "5482fefa684259df98658e87b77c3fccc7cfaf638d388b17ff77a28aaa4c57e5",
+    "val/E2-openvino-one-640/session-0.json": "fa88fc016e890de897fc8af21155e43ce37e8d557cea8bc71fc6e6083ad46641",
+    "val/E2-openvino-one-640/session-1.json": "c120196d7ada4f31b49d7c2dc2c26fe316bc4fe2ae09058abe29d5bffb9fd720",
+    "val/E2-openvino-one-640/session-2.json": "e342b4b5b9c1dd9011b257a99e02d88b2ad2831999b214d700eb4c02591c0ba0",
+    "val/E2-openvino-dense-480/cell.json": "8d63547a2288cf076c9e180565ca87c1b02ba6fb120a89bce3bb2452e7d33ff2",
+    "val/E2-openvino-dense-480/quality.json": "4fa4b46be54400c107ba1b1be69990bc5351a58cefc40c0fd557dfaf0ed3d86b",
+    "val/E2-openvino-dense-480/stage-trace.json": "d8c8ab3826765c58c60845dacbb7ee07fd278b886fcc37640aa0a206656211ce",
+    "val/E2-openvino-dense-480/session-0.json": "0201f9bef304922d935a9d6386e8875b622fab3fe2ad9b9a7a576ae1d67a4122",
+    "val/E2-openvino-dense-480/session-1.json": "ca70c5788865d7e99756d1709f6155b5ecf1f01d79056e6e43931026ab368f81",
+    "val/E2-openvino-dense-480/session-2.json": "dfadb4e3a82c13d023d2565544c780bc3f5cfd29ef881d27d60a837374f93713",
+    "val/E2-pytorch-one-480/cell.json": "7656e30413bbadab9ce41ff3ae9729402897c30f895bfcde6be0db13432a8854",
+    "val/E2-pytorch-one-480/quality.json": "e506b59a8a6c0a753d78caf6aa332852fcfaf3b13c1f3d72f17f51cf4abdd50e",
+    "val/E2-pytorch-one-480/stage-trace.json": "c08d410bf703696d96b607affda906af0c6bcce2fc2a2eed71bb467d08f816df",
+    "val/E2-pytorch-one-480/session-0.json": "d9920cbe42835d051b16734a46c478c6433b2df536cc2e3b32180a6ba101373b",
+    "val/E2-pytorch-one-480/session-1.json": "c354486ffff0b273f8b97763e7475f75037b75311c72aa8a7ac45f0f46704693",
+    "val/E2-pytorch-one-480/session-2.json": "44bfc66c1bb850153ed4181b89fedd9d4829facfe09c4c3febc86c24ecf4ceff",
+    "val/E2-pytorch-dense-480/cell.json": "7f2bfd17013a3256704b6b2c225a98b37408dd4335c75ed9db573eacd8549c7c",
+    "val/E2-pytorch-dense-480/quality.json": "d523ba33b101ccd9f379308666912bced12338505f914d5d95d51145a70d2fc1",
+    "val/E2-pytorch-dense-480/stage-trace.json": "69cbf2d68cd1dd070ee1adcd2bbd9be16ded237a5fa3b7914d56ee9c03581692",
+    "val/E2-pytorch-dense-480/session-0.json": "adb014d927791e2e847d2331719a4f166352ead476f79c803c917bfbe36c6fc2",
+    "val/E2-pytorch-dense-480/session-1.json": "fa61f5f72613d6cfbb1acab3848fa2d7d0a6d83d40182eadc9091a9a81f48837",
+    "val/E2-pytorch-dense-480/session-2.json": "1abd1d355bf0340ea7bdc0193f20b0ca4dfaed0dbd64f2df8a13688dd569731b"
+  },
+  "selection": {
+    "model": "A",
+    "side": 480,
+    "architecture": [
+      {
+        "model": "A",
+        "side": 480,
+        "eligible": true,
+        "failed": [],
+        "paired": {
+          "map5095": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "crazing_recall": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "inclusion_recall": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "patches_recall": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pitted_surface_recall": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rolled_in_scale_recall": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scratches_recall": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "fp_per_image": [
+          0.1,
+          0.09722222222222222,
+          0.1
+        ],
+        "p95": 16.58865,
+        "low": 15.71607,
+        "high": 16.640325
+      },
+      {
+        "model": "B",
+        "side": 480,
+        "eligible": false,
+        "failed": [
+          "seed 0 pitted_surface_recall"
+        ],
+        "paired": {
+          "map5095": [
+            -0.0009181493109653993,
+            0.0022728849153614283,
+            0.0002455679900095764
+          ],
+          "crazing_recall": [
+            0.03676470588235295,
+            -0.07352941176470588,
+            0.07352941176470588
+          ],
+          "inclusion_recall": [
+            0.00502512562814067,
+            0.030150753768844185,
+            -0.03517587939698491
+          ],
+          "patches_recall": [
+            0.04519774011299427,
+            0.05649717514124286,
+            0.0847457627118644
+          ],
+          "pitted_surface_recall": [
+            -0.023529411764705854,
+            -0.04705882352941182,
+            0.02352941176470591
+          ],
+          "rolled_in_scale_recall": [
+            0.024193548387096753,
+            0.04032258064516131,
+            0.008064516129032251
+          ],
+          "scratches_recall": [
+            0.0,
+            0.12612612612612617,
+            0.08108108108108103
+          ]
+        },
+        "fp_per_image": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "p95": 16.167779999999997,
+        "low": 12.984939999999998,
+        "high": 17.61066
+      },
+      {
+        "model": "C",
+        "side": 480,
+        "eligible": false,
+        "failed": [
+          "seed 0 map5095",
+          "seed 0 patches_recall",
+          "seed 0 scratches_recall"
+        ],
+        "paired": {
+          "map5095": [
+            -0.011889798053330292,
+            0.0033834504960423284,
+            -0.003617977618521895
+          ],
+          "crazing_recall": [
+            0.0,
+            0.0,
+            0.036764705882352935
+          ],
+          "inclusion_recall": [
+            0.010050251256281395,
+            -0.030150753768844185,
+            0.055276381909547756
+          ],
+          "patches_recall": [
+            -0.03389830508474578,
+            -0.016949152542372947,
+            0.02259887005649719
+          ],
+          "pitted_surface_recall": [
+            0.03529411764705881,
+            0.04705882352941171,
+            0.15294117647058825
+          ],
+          "rolled_in_scale_recall": [
+            -0.008064516129032251,
+            0.024193548387096808,
+            0.008064516129032251
+          ],
+          "scratches_recall": [
+            -0.027027027027027084,
+            0.07207207207207211,
+            0.018018018018018056
+          ]
+        },
+        "fp_per_image": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "p95": 16.859189999999998,
+        "low": 16.321924999999997,
+        "high": 18.8678
+      },
+      {
+        "model": "D",
+        "side": 480,
+        "eligible": false,
+        "failed": [
+          "seed 0 pitted_surface_recall"
+        ],
+        "paired": {
+          "map5095": [
+            0.0003198228106393586,
+            -0.0012938977796516649,
+            -0.006810122089633552
+          ],
+          "crazing_recall": [
+            0.03676470588235295,
+            0.00735294117647059,
+            0.022058823529411756
+          ],
+          "inclusion_recall": [
+            0.07537688442211049,
+            -0.010050251256281395,
+            0.020100502512562846
+          ],
+          "patches_recall": [
+            0.05649717514124286,
+            0.03389830508474567,
+            -0.02259887005649719
+          ],
+          "pitted_surface_recall": [
+            -0.047058823529411764,
+            0.04705882352941171,
+            0.04705882352941171
+          ],
+          "rolled_in_scale_recall": [
+            0.024193548387096753,
+            -0.04838709677419356,
+            0.0
+          ],
+          "scratches_recall": [
+            -0.009009009009009028,
+            0.11711711711711714,
+            0.036036036036036
+          ]
+        },
+        "fp_per_image": [
+          0.1,
+          0.1,
+          0.09722222222222222
+        ],
+        "p95": 16.300085,
+        "low": 14.18001,
+        "high": 16.519389999999998
+      },
+      {
+        "model": "E",
+        "side": 480,
+        "eligible": false,
+        "failed": [
+          "mean map5095",
+          "seed 0 map5095",
+          "mean inclusion_recall",
+          "seed 0 inclusion_recall",
+          "mean patches_recall",
+          "mean pitted_surface_recall",
+          "seed 0 pitted_surface_recall",
+          "mean rolled_in_scale_recall",
+          "seed 0 rolled_in_scale_recall"
+        ],
+        "paired": {
+          "map5095": [
+            -0.017935024995553106,
+            -0.013078398797909674,
+            -0.011498337202817566
+          ],
+          "crazing_recall": [
+            0.02941176470588236,
+            -0.02205882352941177,
+            0.029411764705882346
+          ],
+          "inclusion_recall": [
+            -0.025125628140703515,
+            -0.0552763819095477,
+            -0.00502512562814067
+          ],
+          "patches_recall": [
+            0.02259887005649719,
+            -0.039548022598870136,
+            -0.062146892655367214
+          ],
+          "pitted_surface_recall": [
+            -0.09411764705882353,
+            0.10588235294117643,
+            -0.08235294117647057
+          ],
+          "rolled_in_scale_recall": [
+            -0.06451612903225806,
+            -0.040322580645161255,
+            0.0
+          ],
+          "scratches_recall": [
+            -0.009009009009009028,
+            0.05405405405405406,
+            0.09009009009009006
+          ]
+        },
+        "fp_per_image": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "p95": 19.112979999999997,
+        "low": 18.565355,
+        "high": 19.36507
+      }
+    ],
+    "sizes": [
+      {
+        "model": "A",
+        "side": 256,
+        "eligible": false,
+        "failed": [
+          "mean map5095",
+          "seed 0 map5095",
+          "mean crazing_recall",
+          "seed 0 crazing_recall",
+          "mean inclusion_recall",
+          "seed 0 inclusion_recall",
+          "mean patches_recall",
+          "seed 0 patches_recall",
+          "mean pitted_surface_recall",
+          "seed 0 pitted_surface_recall",
+          "mean rolled_in_scale_recall",
+          "seed 0 rolled_in_scale_recall",
+          "mean scratches_recall",
+          "seed 0 scratches_recall",
+          "mean crazing_ap50",
+          "seed 0 crazing_ap50",
+          "mean rolled_in_scale_ap50",
+          "seed 0 rolled_in_scale_ap50"
+        ],
+        "paired": {
+          "map5095": [
+            -0.20789849763098622,
+            -0.1833624499825901,
+            -0.18626472640307187
+          ],
+          "crazing_recall": [
+            -0.08088235294117646,
+            -0.1323529411764706,
+            -0.0661764705882353
+          ],
+          "inclusion_recall": [
+            -0.1658291457286432,
+            -0.185929648241206,
+            -0.1507537688442211
+          ],
+          "patches_recall": [
+            -0.25988700564971756,
+            -0.22033898305084754,
+            -0.14689265536723162
+          ],
+          "pitted_surface_recall": [
+            -0.36470588235294116,
+            -0.42352941176470593,
+            -0.3647058823529412
+          ],
+          "rolled_in_scale_recall": [
+            -0.20161290322580644,
+            -0.1935483870967742,
+            -0.20161290322580647
+          ],
+          "scratches_recall": [
+            -0.33333333333333337,
+            -0.2612612612612612,
+            -0.2792792792792793
+          ],
+          "crazing_ap50": [
+            -0.2522855981691289,
+            -0.2005817743318764,
+            -0.2712094348897908
+          ],
+          "rolled_in_scale_ap50": [
+            -0.34272086448819356,
+            -0.2729915696028544,
+            -0.32362809001958515
+          ]
+        },
+        "fp_per_image": [
+          0.09722222222222222,
+          0.06388888888888888,
+          0.06666666666666667
+        ],
+        "p95": 6.425129999999999,
+        "low": 5.981359999999999,
+        "high": 7.8912799999999965
+      },
+      {
+        "model": "A",
+        "side": 320,
+        "eligible": false,
+        "failed": [
+          "mean map5095",
+          "seed 0 map5095",
+          "mean crazing_recall",
+          "seed 0 crazing_recall",
+          "mean inclusion_recall",
+          "seed 0 inclusion_recall",
+          "mean patches_recall",
+          "seed 0 patches_recall",
+          "mean pitted_surface_recall",
+          "seed 0 pitted_surface_recall",
+          "mean rolled_in_scale_recall",
+          "seed 0 rolled_in_scale_recall",
+          "mean scratches_recall",
+          "seed 0 scratches_recall",
+          "mean crazing_ap50",
+          "seed 0 crazing_ap50",
+          "mean rolled_in_scale_ap50",
+          "seed 0 rolled_in_scale_ap50"
+        ],
+        "paired": {
+          "map5095": [
+            -0.11152430272668529,
+            -0.09272562717376781,
+            -0.07491809017218859
+          ],
+          "crazing_recall": [
+            -0.036764705882352935,
+            -0.05882352941176472,
+            -0.04411764705882353
+          ],
+          "inclusion_recall": [
+            -0.09045226130653267,
+            -0.1608040201005025,
+            -0.13065326633165825
+          ],
+          "patches_recall": [
+            -0.14124293785310738,
+            -0.16384180790960456,
+            -0.062146892655367214
+          ],
+          "pitted_surface_recall": [
+            -0.09411764705882353,
+            -0.1647058823529412,
+            -0.15294117647058825
+          ],
+          "rolled_in_scale_recall": [
+            -0.1935483870967742,
+            -0.10483870967741934,
+            -0.14516129032258066
+          ],
+          "scratches_recall": [
+            -0.20720720720720726,
+            -0.17117117117117114,
+            -0.21621621621621623
+          ],
+          "crazing_ap50": [
+            -0.12377796741262331,
+            -0.0472285392323315,
+            -0.10784926814769602
+          ],
+          "rolled_in_scale_ap50": [
+            -0.1837579727856496,
+            -0.10133335794542042,
+            -0.11585212622465135
+          ]
+        },
+        "fp_per_image": [
+          0.1,
+          0.06944444444444445,
+          0.07777777777777778
+        ],
+        "p95": 8.449144999999998,
+        "low": 7.851715,
+        "high": 9.916034999999999
+      },
+      {
+        "model": "A",
+        "side": 480,
+        "eligible": true,
+        "failed": [],
+        "paired": {
+          "map5095": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "crazing_recall": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "inclusion_recall": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "patches_recall": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pitted_surface_recall": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rolled_in_scale_recall": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scratches_recall": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "crazing_ap50": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rolled_in_scale_ap50": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "fp_per_image": [
+          0.1,
+          0.09722222222222222,
+          0.1
+        ],
+        "p95": 16.58865,
+        "low": 15.71607,
+        "high": 16.640325
+      },
+      {
+        "model": "A",
+        "side": 640,
+        "eligible": false,
+        "failed": [
+          "mean map5095",
+          "seed 0 map5095",
+          "mean crazing_recall",
+          "seed 0 crazing_recall",
+          "mean pitted_surface_recall",
+          "seed 0 pitted_surface_recall",
+          "mean rolled_in_scale_recall",
+          "seed 0 rolled_in_scale_recall",
+          "mean scratches_recall",
+          "seed 0 scratches_recall",
+          "mean crazing_ap50",
+          "seed 0 crazing_ap50",
+          "mean rolled_in_scale_ap50",
+          "seed 0 rolled_in_scale_ap50",
+          "mean FP/image",
+          "seed 0 FP/image"
+        ],
+        "paired": {
+          "map5095": [
+            -0.09932227957497247,
+            -0.09040713756599111,
+            -0.12554762383767304
+          ],
+          "crazing_recall": [
+            -0.044117647058823525,
+            -0.04411764705882354,
+            -0.04411764705882353
+          ],
+          "inclusion_recall": [
+            -0.005025125628140725,
+            -0.040201005025125636,
+            0.03015075376884424
+          ],
+          "patches_recall": [
+            0.05084745762711862,
+            0.0,
+            0.02824858757062154
+          ],
+          "pitted_surface_recall": [
+            -0.2588235294117647,
+            -0.31764705882352945,
+            -0.3529411764705882
+          ],
+          "rolled_in_scale_recall": [
+            -0.032258064516129004,
+            -0.016129032258064502,
+            -0.016129032258064502
+          ],
+          "scratches_recall": [
+            -0.05405405405405406,
+            -0.08108108108108103,
+            -0.07207207207207206
+          ],
+          "crazing_ap50": [
+            -0.1491835747893691,
+            -0.029151352980163803,
+            -0.08810149734409639
+          ],
+          "rolled_in_scale_ap50": [
+            -0.11685480028569972,
+            -0.08206201642099631,
+            -0.08834321880093521
+          ]
+        },
+        "fp_per_image": [
+          0.1527777777777778,
+          0.14444444444444443,
+          0.2
+        ],
+        "p95": 26.494799999999998,
+        "low": 26.032009999999996,
+        "high": 29.892564999999998
+      }
+    ],
+    "size_verdict": "480 supported",
+    "architecture_tie": [
+      "A"
+    ],
+    "size_tie": [
+      480
+    ]
+  },
+  "export_inventory_sha": "27c69c321ff344ddf24d55bdd0823ab6a74edf1dd710970bfa6a190acb7ee6d0",
+  "reopened_before_timing_sha": "f9f1142fbe215726974e8136f742e8dfd66d2256e3e4f989a544cfac84b475c5",
+  "protocol_sha": "376b3f5b7edc903f8a24b1772b620778d8a68048ab89d20cb46fbb666b1cbc69",
+  "fusion_evidence": {
+    "audit/fusion-initial.json": "56a8a35a0a2fc6c8077ebe48b11058ed86d496366a304890e08c9cb7a530f232",
+    "audit/fusion-learned.json": "c071cc5d29c3cced0c30790355db563d18beaf1b6da968543516277d3930e816",
+    "study/reopened-before-timing-C0.json": "df60a31e187621f4fe6bcebbdec7ce1249649dc454463f1a842f03c4b3fefa5a",
+    "study/reopened-before-timing-D0.json": "8e9a501e3415afe7d3fe5a48cf27e4a769e5ecf28c56c2fb16f4e76425efb0ff",
+    "audit/design-extension.json": "74dffd15da0ed02042112a5020d23041a30b8d66dfa78de669428adc2405b325"
+  }
+}

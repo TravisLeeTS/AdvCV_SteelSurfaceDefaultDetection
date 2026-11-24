@@ -1,0 +1,26 @@
+{
+  "cells": 174,
+  "distinct_openvino_bundles": 75,
+  "timing_session_rows": 1194,
+  "primary_and_nms_observations": 1170000,
+  "head_observations": 24000,
+  "resolution_rows": 120,
+  "head_rows": 42,
+  "checks": [
+    "group separation",
+    "paired initializations",
+    "prediction and timing digests",
+    "six-class TP+FN denominators",
+    "FP/image",
+    "each raw p50/p95",
+    "matched image sequences",
+    "session rotation and AC profile",
+    "instrumented stage trace coverage and p50/p95",
+    "cached NMS candidate counts versus deployed operating paths",
+    "independent NumPy greedy NMS for every dense image at both score thresholds",
+    "reopened fixed shapes and learned graph branches",
+    "480 one-to-one bundle reuse",
+    "paired signed savings",
+    "complete matrix row counts"
+  ]
+}

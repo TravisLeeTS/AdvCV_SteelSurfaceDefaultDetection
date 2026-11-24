@@ -1,0 +1,17 @@
+{
+  "epoch": 1,
+  "max_weight_changes": {
+    "model.23.cv2.0.2.weight": 0.006479959934949875,
+    "model.23.one2one_cv2.0.2.weight": 0.005322227254509926,
+    "model.23.cv3.0.2.weight": 0.014232851564884186,
+    "model.23.one2one_cv3.0.2.weight": 0.013905107975006104
+  },
+  "grad_norm": {
+    "model.23.cv2.0.2.weight": 15.195047378540039,
+    "model.23.one2one_cv2.0.2.weight": 8.994013786315918,
+    "model.23.cv3.0.2.weight": 1.9381393194198608,
+    "model.23.one2one_cv3.0.2.weight": 9.645816802978516
+  },
+  "criterion": "E2EDetectLoss",
+  "validation_head": "one2one"
+}

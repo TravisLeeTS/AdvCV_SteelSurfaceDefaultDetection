@@ -1,0 +1,70 @@
+{
+  "config": {
+    "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+    "val_sha": "98d75c8b9a5aed0d1d63a1edc8a2073f33c9b999e6272067eac52ae3ddc6ff11",
+    "code_sha": "9b467ffc080a5145f532cee59e06cb8b7e4b8d92ce93879a848d44d15987e468",
+    "head": "native one-to-one",
+    "side": 480,
+    "score_floor": 0.001,
+    "fp_budget": 0.1,
+    "tie": "maximum macro recall, then fewer FP, then higher threshold"
+  },
+  "cutoff": 0.7821453809738159,
+  "quality": {
+    "map50": 0.6913465899959904,
+    "map5095": 0.39534137118749524,
+    "fp_per_image": 0.09722222222222222,
+    "threshold": 0.7821453809738159,
+    "images": 360,
+    "classes": {
+      "crazing": {
+        "ap50": 0.27463826304272787,
+        "gt": 136,
+        "tp": 14,
+        "fp": 6,
+        "fn": 122,
+        "recall": 0.10294117647058823
+      },
+      "inclusion": {
+        "ap50": 0.7758315881008222,
+        "gt": 199,
+        "tp": 95,
+        "fp": 8,
+        "fn": 104,
+        "recall": 0.47738693467336685
+      },
+      "patches": {
+        "ap50": 0.8702512705931871,
+        "gt": 177,
+        "tp": 103,
+        "fp": 4,
+        "fn": 74,
+        "recall": 0.5819209039548022
+      },
+      "pitted_surface": {
+        "ap50": 0.7982748111750929,
+        "gt": 85,
+        "tp": 49,
+        "fp": 2,
+        "fn": 36,
+        "recall": 0.5764705882352941
+      },
+      "rolled_in_scale": {
+        "ap50": 0.5350151765308879,
+        "gt": 124,
+        "tp": 37,
+        "fp": 13,
+        "fn": 87,
+        "recall": 0.29838709677419356
+      },
+      "scratches": {
+        "ap50": 0.894068430533224,
+        "gt": 111,
+        "tp": 63,
+        "fp": 2,
+        "fn": 48,
+        "recall": 0.5675675675675675
+      }
+    }
+  }
+}

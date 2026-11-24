@@ -1,0 +1,17 @@
+{
+  "reference": "pycocotools 2.0.11; all-area, maxDets 300",
+  "cell": "artifacts\\pilot-study\\val\\A0-openvino-one-256",
+  "images": 360,
+  "boxes": 832,
+  "candidates": 72161,
+  "reference_map5095": 0.08258449409090882,
+  "project_map5095": 0.0825844940909088,
+  "ap50_differences": {
+    "crazing": -2.7755575615628914e-17,
+    "inclusion": 0.0,
+    "patches": 0.0,
+    "pitted_surface": 0.0,
+    "rolled_in_scale": 0.0,
+    "scratches": 0.0
+  }
+}

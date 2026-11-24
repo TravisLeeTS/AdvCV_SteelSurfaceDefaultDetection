@@ -1,0 +1,667 @@
+{
+  "split": "train",
+  "images": [
+    "crazing_1",
+    "inclusion_1",
+    "patches_1",
+    "pitted_surface_1",
+    "rolled-in_scale_101",
+    "scratches_10"
+  ],
+  "results": {
+    "C0": {
+      "control": "A",
+      "paired_initial_sha": "60ca9dec671c863e3d671405ba99624348c58128becbd58fa60883e53e81fae1",
+      "sites": [
+        {
+          "path": "model.12",
+          "inputs": [
+            -1,
+            6
+          ],
+          "descriptor_channels": 384,
+          "hidden_channels": 24,
+          "parameters": 9290
+        },
+        {
+          "path": "model.15",
+          "inputs": [
+            -1,
+            4
+          ],
+          "descriptor_channels": 256,
+          "hidden_channels": 16,
+          "parameters": 4146
+        }
+      ],
+      "branch_weights": {
+        "12": {
+          "min": [
+            1.0,
+            1.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "mean": [
+            1.0,
+            1.0
+          ],
+          "per_image": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        },
+        "15": {
+          "min": [
+            1.0,
+            1.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "mean": [
+            1.0,
+            1.0
+          ],
+          "per_image": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "exactly_equal_output_tensors": 11
+    },
+    "D0": {
+      "control": "B",
+      "paired_initial_sha": "60ca9dec671c863e3d671405ba99624348c58128becbd58fa60883e53e81fae1",
+      "sites": [
+        {
+          "path": "model.12",
+          "inputs": [
+            -1,
+            6
+          ],
+          "descriptor_channels": 384,
+          "hidden_channels": 24,
+          "parameters": 9290
+        },
+        {
+          "path": "model.15",
+          "inputs": [
+            -1,
+            4
+          ],
+          "descriptor_channels": 256,
+          "hidden_channels": 16,
+          "parameters": 4146
+        }
+      ],
+      "branch_weights": {
+        "12": {
+          "min": [
+            1.0,
+            1.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "mean": [
+            1.0,
+            1.0
+          ],
+          "per_image": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        },
+        "15": {
+          "min": [
+            1.0,
+            1.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "mean": [
+            1.0,
+            1.0
+          ],
+          "per_image": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "exactly_equal_output_tensors": 11
+    },
+    "C1": {
+      "control": "A",
+      "paired_initial_sha": "46b84354cf0a41aba00cd7b8992cf720ad7b1062ccb81d433dcf9537b98ab34c",
+      "sites": [
+        {
+          "path": "model.12",
+          "inputs": [
+            -1,
+            6
+          ],
+          "descriptor_channels": 384,
+          "hidden_channels": 24,
+          "parameters": 9290
+        },
+        {
+          "path": "model.15",
+          "inputs": [
+            -1,
+            4
+          ],
+          "descriptor_channels": 256,
+          "hidden_channels": 16,
+          "parameters": 4146
+        }
+      ],
+      "branch_weights": {
+        "12": {
+          "min": [
+            1.0,
+            1.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "mean": [
+            1.0,
+            1.0
+          ],
+          "per_image": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        },
+        "15": {
+          "min": [
+            1.0,
+            1.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "mean": [
+            1.0,
+            1.0
+          ],
+          "per_image": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "exactly_equal_output_tensors": 11
+    },
+    "D1": {
+      "control": "B",
+      "paired_initial_sha": "46b84354cf0a41aba00cd7b8992cf720ad7b1062ccb81d433dcf9537b98ab34c",
+      "sites": [
+        {
+          "path": "model.12",
+          "inputs": [
+            -1,
+            6
+          ],
+          "descriptor_channels": 384,
+          "hidden_channels": 24,
+          "parameters": 9290
+        },
+        {
+          "path": "model.15",
+          "inputs": [
+            -1,
+            4
+          ],
+          "descriptor_channels": 256,
+          "hidden_channels": 16,
+          "parameters": 4146
+        }
+      ],
+      "branch_weights": {
+        "12": {
+          "min": [
+            1.0,
+            1.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "mean": [
+            1.0,
+            1.0
+          ],
+          "per_image": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        },
+        "15": {
+          "min": [
+            1.0,
+            1.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "mean": [
+            1.0,
+            1.0
+          ],
+          "per_image": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "exactly_equal_output_tensors": 11
+    },
+    "C2": {
+      "control": "A",
+      "paired_initial_sha": "c81fa66922a061d620f60ddc9017674587cff424567ff4cf5d24bba5afa44c5e",
+      "sites": [
+        {
+          "path": "model.12",
+          "inputs": [
+            -1,
+            6
+          ],
+          "descriptor_channels": 384,
+          "hidden_channels": 24,
+          "parameters": 9290
+        },
+        {
+          "path": "model.15",
+          "inputs": [
+            -1,
+            4
+          ],
+          "descriptor_channels": 256,
+          "hidden_channels": 16,
+          "parameters": 4146
+        }
+      ],
+      "branch_weights": {
+        "12": {
+          "min": [
+            1.0,
+            1.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "mean": [
+            1.0,
+            1.0
+          ],
+          "per_image": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        },
+        "15": {
+          "min": [
+            1.0,
+            1.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "mean": [
+            1.0,
+            1.0
+          ],
+          "per_image": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "exactly_equal_output_tensors": 11
+    },
+    "D2": {
+      "control": "B",
+      "paired_initial_sha": "c81fa66922a061d620f60ddc9017674587cff424567ff4cf5d24bba5afa44c5e",
+      "sites": [
+        {
+          "path": "model.12",
+          "inputs": [
+            -1,
+            6
+          ],
+          "descriptor_channels": 384,
+          "hidden_channels": 24,
+          "parameters": 9290
+        },
+        {
+          "path": "model.15",
+          "inputs": [
+            -1,
+            4
+          ],
+          "descriptor_channels": 256,
+          "hidden_channels": 16,
+          "parameters": 4146
+        }
+      ],
+      "branch_weights": {
+        "12": {
+          "min": [
+            1.0,
+            1.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "mean": [
+            1.0,
+            1.0
+          ],
+          "per_image": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        },
+        "15": {
+          "min": [
+            1.0,
+            1.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "mean": [
+            1.0,
+            1.0
+          ],
+          "per_image": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "exactly_equal_output_tensors": 11
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "verified_utc": "2026-11-23T21:05:54.188944+00:00",
+  "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+  "image_id": "crazing_101",
+  "graphs": [
+    {
+      "bundle": "runs/A0/exports/94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12/FP32/one-256",
+      "bundle_sha": "c85d9b1bba12f90072b1b9c9dd37551b1cfdcfe60285de090dfcf61486fde03f",
+      "xml_sha": "50759c615c0fb1b98367d5270e18faf7fd15b08de6b6e1a55ec6a5c12804bacf",
+      "bin_sha": "8d917f3dd31f24403b7ea5b34ef53167ab30803df7863153e76796b3fe74acf0",
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 210,
+        "i64": 22,
+        "i32": 23
+      },
+      "executed_native_modules": [
+        "model.23.one2one_cv2.0",
+        "model.23.one2one_cv2.1",
+        "model.23.one2one_cv2.2",
+        "model.23.one2one_cv3.0",
+        "model.23.one2one_cv3.1",
+        "model.23.one2one_cv3.2"
+      ],
+      "effective_precision": "f32",
+      "parity": {
+        "native": 10,
+        "exported": 10,
+        "matches": 10,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 2.1606683731079102e-07,
+        "min_iou": 0.9999988675117493
+      }
+    },
+    {
+      "bundle": "runs/A0/exports/94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12/FP32/one-480",
+      "bundle_sha": "c0ccd61e8c75a87616f7ea0cc3e4f69313f8db571416e2d32410ab7b27216ca5",
+      "xml_sha": "fe657383da153ba61304b4acfe95303a7906f8589a29f447e0fc088b097a431f",
+      "bin_sha": "d5e8f070242a71a83b5c9e8068ba9a9575887be3578a76913256f362e5857fb7",
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 210,
+        "i64": 22,
+        "i32": 23
+      },
+      "executed_native_modules": [
+        "model.23.one2one_cv2.0",
+        "model.23.one2one_cv2.1",
+        "model.23.one2one_cv2.2",
+        "model.23.one2one_cv3.0",
+        "model.23.one2one_cv3.1",
+        "model.23.one2one_cv3.2"
+      ],
+      "effective_precision": "f32",
+      "parity": {
+        "native": 35,
+        "exported": 35,
+        "matches": 35,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 2.1457672119140625e-06,
+        "min_iou": 0.9999980926513672
+      }
+    },
+    {
+      "bundle": "runs/A0/exports/94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12/FP32/dense-480",
+      "bundle_sha": "8d27b03b64c55169eaa385ffdc14f087894430820a76e8b48521d833ff0f2fc6",
+      "xml_sha": "fe3acf1331659066eb4f4bd2bb059985f19840cc67f59e8c36db0547f790b146",
+      "bin_sha": "35f3540f96fd17da038e8b3bb473e75ce969ea6f4d9690535c593108093a9ded",
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 211,
+        "i64": 14,
+        "i32": 22
+      },
+      "executed_native_modules": [
+        "model.23.cv2.0",
+        "model.23.cv2.1",
+        "model.23.cv2.2",
+        "model.23.cv3.0",
+        "model.23.cv3.1",
+        "model.23.cv3.2"
+      ],
+      "effective_precision": "f32",
+      "parity": {
+        "native": 31,
+        "exported": 31,
+        "matches": 31,
+        "missed": [],
+        "extra": [],
+        "max_score_error": 9.387731552124023e-07,
+        "min_iou": 0.9999971389770508
+      }
+    }
+  ],
+  "wrong_shape_and_head_rejected": [
+    "Actual IR input shape [1, 3, 256, 256] does not match side 480: artifacts\\abcde\\runs\\A0\\exports\\94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12\\FP32\\one-256\\model.xml",
+    "Wrong learned head branches in artifacts\\abcde\\runs\\A0\\exports\\94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12\\FP32\\one-480\\model.xml. Observed ['one2one_cv2.0', 'one2one_cv2.1', 'one2one_cv2.2', 'one2one_cv3.0', 'one2one_cv3.1', 'one2one_cv3.2'], expected ['cv2.0', 'cv2.1', 'cv2.2', 'cv3.0', 'cv3.1', 'cv3.2']"
+  ],
+  "shared_resolution_and_head_480_bundle": "c0ccd61e8c75a87616f7ea0cc3e4f69313f8db571416e2d32410ab7b27216ca5"
+}

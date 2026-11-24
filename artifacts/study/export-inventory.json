@@ -1,0 +1,3812 @@
+{
+  "runs/A0/exports/94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12/FP32/one-256": {
+    "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+    "model_id": "A",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "c85d9b1bba12f90072b1b9c9dd37551b1cfdcfe60285de090dfcf61486fde03f",
+    "xml_sha": "50759c615c0fb1b98367d5270e18faf7fd15b08de6b6e1a55ec6a5c12804bacf",
+    "bin_sha": "8d917f3dd31f24403b7ea5b34ef53167ab30803df7863153e76796b3fe74acf0",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 210,
+        "i64": 22,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/A0/exports/94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12/FP32/one-320": {
+    "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+    "model_id": "A",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "68b1dd9c18fc32c7d50d5e4f5fb4dc49af86ddb56e5e9cfca4de296639f165e1",
+    "xml_sha": "e175ee314280449b30710d9ff1e5858b4786ea643cdc24243c5df8c4c4478141",
+    "bin_sha": "d8cf5752eb44ff749b6201552952d36dc53935bafbf289f06d0794f335c2279f",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 210,
+        "i64": 22,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/A0/exports/94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12/FP32/one-480": {
+    "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+    "model_id": "A",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "c0ccd61e8c75a87616f7ea0cc3e4f69313f8db571416e2d32410ab7b27216ca5",
+    "xml_sha": "fe657383da153ba61304b4acfe95303a7906f8589a29f447e0fc088b097a431f",
+    "bin_sha": "d5e8f070242a71a83b5c9e8068ba9a9575887be3578a76913256f362e5857fb7",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 210,
+        "i64": 22,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/A0/exports/94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12/FP32/one-640": {
+    "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+    "model_id": "A",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "6fb8017094e041c4d11cff85448249485b08808cdf70c0597d7aa8b0fd580c84",
+    "xml_sha": "39d6218bb8f5a3a877aa002708fffe50e6c470618c8b05e0462d727935cd2b16",
+    "bin_sha": "40b2318480aea8d9d9125a61db34e39a2e79807d8ea17cdbbbda89524d0d9155",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 210,
+        "i64": 22,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/A0/exports/94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12/FP32/dense-480": {
+    "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+    "model_id": "A",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "8d27b03b64c55169eaa385ffdc14f087894430820a76e8b48521d833ff0f2fc6",
+    "xml_sha": "fe3acf1331659066eb4f4bd2bb059985f19840cc67f59e8c36db0547f790b146",
+    "bin_sha": "35f3540f96fd17da038e8b3bb473e75ce969ea6f4d9690535c593108093a9ded",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 211,
+        "i64": 14,
+        "i32": 22
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  },
+  "runs/A1/exports/618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3/FP32/one-256": {
+    "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+    "model_id": "A",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "00ff73dde5c14b686c7dead303cbcadfeb3fa52c9d301ee9fd40c9137ef7974c",
+    "xml_sha": "262d529ddbb128ecfcc2ccdc37f5ffe0165c7423badc22b608418e10930db803",
+    "bin_sha": "2cbcca6408e60aaf05e5c5c1f855f43a2aea4747adf184ebd6b33822078c18db",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 210,
+        "i64": 22,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/A1/exports/618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3/FP32/one-320": {
+    "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+    "model_id": "A",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "b5344e4f94a9f6898fb97ed8624d9fd152ae155bcd3e2ebf9991ba53e4540a3d",
+    "xml_sha": "8c3828e4c7958089fbd4675148ae04185ad68bcb071923d63c24cdf9bcc9b735",
+    "bin_sha": "fee53b11ed0145fa4bfd3d81068b0b8f6073a7f1fa42afd735f9d39b92938c76",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 210,
+        "i64": 22,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/A1/exports/618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3/FP32/one-480": {
+    "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+    "model_id": "A",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "250654ba217a121ac72c79e8ce7d7748aaaf785ba3cb2687edcfd9f92baf5008",
+    "xml_sha": "0525540a7d4eb343e72291993253e9e94fee5bcd8a7cf2996e2b192b2e050740",
+    "bin_sha": "09161aceea90b7928e30e9107082b8c351d27e435db558756be5e0cfdebab9e2",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 210,
+        "i64": 22,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/A1/exports/618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3/FP32/one-640": {
+    "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+    "model_id": "A",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "501c26779bfb6ec93a7286a07c56ce447e9d1d8c5035a379661cba1d5e05dc09",
+    "xml_sha": "bebe71a0fc3431dc1081d9cf132d2c6287e5f818f0814b09207d555d09b1bf00",
+    "bin_sha": "a077d992b892658bf54da85abdadb9c186591ebe2a1dd3ad0be5b76497d0fa80",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 210,
+        "i64": 22,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/A1/exports/618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3/FP32/dense-480": {
+    "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+    "model_id": "A",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "ae56f8388d24b2db528af96cb06bf1cabfd189f9a7e9afd495d3164a8d914c75",
+    "xml_sha": "e79b9a680a0b1b511c162cee4011fcaeaba8cd1b0f807ebaa2ca714b343f02cf",
+    "bin_sha": "5ef1f6a76cf0ae79487e4072a04302b7e1ef0aff61b9bd08f996c2af1e323581",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 211,
+        "i64": 14,
+        "i32": 22
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  },
+  "runs/A2/exports/143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36/FP32/one-256": {
+    "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+    "model_id": "A",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "ee6613c5db7b8d678e89e65d03193157ad7e310be8b9e3ac37e983c49be813e7",
+    "xml_sha": "39abe6d7a292eb2bdf8123f9eb31e4da4fd1eded006d4ddecbae4a2e36680a8c",
+    "bin_sha": "9efab84e336459c5859df8ccdcaff77212021c28de4152545708058f81c75cbd",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 210,
+        "i64": 22,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/A2/exports/143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36/FP32/one-320": {
+    "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+    "model_id": "A",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "2c319f7b2eedc065f50773568a7c9321ed9b87658a309a2774a2fd8f1b182da9",
+    "xml_sha": "9b85e8ece42c99cc77fc0395b7cb00b0a452eba1a3b63043a457c7faf8ac0a23",
+    "bin_sha": "9daec84d100da9bda3852df1a4f4ca44f62a96646fd43ff367137faa697e04a3",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 210,
+        "i64": 22,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/A2/exports/143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36/FP32/one-480": {
+    "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+    "model_id": "A",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "3670fd361fd0a40f62fbb2a3b92fc4f34dba522ecde34c6b3aa2c12013d1ca5a",
+    "xml_sha": "9d2912385b67bc6196fbfcbecfab66e6e2432ab31cec4458be7738e7fe8756e4",
+    "bin_sha": "dc37922e470b09e7f9f21adb671eb766aca7cef2278883e1e1d5659be6c777b0",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 210,
+        "i64": 22,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/A2/exports/143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36/FP32/one-640": {
+    "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+    "model_id": "A",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "fa3579d745887cc60f8f0a471eaf634db7dc50fb163ca7e25fb31c0f626b32c9",
+    "xml_sha": "9f15c6fb3726df5469afce058d93c173f2f48da10f857374ab769eb2d6c34f8e",
+    "bin_sha": "01ea8ff6d6152bcc8339204896f8bd3b29e1305585f84f561bea391b648d31c9",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 210,
+        "i64": 22,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/A2/exports/143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36/FP32/dense-480": {
+    "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+    "model_id": "A",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "e79813d94c6de8110891ff1106f578a437b824e4b1c9fce0af689626ccc5ca39",
+    "xml_sha": "a90ad7031151ba347c940c3db3f10bff250a403e2bedb1635d54e68d80e876c0",
+    "bin_sha": "2a936dd49e45f63e745612ee0cab3afb07cd7f88dfbc5e515704bb334f5beb75",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 211,
+        "i64": 14,
+        "i32": 22
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  },
+  "runs/B0/exports/87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9/FP32/one-256": {
+    "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+    "model_id": "B",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "e87ac01bea2cfdf0214341f1d003c6d3e764ae30462e4da886677e54d2f42376",
+    "xml_sha": "a8a58693046cf20e8f5c270f49e78d86d8c3f375f81b3aea9651566e2537290f",
+    "bin_sha": "da2592929e6e966cbe7690e0b5191652d7dd4aa93c000741a64714aa3ec6d38a",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 214,
+        "i64": 54,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/B0/exports/87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9/FP32/one-320": {
+    "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+    "model_id": "B",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "399e49e76f9f2942708b27b5362d11ab95593d594d6f4350a938bd8d3e9177d8",
+    "xml_sha": "876505ee11d6856adcf541222c393264077eecbd2046d1d42c576ec09a2433a6",
+    "bin_sha": "87ab6a60be9cc4a317eb791575f5ed91acb83a2b9128d2f58076da8a1ea17cbf",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 214,
+        "i64": 54,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/B0/exports/87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9/FP32/one-480": {
+    "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+    "model_id": "B",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "283ba362fa3fb85a0f2a9482743f4bd1c496684613b68a1cf5b355384c425ac8",
+    "xml_sha": "f3e4209730cdf523c70215e1bd15bc2f5d4d094710d3509bdcf1b37cdf13379c",
+    "bin_sha": "03e1e6b26600fee122343e39217ae061012350fa24982d70c1a9cb630a90d3fd",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 214,
+        "i64": 54,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/B0/exports/87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9/FP32/one-640": {
+    "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+    "model_id": "B",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "c3283578073c65100cdc46d58b68774073ffa7d941b003c68dc96bd942f79593",
+    "xml_sha": "4dd63706f21e921322271ca4e3f1a591fba2402746f386a67bdc9e6631bef877",
+    "bin_sha": "c29a93154e731108811b2c0def770713d11d9c1fcc68a43b2ea6a44a8999abc5",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 214,
+        "i64": 54,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/B0/exports/87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9/FP32/dense-480": {
+    "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+    "model_id": "B",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "5d84b9d078c1a376d8363cc752b53d1a78d7ce84fd46eccbded772a3a1d460b4",
+    "xml_sha": "9a2cc0d778f66cfa5e59df0f9fd769b3d5faf6699518f88dd2d0457f1d78aec2",
+    "bin_sha": "ba7e3a110cd138b65d82789943a192d787489708703cd05c3818af9db44b0f91",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 215,
+        "i64": 46,
+        "i32": 22
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  },
+  "runs/B1/exports/dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25/FP32/one-256": {
+    "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+    "model_id": "B",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "e7726ae2e7eb093758806913c369116f9c352e72150a1f5c83df171a90447d91",
+    "xml_sha": "b412182f927d7f68dd57d3a6fb2a076caf27c474472f36fa1a37afc1100febc7",
+    "bin_sha": "0bebf062861ebc9d559899f27cd3a86e2d0bc3df58c084db75edeb9a4beafb31",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 214,
+        "i64": 54,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/B1/exports/dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25/FP32/one-320": {
+    "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+    "model_id": "B",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "ecaa7de8cc2c6d1bac710ba58e4a9f27932b179b69e0870408f03244e2bdfe5a",
+    "xml_sha": "648907c1653de43e3ee270d20b0f1ae10997ade42815eb7af49e5bb0fa3b8dab",
+    "bin_sha": "d86eb5a06dce42f2cbe779ace6ac64bcb94fb75e0ef215f736fc9ff9cabd6fe7",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 214,
+        "i64": 54,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/B1/exports/dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25/FP32/one-480": {
+    "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+    "model_id": "B",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "c71e810f65b6893f3c59ec165991a697ed97686230f89543cbf05df1033d2b5a",
+    "xml_sha": "d4da51472ad8a9f59d08711b4bdfa0d2764e8d56f50462d845ff108c7e27620d",
+    "bin_sha": "c6bfd982b79394c57bf3ca27782c1bc25848f465bb9695da3d2b545e90ce7c21",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 214,
+        "i64": 54,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/B1/exports/dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25/FP32/one-640": {
+    "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+    "model_id": "B",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "cb271531aeaecc9af201cdaf8ba37cee9046e858fbef84dccaa7e27f7a07d936",
+    "xml_sha": "f34dec3c61c66d694221bef30188f497541fc9c3d59e3a97b2299a1fc2cafdbd",
+    "bin_sha": "ee972c1484dac25f556478fb4a6bcb68fbe794324081a0f52915c2e371d4eb67",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 214,
+        "i64": 54,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/B1/exports/dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25/FP32/dense-480": {
+    "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+    "model_id": "B",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "983adadd5e56936f1a5f3f32e1f8f73ae4c2cf5110128519f67debb2d9c01c76",
+    "xml_sha": "e50215f6d3de4a2177e4335a8a2670a77b174984528c0dc86c7b101f19c18bf5",
+    "bin_sha": "5eda8372698ce0f695dc701289747c6c70ac9344322cd6aa0e5bb996dba7b617",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 215,
+        "i64": 46,
+        "i32": 22
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  },
+  "runs/B2/exports/bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42/FP32/one-256": {
+    "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+    "model_id": "B",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "351b166a2d9df3e7d680e79459197653bf567f1b6f565587e17a4b91bea7bcf1",
+    "xml_sha": "db2a560d94ec3c3c4c6ded54690db1d5886d86feac63c8e0ac8dded5a52a0b57",
+    "bin_sha": "682a362da358c26d5954034c0166edaab94a2426fbc432989b479ed3f6c14c9d",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 214,
+        "i64": 54,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/B2/exports/bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42/FP32/one-320": {
+    "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+    "model_id": "B",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "2942aa9a6f3057da1483d451bce5b04d669a7534300980878038dca1e64c16e5",
+    "xml_sha": "50c75810ec09a4bc72c3f4baba62deaa8e71180a82fb5a2db4d873911ffed737",
+    "bin_sha": "f0dd3e8cea048561dcdfc68c70d30a2401b7ecc96040f48e6081d390f7f371c9",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 214,
+        "i64": 54,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/B2/exports/bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42/FP32/one-480": {
+    "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+    "model_id": "B",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "9a3c68ce92659bf9d1e2d766ee3dd02027221e5cc4b7f85992e1a94ac93e08c0",
+    "xml_sha": "07f559459e82259d59e6f1a0e3f3d13498b8230a368162989f2b2d620c33efc2",
+    "bin_sha": "78b42b96719132fdd691de46ce2af894b07b8ae023c6690d2ddf16ca8d788015",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 214,
+        "i64": 54,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/B2/exports/bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42/FP32/one-640": {
+    "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+    "model_id": "B",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "cc3aa2739f6cf084c290706e9e7a1ae0ef0bd0bc15b0c4f6192ececcd72c8c72",
+    "xml_sha": "e83d15e0d2c25d973cd1f6a06f2266c2496f10f628d906212f4639a6ac15dfb7",
+    "bin_sha": "536a6c108cd2aed3caa84e939cb78c518f51b532404e743adcc4bf7d0004baaa",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 214,
+        "i64": 54,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/B2/exports/bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42/FP32/dense-480": {
+    "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+    "model_id": "B",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "2b22a3a5222f85226d6686216b07a00102aa279c0609ca689fea3c2b3c4c209d",
+    "xml_sha": "95c7d1ce2348e767cf7d5391f4404a437d1150357ffbb5ab1c05341043df1226",
+    "bin_sha": "628ac2ab54c94c9de1f9525cca05befde9f2b00e1481cfb8ef8a536be5b8ea0f",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 215,
+        "i64": 46,
+        "i32": 22
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  },
+  "runs/C0/exports/deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1/FP32/one-256": {
+    "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+    "model_id": "C",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "d8aab7342330dc97267b6905641363d82a49454a3c0bbe17ccf2f30e68bed93c",
+    "xml_sha": "18df50959809d6015223b9a7bf9134f765c6c7eece65fa78451f39e1aae40fd6",
+    "bin_sha": "c6e6e43c08da740a20c456ab2ff937f02bcf10f31ea8946bae50b363ec62b131",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 220,
+        "i64": 43,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/C0/exports/deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1/FP32/one-320": {
+    "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+    "model_id": "C",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "5afed75e061ea55efbaecfe05a44fd37243a1d363f8aa29c8e77561e33c7b812",
+    "xml_sha": "f95ea050a386d2ad907d35456bc88f41e52bfaf74ee308400331016e58a95ee3",
+    "bin_sha": "961e1eabb1f53a8e5dd6481172cf051a4334c0ef54a224087ee21fe3c8be360d",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 220,
+        "i64": 43,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/C0/exports/deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1/FP32/one-480": {
+    "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+    "model_id": "C",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "5873e1315e3c9d1632a2d4a74bd11895b591a802ae203e0d72a7010e5415c447",
+    "xml_sha": "b5deae773a058df0ff7f7c8873aa11ef0516a5d7833480a716e97fedab202ab2",
+    "bin_sha": "8789150f8f8daf8ae86964ed26454126d92ef53523d08bb6ffdc2ba42717e46a",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 220,
+        "i64": 43,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/C0/exports/deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1/FP32/one-640": {
+    "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+    "model_id": "C",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "fb7b417df555e9789c171d173c29f8cbc5766afaa02c4e480f72eb7af2aa9010",
+    "xml_sha": "21ae31c087ba2bd4c9f154372bc9def85ff34f738faf78fc3ff0ac32ceb6dc81",
+    "bin_sha": "9eb4e4e0135e2c782a63d3dabb7ebac7cbd918ac554e174da8b91a7542db98be",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 220,
+        "i64": 43,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/C0/exports/deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1/FP32/dense-480": {
+    "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+    "model_id": "C",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "e223ce4a6b9ff2422f0232b9b60820feee7e14feb275b26fb9aebddc2021f934",
+    "xml_sha": "e4d893fac54722949fbb9cfce8daa43f6dbd656481cc2d4a93061fea965a95d2",
+    "bin_sha": "e1ee2af0971886c2be5b2f5f69554cc1efc02c3e385c922ab7e25e445d68653a",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 221,
+        "i64": 35,
+        "i32": 22
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  },
+  "runs/C1/exports/fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d/FP32/one-256": {
+    "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+    "model_id": "C",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "9f00c8b0fecb78c574a84f74acf13364047539fe9026888bcc11732e1741d293",
+    "xml_sha": "18df50959809d6015223b9a7bf9134f765c6c7eece65fa78451f39e1aae40fd6",
+    "bin_sha": "450d6b1e33b4eceff8d14f5de7a6d19c3094a192f830d488c37bfc166e3c01b1",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 220,
+        "i64": 43,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/C1/exports/fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d/FP32/one-320": {
+    "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+    "model_id": "C",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "707ddefb271af4354d9cf37bc2d7cc2d2ce6e3a0e7947321b31260ed09bc3274",
+    "xml_sha": "f95ea050a386d2ad907d35456bc88f41e52bfaf74ee308400331016e58a95ee3",
+    "bin_sha": "3b0fb13746f5f02deb41f2a4c381cbfd1a66696f9f168be433c9b7149eeaa016",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 220,
+        "i64": 43,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/C1/exports/fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d/FP32/one-480": {
+    "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+    "model_id": "C",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "6806ae311f8af7247537f12412769ad39f45dcef999dd0e3c46ec244c1089b01",
+    "xml_sha": "b5deae773a058df0ff7f7c8873aa11ef0516a5d7833480a716e97fedab202ab2",
+    "bin_sha": "457eba7183014f9bc5dd8ca360324e18f5d4021f1d835de5aaf9ed99f5d81d19",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 220,
+        "i64": 43,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/C1/exports/fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d/FP32/one-640": {
+    "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+    "model_id": "C",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "ca63f76ba763ca110ba10bc3db04b63a39f1c2c18790ca4876eb51c11ea00d94",
+    "xml_sha": "21ae31c087ba2bd4c9f154372bc9def85ff34f738faf78fc3ff0ac32ceb6dc81",
+    "bin_sha": "51782d536086d0975c43399610359d4a5a458325e4fff8ee4e0954fdc3bd50a8",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 220,
+        "i64": 43,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/C1/exports/fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d/FP32/dense-480": {
+    "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+    "model_id": "C",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "cd73860a40cd1a5253cc76d37efbe23d4c9b97d9951cae2b34f8dd3e512c327a",
+    "xml_sha": "e4d893fac54722949fbb9cfce8daa43f6dbd656481cc2d4a93061fea965a95d2",
+    "bin_sha": "2b905f664a37b844d6d733e0d333ed4bedc019f8dee59d263fe8a0f7bbc1de22",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 221,
+        "i64": 35,
+        "i32": 22
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  },
+  "runs/C2/exports/9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400/FP32/one-256": {
+    "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+    "model_id": "C",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "ed22a945ae301981e837d7876e7ae24fa973dc6c42d5da6247e4c6a48a908e36",
+    "xml_sha": "18df50959809d6015223b9a7bf9134f765c6c7eece65fa78451f39e1aae40fd6",
+    "bin_sha": "71316071825c01fe74050fd5c316e19e39fe0dc74aa4a40455d9d06041742b8b",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 220,
+        "i64": 43,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/C2/exports/9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400/FP32/one-320": {
+    "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+    "model_id": "C",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "6a15b4da418b60afa321f16897cb08144d7ef2c6952bdbd8edcaf1874ee450d6",
+    "xml_sha": "f95ea050a386d2ad907d35456bc88f41e52bfaf74ee308400331016e58a95ee3",
+    "bin_sha": "29882b867f859c249a386ebe0c954717a0d79356ed3a941eb448abe17ba258ae",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 220,
+        "i64": 43,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/C2/exports/9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400/FP32/one-480": {
+    "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+    "model_id": "C",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "d9a0c93fdc8b73483f8ab6bbec271aa7ad914334ac2679f3f4174ceaf760d732",
+    "xml_sha": "b5deae773a058df0ff7f7c8873aa11ef0516a5d7833480a716e97fedab202ab2",
+    "bin_sha": "487e414710dea11c46ef6621daa75934251c0075015cd848bc318b38203324c6",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 220,
+        "i64": 43,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/C2/exports/9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400/FP32/one-640": {
+    "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+    "model_id": "C",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "4c9b688c6c1198a8ba32c2f6f4f4b024703f7a0a42c960af009fede2f3de08fc",
+    "xml_sha": "21ae31c087ba2bd4c9f154372bc9def85ff34f738faf78fc3ff0ac32ceb6dc81",
+    "bin_sha": "d8e1bb2676e7d80471ccfa57d356486b25620fb2a80b23ce76cf3a39a4a25c0b",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 220,
+        "i64": 43,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/C2/exports/9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400/FP32/dense-480": {
+    "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+    "model_id": "C",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "21ef796d9bfa55d37169cb5e18f3ac2a1cc0cc14109ec918b7c1d9466163034f",
+    "xml_sha": "e4d893fac54722949fbb9cfce8daa43f6dbd656481cc2d4a93061fea965a95d2",
+    "bin_sha": "6ce6fe8bf2d7d35dfd9e640e616e67a1bec773da9e63927dff6d329355ad45fe",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 221,
+        "i64": 35,
+        "i32": 22
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  },
+  "runs/D0/exports/893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390/FP32/one-256": {
+    "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+    "model_id": "D",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "8c02c9a929001ffb71f9ffcb6360d338d1517126d3a3581faafac08aead040f5",
+    "xml_sha": "8fe79f354ac85fddf48941d5f38904621683562b06e4dd8bccbb47f4093e75fa",
+    "bin_sha": "6854d95ad97b9fca8a2f0e1bc848a174a81044017a3eb87ef5ec2e72dd341081",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 224,
+        "i64": 75,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/D0/exports/893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390/FP32/one-320": {
+    "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+    "model_id": "D",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "098228ed2a36c8184d68407c4f0cf09015ae9b31123458dfd9897c8dda60648d",
+    "xml_sha": "72932b0681a30b989d695e93680052d605ac5a67233f30855e330062dfadaba7",
+    "bin_sha": "7e8d209617a638aa665df24ba3914e3df0abbcc09f9adb9d57b4f94c408f0caf",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 224,
+        "i64": 75,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/D0/exports/893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390/FP32/one-480": {
+    "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+    "model_id": "D",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "665a4fa1461e71c07d126c388410ad91d34dcc99888e030cba23ddd7fef533f6",
+    "xml_sha": "93f29c97e6ba03959ecd859c9ac4966d3b6b9869b33c9fb3ccf0e14187d40643",
+    "bin_sha": "a75192f39fbfbfbc5b69250de0f3e29c1822f36b78cab1651136dcf3ec32eff7",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 224,
+        "i64": 75,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/D0/exports/893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390/FP32/one-640": {
+    "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+    "model_id": "D",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "3835b84736855d699a699af80a503b72f10cf0cb4aba397615fa14b2655c39ba",
+    "xml_sha": "e1bf08c8f5286d0491ae69b23d409e9c4c89d319529f068022356104ef53984d",
+    "bin_sha": "0622882c19fc753b0e7325c6401bf404c581f4695d29d1d1baaaa25fdbbd8c4a",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 224,
+        "i64": 75,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/D0/exports/893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390/FP32/dense-480": {
+    "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+    "model_id": "D",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "3d02a4b62a2164d1985e1275240c437f80f786d5b2a61f8692f3c7a0f357194c",
+    "xml_sha": "3163f9fda8017c2faea36288122d3947d0457c972bcce62df007e7c0c87caff7",
+    "bin_sha": "e95d677aca36df46d6de92039f501a612d62c07e14ecdf1c31a0ed7e96000a83",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 225,
+        "i64": 67,
+        "i32": 22
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  },
+  "runs/D1/exports/c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2/FP32/one-256": {
+    "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+    "model_id": "D",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "2e3d8693879edbabce1b7f3e808b77db6ee14f2a4640804eb1ea352f7e32e362",
+    "xml_sha": "8fe79f354ac85fddf48941d5f38904621683562b06e4dd8bccbb47f4093e75fa",
+    "bin_sha": "94ba9adff651b1410618626197604bb475391d37e49c319ea86028922d5192e9",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 224,
+        "i64": 75,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/D1/exports/c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2/FP32/one-320": {
+    "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+    "model_id": "D",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "bc7337bd507c5d1fbcf9f9e87f2fe25f002f3cb0f89e8ab55d6788c67f4aa2a0",
+    "xml_sha": "72932b0681a30b989d695e93680052d605ac5a67233f30855e330062dfadaba7",
+    "bin_sha": "cbf485ea64fd7982dc42ea463c67540c3282e0cc773904a06a023d7fec77b626",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 224,
+        "i64": 75,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/D1/exports/c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2/FP32/one-480": {
+    "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+    "model_id": "D",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "37f7486cb788470bf9ae7e4c78961295e915c3eeee263f124134ee1b74a7841e",
+    "xml_sha": "93f29c97e6ba03959ecd859c9ac4966d3b6b9869b33c9fb3ccf0e14187d40643",
+    "bin_sha": "51855fe83d8d8a33804de14963d970af02982596699da19ba2fe35751347c5da",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 224,
+        "i64": 75,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/D1/exports/c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2/FP32/one-640": {
+    "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+    "model_id": "D",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "3a38ff468f3853a0210a2447173ecff74184ad6df006f375b55aac2455f3b2bb",
+    "xml_sha": "e1bf08c8f5286d0491ae69b23d409e9c4c89d319529f068022356104ef53984d",
+    "bin_sha": "5ffa2a7c5a3fb3711585aeb0fcea5d7761ffe9304247c7c1dfcfb3a1a45eba16",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 224,
+        "i64": 75,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/D1/exports/c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2/FP32/dense-480": {
+    "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+    "model_id": "D",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "a8565920da1b14dff7d9e73e4336c9ad735c54c6bfe6085782739483144d2c08",
+    "xml_sha": "3163f9fda8017c2faea36288122d3947d0457c972bcce62df007e7c0c87caff7",
+    "bin_sha": "d9b1a753df2d1202c5f6d0e4fa25b6403621304e14b949e4263a9c861dce806a",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 225,
+        "i64": 67,
+        "i32": 22
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  },
+  "runs/D2/exports/a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f/FP32/one-256": {
+    "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+    "model_id": "D",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "9ea04026b8455f2d55241620655c804157bdf6e03880f629d32436baf42eaa25",
+    "xml_sha": "d50b126434c0c5339b6347692966dc0d4dab86a8a1c7f11b3db5b766c0d25ab1",
+    "bin_sha": "1e953ca3f90659c70222a263d3e2a30983576f3f45e61bad3672d501f223b21a",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 224,
+        "i64": 75,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/D2/exports/a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f/FP32/one-320": {
+    "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+    "model_id": "D",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "c56a560914f3f7b26f77663e27077c57aef6dcd7430e98ee7b3718d97457f5b9",
+    "xml_sha": "54e723bc3309f5ff1e052140d12c1c5e232b6f7f0305fe40354dd0a5570132a2",
+    "bin_sha": "31a3ed7596709d65dc2efdebbbca44b5b729774624b38190af5b039bc5f9491f",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 224,
+        "i64": 75,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/D2/exports/a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f/FP32/one-480": {
+    "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+    "model_id": "D",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "a53d456ba70ab938c8500e069180549f94893574ced9d12fb45a83a300700c8c",
+    "xml_sha": "ca5337827530bce1a22be9f81a944053d60e3b5fbd34047ccff52aade55a9ae7",
+    "bin_sha": "5bb8552223b46f38738fe0e8583be4cdd5c9862f5cf7647d97150b263f6521c9",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 224,
+        "i64": 75,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/D2/exports/a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f/FP32/one-640": {
+    "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+    "model_id": "D",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "9ed58d2c9a3faad7cdff44d387f7f63d8cbb285232bb8e219fe9d4d9b5bfa640",
+    "xml_sha": "f75f125857f7572d320040cb0288391320f06cb8ccdfe6138f1486e785d7c0fa",
+    "bin_sha": "f09b40656c62208a44fe51c10e43927f255c739dec875d42cb188c163e43a855",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 224,
+        "i64": 75,
+        "i32": 23
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/D2/exports/a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f/FP32/dense-480": {
+    "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+    "model_id": "D",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "b609c3ad427088fc00666dd392c81f64a777be0f294d5f2de27f2dc2027aa750",
+    "xml_sha": "93e6aa02a656915eb54eee1e466e38a82b9a94f593f6d51d5cf76d1b911e84cf",
+    "bin_sha": "a5ce9ab6b8051943ab583105441d28d089823bb207b0c820bb297dd1d03b27cf",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 225,
+        "i64": 67,
+        "i32": 22
+      },
+      "fusion_gates": {
+        "12": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        },
+        "15": {
+          "ReduceMean": 2,
+          "MatMul": 2,
+          "Softmax": 1,
+          "Multiply": 3
+        }
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  },
+  "runs/E0/exports/3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3/FP32/one-256": {
+    "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+    "model_id": "E",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "f6b032918a6b314bec2e2cde27f7cf5b8f65bcce983c9a2bf87bacf24cba752f",
+    "xml_sha": "809e1574ccaf612f79a88604827ad151c99cbd3cb4b717597e7574aefbd237e9",
+    "bin_sha": "84d7e250ed534c1b34999d9435a6d074f403f49ca64370d8d15480df14475eb3",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 172,
+        "i64": 27,
+        "i32": 24
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/E0/exports/3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3/FP32/one-320": {
+    "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+    "model_id": "E",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "b1b08a192b8eb4f030745cbafebd8e925990bb69cd240b8f80c98eda0921f1aa",
+    "xml_sha": "efdb75e69f6d0b604bc86747e41412f7c725a251851c674e3aab969ea0dcc191",
+    "bin_sha": "b50b2552791ccac287a3cc6d737c432ac7253f524cd55d36220ec2804e097800",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 172,
+        "i64": 27,
+        "i32": 24
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/E0/exports/3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3/FP32/one-480": {
+    "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+    "model_id": "E",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "c909b275eb23f4d46b133a64d61f35be20830a25f972496fe30b4066a90d8782",
+    "xml_sha": "6319fbd27381f1c2be91ae590cf994740cca687cb31a821dffa745ff1f73baee",
+    "bin_sha": "640cda61ff035e009752bb2bc152128fe51f8beed6e4200cf80ca92f429bfb4c",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 172,
+        "i64": 27,
+        "i32": 24
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/E0/exports/3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3/FP32/one-640": {
+    "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+    "model_id": "E",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "bfeb74fe70770753effd48f4b646c17926288e5fdc64bb42ddbc51e33ca50705",
+    "xml_sha": "34d542bb1819221613ff42f45deca6596ff520e432ece8c73fb11a7a42eb0143",
+    "bin_sha": "ee66be20bc4f4d163a0850499fbbfbd3b3c2c9616ddae3b6871712441bfc3b94",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 172,
+        "i64": 27,
+        "i32": 24
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/E0/exports/3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3/FP32/dense-480": {
+    "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+    "model_id": "E",
+    "seed": 0,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "d903ad7d887375a6abb37a457f63554a011a45e22ae5cb6cd14a3e9663f605f3",
+    "xml_sha": "0fdd121818ab8f15c5b77d6937f0a70948a466ffbcadd1e58a725d8eb89b2ed9",
+    "bin_sha": "efd79e1fae85f267f3a9ccd127ca779bdc4f6635116bab266206222c8e04b157",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 173,
+        "i64": 19,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  },
+  "runs/E1/exports/4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513/FP32/one-256": {
+    "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+    "model_id": "E",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "d7fb0b97c3daffefdfa856c73aaeb5c189e3f084bc83fb3acacf89a38b043638",
+    "xml_sha": "b83b2a6458a280a50b2d4635f7b481d0bb07909b448aa71dbc13cf4da1dfe99f",
+    "bin_sha": "d4476a4ba2714823770b3446f0bb4c2b0f62fc37856b9c6c944cf2279d2fa2b9",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 172,
+        "i64": 27,
+        "i32": 24
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/E1/exports/4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513/FP32/one-320": {
+    "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+    "model_id": "E",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "1ed0dfe93631eabf31c09037fd5ea8f102cdc8b7d62aced35f8de0a83bc3d304",
+    "xml_sha": "0f0c85103c247a29e991938afae006931ac3f69fab230577689e149f916e6239",
+    "bin_sha": "7903f3301b1983676d7e24a71b40f35b0e4da7cf2d67af5839174a5cddaa2eab",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 172,
+        "i64": 27,
+        "i32": 24
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/E1/exports/4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513/FP32/one-480": {
+    "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+    "model_id": "E",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "40f4b81efdad52b2b468f1078154e186b51f83989e2ff8d038f180693241a88d",
+    "xml_sha": "2fe84c55538cad80143045724bf820cf62d01c274ade64bb4d94194c1a62ff95",
+    "bin_sha": "0c358e42a6babbb77e20bd0b5e28646b2ec91a5b65d69aea715f9a4d64be9afc",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 172,
+        "i64": 27,
+        "i32": 24
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/E1/exports/4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513/FP32/one-640": {
+    "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+    "model_id": "E",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "a98319c3f846336520291ca9ff4ca2a251455a6d3ea29b475c74f391c77d0b83",
+    "xml_sha": "44fddcbac8bf81271531aa8fcd56eec7767de9d87c369c2643bb07f8c2018585",
+    "bin_sha": "42879a4cd76834d7e8f0db2940c7d5bc365e575140b5ce4405d2049b63c4bd63",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 172,
+        "i64": 27,
+        "i32": 24
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/E1/exports/4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513/FP32/dense-480": {
+    "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+    "model_id": "E",
+    "seed": 1,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "3e95079b20c47ee075143d62c9adb4172d9d7dfa64df3825ef60de4dc7b69f13",
+    "xml_sha": "dbaafcc2a2bcff73485ac9facacb828e5d40e72d66bd0239f2b14cee8b03ecbf",
+    "bin_sha": "a38786d33a7cd5ea2b17053394f42e48de0a744bb9ab64bad60ea8ffdda5858a",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 173,
+        "i64": 19,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  },
+  "runs/E2/exports/b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc/FP32/one-256": {
+    "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+    "model_id": "E",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 256,
+    "bundle_sha": "392b7d31f937fe0ff61b49bec81ddb11256afb4712fe0ba732ecc0c1e94d1c48",
+    "xml_sha": "032b8ca459cce18b2dddf7d0f33a5e410d730652b788e494158a7222d05b9cb7",
+    "bin_sha": "7cd0cf22493918b8644798e8cc5914644ff2d50064787a83f886cd4567340902",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 172,
+        "i64": 27,
+        "i32": 24
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/E2/exports/b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc/FP32/one-320": {
+    "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+    "model_id": "E",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 320,
+    "bundle_sha": "92d76060e7948dae6152221a206d66027b98a36fdda760faf2c46c1f0e00f3af",
+    "xml_sha": "d5560c8c15b091515ae3c91bb5c4c882c60591de090b4ee6e3deb5a1b9451872",
+    "bin_sha": "0e6276ac2a6599799db36b5401fda16ecbf5eece5b92f4698c42cd11a20ddd7f",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 172,
+        "i64": 27,
+        "i32": 24
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/E2/exports/b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc/FP32/one-480": {
+    "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+    "model_id": "E",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 480,
+    "bundle_sha": "03526f95a7ac8759b1bbbc59605b162873c81a96937c815059e806d58df6c154",
+    "xml_sha": "70550f79252555a2d3d4eb52ee402ed22f196310c2c2afd258a6c66988d7901a",
+    "bin_sha": "b4e8693c52935204084c3ef205b5c5c9ca49ac39c404ebb19d81dc8d13575198",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 172,
+        "i64": 27,
+        "i32": 24
+      }
+    },
+    "comparisons": [
+      "resolution",
+      "heads"
+    ]
+  },
+  "runs/E2/exports/b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc/FP32/one-640": {
+    "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+    "model_id": "E",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "one",
+    "side": 640,
+    "bundle_sha": "9c4268fd7cd42179ec323b2d1cb8c4eb50e1b353ced775b9af708a29e3b38ea1",
+    "xml_sha": "51105a236afe959445a9516c75bf89a0983714ffd0b9f2f7c1e2b2954f516d4c",
+    "bin_sha": "51bfd6309a7b81c90b8eda08e9c7eac2b4e5940cc4652e42707d6116ed445dcd",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "one",
+      "learned_branches": [
+        "one2one_cv2.0",
+        "one2one_cv2.1",
+        "one2one_cv2.2",
+        "one2one_cv3.0",
+        "one2one_cv3.1",
+        "one2one_cv3.2"
+      ],
+      "topk_operations": 2,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 172,
+        "i64": 27,
+        "i32": 24
+      }
+    },
+    "comparisons": [
+      "resolution"
+    ]
+  },
+  "runs/E2/exports/b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc/FP32/dense-480": {
+    "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+    "model_id": "E",
+    "seed": 2,
+    "precision": "FP32",
+    "head": "dense",
+    "side": 480,
+    "bundle_sha": "2e5bba0befa5049d10d21e02a93d10407bbbc2f69261d6f8372b1a579fd4da79",
+    "xml_sha": "41dadc0a23998dd8fffaa2a468bc026e00a36063e956d7aaa4742a87c342a6fa",
+    "bin_sha": "47e026768b43b7d13103a3f9c028c6897e4d3b4d6e9a7e7d11bbbbd3c081d403",
+    "reopened_ir": {
+      "input_shape": [
+        1,
+        3,
+        480,
+        480
+      ],
+      "output_shape": [
+        1,
+        10,
+        4725
+      ],
+      "input_type": "f32",
+      "output_type": "f32",
+      "head": "dense",
+      "learned_branches": [
+        "cv2.0",
+        "cv2.1",
+        "cv2.2",
+        "cv3.0",
+        "cv3.1",
+        "cv3.2"
+      ],
+      "topk_operations": 0,
+      "nms_operations": 0,
+      "constant_types": {
+        "f32": 173,
+        "i64": 19,
+        "i32": 23
+      }
+    },
+    "comparisons": [
+      "heads"
+    ]
+  }
+}

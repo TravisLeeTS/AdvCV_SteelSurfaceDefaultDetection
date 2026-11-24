@@ -1,0 +1,30 @@
+{
+  "model": "A",
+  "side": 480,
+  "cutoff": 0.6858391165733337,
+  "split": "test",
+  "cases": {
+    "miss": {
+      "id": "crazing_10",
+      "gt": 2,
+      "matched": 0,
+      "predictions": 0,
+      "path": "miss.png"
+    },
+    "false_positive": {
+      "id": "crazing_122",
+      "gt": 2,
+      "matched": 0,
+      "predictions": 1,
+      "path": "false_positive.png"
+    },
+    "success": {
+      "id": "inclusion_11",
+      "gt": 1,
+      "matched": 1,
+      "predictions": 1,
+      "path": "success.png"
+    }
+  },
+  "rule": "First image in frozen ID order satisfying each condition"
+}

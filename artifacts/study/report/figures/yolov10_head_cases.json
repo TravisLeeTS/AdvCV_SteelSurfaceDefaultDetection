@@ -1,0 +1,99 @@
+{
+  "selection": "First crazing or rolled-in-scale annotation in saved test order in each direction of disagreement.",
+  "coordinates": "Zero-based half-open edges on the original image. annotation_index is zero-based.",
+  "cutoff": 0.7922124266624451,
+  "diagnostic_score_floor": 0.001,
+  "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+  "sources": {
+    "dense": "test/E0-openvino-dense-480",
+    "one": "test/E0-openvino-one-480"
+  },
+  "artifact_sha": {
+    "dense": "d903ad7d887375a6abb37a457f63554a011a45e22ae5cb6cd14a3e9663f605f3",
+    "one": "c909b275eb23f4d46b133a64d61f35be20830a25f972496fe30b4066a90d8782"
+  },
+  "cases": [
+    {
+      "image_id": "crazing_15",
+      "annotation_index": 1,
+      "defect": "crazing",
+      "gt_box": [
+        26,
+        15,
+        167,
+        65
+      ],
+      "image_sha": "466fc481bd3e6d378058b4aa9a4a4612e27da31a6a1844fe9d863e85ab47a5e8",
+      "winner": "dense",
+      "heads": {
+        "dense": {
+          "status": "matched",
+          "prediction": [
+            36.75365447998047,
+            5.920448303222656,
+            163.27340698242188,
+            83.11416625976562,
+            0.8135668635368347,
+            0.0
+          ],
+          "score": 0.8135668635368347,
+          "iou": 0.6030181646347046
+        },
+        "one": {
+          "status": "below cutoff",
+          "prediction": [
+            40.33599090576172,
+            8.306074142456055,
+            167.50274658203125,
+            84.1232681274414,
+            0.76956707239151,
+            0.0
+          ],
+          "score": 0.76956707239151,
+          "iou": 0.6114175915718079
+        }
+      }
+    },
+    {
+      "image_id": "crazing_201",
+      "annotation_index": 1,
+      "defect": "crazing",
+      "gt_box": [
+        30,
+        34,
+        160,
+        88
+      ],
+      "image_sha": "20ae74412c2c5e1271d975356217412b3a2f8c1c68ced06c5175028fa74566d9",
+      "winner": "one",
+      "heads": {
+        "dense": {
+          "status": "below cutoff",
+          "prediction": [
+            9.260736465454102,
+            24.739219665527344,
+            173.37974548339844,
+            82.7896499633789,
+            0.7883230447769165,
+            0.0
+          ],
+          "score": 0.7883230447769165,
+          "iou": 0.6215530633926392
+        },
+        "one": {
+          "status": "matched",
+          "prediction": [
+            9.694238662719727,
+            25.335224151611328,
+            178.79872131347656,
+            78.31513214111328,
+            0.8401355147361755,
+            0.0
+          ],
+          "score": 0.8401355147361755,
+          "iou": 0.5637962818145752
+        }
+      }
+    }
+  ]
+}

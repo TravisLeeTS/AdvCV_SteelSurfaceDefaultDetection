@@ -1,0 +1,310 @@
+{
+  "selected_cell": "A0-openvino-one-480",
+  "checkpoint_sha256": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+  "cutoff": 0.6858391165733337,
+  "export_bundle": "runs/A0/exports/94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12/FP32/one-480",
+  "bundle_sha256": "c0ccd61e8c75a87616f7ea0cc3e4f69313f8db571416e2d32410ab7b27216ca5",
+  "graph_input": [
+    1,
+    3,
+    480,
+    480
+  ],
+  "graph_output": [
+    1,
+    300,
+    6
+  ],
+  "study_freeze_sha256": "7473543d2af3962819fdbde60f4eff6744ff55a5d45c2f116b68ecd0b9127735",
+  "post_hoc": true,
+  "intervals": "1,000 acquisition-group resamples, percentile 95%, fixed checkpoint and cutoff; seed 5122026",
+  "size_measure": "Shorter side of the original 200-pixel image annotation box. Bins split at 10% and 25% of the image side.",
+  "budget_measure": "Descriptive hypothetical software budgets, elapsed time strictly greater than the listed milliseconds. Repeated synchronous requests on decoded images.",
+  "val": {
+    "images": 360,
+    "groups": 332,
+    "classes": {
+      "crazing": {
+        "gt": 136,
+        "tp": 13,
+        "fp": 7,
+        "fn": 123,
+        "recall": 0.09558823529411764,
+        "ap50": 0.37796557369880485,
+        "recall_group_interval": [
+          0.047619047619047616,
+          0.14558422590068157
+        ]
+      },
+      "inclusion": {
+        "gt": 199,
+        "tp": 85,
+        "fp": 9,
+        "fn": 114,
+        "recall": 0.4271356783919598,
+        "ap50": 0.7431584365907659,
+        "recall_group_interval": [
+          0.3571338837042355,
+          0.49544474147882617
+        ]
+      },
+      "patches": {
+        "gt": 177,
+        "tp": 108,
+        "fp": 6,
+        "fn": 69,
+        "recall": 0.6101694915254238,
+        "ap50": 0.8712436805744719,
+        "recall_group_interval": [
+          0.53125,
+          0.6828225806451612
+        ]
+      },
+      "pitted_surface": {
+        "gt": 85,
+        "tp": 43,
+        "fp": 3,
+        "fn": 42,
+        "recall": 0.5058823529411764,
+        "ap50": 0.7960338252580641,
+        "recall_group_interval": [
+          0.407334581772784,
+          0.6232336956521739
+        ]
+      },
+      "rolled_in_scale": {
+        "gt": 124,
+        "tp": 39,
+        "fp": 9,
+        "fn": 85,
+        "recall": 0.31451612903225806,
+        "ap50": 0.6619353859053564,
+        "recall_group_interval": [
+          0.22807017543859648,
+          0.4
+        ]
+      },
+      "scratches": {
+        "gt": 111,
+        "tp": 67,
+        "fp": 2,
+        "fn": 44,
+        "recall": 0.6036036036036037,
+        "ap50": 0.8666294538813876,
+        "recall_group_interval": [
+          0.5054834054834054,
+          0.6908274291497976
+        ]
+      }
+    },
+    "fp": 36,
+    "fp_per_image": 0.1,
+    "fp_per_image_group_interval": [
+      0.07008086253369272,
+      0.13550365164668596
+    ],
+    "macro_ap50": 0.7194943926514751,
+    "box_short_side": {
+      "crazing": {
+        "<20 px": {
+          "gt": 0,
+          "tp": 0,
+          "recall": null
+        },
+        "20 to <50 px": {
+          "gt": 17,
+          "tp": 0,
+          "recall": 0.0
+        },
+        ">=50 px": {
+          "gt": 119,
+          "tp": 13,
+          "recall": 0.1092436974789916
+        }
+      },
+      "rolled_in_scale": {
+        "<20 px": {
+          "gt": 0,
+          "tp": 0,
+          "recall": null
+        },
+        "20 to <50 px": {
+          "gt": 42,
+          "tp": 9,
+          "recall": 0.21428571428571427
+        },
+        ">=50 px": {
+          "gt": 82,
+          "tp": 30,
+          "recall": 0.36585365853658536
+        }
+      }
+    },
+    "predictions_sha256": "0f698a374c7d7670cf8e147cd240ab04ca7bc768cf7288babaab6887cd1efdcc",
+    "annotations_sha256": "98d75c8b9a5aed0d1d63a1edc8a2073f33c9b999e6272067eac52ae3ddc6ff11"
+  },
+  "test": {
+    "images": 360,
+    "groups": 334,
+    "classes": {
+      "crazing": {
+        "gt": 137,
+        "tp": 20,
+        "fp": 4,
+        "fn": 117,
+        "recall": 0.145985401459854,
+        "ap50": 0.429423647024396,
+        "recall_group_interval": [
+          0.09166507633587785,
+          0.20716428571428572
+        ]
+      },
+      "inclusion": {
+        "gt": 200,
+        "tp": 87,
+        "fp": 9,
+        "fn": 113,
+        "recall": 0.435,
+        "ap50": 0.7413167379640435,
+        "recall_group_interval": [
+          0.3656324127414436,
+          0.5055902777777778
+        ]
+      },
+      "patches": {
+        "gt": 175,
+        "tp": 111,
+        "fp": 10,
+        "fn": 64,
+        "recall": 0.6342857142857142,
+        "ap50": 0.8543424998250482,
+        "recall_group_interval": [
+          0.5488259564891222,
+          0.720006993006993
+        ]
+      },
+      "pitted_surface": {
+        "gt": 86,
+        "tp": 45,
+        "fp": 3,
+        "fn": 41,
+        "recall": 0.5232558139534884,
+        "ap50": 0.805876264508801,
+        "recall_group_interval": [
+          0.41379310344827586,
+          0.6389322916666665
+        ]
+      },
+      "rolled_in_scale": {
+        "gt": 126,
+        "tp": 43,
+        "fp": 8,
+        "fn": 83,
+        "recall": 0.3412698412698413,
+        "ap50": 0.5770510016521275,
+        "recall_group_interval": [
+          0.26665137614678897,
+          0.4198473282442748
+        ]
+      },
+      "scratches": {
+        "gt": 109,
+        "tp": 65,
+        "fp": 3,
+        "fn": 44,
+        "recall": 0.5963302752293578,
+        "ap50": 0.8220227291759867,
+        "recall_group_interval": [
+          0.5,
+          0.7019770408163264
+        ]
+      }
+    },
+    "fp": 37,
+    "fp_per_image": 0.10277777777777777,
+    "fp_per_image_group_interval": [
+      0.07064148754274548,
+      0.13624287837503096
+    ],
+    "macro_ap50": 0.7050054800250671,
+    "box_short_side": {
+      "crazing": {
+        "<20 px": {
+          "gt": 0,
+          "tp": 0,
+          "recall": null
+        },
+        "20 to <50 px": {
+          "gt": 19,
+          "tp": 0,
+          "recall": 0.0
+        },
+        ">=50 px": {
+          "gt": 118,
+          "tp": 20,
+          "recall": 0.1694915254237288
+        }
+      },
+      "rolled_in_scale": {
+        "<20 px": {
+          "gt": 0,
+          "tp": 0,
+          "recall": null
+        },
+        "20 to <50 px": {
+          "gt": 39,
+          "tp": 6,
+          "recall": 0.15384615384615385
+        },
+        ">=50 px": {
+          "gt": 87,
+          "tp": 37,
+          "recall": 0.42528735632183906
+        }
+      }
+    },
+    "predictions_sha256": "090a461499e78b8d6f91a53cd5950b6f975b536109ec6f88c3a1ad5030c1391e",
+    "annotations_sha256": "0e0ce6666994cc4af1684744683c0656e87f1113e213bf12a054c33602835561"
+  },
+  "timing_sessions": [
+    {
+      "session": 0,
+      "n": 1000,
+      "p50_ms": 9.9003,
+      "p95_ms": 15.39025499999999,
+      "p99_ms": 17.126829,
+      "over_budget": {
+        "10": 456,
+        "15": 61,
+        "20": 0
+      },
+      "sha256": "824f45fdbe27bee36a88d354c2fb69ba540268acc05c6ebb4a86e38381233eb3"
+    },
+    {
+      "session": 1,
+      "n": 1000,
+      "p50_ms": 11.800799999999999,
+      "p95_ms": 19.35569,
+      "p99_ms": 27.478826,
+      "over_budget": {
+        "10": 644,
+        "15": 311,
+        "20": 44
+      },
+      "sha256": "156ffe6b847f640358f2d0fd2bca2480ea06a46780cd48f97bb510bcac12a1ff"
+    },
+    {
+      "session": 2,
+      "n": 1000,
+      "p50_ms": 10.075,
+      "p95_ms": 15.590224999999998,
+      "p99_ms": 17.078999,
+      "over_budget": {
+        "10": 532,
+        "15": 61,
+        "20": 1
+      },
+      "sha256": "8ef049bff470280615a06775a5bc73b99185e56bd4b70e1920fe16ac107a0274"
+    }
+  ]
+}

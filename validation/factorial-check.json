@@ -1,0 +1,19 @@
+{
+  "contrasts": 6,
+  "point_rows": 480,
+  "interval_rows": 336,
+  "draws": 1000,
+  "folds": [
+    "val",
+    "test"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "freeze_sha": "7473543d2af3962819fdbde60f4eff6744ff55a5d45c2f116b68ecd0b9127735",
+  "method": "COCO per-image FP32 matches, explicit group repetition and 101-point interpolation; independent operating rematch and raw timing percentiles.",
+  "points_sha": "744e5dce1187918454b6caced802a4fead17ee42cb48589b0913fd79b22be688",
+  "intervals_sha": "913296b493e8b9eed5fa890922479c0a62c3a06ab8035e33e9d86a5cd3ff3520"
+}

@@ -1,0 +1,6 @@
+split,image_id,annotation_index,defect,pytorch_source,openvino_source,cutoff,pytorch_status,pytorch_score,pytorch_iou,openvino_status,openvino_score,openvino_iou
+val,patches_50,0,patches,val/A0-pytorch-one-480,val/A0-openvino-one-480,0.6858391165733337,matched,0.6858391165733337,0.9148038029670715,below cutoff,0.6858373880386353,0.9148038029670715
+val,pitted_surface_205,1,patches,val/A2-pytorch-one-480,val/A2-openvino-one-480,0.7360888123512268,matched,0.7360888123512268,0.8567395210266113,below cutoff,0.7360886335372925,0.8567402362823486
+val,inclusion_93,1,inclusion,val/E0-pytorch-one-480,val/E0-openvino-one-480,0.7922124266624451,matched,0.7922124266624451,0.7906734347343445,below cutoff,0.7922114729881287,0.7906729578971863
+val,patches_227,1,patches,val/E1-pytorch-one-480,val/E1-openvino-one-480,0.6513373255729675,matched,0.6513373255729675,0.8856510519981384,below cutoff,0.651336669921875,0.8856510519981384
+val,patches_272,0,patches,val/E2-pytorch-one-480,val/E2-openvino-one-480,0.6665282249450684,matched,0.6665282249450684,0.9594658613204956,below cutoff,0.666527271270752,0.9594661593437195

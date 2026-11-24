@@ -1,0 +1,33 @@
+{
+  "epoch": 1,
+  "max_weight_changes": {
+    "model.12.reduce.weight": 0.008137956261634827,
+    "model.12.reduce.bias": 0.006147947162389755,
+    "model.12.project.weight": 0.005558631848543882,
+    "model.12.project.bias": 0.005227497313171625,
+    "model.15.reduce.weight": 0.006389879155904055,
+    "model.15.reduce.bias": 0.0028276853263378143,
+    "model.15.project.weight": 0.003847049782052636,
+    "model.15.project.bias": 0.002090401714667678,
+    "model.23.cv2.0.2.weight": 0.007311537861824036,
+    "model.23.one2one_cv2.0.2.weight": 0.00562212523072958,
+    "model.23.cv3.0.2.weight": 0.013591408729553223,
+    "model.23.one2one_cv3.0.2.weight": 0.013816826045513153
+  },
+  "grad_norm": {
+    "model.12.project.weight": 1.4312561750411987,
+    "model.12.project.bias": 3.1239757537841797,
+    "model.15.project.weight": 0.29172030091285706,
+    "model.15.project.bias": 0.7202269434928894,
+    "model.23.cv2.0.2.weight": 4.513601779937744,
+    "model.23.one2one_cv2.0.2.weight": 0.3063405752182007,
+    "model.23.cv3.0.2.weight": 1.4913241863250732,
+    "model.23.one2one_cv3.0.2.weight": 1.7495770454406738,
+    "model.12.reduce.weight": 0.0005668075755238533,
+    "model.12.reduce.bias": 0.00010406140791019425,
+    "model.15.reduce.weight": 5.656209395965561e-05,
+    "model.15.reduce.bias": 1.0626327821228188e-05
+  },
+  "criterion": "E2ELoss",
+  "validation_head": "one2one"
+}

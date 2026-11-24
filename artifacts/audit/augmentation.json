@@ -1,0 +1,63 @@
+{
+  "ordered_classes": [
+    "crazing",
+    "inclusion",
+    "patches",
+    "pitted_surface",
+    "rolled_in_scale",
+    "scratches"
+  ],
+  "summary": [
+    {
+      "seed": 0,
+      "images": 1080,
+      "order_and_transform_sha": "8573139258c2a047921a8ee5b7d74d87d50c265587445d06b20f942237f886fc",
+      "scale_min": 0.8002494565398046,
+      "scale_mean": 1.0006822211617645,
+      "scale_max": 1.1992509051485194,
+      "flip_fraction": 0.487962962962963,
+      "rejected_by_class": [
+        0,
+        1,
+        2,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "seed": 1,
+      "images": 1080,
+      "order_and_transform_sha": "2bba38083165c8da39b5e9a2220f3ee6fec28c2f2f5d18fd45b3672277a62cef",
+      "scale_min": 0.800017884887399,
+      "scale_mean": 1.0019517062985108,
+      "scale_max": 1.1987427515551858,
+      "flip_fraction": 0.47685185185185186,
+      "rejected_by_class": [
+        0,
+        2,
+        3,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "seed": 2,
+      "images": 1080,
+      "order_and_transform_sha": "961ebb6c0f597b39e19b685f2b6a51a162e2412a5addbbac6fd80fa8341f9757",
+      "scale_min": 0.801104910229481,
+      "scale_mean": 1.0000395020796191,
+      "scale_max": 1.1995552766869906,
+      "flip_fraction": 0.5,
+      "rejected_by_class": [
+        0,
+        3,
+        4,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

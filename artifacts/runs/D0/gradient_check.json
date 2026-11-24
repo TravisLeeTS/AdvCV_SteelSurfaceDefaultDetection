@@ -1,0 +1,41 @@
+{
+  "epoch": 1,
+  "max_weight_changes": {
+    "model.6.m.0.m.0.cv2.conv.kernel.weight": 0.004217380657792091,
+    "model.6.m.0.m.1.cv2.conv.kernel.weight": 0.004589870572090149,
+    "model.8.m.0.m.0.cv2.conv.kernel.weight": 0.005458221770823002,
+    "model.8.m.0.m.1.cv2.conv.kernel.weight": 0.006683324929326773,
+    "model.12.reduce.weight": 0.01044243574142456,
+    "model.12.reduce.bias": 0.007836300879716873,
+    "model.12.project.weight": 0.007410089951008558,
+    "model.12.project.bias": 0.005805312190204859,
+    "model.15.reduce.weight": 0.006389591842889786,
+    "model.15.reduce.bias": 0.003381062299013138,
+    "model.15.project.weight": 0.0028021768666803837,
+    "model.15.project.bias": 0.002309506991878152,
+    "model.23.cv2.0.2.weight": 0.005046050064265728,
+    "model.23.one2one_cv2.0.2.weight": 0.006710857152938843,
+    "model.23.cv3.0.2.weight": 0.013576090335845947,
+    "model.23.one2one_cv3.0.2.weight": 0.013947170227766037
+  },
+  "grad_norm": {
+    "model.6.m.0.m.0.cv2.conv.kernel.weight": 69.07478332519531,
+    "model.6.m.0.m.1.cv2.conv.kernel.weight": 69.84425354003906,
+    "model.8.m.0.m.0.cv2.conv.kernel.weight": 80.43602752685547,
+    "model.8.m.0.m.1.cv2.conv.kernel.weight": 93.32902526855469,
+    "model.12.project.weight": 3.478154420852661,
+    "model.12.project.bias": 8.148301124572754,
+    "model.15.project.weight": 0.379645437002182,
+    "model.15.project.bias": 0.206642284989357,
+    "model.23.cv2.0.2.weight": 6.007501125335693,
+    "model.23.one2one_cv2.0.2.weight": 0.7993049025535583,
+    "model.23.cv3.0.2.weight": 2.486283540725708,
+    "model.23.one2one_cv3.0.2.weight": 2.506058692932129,
+    "model.12.reduce.weight": 0.001551174558699131,
+    "model.12.reduce.bias": 0.00028361345175653696,
+    "model.15.reduce.weight": 0.0002309036790393293,
+    "model.15.reduce.bias": 4.39779760199599e-05
+  },
+  "criterion": "E2ELoss",
+  "validation_head": "one2one"
+}

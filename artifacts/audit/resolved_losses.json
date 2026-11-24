@@ -1,0 +1,1669 @@
+{
+  "A": {
+    "head_type": "Detect",
+    "criterion": "E2ELoss",
+    "loss_gains": {
+      "box": 7.5,
+      "cls": 0.5,
+      "dfl": 1.5
+    },
+    "native_one2one_selection": true,
+    "network_yaml": {
+      "nc": 6,
+      "end2end": true,
+      "reg_max": 1,
+      "scales": {
+        "n": [
+          0.5,
+          0.25,
+          1024
+        ],
+        "s": [
+          0.5,
+          0.5,
+          1024
+        ],
+        "m": [
+          0.5,
+          1.0,
+          512
+        ],
+        "l": [
+          1.0,
+          1.0,
+          512
+        ],
+        "x": [
+          1.0,
+          1.5,
+          512
+        ]
+      },
+      "backbone": [
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            64,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            128,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            256,
+            false,
+            0.25
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            256,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            false,
+            0.25
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            512,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            1024,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            1024,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "SPPF",
+          [
+            1024,
+            5,
+            3,
+            true
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C2PSA",
+          [
+            1024
+          ]
+        ]
+      ],
+      "head": [
+        [
+          -1,
+          1,
+          "nn.Upsample",
+          [
+            "None",
+            2,
+            "nearest"
+          ]
+        ],
+        [
+          [
+            -1,
+            6
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "nn.Upsample",
+          [
+            "None",
+            2,
+            "nearest"
+          ]
+        ],
+        [
+          [
+            -1,
+            4
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            256,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            256,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            -1,
+            13
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            512,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            -1,
+            10
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          1,
+          "C3k2",
+          [
+            1024,
+            true,
+            0.5,
+            true
+          ]
+        ],
+        [
+          [
+            16,
+            19,
+            22
+          ],
+          1,
+          "Detect",
+          [
+            "nc"
+          ]
+        ]
+      ],
+      "scale": "n",
+      "yaml_file": "yolo26n.yaml",
+      "channels": 3
+    },
+    "one2many": {
+      "reg_max": 1,
+      "assigner": "TaskAlignedAssigner",
+      "loss_parts": [
+        "box_loss",
+        "cls_loss",
+        "l1_loss"
+      ],
+      "topk": 10,
+      "topk2": 10,
+      "alpha": 0.5,
+      "beta": 6.0
+    },
+    "one2one": {
+      "reg_max": 1,
+      "assigner": "TaskAlignedAssigner",
+      "loss_parts": [
+        "box_loss",
+        "cls_loss",
+        "l1_loss"
+      ],
+      "topk": 7,
+      "topk2": 1,
+      "alpha": 0.5,
+      "beta": 6.0
+    },
+    "assignment_weight_schedule": {
+      "dense_initial": 0.8,
+      "dense_final": 0.1,
+      "one_to_one": "one minus dense",
+      "updates": "after each epoch"
+    }
+  },
+  "B": {
+    "head_type": "Detect",
+    "criterion": "E2ELoss",
+    "loss_gains": {
+      "box": 7.5,
+      "cls": 0.5,
+      "dfl": 1.5
+    },
+    "native_one2one_selection": true,
+    "network_yaml": {
+      "nc": 6,
+      "end2end": true,
+      "reg_max": 1,
+      "scales": {
+        "n": [
+          0.5,
+          0.25,
+          1024
+        ],
+        "s": [
+          0.5,
+          0.5,
+          1024
+        ],
+        "m": [
+          0.5,
+          1.0,
+          512
+        ],
+        "l": [
+          1.0,
+          1.0,
+          512
+        ],
+        "x": [
+          1.0,
+          1.5,
+          512
+        ]
+      },
+      "backbone": [
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            64,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            128,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            256,
+            false,
+            0.25
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            256,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            false,
+            0.25
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            512,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            1024,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            1024,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "SPPF",
+          [
+            1024,
+            5,
+            3,
+            true
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C2PSA",
+          [
+            1024
+          ]
+        ]
+      ],
+      "head": [
+        [
+          -1,
+          1,
+          "nn.Upsample",
+          [
+            "None",
+            2,
+            "nearest"
+          ]
+        ],
+        [
+          [
+            -1,
+            6
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "nn.Upsample",
+          [
+            "None",
+            2,
+            "nearest"
+          ]
+        ],
+        [
+          [
+            -1,
+            4
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            256,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            256,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            -1,
+            13
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            512,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            -1,
+            10
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          1,
+          "C3k2",
+          [
+            1024,
+            true,
+            0.5,
+            true
+          ]
+        ],
+        [
+          [
+            16,
+            19,
+            22
+          ],
+          1,
+          "Detect",
+          [
+            "nc"
+          ]
+        ]
+      ],
+      "scale": "n",
+      "yaml_file": "yolo26n.yaml",
+      "channels": 3
+    },
+    "one2many": {
+      "reg_max": 1,
+      "assigner": "TaskAlignedAssigner",
+      "loss_parts": [
+        "box_loss",
+        "cls_loss",
+        "l1_loss"
+      ],
+      "topk": 10,
+      "topk2": 10,
+      "alpha": 0.5,
+      "beta": 6.0
+    },
+    "one2one": {
+      "reg_max": 1,
+      "assigner": "TaskAlignedAssigner",
+      "loss_parts": [
+        "box_loss",
+        "cls_loss",
+        "l1_loss"
+      ],
+      "topk": 7,
+      "topk2": 1,
+      "alpha": 0.5,
+      "beta": 6.0
+    },
+    "assignment_weight_schedule": {
+      "dense_initial": 0.8,
+      "dense_final": 0.1,
+      "one_to_one": "one minus dense",
+      "updates": "after each epoch"
+    }
+  },
+  "E": {
+    "head_type": "v10Detect",
+    "criterion": "E2EDetectLoss",
+    "loss_gains": {
+      "box": 7.5,
+      "cls": 0.5,
+      "dfl": 1.5
+    },
+    "native_one2one_selection": true,
+    "network_yaml": {
+      "nc": 6,
+      "end2end": true,
+      "scales": {
+        "n": [
+          0.33,
+          0.25,
+          1024
+        ]
+      },
+      "backbone": [
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            64,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            128,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          3,
+          "C2f",
+          [
+            128,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            256,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          6,
+          "C2f",
+          [
+            256,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "SCDown",
+          [
+            512,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          6,
+          "C2f",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "SCDown",
+          [
+            1024,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          3,
+          "C2f",
+          [
+            1024,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "SPPF",
+          [
+            1024,
+            5
+          ]
+        ],
+        [
+          -1,
+          1,
+          "PSA",
+          [
+            1024
+          ]
+        ]
+      ],
+      "head": [
+        [
+          -1,
+          1,
+          "nn.Upsample",
+          [
+            "None",
+            2,
+            "nearest"
+          ]
+        ],
+        [
+          [
+            -1,
+            6
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          3,
+          "C2f",
+          [
+            512
+          ]
+        ],
+        [
+          -1,
+          1,
+          "nn.Upsample",
+          [
+            "None",
+            2,
+            "nearest"
+          ]
+        ],
+        [
+          [
+            -1,
+            4
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          3,
+          "C2f",
+          [
+            256
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            256,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            -1,
+            13
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          3,
+          "C2f",
+          [
+            512
+          ]
+        ],
+        [
+          -1,
+          1,
+          "SCDown",
+          [
+            512,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            -1,
+            10
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          3,
+          "C2fCIB",
+          [
+            1024,
+            true,
+            true
+          ]
+        ],
+        [
+          [
+            16,
+            19,
+            22
+          ],
+          1,
+          "v10Detect",
+          [
+            "nc"
+          ]
+        ]
+      ],
+      "scale": "n",
+      "yaml_file": "yolov10n.yaml",
+      "ch": 3,
+      "channels": 3
+    },
+    "one2many": {
+      "reg_max": 16,
+      "assigner": "TaskAlignedAssigner",
+      "loss_parts": [
+        "box_loss",
+        "cls_loss",
+        "dfl_loss"
+      ],
+      "topk": 10,
+      "topk2": 10,
+      "alpha": 0.5,
+      "beta": 6.0
+    },
+    "one2one": {
+      "reg_max": 16,
+      "assigner": "TaskAlignedAssigner",
+      "loss_parts": [
+        "box_loss",
+        "cls_loss",
+        "dfl_loss"
+      ],
+      "topk": 1,
+      "topk2": 1,
+      "alpha": 0.5,
+      "beta": 6.0
+    }
+  },
+  "C": {
+    "head_type": "Detect",
+    "criterion": "E2ELoss",
+    "loss_gains": {
+      "box": 7.5,
+      "cls": 0.5,
+      "dfl": 1.5
+    },
+    "native_one2one_selection": true,
+    "network_yaml": {
+      "nc": 6,
+      "end2end": true,
+      "reg_max": 1,
+      "scales": {
+        "n": [
+          0.5,
+          0.25,
+          1024
+        ],
+        "s": [
+          0.5,
+          0.5,
+          1024
+        ],
+        "m": [
+          0.5,
+          1.0,
+          512
+        ],
+        "l": [
+          1.0,
+          1.0,
+          512
+        ],
+        "x": [
+          1.0,
+          1.5,
+          512
+        ]
+      },
+      "backbone": [
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            64,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            128,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            256,
+            false,
+            0.25
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            256,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            false,
+            0.25
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            512,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            1024,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            1024,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "SPPF",
+          [
+            1024,
+            5,
+            3,
+            true
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C2PSA",
+          [
+            1024
+          ]
+        ]
+      ],
+      "head": [
+        [
+          -1,
+          1,
+          "nn.Upsample",
+          [
+            "None",
+            2,
+            "nearest"
+          ]
+        ],
+        [
+          [
+            -1,
+            6
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "nn.Upsample",
+          [
+            "None",
+            2,
+            "nearest"
+          ]
+        ],
+        [
+          [
+            -1,
+            4
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            256,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            256,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            -1,
+            13
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            512,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            -1,
+            10
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          1,
+          "C3k2",
+          [
+            1024,
+            true,
+            0.5,
+            true
+          ]
+        ],
+        [
+          [
+            16,
+            19,
+            22
+          ],
+          1,
+          "Detect",
+          [
+            "nc"
+          ]
+        ]
+      ],
+      "scale": "n",
+      "yaml_file": "yolo26n.yaml",
+      "channels": 3
+    },
+    "fusion_sites": [
+      {
+        "path": "model.12",
+        "inputs": [
+          -1,
+          6
+        ],
+        "descriptor_channels": 384,
+        "hidden_channels": 24,
+        "parameters": 9290
+      },
+      {
+        "path": "model.15",
+        "inputs": [
+          -1,
+          4
+        ],
+        "descriptor_channels": 256,
+        "hidden_channels": 16,
+        "parameters": 4146
+      }
+    ],
+    "partial_convolutions": [],
+    "assignment_weight_schedule": {
+      "dense_initial": 0.8,
+      "dense_final": 0.1,
+      "one_to_one": "one minus dense",
+      "updates": "after each epoch"
+    },
+    "one2many": {
+      "reg_max": 1,
+      "assigner": "TaskAlignedAssigner",
+      "topk": 10,
+      "topk2": 10,
+      "alpha": 0.5,
+      "beta": 6.0
+    },
+    "one2one": {
+      "reg_max": 1,
+      "assigner": "TaskAlignedAssigner",
+      "topk": 7,
+      "topk2": 1,
+      "alpha": 0.5,
+      "beta": 6.0
+    }
+  },
+  "D": {
+    "head_type": "Detect",
+    "criterion": "E2ELoss",
+    "loss_gains": {
+      "box": 7.5,
+      "cls": 0.5,
+      "dfl": 1.5
+    },
+    "native_one2one_selection": true,
+    "network_yaml": {
+      "nc": 6,
+      "end2end": true,
+      "reg_max": 1,
+      "scales": {
+        "n": [
+          0.5,
+          0.25,
+          1024
+        ],
+        "s": [
+          0.5,
+          0.5,
+          1024
+        ],
+        "m": [
+          0.5,
+          1.0,
+          512
+        ],
+        "l": [
+          1.0,
+          1.0,
+          512
+        ],
+        "x": [
+          1.0,
+          1.5,
+          512
+        ]
+      },
+      "backbone": [
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            64,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            128,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            256,
+            false,
+            0.25
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            256,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            false,
+            0.25
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            512,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            1024,
+            3,
+            2
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            1024,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "SPPF",
+          [
+            1024,
+            5,
+            3,
+            true
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C2PSA",
+          [
+            1024
+          ]
+        ]
+      ],
+      "head": [
+        [
+          -1,
+          1,
+          "nn.Upsample",
+          [
+            "None",
+            2,
+            "nearest"
+          ]
+        ],
+        [
+          [
+            -1,
+            6
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "nn.Upsample",
+          [
+            "None",
+            2,
+            "nearest"
+          ]
+        ],
+        [
+          [
+            -1,
+            4
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            256,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            256,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            -1,
+            13
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          2,
+          "C3k2",
+          [
+            512,
+            true
+          ]
+        ],
+        [
+          -1,
+          1,
+          "Conv",
+          [
+            512,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            -1,
+            10
+          ],
+          1,
+          "Concat",
+          [
+            1
+          ]
+        ],
+        [
+          -1,
+          1,
+          "C3k2",
+          [
+            1024,
+            true,
+            0.5,
+            true
+          ]
+        ],
+        [
+          [
+            16,
+            19,
+            22
+          ],
+          1,
+          "Detect",
+          [
+            "nc"
+          ]
+        ]
+      ],
+      "scale": "n",
+      "yaml_file": "yolo26n.yaml",
+      "channels": 3
+    },
+    "fusion_sites": [
+      {
+        "path": "model.12",
+        "inputs": [
+          -1,
+          6
+        ],
+        "descriptor_channels": 384,
+        "hidden_channels": 24,
+        "parameters": 9290
+      },
+      {
+        "path": "model.15",
+        "inputs": [
+          -1,
+          4
+        ],
+        "descriptor_channels": 256,
+        "hidden_channels": 16,
+        "parameters": 4146
+      }
+    ],
+    "partial_convolutions": [
+      {
+        "path": "model.6.m.0.m.0.cv2.conv",
+        "dense_shape": [
+          32,
+          32,
+          3,
+          3
+        ],
+        "new_shape": [
+          8,
+          8,
+          3,
+          3
+        ],
+        "source_slice": "[:8, :8, :, :]"
+      },
+      {
+        "path": "model.6.m.0.m.1.cv2.conv",
+        "dense_shape": [
+          32,
+          32,
+          3,
+          3
+        ],
+        "new_shape": [
+          8,
+          8,
+          3,
+          3
+        ],
+        "source_slice": "[:8, :8, :, :]"
+      },
+      {
+        "path": "model.8.m.0.m.0.cv2.conv",
+        "dense_shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "new_shape": [
+          16,
+          16,
+          3,
+          3
+        ],
+        "source_slice": "[:16, :16, :, :]"
+      },
+      {
+        "path": "model.8.m.0.m.1.cv2.conv",
+        "dense_shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "new_shape": [
+          16,
+          16,
+          3,
+          3
+        ],
+        "source_slice": "[:16, :16, :, :]"
+      }
+    ],
+    "assignment_weight_schedule": {
+      "dense_initial": 0.8,
+      "dense_final": 0.1,
+      "one_to_one": "one minus dense",
+      "updates": "after each epoch"
+    },
+    "one2many": {
+      "reg_max": 1,
+      "assigner": "TaskAlignedAssigner",
+      "topk": 10,
+      "topk2": 10,
+      "alpha": 0.5,
+      "beta": 6.0
+    },
+    "one2one": {
+      "reg_max": 1,
+      "assigner": "TaskAlignedAssigner",
+      "topk": 7,
+      "topk2": 1,
+      "alpha": 0.5,
+      "beta": 6.0
+    }
+  }
+}
