@@ -287,7 +287,7 @@
     "scripts/check_fusion.py": "9251ddfd74fac1f9660b8f224505315d5bf4159d03888eeb24d338abe209ab52",
     "scripts/matched_objects.py": "699768cd6d5b7f0941f2a81ecc8a451d000a994cb10cb879cfff59029284bad2",
     "scripts/survey_evidence.py": "259abdab0cb2fc0b3a583a489800a16649ec312a92fcf116c85b55697a87e73a",
-    "scripts/verify_demo.py": "709573bbb52927ff3db87ba20ba801eeb9703315e9e21d72b28416928fe822d3",
+    "scripts/verify_demo.py": "0f92b6d59393654e4f108169c27c05d694814b94e9b2d54b742cdc46ca3614af",
     "scripts/verify_factorial.py": "2922557d091940e14cd246773d434ec8429003616c3b8b6b9beed795dc6906dc",
     "scripts/verify_research_metrics.py": "2e4ad03116ed6e1cd8af79486bf389808a6758dab830136f2c948a01f4488819",
     "steel/__init__.py": "a8b156ef40884e70ebc5ec3ee73e631eacfb493d25a470033de154bbaff753e9",

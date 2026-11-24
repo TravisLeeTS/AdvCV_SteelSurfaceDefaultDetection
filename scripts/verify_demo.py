@@ -15,11 +15,12 @@ from steel.bench import read_predictions
 from steel.common import put, read, sha
 
 
-def check(data, out):
+def check(data, out, dest=Path(".review/demo")):
     study=out/"study"
-    dest=study/"report"
+    dest=Path(dest)
+    dest.mkdir(parents=True,exist_ok=True)
     frozen=read(study/"freeze.json")
-    cases=read(dest/"figures/demo_cases.json")
+    cases=read(study/"report/figures/demo_cases.json")
     sample=cases["cases"]["success"]["id"]
     models=frozen["models"]
     selected=frozen["selection"]["model"]
@@ -81,5 +82,6 @@ if __name__=="__main__":
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data",type=Path,default=Path("data"))
     parser.add_argument("--artifacts",type=Path,default=Path("artifacts"))
+    parser.add_argument("--output-dir",type=Path,default=Path(".review/demo"))
     args=parser.parse_args()
-    check(args.data,args.artifacts)
+    check(args.data,args.artifacts,args.output_dir)

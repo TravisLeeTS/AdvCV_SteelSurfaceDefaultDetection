@@ -170,6 +170,7 @@ def replay(args, index):
         cells.extend((model, seed, "pytorch", "one", 480) for model in "BCD" for seed in freeze["seeds"])
     else:
         cells = [(args.run[0], int(args.run[1]), args.runtime, args.head, args.side)]
+    comparisons = []
     pin_cpu(4)
     with torch.inference_mode():
         for model, seed, runtime, head, side in cells:
@@ -186,9 +187,17 @@ def replay(args, index):
             match = paired_boxes(np.asarray(boxes), expected)
             if match["missed"] or match["extra"]:
                 raise ValueError(f"Box mismatch for {row['id']} / {cell} against {source.parent.name}: {match}")
+            comparisons.append(dict(configuration=cell, checkpoint_sha=freeze["checkpoints"][run],
+                                    reference=source.parent.name, boxes=np.asarray(boxes).tolist(), parity=match))
             if not args.all:
                 print(f"{cell} / {row['id']}: {len(boxes)} operating boxes; reference {source.parent.name}.")
                 print(json.dumps(np.asarray(boxes).tolist()))
+    if args.all:
+        SCRATCH.mkdir(exist_ok=True)
+        receipt = SCRATCH / f"replay-{args.split}-{row['id']}.json"
+        summary = dict(split=args.split, image=row["id"], image_sha=row["image_sha"], comparisons=comparisons)
+        receipt.write_text(json.dumps(summary, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+        print(f"Per-configuration detections and comparison results: {receipt}")
     print(f"Matched the archived operating boxes for {len(cells)} fresh inference configuration(s) on {row['id']}.")
 
 

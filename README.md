@@ -42,7 +42,7 @@ Each ID has training seeds 0, 1 and 2. Each checkpoint has five complete static 
 & $py review.py replay --all
 ```
 
-The last command compares fresh detections on the same image across all 75 graphs and every native checkpoint. It includes the published A/E native head controls. Where the study measured only an OpenVINO cell, the native run is checked against that run's paired OpenVINO detections. The comparison uses the study's class, geometry and score tolerances. The five bundled image IDs are `inclusion_11`, `crazing_10`, `crazing_122`, `crazing_15` and `crazing_201`.
+The last command compares fresh detections on the same image across all 75 graphs and every native checkpoint. It includes the published A/E native head controls. Where the study measured only an OpenVINO cell, the native run is checked against that run's paired OpenVINO detections. The comparison uses the study's class, geometry and score tolerances. It writes the actual boxes and comparison results to `.review/replay-test-inclusion_11.json`. The five bundled image IDs are `inclusion_11`, `crazing_10`, `crazing_122`, `crazing_15` and `crazing_201`.
 
 ## Open the interactive demo or use all images
 
@@ -59,7 +59,7 @@ An existing publisher download also works offline. Substitute its path for the e
 & $py review.py images --zip "D:\datasets\NEU-DET.zip"
 ```
 
-To save a two-panel prediction without a window, append `--output .review/demo.png` to the viewer command. Use `--seeds 1` or `--seeds 2` to browse other checkpoints.
+To save a two-panel prediction without a window, append `--output .review/demo.png` to the viewer command. Use `--seeds 1` or `--seeds 2` to browse other checkpoints. With the full images installed, `& $py -m scripts.verify_demo` exercises the actual viewer controls and checks each displayed detection. The screenshot and check receipt are saved in `.review/demo/`.
 
 ## Find the evidence
 
