@@ -28,7 +28,7 @@
     "coco_cells": 12
   },
   "paired_audit_sha": "38c67949f0e693642689a84d4c3255ac93c4545e893fe872fa87ec128e5875b3",
-  "confirmation_sha": "a064ef3b4cd23057bf6b03ae887b9f485d5b2c63fb7380c549ae24b29a4b8ec2",
+  "confirmation_sha": "19d8061f38c14420dffbbbae735edbce6e03925bea038e659e0b93c495bf3d11",
   "files": {
     "artifacts/cpu-extension/runs/yolov8n-0/best.pt": "e46a2fb7424a3d3a80245ffd93863db89093dd1f9c4c10dc382a38ebf828eb4b",
     "artifacts/cpu-extension/runs/yolov8n-0/complete.json": "163293864905e1a59442bd44aac286e24290d6011e75ddbc468bf5063ba2cac7",
@@ -125,7 +125,7 @@
     "cpu_study/head_figure.py": "59de25711cc5044c4f2795c72e63b931d1740cab214b6365341bc99beb7b8a43",
     "cpu_study/models.py": "562a452aab01433e484cfed82fd7cab134b949e7714159625838784fb8d4701e",
     "cpu_study/protocol.json": "c273f339436d5ff4c68637ac704f6bf86cc2a519622e4b03dd87b082a36fefae",
-    "cpu_study/README.md": "8049c348967a9edd39cc2280f38bfb1cafbfe13bd9474474b4617f2bb4deb9c9",
+    "cpu_study/README.md": "de2743b54c8b36633b0e80c16d84f13114112154b7712002d3ea998db49fdf10",
     "cpu_study/readout.py": "18881bc5e9d33b90a66a28624b0ed26c94e2281f041427156ab398cf72bec754",
     "cpu_study/requirements.txt": "eaa842393826e1a82c239979ad71939276b04f7fd20a693d5bf67bb7a4b7a30f",
     "cpu_study/review.py": "b86dfa1792cd3ad86ca46a3de9f45803a4716ddc6b52e30311fd6879fe10f658",
@@ -141,11 +141,12 @@
     "cpu_study/feedback_audit.py": "ec1e6bc7d9430519b1f1a05c7a8bd947106763270c62c8085b09cc746d22cf32",
     "cpu_study/feedback_timing.py": "0fc59cdc728281ea9d83f9ca6cfe8c63b2f9f5642e2d4e23ae422bf71e4fef3b",
     "cpu_study/dense_sizes.py": "c57639a94f57a7cc03c6f32b7b87d8ae87bf6c2b842b2e30dd051531cb7380d7",
-    "cpu_study/confirmation.py": "ccf364cdf69f5ba4559347d98c4718b9ebc83942019d30171e68b6b14d7e9b4a",
-    "cpu_study/confirmation.json": "a064ef3b4cd23057bf6b03ae887b9f485d5b2c63fb7380c549ae24b29a4b8ec2",
+    "cpu_study/confirmation.py": "3dddc932c9a27cb27fc1d35be65b3d3ecfab9f69cc35e84da9c483e8c2ec598f",
+    "cpu_study/confirmation_design.py": "57ec694145fd6fa69d2717c65b5515e35bc25e0a51c795f0077c0ab4615ef026",
+    "cpu_study/confirmation.json": "19d8061f38c14420dffbbbae735edbce6e03925bea038e659e0b93c495bf3d11",
     "tests/test_cpu_extension.py": "b62268cd16414a45bce805f838e3acf026ec92804ed50bf050f7f66df5ee45a7",
     "tests/test_operating_policy.py": "92412b5aa2a99f2523c837fe41c36719c5070504a8637083b9547a3ed6377be9",
-    "tests/test_confirmation.py": "1a26000ddfecc75073d6d754127ba6e1498e2182954a3530d5a66c659f5b1110",
+    "tests/test_confirmation.py": "5a57d682d66e86add9acb67269bc309ba096dadb11ce4ff1065515776d382fde",
     "licenses/YOLOv5-v7-GPL-3.0.txt": "7fa7e56c0db71105f4b59a6a0ac40225eb059876f85cd380383f7d7a066e68be"
   },
   "archives": {

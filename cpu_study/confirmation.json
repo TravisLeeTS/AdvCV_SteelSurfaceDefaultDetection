@@ -1,25 +1,79 @@
 {
-  "purpose": "Prospective supervised comparison on independent hot-rolled steel. All numerical acceptance limits are proposed homework assumptions. No plant requirements or independent outcomes were supplied.",
-  "checkpoint": "B0",
-  "checkpoint_sha256": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
-  "graph": "B0-openvino-dense-480",
-  "graph_sha256": "5d84b9d078c1a376d8363cc752b53d1a78d7ce84fd46eccbded772a3a1d460b4",
+  "version": 2,
+  "purpose": "Preregistered paired shadow comparison on independent hot-rolled steel. Numerical limits and operating conditions are proposed coursework assumptions. No independent results or plant requirements are available.",
+  "models": {
+    "B0": {
+      "role": "candidate",
+      "checkpoint": "B0",
+      "head": "dense",
+      "side": 480,
+      "policy": "global",
+      "graph": "B0-openvino-dense-480",
+      "checkpoint_sha256": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+      "graph_sha256": "5d84b9d078c1a376d8363cc752b53d1a78d7ce84fd46eccbded772a3a1d460b4",
+      "all_class_cutoff": 0.723431408405304
+    },
+    "A0": {
+      "role": "stock comparator",
+      "checkpoint": "A0",
+      "head": "one",
+      "side": 480,
+      "policy": "global",
+      "graph": "A0-openvino-one-480",
+      "checkpoint_sha256": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+      "graph_sha256": "c0ccd61e8c75a87616f7ea0cc3e4f69313f8db571416e2d32410ab7b27216ca5",
+      "all_class_cutoff": 0.6858373880386353
+    }
+  },
   "policy_freeze_sha256": "c295823cfa47d08b34da39f876f3e522edd6c6437760ffa0431fbce71c7aeffd",
   "seed_rule": "Use the original deployment seed 0. The other paired seeds characterize robustness.",
+  "class_order": [
+    "crazing",
+    "inclusion",
+    "patches",
+    "pitted_surface",
+    "rolled_in_scale",
+    "scratches"
+  ],
   "runtime": "OpenVINO CPU FP32, batch one, four performance cores, four threads, one stream",
-  "side": 480,
-  "head": "dense",
-  "policy": "global",
-  "all_class_cutoff": 0.723431408405304,
-  "class_order": ["crazing", "inclusion", "patches", "pitted_surface", "rolled_in_scale", "scratches"],
   "preprocessing": "Decode grayscale, aspect-preserving letterbox to 480, repeat to three channels, divide by 255.",
-  "postprocessing": "Keep the top-scoring class per anchor at score >= cutoff. Class-wise NMS, IoU 0.70, at most 30000 candidates before NMS and 300 final boxes. A frame alarms on any final box.",
-  "critical_object_recall_floors": {"crazing": 0.90, "rolled_in_scale": 0.90},
-  "object_endpoint": "Greedy same-class match at IoU >= 0.50. Each critical class must recover at least nine in ten annotated objects.",
-  "maximum_clean_strip_rejection_fraction": 0.01,
-  "clean_strip_endpoint": "One predetermined window per independently adjudicated clean strip. Reject the strip if any of its first 100 consecutive, nonoverlapping frame exposures alarms. Count strips equally.",
-  "clean_window_frames": 100,
-  "maximum_line_p95_ms": 20,
-  "line_endpoint": "Elapsed time from camera capture trigger to acknowledged controller decision on a common clock, including capture, queue, transfer and inference. A 20 ms period is an illustrative 50-frame/s deadline.",
-  "analysis": "Keep the checkpoint, score cutoff and all three acceptance criteria fixed before acquisition. Retain the true coil or acquisition group, strip identity, frame order and inspector annotations. Report numerators and denominators; compare each point estimate with its stated limit. The laptop timer covers only decoded image to final boxes. Keep all decisions under human supervision."
+  "postprocessing": {
+    "B0": "Keep the top-scoring class per anchor at score >= cutoff. Class-wise NMS, IoU 0.70, at most 30000 candidates before NMS and 300 final boxes. A frame alarms on any final box.",
+    "A0": "Decode the graph's one-to-one top-k outputs with its own global cutoff. No external NMS. Report at most 300 final boxes."
+  },
+  "sampling": {
+    "coils": {
+      "clean": 300,
+      "crazing": 100,
+      "rolled_in_scale": 100,
+      "timing": 60
+    },
+    "seed": "MLR512-paired-shadow-v2",
+    "clean_window_frames": 100,
+    "frame_pitch_mm": 10,
+    "nominal_strip_speed_m_s": 0.5,
+    "target": "First full-width strip of each distinct coil at one declared line, at the nominal speed, long enough for a 60 s run. Screen a closed consecutive production roster covering all shifts and grades in the preregistered campaign. Blinded inspectors adjudicate the whole strip and catalogue physical critical defects, each once with a canonical exposure.",
+    "selection": "Draw the timing cohort from all eligible coils without reference to defect labels. Assign each remaining non-clean coil to one of the two critical classes with equal probability by fixed hash, regardless of which labels it carries. It is eligible for that cohort if the assigned class is present. Draw the clean and two critical cohorts by hash rank within their eligible pools. For a critical coil select one physical object uniformly by hash rank and use its canonical view. For clean or timing coils select one contiguous window with a uniformly chosen eligible start. One first strip per coil and one cohort per coil.",
+    "material": "Encoder-spaced, contiguous full-width views on the declared surface at 10 mm pitch. Each clean coil contributes one randomly located 1 m window. Any alarm flags that sampled metre. Weight coils equally. Record the eligible and selected grade/shift mix. This does not estimate the probability of any alarm over a whole production coil.",
+    "custody": "Freeze and externally timestamp the site, line, campaign dates, enrollment roster, acquisition geometry, rig identities and selection file before releasing detector or controller outcomes. Use fixed enrollment, blinded annotation, and no replacements or interim decisions."
+  },
+  "acceptance": {
+    "one_sided_confidence": 0.95,
+    "critical_object_recall_floor": 0.9,
+    "maximum_clean_window_alarm_fraction": 0.01,
+    "minimum_timing_coil_pass_fraction": 0.95,
+    "method": "Marginal one-sided exact Clopper-Pearson bounds on independent coils. Lower bounds for indexed-object recall and coil compliance, upper bound for flagged clean windows. All six prespecified endpoints must pass the intersection-union screen for a model. Incomplete cohorts are indeterminate. This screen is for supervised assessment."
+  },
+  "timing": {
+    "duration_seconds": 60,
+    "offered_fps": 50,
+    "capture_jitter_tolerance_ms": 1,
+    "minimum_completed_fps": 50,
+    "maximum_capture_to_controller_p95_ms": 20,
+    "frame_deadline_ms": 20,
+    "maximum_deadline_exceedance_fraction": 0.01,
+    "method": "Send the same live triggers to separate matched four-core rigs with isolated shadow controllers on one synchronized clock. Alternate model-to-rig assignment across timing coils, 30 blocks per assignment. Record 3,000 consecutive scheduled triggers per block. An explicitly logged drop counts late, has infinite latency and contributes no completion. An absent model record makes that model's block incomplete.",
+    "endpoints": "Compute nearest-rank p95 over all scheduled triggers, decisions completed within the fixed 60 s divided by 60, and the fraction acknowledged after 20 ms or dropped. Each metric has its own coil pass flag and one-sided bound across 60 independent coils."
+  },
+  "comparison": "Use the same exposures, annotated index objects, clean windows and clocks for both models. Report paired B0 minus A0 rates, the two discordant counts and an exact two-sided McNemar test descriptively. Summarize signed within-coil timing differences. B0 is the prespecified primary absolute screen and A0 is the reference. The paired comparison is descriptive."
 }
