@@ -2,112 +2,73 @@
 
 **Lee Ting Sen and Khalifa Alshamsi · MLR 512, Advanced Computer Vision**
 
-<!-- cpu-study-results -->
-Among the four default stock paths at 480 pixels on four performance cores, **YOLO26n** recorded the lowest mean validation pipeline p95 across three seeds (15.28 ms). It also met every prespecified mAP and per-class recall limit. Its held-out mean was **14.58 ms**, with **37.59% mAP50–95** and **41.63% macro recall**. YOLOv8n had the highest held-out mAP (38.19%). The compared stock paths are YOLO26n, YOLOv10n, YOLOv8n and original anchor-based YOLOv5s.
+This repository contains the code, trained detectors and measurements for the NEU-DET study. All **21 trained checkpoints** and **84 static OpenVINO graphs** are included. Five held-out images are bundled for immediate replay.
 
-When each YOLO26n head chose its own threshold at a validation allowance of 36 false boxes per 360 images, the dense head achieved **46.38%** mean test macro recall and one-to-one achieved **41.63%**. Their fresh test pipeline p95 values were 13.87 and 14.58 ms, respectively. On validation the corresponding values were 16.39 and 15.28 ms. [CPU comparison and replay commands](cpu_study/README.md) · [Validation ranking](artifacts/cpu-extension/stock/selection.json) · [Test results](artifacts/cpu-extension/tables/test-families.csv)
+## Validate the submission
 
-Across 12 architecture/head options, validation selected **PConv YOLO26n with its dense head**. At its frozen global cutoffs, it reached 47.56% test macro recall and 12.99 ms test pipeline p95. Stock one-to-one measured 14.58 ms in that run. The repeat measured 13.88 ms for PConv dense and 13.41 ms for stock one-to-one. The eligible validation timing ranges overlap. Allowing a one-point class-recall loss instead of two selected stock one-to-one. The follow-up reuses a previously inspected test split. [Joint selection and tolerance sensitivity](artifacts/cpu-extension/policies/recall-tolerance.csv) · [Class-specific results](artifacts/cpu-extension/policies/operating-results.csv)
+From the repository root in PowerShell, use Windows x64 and Python 3.12 (the reference version was 3.12.5).
 
-The supervised comparison freezes **PConv dense B0 at 0.723431408405304** and **stock one-to-one A0 at 0.6858373880386353**, both OpenVINO FP32 at 480 pixels. The proposed screen uses 560 independent coils. Across all three paired seeds, switching from stock one-to-one to PConv dense at their respective global thresholds gained 5.94 points of test macro recall (95% group interval 3.84 to 8.11). Correctly localized frames increased by 2.59 points (−0.19 to 5.33). In the two-size PConv dense rotation, 320 and 480 reached 37.93% and 47.56% test macro recall at 7.45 and 15.24 ms p95. [By-seed frame outcomes](artifacts/cpu-extension/feedback/frames.csv) · [Paired differences](artifacts/cpu-extension/feedback/paired-effects.csv) · [Size comparison](artifacts/cpu-extension/dense-sizes/results.csv) · [Prospective coursework criteria](cpu_study/confirmation.json)
-<!-- /cpu-study-results -->
-
-Can a lighter detector inspect hot-rolled steel faster while retaining defects that are hard to see? The original architecture experiment compares five detectors on NEU-DET, with three paired training seeds per detector. Validation selected stock YOLO26n (A), one-to-one detection, at 480 pixels. On 360 held-out images, A0 achieved **38.29% mAP50–95** and a **15.59 ms pipeline p95**. It detected 20 of 137 crazing annotations and 43 of 126 rolled-in-scale annotations at the frozen cutoff, with 37 false-positive boxes overall. The latency is the median of three session p95s on an Intel Core i9-13900HX using four CPU cores, batch one and OpenVINO FP32. [Measured exhibits (PDF)](artifacts/study/report/MLR512-experimental-materials.pdf) · [Per-configuration results](artifacts/study/report/cells.csv)
-
-## Run the faculty check
-
-In PowerShell, open the root of this checkout. The reference environment is Windows x64 with Python 3.12.5. Use Git or download the repository ZIP and extract it first. All trained files are in this repository.
-
-```powershell
+~~~powershell
 py -3.12 review.py unpack
 py -3.12 -m venv .venv
 $py = (Resolve-Path .\.venv\Scripts\python.exe).Path
 & $py -m pip install -r cpu_study/requirements.txt
 & $py review.py replay
 & $py review.py verify
-```
+~~~
 
-To check the original tables and each later analysis separately, run the commands below after unpacking. They use the saved measurements and annotations.
+- **Unpack** checks SHA-256 and restores the graphs and saved measurements. It can resume an interrupted extraction.
+- **Replay** runs fresh CPU inference on `inclusion_11`. Stock YOLO26n (A0) should find one inclusion and match the archived coordinates and score.
+- **Verify** runs the tests, reproduces ten primary tables byte for byte, reopens the original exports and checks graph reuse, metrics, timings and threshold selection. The extended checks include the historical detectors, PConv dense size comparison and supervised comparison protocol. The saved checks run offline once dependencies are installed. [Verification counts](artifacts/study/report/verification.json) · [Independent metric checks](validation/research-metrics-check.json) · [Individual verification commands](cpu_study/README.md#reproduce-the-published-result)
 
-```powershell
-& $py -m steel report --tables-only --output .review\primary-tables
-& $py -m cpu_study.verify_policies
-& $py -m cpu_study.policy_timing verify
-& $py -m cpu_study.feedback_audit --verify
-& $py -m cpu_study.dense_sizes verify
-& $py -m cpu_study.confirmation verify
-```
+## What the study found
 
-- **Unpack** uses the Python standard library. It checks SHA-256 for the published files and restores each graph and measurement to its original relative path. You can rerun it after an interrupted extraction.
-- **Replay** performs fresh CPU inference on the bundled held-out image `inclusion_11`. The default A0 model returns one inclusion box. It checks the class, coordinates and score against the stored operating detections.
-- **Verify** runs the unit tests, rebuilds ten primary tables in a fresh directory and compares every byte. It reopens all 75 original graphs, checks the reuse of the same 480-pixel one-to-one graph in both comparisons, recalculates latency percentiles, and independently evaluates all 174 measured cells with the COCO evaluator. The grouped factorial and recall interval checks are included. New validation receipts are written under `.review/` and `artifacts/audit/factorial-check.json`. [Original verification counts](artifacts/study/report/verification.json) · [Independent evaluator results](validation/research-metrics-check.json)
-
-The same verification command also checks the six added historical-model graphs, 288,000 head-specific timings, the joint validation decision and 108,000 supplementary policy timings. It also checks the three new PConv dense graphs, 36,000 paired-size calls, and the prospective B0 policy. An independent integer program checks the two class-threshold objectives for every OpenVINO path at 480 pixels. Setup needs network access or a wheel collection. After setup, all three checks above work offline. The live viewer shows one frame on the current machine.
-
-## Run any checkpoint or graph
-
-| ID | Detector |
+| Comparison | Held-out result |
 | --- | --- |
-| A | Stock YOLO26n |
-| B | YOLO26n with partial convolution |
-| C | YOLO26n with two learned top-down fusion gates |
-| D | YOLO26n with both changes |
-| E | Stock YOLOv10n |
+| PConv YOLO26n, dense head at 320 and 480 pixels | Mean macro recall rose from **37.93% to 47.56%**. In the same paired size experiment, pipeline p95 rose from **7.45 to 15.24 ms**. [By-seed results](artifacts/cpu-extension/dense-sizes/results.csv) |
+| Four stock models at 480 pixels | YOLO26n had the lowest mean validation pipeline p95 (15.28 ms) and met the specified quality limits. Its test p95 was 14.58 ms. YOLOv8n had the highest test mAP50–95 (38.19%). [Validation selection](artifacts/cpu-extension/stock/selection.json) · [Test results](artifacts/cpu-extension/tables/test-families.csv) |
+| Stock YOLO26n heads under the same validation false-box allowance | With each head’s own cutoff, dense achieved **46.38%** mean test macro recall and one-to-one achieved **41.63%**. [Head and policy analysis](cpu_study/README.md) |
 
-Each ID has training seeds 0, 1 and 2. Each checkpoint has five complete static FP32 graphs. The one-to-one head supports 256, 320, 480 and 640 pixels. The raw one-to-many head (`dense`) runs at 480 pixels, followed by classwise NMS in the inference code. [Protocol](protocol.json) · [Export inventory](artifacts/study/export-inventory.json)
+The original stock A0 one-to-one result was **15.59 ms p95** at 480 pixels. The prospective PConv dense B0 candidate recovered **16/137 crazing** and **38/126 rolled-in-scale** objects. NEU-DET contains defect images. Clean-strip false rejection and continuous camera-to-controller performance require independent acquisitions. [Original results](artifacts/study/report/cells.csv) · [Per-class counts](artifacts/cpu-extension/feedback/classes.csv) · [Frozen supervised comparison](cpu_study/confirmation.json)
 
-```powershell
+## Replay a specific model
+
+A is stock YOLO26n, B adds partial convolution, C adds learned top-down fusion gates, D combines both changes and E is stock YOLOv10n. Each has seeds 0, 1 and 2. Their original OpenVINO graphs support one-to-one at 256, 320, 480 and 640 pixels and dense with NMS at 480. B also has a dense 320 graph for each seed. Original anchor-based YOLOv5s and YOLOv8n each have three trained checkpoints and three dense 480 graphs. Each graph is stored by checkpoint, precision, head and size. The same 480 one-to-one graph serves both original comparisons.
+
+~~~powershell
 & $py review.py replay --run E2 --head dense --side 480
 & $py review.py replay --run D1 --runtime pytorch --head one --side 480
-& $py review.py replay --run B0 --side 320 --image crazing_10
-& $py review.py replay --all
-```
+& $py -m cpu_study.review replay --family B --seed 0 --head dense --side 320 --policy global --image crazing_201
+& $py -m cpu_study.review replay --family B --seed 0 --head dense --side 480 --policy global --image crazing_201
+~~~
 
-The last command compares fresh detections on the same image across all 75 original graphs and the fifteen original native checkpoints. It includes the published A/E native head controls. Where the study measured only an OpenVINO cell, the native run is checked against that run's paired OpenVINO detections. The comparison uses the study's class, geometry and score tolerances. It writes the actual boxes and comparison results to `.review/replay-test-inclusion_11.json`. The five bundled image IDs are `inclusion_11`, `crazing_10`, `crazing_122`, `crazing_15` and `crazing_201`.
+For the last two commands, the expected matches are **0/2 at 320** and **1/2 at 480**. Use `--save frame.png` to export the annotated comparison. The original all-model replay is `& $py review.py replay --all`. [Saved replay receipt](validation/inference-replay.json) · [Additional model and policy commands](cpu_study/README.md)
 
-On a separate checkout with only the five bundled images and a fresh installation of the pinned environment, all 96 configurations matched the archived operating boxes on `inclusion_11`. The receipt identifies each checkpoint, comparison source and detection. [Fresh inference results](validation/inference-replay.json)
+## Open the interactive viewer
 
-## Open the interactive demo or use all images
+Install the images to browse all 360 held-out examples and test the actual viewer controls. The loader checks each of the 1,800 source images against its split manifest. An existing official download also works with `& $py review.py images --zip "D:\datasets\NEU-DET.zip"`. [Dataset and citation](https://faculty.neu.edu.cn/songkc/en/zdylm/263265/) · [Split manifest](data/split.json)
 
-The viewer below uses each checkpoint’s **original shared cutoff fitted on the native one-to-one head at 480**. To replay the **frozen supervised candidate**, run `& $py -m cpu_study.review replay --family B --seed 0 --head dense --side 480 --policy global --image crazing_15`. This uses the B0 OpenVINO graph and the head-specific cutoff 0.723431408405304. Set `--side 320` to replay the smaller dense graph with its own validation cutoff. [Full policy, classes and replay instructions](cpu_study/README.md)
-
-The viewer lets you change the image, detector, head and input size. Install the full dataset once to browse all 360 held-out images or select a validation example. The loader checks the publisher archive and each of the 1,800 images against the frozen manifests. The paper used 1,080 training, 360 validation and 360 test images. [NEU-DET download and citation](https://faculty.neu.edu.cn/songkc/en/zdylm/263265/) · [Split and archive hashes](data/split.json)
-
-```powershell
+~~~powershell
 & $py review.py images
 & $py -m steel demo --split test --seeds 0 --image-id inclusion_11 --side 480 --head one
-```
+& $py -m scripts.verify_demo
+~~~
 
-An existing publisher download also works offline. Substitute its path for the example below.
+Change the image, detector, head or input size to trigger inference. The viewer uses each model’s original shared cutoff. The two B0 replay commands above use the size-specific dense cutoffs from the paper. To save a viewer image without opening a window, add `--output .review/demo.png` to the `steel demo` command.
 
-```powershell
-& $py review.py images --zip "D:\datasets\NEU-DET.zip"
-```
+## Locate the evidence
 
-To save a two-panel prediction without a window, append `--output .review/demo.png` to the viewer command. Use `--seeds 1` or `--seeds 2` to browse other checkpoints. With the full images installed, `& $py -m scripts.verify_demo` exercises the actual viewer controls and checks each displayed detection. The screenshot and check receipt are saved in `.review/demo/`.
-
-## Find the evidence
-
-| Question | Files |
+| Material | Location |
 | --- | --- |
-| What did the study decide before test evaluation? | [Frozen selection and thresholds](artifacts/study/freeze.json) · [Held-out admission](artifacts/study/heldout-start.json) · [Registered C/D extension and prior test exposure](artifacts/audit/design-extension.json) |
-| Where are the 15 trained weights and training logs? | [Per-run directories](artifacts/runs) contain the original `best.pt`, training configuration, 200 epoch rows and weight-transfer records. [Training verification](artifacts/audit/training-verification.json) |
-| Where are the actual exported models? | [One archive per checkpoint](bundles/openvino). After unpacking, find `artifacts/runs/<run>/exports/<checkpoint SHA>/FP32/<head>-<side>/`. Each graph has its XML, binary weights, manifest and parity record. |
-| How can I inspect individual measurements? | [Raw measurement archives by split and detector](bundles/measurements). Unpacking creates `artifacts/study/{val,test}/<cell>/` with predictions, individual timing samples, identified image order and session records. [Bundle checksums](bundles/index.json) |
-| How did head, size and the learned gates affect results? | [Head pairs](artifacts/study/report/head_comparison.csv) · [Resolution sweep](artifacts/study/report/resolution_sweep.csv) · [Factorial effects](artifacts/study/report/fusion_contrasts.csv) · [Grouped intervals](artifacts/study/report/fusion_intervals.csv) |
-| Where are the figures and error cases? | [Figures](artifacts/study/report/figures) · [Per-class metrics](artifacts/study/report/class_metrics.csv) · [Matched annotations](artifacts/study/report/matched_objects.csv) · [Saved demo frame](artifacts/study/report/demo.png) |
-| What code produced these outputs? | [Frozen implementation](steel) · [Independent evaluators](scripts) · [Protocol tests](tests) · [Hardware and software](artifacts/audit/environment.json) |
+| Weights, training logs and OpenVINO bundles | [Original runs](artifacts/runs) · [Original graph archives](bundles/openvino) · [Historical runs](artifacts/cpu-extension/runs) · [Additional graph archives](bundles/cpu-extension/graphs) |
+| Figures, per-class measurements and timing data | [Measured exhibits](paper/README.md) · [Figures](artifacts/study/report/figures) · [Class metrics](artifacts/study/report/class_metrics.csv) · [Session archives](bundles/measurements) · [Extended results](artifacts/cpu-extension/tables) |
+| Model code, protocol and tests | [Primary implementation](steel) · [CPU comparisons](cpu_study) · [Independent evaluators](scripts) · [Protocol tests](tests) · [Reference environment](artifacts/audit/environment.json) |
+| Frozen study decisions | [Original selection](artifacts/study/freeze.json) · [Test admission](artifacts/study/heldout-start.json) · [Registration and earlier test exposure](artifacts/audit/design-extension.json) · [Paired differences](artifacts/cpu-extension/feedback/paired-effects.csv) |
 
-The evidence covers images containing labeled defects. False-positive boxes per image on this set measure a different quantity from a false-alarm rate on clean production strips. The C/D extension was registered after earlier A/B/E results had been seen. The registration records that exposure explicitly.
+To train a new original model with the full dataset and a CUDA GPU, use a separate output directory. The reference training ran for 200 epochs.
 
-## Training entry point
-
-For a new training run, install the full images and use a separate artifact directory so the published checkpoints remain available for comparison. The original training used an NVIDIA GPU, 200 epochs and the recorded PyTorch/CUDA environment. The first run retrieves the versioned pretrained initialization and verifies its checksum.
-
-```powershell
+~~~powershell
 & $py -m steel train --data data --artifacts .review/new-study --models A --seeds 0 --epochs 200 --device cuda
-```
+~~~
 
-The five architectures use Ultralytics model definitions and weights. The upstream license text is included. The detector and partial-convolution methods are credited to their original authors. [Ultralytics license](https://www.ultralytics.com/license) · [Included AGPL text](licenses/Ultralytics-AGPL-3.0.txt) · [YOLOv10 paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/c34ddd05eb089991f06f3c5dc36836e0-Abstract.html) · [FasterNet paper](https://openaccess.thecvf.com/content/CVPR2023/html/Chen_Run_Dont_Walk_Chasing_Higher_FLOPS_for_Faster_Neural_Networks_CVPR_2023_paper.html)
-
-The NEU-DET images and annotations are credited to the dataset authors at Northeastern University. The bundled images illustrate the measured examples. The full archive comes from the dataset publisher. [Dataset and requested citations](https://faculty.neu.edu.cn/songkc/en/zdylm/263265/)
+The study uses the NEU-DET dataset, Ultralytics model definitions and weights, YOLOv10 and partial convolution from FasterNet. [Dataset authors](https://faculty.neu.edu.cn/songkc/en/zdylm/263265/) · [Included Ultralytics license](licenses/Ultralytics-AGPL-3.0.txt) · [YOLOv10 paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/c34ddd05eb089991f06f3c5dc36836e0-Abstract.html) · [FasterNet paper](https://openaccess.thecvf.com/content/CVPR2023/html/Chen_Run_Dont_Walk_Chasing_Higher_FLOPS_for_Faster_Neural_Networks_CVPR_2023_paper.html)
