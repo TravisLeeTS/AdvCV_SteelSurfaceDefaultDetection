@@ -25,3 +25,5 @@ artifacts/cpu-extension/timing/
 artifacts/cpu-extension/vendor/yolov5-*/
 artifacts/cpu-extension/**/*.lock
 artifacts/cpu-repeat/
+artifacts/cpu-extension/policy-timing/*/
+artifacts/policy-repeat/

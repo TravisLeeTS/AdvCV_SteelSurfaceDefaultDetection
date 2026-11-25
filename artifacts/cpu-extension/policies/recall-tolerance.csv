@@ -1,0 +1,9 @@
+protocol,tolerance_pp,eligible,fastest,selected,recall_first,overlapping
+original_shared,1,A,A,A,,
+original_shared,2,A,A,A,,
+original_shared,3,A|B,B,A,,A
+original_shared,5,A|B|D,B,A,,A|D
+unified_global,1,A/one|D/dense,A/one,A/one,D/dense,D/dense
+unified_global,2,A/one|B/dense|D/dense,B/dense,B/dense,B/dense,A/one|D/dense
+unified_global,3,A/one|B/dense|B/one|D/dense,B/one,B/one,B/dense,A/one|B/dense|D/dense
+unified_global,5,A/dense|A/one|B/dense|B/one|C/dense|D/dense|D/one,B/one,B/one,B/dense,A/dense|A/one|B/dense|C/dense|D/dense|D/one

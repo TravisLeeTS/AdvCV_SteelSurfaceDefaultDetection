@@ -2,6 +2,8 @@
 
 This experiment compares stock YOLO26n, YOLOv10n, YOLOv8n and original anchor-based YOLOv5s on the same grouped NEU-DET partition. The historical models each use three 200-epoch, 480-pixel runs. The four input sizes and the PConv-by-fusion experiment use the original A–E checkpoints.
 
+Table IV of Lee Ting Sen and Khalifa Alshamsi's survey uses original YOLOv5s in three of its seven core comparisons and YOLOv8n in three more. Earlier work had already timed YOLOv5 on a CPU for steel inspection. This study measures which defects each head recovers at a common validation false-box allowance and includes filtering and NMS in the CPU timer. [Earlier CPU measurements, Fig. 10](https://digibuo.uniovi.es/dspace/bitstream/handle/10651/64510/ias2021-cnn.pdf?isAllowed=y&sequence=1)
+
 Each 480-pixel path chooses its own confidence cutoff on the same 360 validation images. The cutoff maximizes the mean of the six class recalls at IoU 0.50, with at most 36 false boxes. Equal recall favors fewer false boxes, then the higher cutoff. Score ties stay together. The test evaluation applies the frozen cutoffs. False boxes per image refer to annotated steel images. NEU-DET supplies no clean-strip exposure.
 
 ## Reproduce the published result
@@ -46,6 +48,27 @@ Use `--family YOLOv10n`, `--seed 1` or `--image crazing_15` to change the config
 The stock recommendation uses only validation. Its quality limits allow at most a one-percentage-point loss in mAP50–95 and a two-point loss in any class recall relative to YOLO26n, on seed zero and the paired three-seed mean. Latency is decoded grayscale image to final boxes on four physical performance cores, batch one, CPU FP32. A checkpoint's reported p95 is the median of three session percentiles. Each seed has equal weight in the family table. The original A–E test results were already public when the additional comparisons were designed.
 
 ## Collect fresh measurements
+
+### Joint head selection, class thresholds and input size
+
+The follow-up compared 12 architecture/head options at 480. Each path used its own global validation threshold. The primary rule minimizes validation p95 among paths that meet the mAP, six-class recall and false-box limits. A recall-first ranking uses exactly the same eligible candidates. The original stock-family comparison, fixed-cutoff size sweep and factorial experiment have their own selection rules.
+
+Six class thresholds share one allowance of 36 false boxes. One policy maximizes the mean class recall. The second first protects the lowest recall across classes. The code fits both policies for all 36 OpenVINO checkpoint/head combinations at 480 and fits a global threshold independently at every one of the 60 one-to-one graph sizes. The output counts matched objects, images flagged by any box, and images with a correct localization. The test set contains 360 annotated defective images and zero clean images.
+
+Run these commands after unpacking the repository. The verifier rebuilds the validation decisions and 306 policy readouts in a temporary directory, checks both class objectives independently and compares the result with the distributed tables. The timing verifier reconstructs the extra 108,000 test calls from the archived observations.
+
+```powershell
+.\.venv\Scripts\python.exe -m cpu_study.verify_policies
+.\.venv\Scripts\python.exe -m cpu_study.policy_timing verify
+.\.venv\Scripts\python.exe -m cpu_study.review replay --family B --head dense --image inclusion_11
+.\.venv\Scripts\python.exe -m cpu_study.review replay --family B --head dense --image crazing_15 --policy class_minimum
+```
+
+The timing subset includes all four stock one-to-one sizes and three threshold policies at 480 for stock one-to-one, stock dense and the validation-selected PConv dense path. Every reported time includes live score filtering and any class-wise NMS. To repeat that rotation, restore the images with `review.py images` and run `python -m cpu_study.policy_timing collect --output artifacts/policy-repeat` on AC power.
+
+[Validation policy and cutoffs](../artifacts/cpu-extension/policies/freeze.json) · [Eligibility at four tolerances](../artifacts/cpu-extension/policies/recall-tolerance.csv) · [Box and image counts](../artifacts/cpu-extension/policies/operating-results.csv) · [Re-timed thresholds](../artifacts/cpu-extension/policy-timing/timing.csv) · [Architecture diagram](../paper/generated/architecture.pdf)
+
+### Original 480-pixel comparison
 
 To time the saved checkpoints at their operating cutoffs again, run the following from the repository root with the laptop plugged in. The separate output directory keeps the new observations together. A subsequent invocation resumes completed sessions.
 

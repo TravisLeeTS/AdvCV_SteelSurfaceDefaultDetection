@@ -1,0 +1,14 @@
+{
+  "freeze_sha": "c295823cfa47d08b34da39f876f3e522edd6c6437760ffa0431fbce71c7aeffd",
+  "protocol_sha": "52de07e096a0d186f2e1860aa8a418317121a3dd57ed9008a08407937cc79e3e",
+  "files": {
+    "operating-results.csv": "192cbb4c2771a34c963f91e8f92a2ff97f11eba880bc08f4dedb313a8417b8ed",
+    "path-eligibility.csv": "2a1077abcc15a09f1e04c313c403cf7970b9d62cb2ffd93b2cea9a3903ebfc18",
+    "recall-tolerance.csv": "bbdb07654e86b4c44e7c532b91071faf15b585243721e86db7af379269c92998",
+    "source-digests.csv": "39ec1d9631b9e21faa5808e5af56dc99ce1bf21fb8cf1b438404eae16a953975"
+  },
+  "splits": 2,
+  "graphs": 81,
+  "policy_rows": 306,
+  "independently_rematched_image_policies": 110160
+}

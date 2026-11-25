@@ -127,10 +127,12 @@ def verify(data, artifacts):
 
 
 @torch.inference_mode()
-def replay(data, artifacts, family, seed, head, image_id, split, save=None, runtime="openvino"):
+def replay(data, artifacts, family, seed, head, image_id, split, save=None, runtime="openvino", policy="global"):
     out=artifacts / "cpu-extension"
     model={"YOLO26n":"A","YOLOv10n":"E","YOLOv8n":"yolov8n","YOLOv5s":"yolov5s"}.get(family,family)
     head=head or ("one" if model in ("A","B","C","D","E") else "dense")
+    if policy != "global" and runtime != "openvino":
+        raise ValueError("Class-specific thresholds were fitted on the OpenVINO paths.")
     candidates=[e for e in matrix(out) if (e["model"],e["seed"],e["head"])==(model,seed,head)]
     entry=next((e for e in candidates if e["runtime"]==runtime),None)
     parity_only=entry is None and runtime=="pytorch"
@@ -156,10 +158,23 @@ def replay(data, artifacts, family, seed, head, image_id, split, save=None, runt
     else:
         engine=live_engine(artifacts,out,entry)
     gray=gray_image(data,row)
-    boxes,counts=pipeline(engine,gray,entry)
     source=read_predictions(predictions(artifacts,out,split,entry))
     saved=next(low for i,low in source if i==image_id)
-    expected=saved[saved[:,4]>=entry["cutoff"]]
+    if policy == "global":
+        boxes,counts=pipeline(engine,gray,entry)
+        expected=saved[saved[:,4]>=entry["cutoff"]]
+        setting=f"Cutoff {entry['cutoff']:.6f}"
+        details=f"{counts[0]} raw candidates, {counts[1]} above cutoff, {counts[2]} final boxes."
+    else:
+        from .policy_timing import pipeline as apply_thresholds
+        selected=read(out/"policies/freeze.json")["fits"][name(entry)]
+        if selected["artifact_sha"]!=entry["artifact_sha"]:
+            raise ValueError("Thresholds belong to another OpenVINO graph.")
+        cuts=np.asarray(selected["thresholds"][policy],dtype=np.float32)
+        boxes=apply_thresholds(engine,gray,dict(entry,policy=policy),cuts)
+        expected=saved[saved[:,4]>=cuts[saved[:,5].astype(int)]]
+        setting="Per class, maximum "+("mean recall" if policy=="class_macro" else "minimum recall")
+        details=", ".join(f"{c} {t:.4f}" for c,t in zip(CLASSES,cuts,strict=True))+f". {len(boxes)} final boxes."
     if parity_only:
         paired=paired_boxes(boxes,expected)
         boundary=paired["missed"]+paired["extra"]
@@ -169,8 +184,7 @@ def replay(data, artifacts, family, seed, head, image_id, split, save=None, runt
               f"Unpaired scores within the cutoff tolerance: {len(boundary)}.")
     else:
         np.testing.assert_allclose(boxes,expected,atol=.0001,rtol=0)
-    print(f"{family} seed {seed}, {runtime}, {head}, cutoff {entry['cutoff']:.6f}, {image_id}. "
-          f"{counts[0]} raw candidates, {counts[1]} above cutoff, {counts[2]} final boxes.")
+    print(f"{family} seed {seed}, {runtime}, {head}, {image_id}. {setting}. {details}")
     for x1,y1,x2,y2,score,cls in boxes:
         print(f"  {CLASSES[int(cls)]} {score:.5f} at ({x1:.1f}, {y1:.1f}) to ({x2:.1f}, {y2:.1f})")
     hits=int(match_image(row,boxes)[2][:,0].sum())
@@ -178,7 +192,7 @@ def replay(data, artifacts, family, seed, head, image_id, split, save=None, runt
     if save:
         from steel.demo import pair_image
         title=f"{family} | seed {seed} | {runtime} | {head} | 480 px | {image_id}"
-        footer=f"Cutoff {entry['cutoff']:.6f} | {hits}/{len(row['classes'])} matched | {len(boxes)-hits} false boxes"
+        footer=f"{setting} | {hits}/{len(row['classes'])} matched | {len(boxes)-hits} false boxes"
         save.parent.mkdir(parents=True,exist_ok=True)
         pair_image(row,gray,boxes,title,footer).save(save)
         print(save.resolve())
@@ -195,6 +209,7 @@ if __name__=="__main__":
     parser.add_argument("--seed",type=int,default=0,choices=[0,1,2])
     parser.add_argument("--head",choices=["one","dense"])
     parser.add_argument("--runtime",choices=["openvino","pytorch"],default="openvino")
+    parser.add_argument("--policy",choices=["global","class_macro","class_minimum"],default="global")
     parser.add_argument("--image",default="inclusion_11")
     parser.add_argument("--split",default="test",choices=["test","val"])
     parser.add_argument("--save",type=Path,help="Write a PNG with ground truth and live predictions side by side")
@@ -203,4 +218,4 @@ if __name__=="__main__":
     if args.action=="verify":
         verify(args.data,args.artifacts)
     else:
-        replay(args.data,args.artifacts,args.family,args.seed,args.head,args.image,args.split,args.save,args.runtime)
+        replay(args.data,args.artifacts,args.family,args.seed,args.head,args.image,args.split,args.save,args.runtime,args.policy)

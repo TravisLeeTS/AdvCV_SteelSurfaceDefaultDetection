@@ -1,0 +1,10 @@
+{
+  "freeze_sha": "c295823cfa47d08b34da39f876f3e522edd6c6437760ffa0431fbce71c7aeffd",
+  "implementation": "b95cc37c5ec8f33011b3045e45ae8b61fc4fb3fc9def0318bf9be588b4e593da",
+  "conditions": 36,
+  "sessions": 108,
+  "individual_timings": 108000,
+  "warmups_per_session": 200,
+  "verified_live_images_per_condition": 360,
+  "table_sha": "3294bbbecb6516b3e6a674ce2b3946832fd311728bfc3bdaf0ddb160e4f8361a"
+}

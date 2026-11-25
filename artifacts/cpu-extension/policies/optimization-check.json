@@ -1,0 +1,8 @@
+{
+  "freeze_sha": "c295823cfa47d08b34da39f876f3e522edd6c6437760ffa0431fbce71c7aeffd",
+  "graphs_at_480": 36,
+  "checks": 108,
+  "largest_absolute_difference": 0.0,
+  "method": "Independent multiple-choice integer programs for mean recall, minimum recall and its mean-recall tie break.",
+  "policy_replay_rows": 306
+}

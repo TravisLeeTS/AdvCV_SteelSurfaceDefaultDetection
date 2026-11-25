@@ -1,0 +1,2220 @@
+{
+  "protocol": {
+    "status": "Exploratory follow-up designed after the published NEU-DET results were inspected.",
+    "validation": "Use the original 360 validation images. Fit thresholds and select paths before evaluating their new test readouts. Retain whole score ties, same-class matching at IoU 0.50, and the allowance of 36 false boxes.",
+    "path_selection": "At 480, compare both OpenVINO heads of A-E and the deployed dense path of each historical model. Use the existing independently calibrated global thresholds and their live pipeline timings. Relative to A one-to-one, require no more than 1 pp loss in mAP and 2 pp in every class recall for seed 0 and the paired three-seed mean. Require each fitted path to meet the false-box allowance. Rank eligible paths by mean seed-level validation p95 for speed, or by mean validation macro recall for a recall-first comparison. Secondary ties use the other measure, then path name. Publish session overlap and keep the speed choice as primary.",
+    "class_thresholds": "At 480 for each of the 36 OpenVINO checkpoint/head paths, compare a single threshold with six class thresholds. Maximize mean class recall under the total budget; separately maximize the lowest of the six class recalls, then mean recall. Ties prefer fewer false boxes and then higher thresholds in dataset class order. Report validation and frozen test object and image counts. These are quality analyses; no latency value is transferred to a class-specific policy.",
+    "size_thresholds": "Independently fit a global threshold for each of the 60 existing one-to-one static OpenVINO graphs (A-E, three seeds, four sizes). Report recall, AP and realized false boxes on the original split. The original common-cutoff size timings remain labeled with their own operating policy.",
+    "sensitivity": "Repeat the original one-to-one architecture eligibility calculation and the unified 480-pixel head comparison at per-class recall losses of 1, 2, 3 and 5 pp. Retain the original AP and false-box limits, baselines and timing/tie rules for each experiment.",
+    "image_outcomes": "For an annotated frame count any accepted box as a rejection alarm. Independently count frames with a correctly localized, correctly classified defect, frames flagged only by unmatched boxes, and frames with no flag. Clean-frame false-rejection rate requires independently labeled clean material."
+  },
+  "protocol_sha": "52de07e096a0d186f2e1860aa8a418317121a3dd57ed9008a08407937cc79e3e",
+  "split_hash": "091bf58a97f2aabe6ab417f4f2c395e676d58ac8c4e8e051b25ea7232c99436a",
+  "validation_annotations_sha": "98d75c8b9a5aed0d1d63a1edc8a2073f33c9b999e6272067eac52ae3ddc6ff11",
+  "validation_table_sha": "8a1d25f17e72792c0e5a2971ae783c5138285c12b8cb8d3b4860f12ddb861e91",
+  "speed_first": "B/dense",
+  "recall_first": "B/dense",
+  "eligible": [
+    "A/one",
+    "B/dense",
+    "D/dense"
+  ],
+  "fits": {
+    "A0-openvino-dense-480": {
+      "run": "A0",
+      "model": "A",
+      "seed": 0,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "8d27b03b64c55169eaa385ffdc14f087894430820a76e8b48521d833ff0f2fc6",
+      "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+      "thresholds": {
+        "global": [
+          0.6662965416908264,
+          0.6662965416908264,
+          0.6662965416908264,
+          0.6662965416908264,
+          0.6662965416908264,
+          0.6662965416908264
+        ],
+        "class_macro": [
+          0.6570801734924316,
+          0.5669450759887695,
+          0.7021127939224243,
+          0.6224006414413452,
+          0.6939617991447449,
+          0.5699611902236938
+        ],
+        "class_minimum": [
+          0.48342132568359375,
+          0.696591317653656,
+          0.8109766244888306,
+          0.8640570640563965,
+          0.7156506776809692,
+          0.6965466737747192
+        ]
+      },
+      "validation_predictions_sha": "aabd1a5ac7407386326849c512c387d6aadfcdacea658eee732c6552a7f3ab05"
+    },
+    "A0-openvino-one-256": {
+      "run": "A0",
+      "model": "A",
+      "seed": 0,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "c85d9b1bba12f90072b1b9c9dd37551b1cfdcfe60285de090dfcf61486fde03f",
+      "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+      "thresholds": {
+        "global": [
+          0.6770274639129639,
+          0.6770274639129639,
+          0.6770274639129639,
+          0.6770274639129639,
+          0.6770274639129639,
+          0.6770274639129639
+        ]
+      },
+      "validation_predictions_sha": "b991675001cb2831cf2016c68358e9818329d0e815329a99935625a636a1ecda"
+    },
+    "A0-openvino-one-320": {
+      "run": "A0",
+      "model": "A",
+      "seed": 0,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "68b1dd9c18fc32c7d50d5e4f5fb4dc49af86ddb56e5e9cfca4de296639f165e1",
+      "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+      "thresholds": {
+        "global": [
+          0.6655031442642212,
+          0.6655031442642212,
+          0.6655031442642212,
+          0.6655031442642212,
+          0.6655031442642212,
+          0.6655031442642212
+        ]
+      },
+      "validation_predictions_sha": "e14ccb5648d57af569d9afb4295fe7e2c0e27401e3111ac8d5a28c1b36508212"
+    },
+    "A0-openvino-one-480": {
+      "run": "A0",
+      "model": "A",
+      "seed": 0,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "c0ccd61e8c75a87616f7ea0cc3e4f69313f8db571416e2d32410ab7b27216ca5",
+      "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+      "thresholds": {
+        "global": [
+          0.6858373880386353,
+          0.6858373880386353,
+          0.6858373880386353,
+          0.6858373880386353,
+          0.6858373880386353,
+          0.6858373880386353
+        ],
+        "class_macro": [
+          0.7563460469245911,
+          0.7032444477081299,
+          0.6547219753265381,
+          0.49129146337509155,
+          0.6877550482749939,
+          0.3675912320613861
+        ],
+        "class_minimum": [
+          0.4823077917098999,
+          0.7676927447319031,
+          0.7669230103492737,
+          0.8577419519424438,
+          0.6877550482749939,
+          0.6629795432090759
+        ]
+      },
+      "validation_predictions_sha": "0f698a374c7d7670cf8e147cd240ab04ca7bc768cf7288babaab6887cd1efdcc"
+    },
+    "A0-openvino-one-640": {
+      "run": "A0",
+      "model": "A",
+      "seed": 0,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "6fb8017094e041c4d11cff85448249485b08808cdf70c0597d7aa8b0fd580c84",
+      "checkpoint_sha": "94f01743fe2fc500b87cc2c5223b8a3f731a4277bd390f3f5d3a4ef6f3686f12",
+      "thresholds": {
+        "global": [
+          0.7516960501670837,
+          0.7516960501670837,
+          0.7516960501670837,
+          0.7516960501670837,
+          0.7516960501670837,
+          0.7516960501670837
+        ]
+      },
+      "validation_predictions_sha": "191145d47121ac43679586d5d6f2675cc31af7ba7236e8f440e27f551a68f027"
+    },
+    "A1-openvino-dense-480": {
+      "run": "A1",
+      "model": "A",
+      "seed": 1,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "ae56f8388d24b2db528af96cb06bf1cabfd189f9a7e9afd495d3164a8d914c75",
+      "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+      "thresholds": {
+        "global": [
+          0.7815216779708862,
+          0.7815216779708862,
+          0.7815216779708862,
+          0.7815216779708862,
+          0.7815216779708862,
+          0.7815216779708862
+        ],
+        "class_macro": [
+          0.8551745414733887,
+          0.7414383888244629,
+          0.7723015546798706,
+          0.6842027306556702,
+          0.8014577031135559,
+          0.6620296835899353
+        ],
+        "class_minimum": [
+          0.6731733083724976,
+          0.809493899345398,
+          0.8463472127914429,
+          0.7830776572227478,
+          0.8143496513366699,
+          0.7866126894950867
+        ]
+      },
+      "validation_predictions_sha": "5b96c7e88195c47c6d3a94ee0ba885190fde0cca5458520ea12acc2c5f4ccf04"
+    },
+    "A1-openvino-one-256": {
+      "run": "A1",
+      "model": "A",
+      "seed": 1,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "00ff73dde5c14b686c7dead303cbcadfeb3fa52c9d301ee9fd40c9137ef7974c",
+      "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+      "thresholds": {
+        "global": [
+          0.7855391502380371,
+          0.7855391502380371,
+          0.7855391502380371,
+          0.7855391502380371,
+          0.7855391502380371,
+          0.7855391502380371
+        ]
+      },
+      "validation_predictions_sha": "5538620d5761be3f9c09fa66d6619557d6d9e6dd1694adf9c1854863d9432c42"
+    },
+    "A1-openvino-one-320": {
+      "run": "A1",
+      "model": "A",
+      "seed": 1,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "b5344e4f94a9f6898fb97ed8624d9fd152ae155bcd3e2ebf9991ba53e4540a3d",
+      "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+      "thresholds": {
+        "global": [
+          0.7749218344688416,
+          0.7749218344688416,
+          0.7749218344688416,
+          0.7749218344688416,
+          0.7749218344688416,
+          0.7749218344688416
+        ]
+      },
+      "validation_predictions_sha": "de5b27c6c05611a78298ebaaebce1b2b012ee9d56d56a938dccf389f0509b667"
+    },
+    "A1-openvino-one-480": {
+      "run": "A1",
+      "model": "A",
+      "seed": 1,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "250654ba217a121ac72c79e8ce7d7748aaaf785ba3cb2687edcfd9f92baf5008",
+      "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+      "thresholds": {
+        "global": [
+          0.844358503818512,
+          0.844358503818512,
+          0.844358503818512,
+          0.844358503818512,
+          0.844358503818512,
+          0.844358503818512
+        ],
+        "class_macro": [
+          0.8909515738487244,
+          0.8238356113433838,
+          0.8154885768890381,
+          0.6251494288444519,
+          0.8866288661956787,
+          0.4439104497432709
+        ],
+        "class_minimum": [
+          0.5664300918579102,
+          0.8940438032150269,
+          0.8658828139305115,
+          0.8822149038314819,
+          0.8866288661956787,
+          0.8923513889312744
+        ]
+      },
+      "validation_predictions_sha": "c0def6b1eca4545e9343cbb041eae79bf66f6de72d94e29995da01202831e04d"
+    },
+    "A1-openvino-one-640": {
+      "run": "A1",
+      "model": "A",
+      "seed": 1,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "501c26779bfb6ec93a7286a07c56ce447e9d1d8c5035a379661cba1d5e05dc09",
+      "checkpoint_sha": "618d4c6ea324dc82f6d37050efeee6617e3bf9b42a0e61de1d53a4a6db7e64b3",
+      "thresholds": {
+        "global": [
+          0.8730812668800354,
+          0.8730812668800354,
+          0.8730812668800354,
+          0.8730812668800354,
+          0.8730812668800354,
+          0.8730812668800354
+        ]
+      },
+      "validation_predictions_sha": "60d63ca96b82fdd71c922bb342b9fd868cc7e4d877dd6f32ed4d9591dbeeab1a"
+    },
+    "A2-openvino-dense-480": {
+      "run": "A2",
+      "model": "A",
+      "seed": 2,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "e79813d94c6de8110891ff1106f578a437b824e4b1c9fce0af689626ccc5ca39",
+      "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+      "thresholds": {
+        "global": [
+          0.6900452971458435,
+          0.6900452971458435,
+          0.6900452971458435,
+          0.6900452971458435,
+          0.6900452971458435,
+          0.6900452971458435
+        ],
+        "class_macro": [
+          0.7529560327529907,
+          0.6839268207550049,
+          0.6336668729782104,
+          0.5523335933685303,
+          0.7133606672286987,
+          0.6122411489486694
+        ],
+        "class_minimum": [
+          0.4668155610561371,
+          0.7800840735435486,
+          0.7681099772453308,
+          0.8076236844062805,
+          0.7133606672286987,
+          0.7361701726913452
+        ]
+      },
+      "validation_predictions_sha": "83b4a2abfa2a02537f00fb179e4234683c7e7a00c83656c22379f88f22e78a17"
+    },
+    "A2-openvino-one-256": {
+      "run": "A2",
+      "model": "A",
+      "seed": 2,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "ee6613c5db7b8d678e89e65d03193157ad7e310be8b9e3ac37e983c49be813e7",
+      "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+      "thresholds": {
+        "global": [
+          0.6535651683807373,
+          0.6535651683807373,
+          0.6535651683807373,
+          0.6535651683807373,
+          0.6535651683807373,
+          0.6535651683807373
+        ]
+      },
+      "validation_predictions_sha": "96c5f1008ca1c0c2246e66f7e1ea72c8fc7ffbd6bed18d3ccca9006e8380bf5d"
+    },
+    "A2-openvino-one-320": {
+      "run": "A2",
+      "model": "A",
+      "seed": 2,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "2c319f7b2eedc065f50773568a7c9321ed9b87658a309a2774a2fd8f1b182da9",
+      "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+      "thresholds": {
+        "global": [
+          0.6822932958602905,
+          0.6822932958602905,
+          0.6822932958602905,
+          0.6822932958602905,
+          0.6822932958602905,
+          0.6822932958602905
+        ]
+      },
+      "validation_predictions_sha": "dc77af62523a395589edef8ac08f01b9d24d61ed8b545e02087e730f380d022f"
+    },
+    "A2-openvino-one-480": {
+      "run": "A2",
+      "model": "A",
+      "seed": 2,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "3670fd361fd0a40f62fbb2a3b92fc4f34dba522ecde34c6b3aa2c12013d1ca5a",
+      "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+      "thresholds": {
+        "global": [
+          0.7360886335372925,
+          0.7360886335372925,
+          0.7360886335372925,
+          0.7360886335372925,
+          0.7360886335372925,
+          0.7360886335372925
+        ],
+        "class_macro": [
+          0.7546886205673218,
+          0.6248600482940674,
+          0.7487101554870605,
+          0.5354288816452026,
+          0.800020694732666,
+          0.6548154354095459
+        ],
+        "class_minimum": [
+          0.4410802125930786,
+          0.8376320600509644,
+          0.862142026424408,
+          0.8725889325141907,
+          0.7968217134475708,
+          0.6739128828048706
+        ]
+      },
+      "validation_predictions_sha": "3dbaad30fc3b4a280ba78ce56fc2fbc013bd702dc824f5cba26a5c4f0d405b52"
+    },
+    "A2-openvino-one-640": {
+      "run": "A2",
+      "model": "A",
+      "seed": 2,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "fa3579d745887cc60f8f0a471eaf634db7dc50fb163ca7e25fb31c0f626b32c9",
+      "checkpoint_sha": "143b5f0873fcb056708ffd7eebfab61de221aa7dc378bdfac58edbe1aadd0a36",
+      "thresholds": {
+        "global": [
+          0.81415194272995,
+          0.81415194272995,
+          0.81415194272995,
+          0.81415194272995,
+          0.81415194272995,
+          0.81415194272995
+        ]
+      },
+      "validation_predictions_sha": "7fb3474869115476567f3d2cb6376a64b72f1e981f0770a64b3f433be2cc1eeb"
+    },
+    "B0-openvino-dense-480": {
+      "run": "B0",
+      "model": "B",
+      "seed": 0,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "5d84b9d078c1a376d8363cc752b53d1a78d7ce84fd46eccbded772a3a1d460b4",
+      "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+      "thresholds": {
+        "global": [
+          0.723431408405304,
+          0.723431408405304,
+          0.723431408405304,
+          0.723431408405304,
+          0.723431408405304,
+          0.723431408405304
+        ],
+        "class_macro": [
+          0.7252044677734375,
+          0.6387795209884644,
+          0.7682514786720276,
+          0.5919119119644165,
+          0.7315629720687866,
+          0.6829327344894409
+        ],
+        "class_minimum": [
+          0.6050180196762085,
+          0.7563748359680176,
+          0.8151153922080994,
+          0.8093171119689941,
+          0.7609807252883911,
+          0.7511700391769409
+        ]
+      },
+      "validation_predictions_sha": "cc2669c723e2c9cc76342a0716a735cdfda7da7f99a05d70b3198d7d29944d16"
+    },
+    "B0-openvino-one-256": {
+      "run": "B0",
+      "model": "B",
+      "seed": 0,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "e87ac01bea2cfdf0214341f1d003c6d3e764ae30462e4da886677e54d2f42376",
+      "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+      "thresholds": {
+        "global": [
+          0.6074225902557373,
+          0.6074225902557373,
+          0.6074225902557373,
+          0.6074225902557373,
+          0.6074225902557373,
+          0.6074225902557373
+        ]
+      },
+      "validation_predictions_sha": "082b445dfacdf95193a69f432f3cc7de75b9891eb403cde18d7000dc7938900d"
+    },
+    "B0-openvino-one-320": {
+      "run": "B0",
+      "model": "B",
+      "seed": 0,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "399e49e76f9f2942708b27b5362d11ab95593d594d6f4350a938bd8d3e9177d8",
+      "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+      "thresholds": {
+        "global": [
+          0.6781569123268127,
+          0.6781569123268127,
+          0.6781569123268127,
+          0.6781569123268127,
+          0.6781569123268127,
+          0.6781569123268127
+        ]
+      },
+      "validation_predictions_sha": "ab77b15082933ed24e39dc19feafbc005bbdd2b9d8ac9c022da4e550daa5304f"
+    },
+    "B0-openvino-one-480": {
+      "run": "B0",
+      "model": "B",
+      "seed": 0,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "283ba362fa3fb85a0f2a9482743f4bd1c496684613b68a1cf5b355384c425ac8",
+      "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+      "thresholds": {
+        "global": [
+          0.772908627986908,
+          0.772908627986908,
+          0.772908627986908,
+          0.772908627986908,
+          0.772908627986908,
+          0.772908627986908
+        ],
+        "class_macro": [
+          0.9172789454460144,
+          0.6548395156860352,
+          0.712226390838623,
+          0.49966272711753845,
+          0.7770909667015076,
+          0.613457441329956
+        ],
+        "class_minimum": [
+          0.5348725318908691,
+          0.8418307900428772,
+          0.8625706434249878,
+          0.8905087113380432,
+          0.7770909667015076,
+          0.7665521502494812
+        ]
+      },
+      "validation_predictions_sha": "1b31a296f6196b6c6f223b2f50508bbd74227b8892e6eb79ace77d73a745aeab"
+    },
+    "B0-openvino-one-640": {
+      "run": "B0",
+      "model": "B",
+      "seed": 0,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "c3283578073c65100cdc46d58b68774073ffa7d941b003c68dc96bd942f79593",
+      "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+      "thresholds": {
+        "global": [
+          0.8514736890792847,
+          0.8514736890792847,
+          0.8514736890792847,
+          0.8514736890792847,
+          0.8514736890792847,
+          0.8514736890792847
+        ]
+      },
+      "validation_predictions_sha": "0c6c07b27113e41655098775b590f2e940e7f72b1b5974ecf54f70b93111dc5f"
+    },
+    "B1-openvino-dense-480": {
+      "run": "B1",
+      "model": "B",
+      "seed": 1,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "983adadd5e56936f1a5f3f32e1f8f73ae4c2cf5110128519f67debb2d9c01c76",
+      "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+      "thresholds": {
+        "global": [
+          0.7176007032394409,
+          0.7176007032394409,
+          0.7176007032394409,
+          0.7176007032394409,
+          0.7176007032394409,
+          0.7176007032394409
+        ],
+        "class_macro": [
+          0.7580381035804749,
+          0.6666799783706665,
+          0.7501813769340515,
+          0.6807184219360352,
+          0.6195650696754456,
+          0.6964322328567505
+        ],
+        "class_minimum": [
+          0.4711689054965973,
+          0.7550225257873535,
+          0.7501813769340515,
+          0.8266335725784302,
+          0.6625603437423706,
+          0.769908607006073
+        ]
+      },
+      "validation_predictions_sha": "985bc941dca5b52d1125f5172a3a5c8c9bbc57787b6ddd735a447ec02bec3777"
+    },
+    "B1-openvino-one-256": {
+      "run": "B1",
+      "model": "B",
+      "seed": 1,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "e7726ae2e7eb093758806913c369116f9c352e72150a1f5c83df171a90447d91",
+      "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+      "thresholds": {
+        "global": [
+          0.7468026280403137,
+          0.7468026280403137,
+          0.7468026280403137,
+          0.7468026280403137,
+          0.7468026280403137,
+          0.7468026280403137
+        ]
+      },
+      "validation_predictions_sha": "cbc319ee4550f2b0b9cf42f0ee8f0b207ee6bb8bf5f42350c0500c7cc059237b"
+    },
+    "B1-openvino-one-320": {
+      "run": "B1",
+      "model": "B",
+      "seed": 1,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "ecaa7de8cc2c6d1bac710ba58e4a9f27932b179b69e0870408f03244e2bdfe5a",
+      "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+      "thresholds": {
+        "global": [
+          0.7418755292892456,
+          0.7418755292892456,
+          0.7418755292892456,
+          0.7418755292892456,
+          0.7418755292892456,
+          0.7418755292892456
+        ]
+      },
+      "validation_predictions_sha": "4c41ce95118d39fe25e48aabfdf55de1a64a66ec283632f243c47ca26595ee74"
+    },
+    "B1-openvino-one-480": {
+      "run": "B1",
+      "model": "B",
+      "seed": 1,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "c71e810f65b6893f3c59ec165991a697ed97686230f89543cbf05df1033d2b5a",
+      "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+      "thresholds": {
+        "global": [
+          0.723358690738678,
+          0.723358690738678,
+          0.723358690738678,
+          0.723358690738678,
+          0.723358690738678,
+          0.723358690738678
+        ],
+        "class_macro": [
+          0.6146465539932251,
+          0.7370679378509521,
+          0.7830003499984741,
+          0.3670690357685089,
+          0.675700306892395,
+          0.6647058129310608
+        ],
+        "class_minimum": [
+          0.38109856843948364,
+          0.816984236240387,
+          0.8060563206672668,
+          0.8354122042655945,
+          0.7178260087966919,
+          0.8198569416999817
+        ]
+      },
+      "validation_predictions_sha": "81713b368305b94d1a71aff2b0eb9344e31e76499d6923857047b1a33ae5b709"
+    },
+    "B1-openvino-one-640": {
+      "run": "B1",
+      "model": "B",
+      "seed": 1,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "cb271531aeaecc9af201cdaf8ba37cee9046e858fbef84dccaa7e27f7a07d936",
+      "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+      "thresholds": {
+        "global": [
+          0.8213640451431274,
+          0.8213640451431274,
+          0.8213640451431274,
+          0.8213640451431274,
+          0.8213640451431274,
+          0.8213640451431274
+        ]
+      },
+      "validation_predictions_sha": "053e6c7a9acc93744a65ea4448d61e7f33d146ca888c79365b6f6fd380a6eb8e"
+    },
+    "B2-openvino-dense-480": {
+      "run": "B2",
+      "model": "B",
+      "seed": 2,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "2b22a3a5222f85226d6686216b07a00102aa279c0609ca689fea3c2b3c4c209d",
+      "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+      "thresholds": {
+        "global": [
+          0.6800620555877686,
+          0.6800620555877686,
+          0.6800620555877686,
+          0.6800620555877686,
+          0.6800620555877686,
+          0.6800620555877686
+        ],
+        "class_macro": [
+          0.693162202835083,
+          0.615312933921814,
+          0.6934952735900879,
+          0.6727997064590454,
+          0.649439811706543,
+          0.6518439650535583
+        ],
+        "class_minimum": [
+          0.49224331974983215,
+          0.7423065900802612,
+          0.8246228098869324,
+          0.8346238136291504,
+          0.7083795070648193,
+          0.8108051419258118
+        ]
+      },
+      "validation_predictions_sha": "85ba22562da27bdac54c3f00f581d780c3f39dab8420c7f98e0fd0e91ccf569d"
+    },
+    "B2-openvino-one-256": {
+      "run": "B2",
+      "model": "B",
+      "seed": 2,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "351b166a2d9df3e7d680e79459197653bf567f1b6f565587e17a4b91bea7bcf1",
+      "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+      "thresholds": {
+        "global": [
+          0.5290563106536865,
+          0.5290563106536865,
+          0.5290563106536865,
+          0.5290563106536865,
+          0.5290563106536865,
+          0.5290563106536865
+        ]
+      },
+      "validation_predictions_sha": "bbc63c2fcfd569ec41c6a26ee32b082926a510be3edf0deb8031bbf52286d8af"
+    },
+    "B2-openvino-one-320": {
+      "run": "B2",
+      "model": "B",
+      "seed": 2,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "2942aa9a6f3057da1483d451bce5b04d669a7534300980878038dca1e64c16e5",
+      "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+      "thresholds": {
+        "global": [
+          0.5742149949073792,
+          0.5742149949073792,
+          0.5742149949073792,
+          0.5742149949073792,
+          0.5742149949073792,
+          0.5742149949073792
+        ]
+      },
+      "validation_predictions_sha": "bce22542a1656fb07443e72509ab2f1e74107ea6ca5b8c8bffd54a6c25b4a26d"
+    },
+    "B2-openvino-one-480": {
+      "run": "B2",
+      "model": "B",
+      "seed": 2,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "9a3c68ce92659bf9d1e2d766ee3dd02027221e5cc4b7f85992e1a94ac93e08c0",
+      "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+      "thresholds": {
+        "global": [
+          0.6531714200973511,
+          0.6531714200973511,
+          0.6531714200973511,
+          0.6531714200973511,
+          0.6531714200973511,
+          0.6531714200973511
+        ],
+        "class_macro": [
+          0.7846661806106567,
+          0.6264844536781311,
+          0.7529907822608948,
+          0.504586935043335,
+          0.5217680335044861,
+          0.4305426776409149
+        ],
+        "class_minimum": [
+          0.42684346437454224,
+          0.6908767223358154,
+          0.869465708732605,
+          0.75494384765625,
+          0.6547396183013916,
+          0.7456359267234802
+        ]
+      },
+      "validation_predictions_sha": "02912ee648cef4eaa60fc8032d1c26242d1a677ece5e1c9121636da71735b370"
+    },
+    "B2-openvino-one-640": {
+      "run": "B2",
+      "model": "B",
+      "seed": 2,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "cc3aa2739f6cf084c290706e9e7a1ae0ef0bd0bc15b0c4f6192ececcd72c8c72",
+      "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+      "thresholds": {
+        "global": [
+          0.7504309415817261,
+          0.7504309415817261,
+          0.7504309415817261,
+          0.7504309415817261,
+          0.7504309415817261,
+          0.7504309415817261
+        ]
+      },
+      "validation_predictions_sha": "7478e63cda49b3ed55cf472750a20d551aac943094b537880d4c75ef5fbe6c30"
+    },
+    "C0-openvino-dense-480": {
+      "run": "C0",
+      "model": "C",
+      "seed": 0,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "e223ce4a6b9ff2422f0232b9b60820feee7e14feb275b26fb9aebddc2021f934",
+      "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+      "thresholds": {
+        "global": [
+          0.7189585566520691,
+          0.7189585566520691,
+          0.7189585566520691,
+          0.7189585566520691,
+          0.7189585566520691,
+          0.7189585566520691
+        ],
+        "class_macro": [
+          1.0000001192092896,
+          0.7093284130096436,
+          0.766191840171814,
+          0.5075138807296753,
+          0.6745871901512146,
+          0.5597208738327026
+        ],
+        "class_minimum": [
+          0.5792235136032104,
+          0.8071727156639099,
+          0.861622154712677,
+          0.8313175439834595,
+          0.7850852012634277,
+          0.7166914343833923
+        ]
+      },
+      "validation_predictions_sha": "fd42b79ab0c25deec23d92cbea89094f49b29cf6bbd7954712928fa475bf67b3"
+    },
+    "C0-openvino-one-256": {
+      "run": "C0",
+      "model": "C",
+      "seed": 0,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "d8aab7342330dc97267b6905641363d82a49454a3c0bbe17ccf2f30e68bed93c",
+      "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+      "thresholds": {
+        "global": [
+          0.7293124198913574,
+          0.7293124198913574,
+          0.7293124198913574,
+          0.7293124198913574,
+          0.7293124198913574,
+          0.7293124198913574
+        ]
+      },
+      "validation_predictions_sha": "88e3462dd6cc5ecefbfb8cd447a6bd4abc95d5180c90415f04308c9d78522681"
+    },
+    "C0-openvino-one-320": {
+      "run": "C0",
+      "model": "C",
+      "seed": 0,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "5afed75e061ea55efbaecfe05a44fd37243a1d363f8aa29c8e77561e33c7b812",
+      "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+      "thresholds": {
+        "global": [
+          0.7637887001037598,
+          0.7637887001037598,
+          0.7637887001037598,
+          0.7637887001037598,
+          0.7637887001037598,
+          0.7637887001037598
+        ]
+      },
+      "validation_predictions_sha": "a1b329f008f32cc0ba0ee688f8785724c13914dd9f5f1474f32d8bc246a62896"
+    },
+    "C0-openvino-one-480": {
+      "run": "C0",
+      "model": "C",
+      "seed": 0,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "5873e1315e3c9d1632a2d4a74bd11895b591a802ae203e0d72a7010e5415c447",
+      "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+      "thresholds": {
+        "global": [
+          0.7704395055770874,
+          0.7704395055770874,
+          0.7704395055770874,
+          0.7704395055770874,
+          0.7704395055770874,
+          0.7704395055770874
+        ],
+        "class_macro": [
+          1.0000001192092896,
+          0.7673947215080261,
+          0.7018879652023315,
+          0.5903012752532959,
+          0.7035069465637207,
+          0.5822710990905762
+        ],
+        "class_minimum": [
+          0.5545709133148193,
+          0.8753935098648071,
+          0.8862996697425842,
+          0.8333277702331543,
+          0.7986898422241211,
+          0.8405612707138062
+        ]
+      },
+      "validation_predictions_sha": "75f727177d866250560228d6bc19e72ea3eec2419302ae8fa61508f19f84089d"
+    },
+    "C0-openvino-one-640": {
+      "run": "C0",
+      "model": "C",
+      "seed": 0,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "fb7b417df555e9789c171d173c29f8cbc5766afaa02c4e480f72eb7af2aa9010",
+      "checkpoint_sha": "deb0c891c005b2fa2a560c2a9a6e9ab587fa3239af156dc3f155af5aa760a3b1",
+      "thresholds": {
+        "global": [
+          0.827014684677124,
+          0.827014684677124,
+          0.827014684677124,
+          0.827014684677124,
+          0.827014684677124,
+          0.827014684677124
+        ]
+      },
+      "validation_predictions_sha": "389dc798683c5a7f21b50bc76ca8fb72d3cba84530523fe3002b796deb2d3c03"
+    },
+    "C1-openvino-dense-480": {
+      "run": "C1",
+      "model": "C",
+      "seed": 1,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "cd73860a40cd1a5253cc76d37efbe23d4c9b97d9951cae2b34f8dd3e512c327a",
+      "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+      "thresholds": {
+        "global": [
+          0.7302353382110596,
+          0.7302353382110596,
+          0.7302353382110596,
+          0.7302353382110596,
+          0.7302353382110596,
+          0.7302353382110596
+        ],
+        "class_macro": [
+          1.0000001192092896,
+          0.6299318075180054,
+          0.7429597973823547,
+          0.6745849847793579,
+          0.6582357883453369,
+          0.6538566946983337
+        ],
+        "class_minimum": [
+          0.548041820526123,
+          0.7680796980857849,
+          0.8437764048576355,
+          0.839626669883728,
+          0.7626911997795105,
+          0.7843561768531799
+        ]
+      },
+      "validation_predictions_sha": "1b5fc204de5dc0ffe99e08c45d3220c43a083ebf3730dfc6899c9eb847feb5e1"
+    },
+    "C1-openvino-one-256": {
+      "run": "C1",
+      "model": "C",
+      "seed": 1,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "9f00c8b0fecb78c574a84f74acf13364047539fe9026888bcc11732e1741d293",
+      "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+      "thresholds": {
+        "global": [
+          0.758266806602478,
+          0.758266806602478,
+          0.758266806602478,
+          0.758266806602478,
+          0.758266806602478,
+          0.758266806602478
+        ]
+      },
+      "validation_predictions_sha": "555d218c4b250b42c9a1cfefb99fbe53f558342f2b15fca3d75b29d9e8f543d2"
+    },
+    "C1-openvino-one-320": {
+      "run": "C1",
+      "model": "C",
+      "seed": 1,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "707ddefb271af4354d9cf37bc2d7cc2d2ce6e3a0e7947321b31260ed09bc3274",
+      "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+      "thresholds": {
+        "global": [
+          0.736803412437439,
+          0.736803412437439,
+          0.736803412437439,
+          0.736803412437439,
+          0.736803412437439,
+          0.736803412437439
+        ]
+      },
+      "validation_predictions_sha": "78978dae352c91b501300d0531db2168335ef0b0a828a244cfc985139592a0b5"
+    },
+    "C1-openvino-one-480": {
+      "run": "C1",
+      "model": "C",
+      "seed": 1,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "6806ae311f8af7247537f12412769ad39f45dcef999dd0e3c46ec244c1089b01",
+      "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+      "thresholds": {
+        "global": [
+          0.7584478855133057,
+          0.7584478855133057,
+          0.7584478855133057,
+          0.7584478855133057,
+          0.7584478855133057,
+          0.7584478855133057
+        ],
+        "class_macro": [
+          0.7957653999328613,
+          0.779370903968811,
+          0.7584478855133057,
+          0.6037510633468628,
+          0.8069124221801758,
+          0.4885399043560028
+        ],
+        "class_minimum": [
+          0.5141572952270508,
+          0.8587173819541931,
+          0.8632475733757019,
+          0.8643890619277954,
+          0.8069124221801758,
+          0.8058102130889893
+        ]
+      },
+      "validation_predictions_sha": "9d067593528a9d37fe6e9eef3ca74ef22a57a5f7c93c893a1c40d0ed63e8adf7"
+    },
+    "C1-openvino-one-640": {
+      "run": "C1",
+      "model": "C",
+      "seed": 1,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "ca63f76ba763ca110ba10bc3db04b63a39f1c2c18790ca4876eb51c11ea00d94",
+      "checkpoint_sha": "fa4c3faa90a1f333d9c42083f49c376b8836e8d926928e0da9a298200e53075d",
+      "thresholds": {
+        "global": [
+          0.8070372939109802,
+          0.8070372939109802,
+          0.8070372939109802,
+          0.8070372939109802,
+          0.8070372939109802,
+          0.8070372939109802
+        ]
+      },
+      "validation_predictions_sha": "dd9e0cccfe25d5013aca5e33585ecdaa8f2c7a63cc8e05414affdd9b6ed2ce72"
+    },
+    "C2-openvino-dense-480": {
+      "run": "C2",
+      "model": "C",
+      "seed": 2,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "21ef796d9bfa55d37169cb5e18f3ac2a1cc0cc14109ec918b7c1d9466163034f",
+      "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+      "thresholds": {
+        "global": [
+          0.7288724184036255,
+          0.7288724184036255,
+          0.7288724184036255,
+          0.7288724184036255,
+          0.7288724184036255,
+          0.7288724184036255
+        ],
+        "class_macro": [
+          0.7313563823699951,
+          0.7449812889099121,
+          0.7203242778778076,
+          0.6417214870452881,
+          0.7288724184036255,
+          0.6576344966888428
+        ],
+        "class_minimum": [
+          0.5463706254959106,
+          0.8004297018051147,
+          0.820308268070221,
+          0.8865675926208496,
+          0.7755906581878662,
+          0.7983213067054749
+        ]
+      },
+      "validation_predictions_sha": "03f0e348f5101067a0ca1dc6dd55b5f02686dc0077d9ba860766323ab2463478"
+    },
+    "C2-openvino-one-256": {
+      "run": "C2",
+      "model": "C",
+      "seed": 2,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "ed22a945ae301981e837d7876e7ae24fa973dc6c42d5da6247e4c6a48a908e36",
+      "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+      "thresholds": {
+        "global": [
+          0.7968774437904358,
+          0.7968774437904358,
+          0.7968774437904358,
+          0.7968774437904358,
+          0.7968774437904358,
+          0.7968774437904358
+        ]
+      },
+      "validation_predictions_sha": "30a71382f66a2dc786f6809833dd9e9bd5e316768bf9fe805ce961bc611cb506"
+    },
+    "C2-openvino-one-320": {
+      "run": "C2",
+      "model": "C",
+      "seed": 2,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "6a15b4da418b60afa321f16897cb08144d7ef2c6952bdbd8edcaf1874ee450d6",
+      "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+      "thresholds": {
+        "global": [
+          0.7729639410972595,
+          0.7729639410972595,
+          0.7729639410972595,
+          0.7729639410972595,
+          0.7729639410972595,
+          0.7729639410972595
+        ]
+      },
+      "validation_predictions_sha": "a1cf0323e9f931cfb43b6c87056630264e2744ac8a45e47e587a9ea72d783344"
+    },
+    "C2-openvino-one-480": {
+      "run": "C2",
+      "model": "C",
+      "seed": 2,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "d9a0c93fdc8b73483f8ab6bbec271aa7ad914334ac2679f3f4174ceaf760d732",
+      "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+      "thresholds": {
+        "global": [
+          0.7868828177452087,
+          0.7868828177452087,
+          0.7868828177452087,
+          0.7868828177452087,
+          0.7868828177452087,
+          0.7868828177452087
+        ],
+        "class_macro": [
+          0.8590515851974487,
+          0.7588165402412415,
+          0.5286760330200195,
+          0.7619602084159851,
+          0.8880871534347534,
+          0.5075738430023193
+        ],
+        "class_minimum": [
+          0.541027843952179,
+          0.8762150406837463,
+          0.9052653312683105,
+          0.7946953773498535,
+          0.871031641960144,
+          0.8346974849700928
+        ]
+      },
+      "validation_predictions_sha": "0e75d8bc13e2ac0f9be0ea80bc1ae75945e3853baedceb887fb5be0f36f835a2"
+    },
+    "C2-openvino-one-640": {
+      "run": "C2",
+      "model": "C",
+      "seed": 2,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "4c9b688c6c1198a8ba32c2f6f4f4b024703f7a0a42c960af009fede2f3de08fc",
+      "checkpoint_sha": "9ed00305bdc090c5f19b4917224685be784b0530d12fc0641a94a5270839b400",
+      "thresholds": {
+        "global": [
+          0.8400188088417053,
+          0.8400188088417053,
+          0.8400188088417053,
+          0.8400188088417053,
+          0.8400188088417053,
+          0.8400188088417053
+        ]
+      },
+      "validation_predictions_sha": "745c32ee1d83012d17a86f33c13e58346a51a17e8553e2f27301c9e1fa1e76d5"
+    },
+    "D0-openvino-dense-480": {
+      "run": "D0",
+      "model": "D",
+      "seed": 0,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "3d02a4b62a2164d1985e1275240c437f80f786d5b2a61f8692f3c7a0f357194c",
+      "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+      "thresholds": {
+        "global": [
+          0.758877694606781,
+          0.758877694606781,
+          0.758877694606781,
+          0.758877694606781,
+          0.758877694606781,
+          0.758877694606781
+        ],
+        "class_macro": [
+          0.7600244879722595,
+          0.6689636707305908,
+          0.7389370203018188,
+          0.6183977127075195,
+          0.8072057366371155,
+          0.7381314039230347
+        ],
+        "class_minimum": [
+          0.6446122527122498,
+          0.8183204531669617,
+          0.8046370148658752,
+          0.8831912875175476,
+          0.787742018699646,
+          0.8188846111297607
+        ]
+      },
+      "validation_predictions_sha": "858392239757acf5429eb458efb4defd50cdd9bf2f226d12096d3229c6f714d6"
+    },
+    "D0-openvino-one-256": {
+      "run": "D0",
+      "model": "D",
+      "seed": 0,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "8c02c9a929001ffb71f9ffcb6360d338d1517126d3a3581faafac08aead040f5",
+      "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+      "thresholds": {
+        "global": [
+          0.79544997215271,
+          0.79544997215271,
+          0.79544997215271,
+          0.79544997215271,
+          0.79544997215271,
+          0.79544997215271
+        ]
+      },
+      "validation_predictions_sha": "749ad780aaff7fc1d7ceda01ceab65536aeba3c572e22c7b70826d020d34794b"
+    },
+    "D0-openvino-one-320": {
+      "run": "D0",
+      "model": "D",
+      "seed": 0,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "098228ed2a36c8184d68407c4f0cf09015ae9b31123458dfd9897c8dda60648d",
+      "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+      "thresholds": {
+        "global": [
+          0.737269937992096,
+          0.737269937992096,
+          0.737269937992096,
+          0.737269937992096,
+          0.737269937992096,
+          0.737269937992096
+        ]
+      },
+      "validation_predictions_sha": "3aef3b92d7b0a5c7707e2e4d6112eb4e20f6726a77aeb752b73753062e472173"
+    },
+    "D0-openvino-one-480": {
+      "run": "D0",
+      "model": "D",
+      "seed": 0,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "665a4fa1461e71c07d126c388410ad91d34dcc99888e030cba23ddd7fef533f6",
+      "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+      "thresholds": {
+        "global": [
+          0.7868207693099976,
+          0.7868207693099976,
+          0.7868207693099976,
+          0.7868207693099976,
+          0.7868207693099976,
+          0.7868207693099976
+        ],
+        "class_macro": [
+          0.8379818201065063,
+          0.8017305135726929,
+          0.6856358647346497,
+          0.6158544421195984,
+          0.8139190673828125,
+          0.526793360710144
+        ],
+        "class_minimum": [
+          0.602008581161499,
+          0.8769644498825073,
+          0.88851398229599,
+          0.8842175006866455,
+          0.854789674282074,
+          0.8460957407951355
+        ]
+      },
+      "validation_predictions_sha": "00abfaccc35149c85d99e52c14a066fd76e470590db4415114434ca38b5b9e9e"
+    },
+    "D0-openvino-one-640": {
+      "run": "D0",
+      "model": "D",
+      "seed": 0,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "3835b84736855d699a699af80a503b72f10cf0cb4aba397615fa14b2655c39ba",
+      "checkpoint_sha": "893fee712f1e674eeef6a827e28360bbf6a80bc8bfeae768bbe38c94c2ea7390",
+      "thresholds": {
+        "global": [
+          0.8387138247489929,
+          0.8387138247489929,
+          0.8387138247489929,
+          0.8387138247489929,
+          0.8387138247489929,
+          0.8387138247489929
+        ]
+      },
+      "validation_predictions_sha": "4a6589cc5791610032e381d0a8b04d102a8c819d00720616e58ab18d52777cc0"
+    },
+    "D1-openvino-dense-480": {
+      "run": "D1",
+      "model": "D",
+      "seed": 1,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "a8565920da1b14dff7d9e73e4336c9ad735c54c6bfe6085782739483144d2c08",
+      "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+      "thresholds": {
+        "global": [
+          0.742599368095398,
+          0.742599368095398,
+          0.742599368095398,
+          0.742599368095398,
+          0.742599368095398,
+          0.742599368095398
+        ],
+        "class_macro": [
+          0.8251444101333618,
+          0.6161215305328369,
+          0.7277945280075073,
+          0.6463104486465454,
+          0.7796992659568787,
+          0.6662755012512207
+        ],
+        "class_minimum": [
+          0.6558908224105835,
+          0.7884663939476013,
+          0.8363245725631714,
+          0.8508362174034119,
+          0.7713002562522888,
+          0.8168490529060364
+        ]
+      },
+      "validation_predictions_sha": "2e0704bc35b0a719ec936361c26bdc653889cb135be6bb4234c5110aef640548"
+    },
+    "D1-openvino-one-256": {
+      "run": "D1",
+      "model": "D",
+      "seed": 1,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "2e3d8693879edbabce1b7f3e808b77db6ee14f2a4640804eb1ea352f7e32e362",
+      "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+      "thresholds": {
+        "global": [
+          0.7429242730140686,
+          0.7429242730140686,
+          0.7429242730140686,
+          0.7429242730140686,
+          0.7429242730140686,
+          0.7429242730140686
+        ]
+      },
+      "validation_predictions_sha": "d99555b2f9863adc42fff3644b250b387f013b92f790b18c224bb858793ec04e"
+    },
+    "D1-openvino-one-320": {
+      "run": "D1",
+      "model": "D",
+      "seed": 1,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "bc7337bd507c5d1fbcf9f9e87f2fe25f002f3cb0f89e8ab55d6788c67f4aa2a0",
+      "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+      "thresholds": {
+        "global": [
+          0.7558223605155945,
+          0.7558223605155945,
+          0.7558223605155945,
+          0.7558223605155945,
+          0.7558223605155945,
+          0.7558223605155945
+        ]
+      },
+      "validation_predictions_sha": "036fb0912441a79ba795aee1fd8ef5c2db27e957cb5b3dc30b428b5bd16ae8bd"
+    },
+    "D1-openvino-one-480": {
+      "run": "D1",
+      "model": "D",
+      "seed": 1,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "37f7486cb788470bf9ae7e4c78961295e915c3eeee263f124134ee1b74a7841e",
+      "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+      "thresholds": {
+        "global": [
+          0.7633296251296997,
+          0.7633296251296997,
+          0.7633296251296997,
+          0.7633296251296997,
+          0.7633296251296997,
+          0.7633296251296997
+        ],
+        "class_macro": [
+          0.8124447464942932,
+          0.75772625207901,
+          0.7169599533081055,
+          0.5296591520309448,
+          0.8137584328651428,
+          0.5117101669311523
+        ],
+        "class_minimum": [
+          0.6590447425842285,
+          0.8439295291900635,
+          0.8534155488014221,
+          0.6732642650604248,
+          0.7796798944473267,
+          0.769740104675293
+        ]
+      },
+      "validation_predictions_sha": "a79afcf840b05aad1211584a340b226d88cd7013f00240a64b6b79d7ee57051c"
+    },
+    "D1-openvino-one-640": {
+      "run": "D1",
+      "model": "D",
+      "seed": 1,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "3a38ff468f3853a0210a2447173ecff74184ad6df006f375b55aac2455f3b2bb",
+      "checkpoint_sha": "c263068eaa727dbe30ebb7cf26748ad189a116b491191fd0fa4f1d64a535dfa2",
+      "thresholds": {
+        "global": [
+          0.8502721190452576,
+          0.8502721190452576,
+          0.8502721190452576,
+          0.8502721190452576,
+          0.8502721190452576,
+          0.8502721190452576
+        ]
+      },
+      "validation_predictions_sha": "6b5d806d900c86dd2cd8d0ce9dedb8c873fa3f74bbf22e1cdc8fcb06902ab479"
+    },
+    "D2-openvino-dense-480": {
+      "run": "D2",
+      "model": "D",
+      "seed": 2,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "b609c3ad427088fc00666dd392c81f64a777be0f294d5f2de27f2dc2027aa750",
+      "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+      "thresholds": {
+        "global": [
+          0.7468793988227844,
+          0.7468793988227844,
+          0.7468793988227844,
+          0.7468793988227844,
+          0.7468793988227844,
+          0.7468793988227844
+        ],
+        "class_macro": [
+          1.0000001192092896,
+          0.6762397885322571,
+          0.7395455241203308,
+          0.5909529328346252,
+          0.7677447199821472,
+          0.6652613878250122
+        ],
+        "class_minimum": [
+          0.5723705291748047,
+          0.7857460975646973,
+          0.8071780204772949,
+          0.7428911328315735,
+          0.7829920053482056,
+          0.7533097267150879
+        ]
+      },
+      "validation_predictions_sha": "c580ec322a958dda1f12af2f01d501370cad966e43d03f016210a91288412b56"
+    },
+    "D2-openvino-one-256": {
+      "run": "D2",
+      "model": "D",
+      "seed": 2,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "9ea04026b8455f2d55241620655c804157bdf6e03880f629d32436baf42eaa25",
+      "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+      "thresholds": {
+        "global": [
+          0.6739615201950073,
+          0.6739615201950073,
+          0.6739615201950073,
+          0.6739615201950073,
+          0.6739615201950073,
+          0.6739615201950073
+        ]
+      },
+      "validation_predictions_sha": "e3d87a2b58184e4c4ba791f48cd97d4cbb5d867daeb5c726195ba22367120138"
+    },
+    "D2-openvino-one-320": {
+      "run": "D2",
+      "model": "D",
+      "seed": 2,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "c56a560914f3f7b26f77663e27077c57aef6dcd7430e98ee7b3718d97457f5b9",
+      "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+      "thresholds": {
+        "global": [
+          0.7664123773574829,
+          0.7664123773574829,
+          0.7664123773574829,
+          0.7664123773574829,
+          0.7664123773574829,
+          0.7664123773574829
+        ]
+      },
+      "validation_predictions_sha": "a3a4fac250bfb7c3a2b588689be33a00b433bdac2a884e9d9f8687043ab499d8"
+    },
+    "D2-openvino-one-480": {
+      "run": "D2",
+      "model": "D",
+      "seed": 2,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "a53d456ba70ab938c8500e069180549f94893574ced9d12fb45a83a300700c8c",
+      "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+      "thresholds": {
+        "global": [
+          0.7821454405784607,
+          0.7821454405784607,
+          0.7821454405784607,
+          0.7821454405784607,
+          0.7821454405784607,
+          0.7821454405784607
+        ],
+        "class_macro": [
+          0.8308628797531128,
+          0.638795018196106,
+          0.7821559309959412,
+          0.6404736042022705,
+          0.8035299777984619,
+          0.6092881560325623
+        ],
+        "class_minimum": [
+          0.6009782552719116,
+          0.8885097503662109,
+          0.9000365734100342,
+          0.8919244408607483,
+          0.8497432470321655,
+          0.8106558322906494
+        ]
+      },
+      "validation_predictions_sha": "42876aa6f1748310a8e9cef00c6cda7a9f15c43ab0351ed7b2a3f0c3fa6c5256"
+    },
+    "D2-openvino-one-640": {
+      "run": "D2",
+      "model": "D",
+      "seed": 2,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "9ed58d2c9a3faad7cdff44d387f7f63d8cbb285232bb8e219fe9d4d9b5bfa640",
+      "checkpoint_sha": "a8f47fbd772f7807330f4245e77bd7c940bbe7fa6b954c5d7ebad8c1e456a03f",
+      "thresholds": {
+        "global": [
+          0.8263697624206543,
+          0.8263697624206543,
+          0.8263697624206543,
+          0.8263697624206543,
+          0.8263697624206543,
+          0.8263697624206543
+        ]
+      },
+      "validation_predictions_sha": "1dffe38057a4ef126aa4e6750d11c0d1e0f956f0629004b00a64165a22f23e0f"
+    },
+    "E0-openvino-dense-480": {
+      "run": "E0",
+      "model": "E",
+      "seed": 0,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "d903ad7d887375a6abb37a457f63554a011a45e22ae5cb6cd14a3e9663f605f3",
+      "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+      "thresholds": {
+        "global": [
+          0.8005523681640625,
+          0.8005523681640625,
+          0.8005523681640625,
+          0.8005523681640625,
+          0.8005523681640625,
+          0.8005523681640625
+        ],
+        "class_macro": [
+          1.0000001192092896,
+          0.6884497404098511,
+          0.8171761631965637,
+          0.7514395117759705,
+          0.7851934432983398,
+          0.7308179140090942
+        ],
+        "class_minimum": [
+          0.738717794418335,
+          0.822828471660614,
+          0.8362314701080322,
+          0.8580508232116699,
+          0.8033027648925781,
+          0.7308179140090942
+        ]
+      },
+      "validation_predictions_sha": "4fc781ba31dea3390dad5fb99cf54f6357999f55a8f484cb631aff7616335310"
+    },
+    "E0-openvino-one-256": {
+      "run": "E0",
+      "model": "E",
+      "seed": 0,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "f6b032918a6b314bec2e2cde27f7cf5b8f65bcce983c9a2bf87bacf24cba752f",
+      "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+      "thresholds": {
+        "global": [
+          0.6382631063461304,
+          0.6382631063461304,
+          0.6382631063461304,
+          0.6382631063461304,
+          0.6382631063461304,
+          0.6382631063461304
+        ]
+      },
+      "validation_predictions_sha": "6f8de8541bc98d21be9d21ab38ae1bdf62615c25fb6919d4ae7fe164fe0788d5"
+    },
+    "E0-openvino-one-320": {
+      "run": "E0",
+      "model": "E",
+      "seed": 0,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "b1b08a192b8eb4f030745cbafebd8e925990bb69cd240b8f80c98eda0921f1aa",
+      "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+      "thresholds": {
+        "global": [
+          0.7366375923156738,
+          0.7366375923156738,
+          0.7366375923156738,
+          0.7366375923156738,
+          0.7366375923156738,
+          0.7366375923156738
+        ]
+      },
+      "validation_predictions_sha": "7ca7f10ea5072e84d40e579817b5cf9c7784d0b5334bb311471086482416c622"
+    },
+    "E0-openvino-one-480": {
+      "run": "E0",
+      "model": "E",
+      "seed": 0,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "c909b275eb23f4d46b133a64d61f35be20830a25f972496fe30b4066a90d8782",
+      "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+      "thresholds": {
+        "global": [
+          0.7922114729881287,
+          0.7922114729881287,
+          0.7922114729881287,
+          0.7922114729881287,
+          0.7922114729881287,
+          0.7922114729881287
+        ],
+        "class_macro": [
+          0.8324605226516724,
+          0.7585694789886475,
+          0.7334508895874023,
+          0.42134660482406616,
+          0.8958362340927124,
+          0.722261369228363
+        ],
+        "class_minimum": [
+          0.6152384281158447,
+          0.8604053258895874,
+          0.9065201282501221,
+          0.9412469267845154,
+          0.8320479393005371,
+          0.8284252285957336
+        ]
+      },
+      "validation_predictions_sha": "36a581018386b5e86ef266f2cd64e40fbf023bb0ca9a78d8d5ef033847adcdd8"
+    },
+    "E0-openvino-one-640": {
+      "run": "E0",
+      "model": "E",
+      "seed": 0,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "bfeb74fe70770753effd48f4b646c17926288e5fdc64bb42ddbc51e33ca50705",
+      "checkpoint_sha": "3723f433b6084e6be3170722d9f6892cf51e00702e5928f75d596df35dc7f5b3",
+      "thresholds": {
+        "global": [
+          0.8591595888137817,
+          0.8591595888137817,
+          0.8591595888137817,
+          0.8591595888137817,
+          0.8591595888137817,
+          0.8591595888137817
+        ]
+      },
+      "validation_predictions_sha": "fc3a8f64ab96a86022c0902cf680e6fb564ef9449a9341acc57348d0c9757912"
+    },
+    "E1-openvino-dense-480": {
+      "run": "E1",
+      "model": "E",
+      "seed": 1,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "3e95079b20c47ee075143d62c9adb4172d9d7dfa64df3825ef60de4dc7b69f13",
+      "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+      "thresholds": {
+        "global": [
+          0.7142080068588257,
+          0.7142080068588257,
+          0.7142080068588257,
+          0.7142080068588257,
+          0.7142080068588257,
+          0.7142080068588257
+        ],
+        "class_macro": [
+          0.8168872594833374,
+          0.7285146713256836,
+          0.7152057886123657,
+          0.655393123626709,
+          0.6449271440505981,
+          0.5541267395019531
+        ],
+        "class_minimum": [
+          0.5466843843460083,
+          0.7740793228149414,
+          0.7613545060157776,
+          0.8854469656944275,
+          0.7098774313926697,
+          0.6892823576927185
+        ]
+      },
+      "validation_predictions_sha": "55cffcb60f2c728c077f5345e0603eff4fce63483838384743bdaa99b126ecee"
+    },
+    "E1-openvino-one-256": {
+      "run": "E1",
+      "model": "E",
+      "seed": 1,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "d7fb0b97c3daffefdfa856c73aaeb5c189e3f084bc83fb3acacf89a38b043638",
+      "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+      "thresholds": {
+        "global": [
+          0.4461089074611664,
+          0.4461089074611664,
+          0.4461089074611664,
+          0.4461089074611664,
+          0.4461089074611664,
+          0.4461089074611664
+        ]
+      },
+      "validation_predictions_sha": "785abe00b98a43639934f1076ed765f7b80da8e6e0da9733620a25f112794e6e"
+    },
+    "E1-openvino-one-320": {
+      "run": "E1",
+      "model": "E",
+      "seed": 1,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "1ed0dfe93631eabf31c09037fd5ea8f102cdc8b7d62aced35f8de0a83bc3d304",
+      "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+      "thresholds": {
+        "global": [
+          0.5529319047927856,
+          0.5529319047927856,
+          0.5529319047927856,
+          0.5529319047927856,
+          0.5529319047927856,
+          0.5529319047927856
+        ]
+      },
+      "validation_predictions_sha": "af5752e662f65216c84a2a40bfd66e4f332b649c190f26dec67d552056247ced"
+    },
+    "E1-openvino-one-480": {
+      "run": "E1",
+      "model": "E",
+      "seed": 1,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "40f4b81efdad52b2b468f1078154e186b51f83989e2ff8d038f180693241a88d",
+      "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+      "thresholds": {
+        "global": [
+          0.651336669921875,
+          0.651336669921875,
+          0.651336669921875,
+          0.651336669921875,
+          0.651336669921875,
+          0.651336669921875
+        ],
+        "class_macro": [
+          0.7169398069381714,
+          0.6307007074356079,
+          0.651336669921875,
+          0.6716471910476685,
+          0.4840323328971863,
+          0.6289129257202148
+        ],
+        "class_minimum": [
+          0.4811645448207855,
+          0.7749378681182861,
+          0.8301001191139221,
+          0.923755407333374,
+          0.6103925704956055,
+          0.7528350949287415
+        ]
+      },
+      "validation_predictions_sha": "bd6343691be7d4ceb99a62148ffc1f1055c4c45f146c16b32b2d7ff43cf52f58"
+    },
+    "E1-openvino-one-640": {
+      "run": "E1",
+      "model": "E",
+      "seed": 1,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "a98319c3f846336520291ca9ff4ca2a251455a6d3ea29b475c74f391c77d0b83",
+      "checkpoint_sha": "4fb2c4b5b0042a024314ef3693c1b2c34491f66f97b3676fe122678713c5c513",
+      "thresholds": {
+        "global": [
+          0.7505428791046143,
+          0.7505428791046143,
+          0.7505428791046143,
+          0.7505428791046143,
+          0.7505428791046143,
+          0.7505428791046143
+        ]
+      },
+      "validation_predictions_sha": "3b937e05eee6c6960ba170eb52b3aa3321efb21b87e893cd27764153bc963f50"
+    },
+    "E2-openvino-dense-480": {
+      "run": "E2",
+      "model": "E",
+      "seed": 2,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "2e5bba0befa5049d10d21e02a93d10407bbbc2f69261d6f8372b1a579fd4da79",
+      "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+      "thresholds": {
+        "global": [
+          0.7438302040100098,
+          0.7438302040100098,
+          0.7438302040100098,
+          0.7438302040100098,
+          0.7438302040100098,
+          0.7438302040100098
+        ],
+        "class_macro": [
+          0.7983922958374023,
+          0.7202062010765076,
+          0.6533228158950806,
+          0.4990870952606201,
+          0.8465288877487183,
+          0.577052116394043
+        ],
+        "class_minimum": [
+          0.5857201218605042,
+          0.7830564975738525,
+          0.8280019760131836,
+          0.8326467275619507,
+          0.7717657685279846,
+          0.7455974817276001
+        ]
+      },
+      "validation_predictions_sha": "ff08ba021f62dcfa3d86e23f574f132cc654d8be8a375f9a87d38695376f2149"
+    },
+    "E2-openvino-one-256": {
+      "run": "E2",
+      "model": "E",
+      "seed": 2,
+      "head": "one",
+      "side": 256,
+      "artifact_sha": "392b7d31f937fe0ff61b49bec81ddb11256afb4712fe0ba732ecc0c1e94d1c48",
+      "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+      "thresholds": {
+        "global": [
+          0.4255967140197754,
+          0.4255967140197754,
+          0.4255967140197754,
+          0.4255967140197754,
+          0.4255967140197754,
+          0.4255967140197754
+        ]
+      },
+      "validation_predictions_sha": "c60ae55258d62365b7b92ee03daa30ce489dc6a42bd56d9b268643ecd21291a0"
+    },
+    "E2-openvino-one-320": {
+      "run": "E2",
+      "model": "E",
+      "seed": 2,
+      "head": "one",
+      "side": 320,
+      "artifact_sha": "92d76060e7948dae6152221a206d66027b98a36fdda760faf2c46c1f0e00f3af",
+      "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+      "thresholds": {
+        "global": [
+          0.5456005334854126,
+          0.5456005334854126,
+          0.5456005334854126,
+          0.5456005334854126,
+          0.5456005334854126,
+          0.5456005334854126
+        ]
+      },
+      "validation_predictions_sha": "b5a27fea85b88dc669bc228d2365221233c22c54c1926a09e32b375f53cce795"
+    },
+    "E2-openvino-one-480": {
+      "run": "E2",
+      "model": "E",
+      "seed": 2,
+      "head": "one",
+      "side": 480,
+      "artifact_sha": "03526f95a7ac8759b1bbbc59605b162873c81a96937c815059e806d58df6c154",
+      "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+      "thresholds": {
+        "global": [
+          0.666527271270752,
+          0.666527271270752,
+          0.666527271270752,
+          0.666527271270752,
+          0.666527271270752,
+          0.666527271270752
+        ],
+        "class_macro": [
+          0.7058500051498413,
+          0.7293915748596191,
+          0.6414294242858887,
+          0.4561886489391327,
+          0.6749095916748047,
+          0.4877452254295349
+        ],
+        "class_minimum": [
+          0.4555571675300598,
+          0.834768533706665,
+          0.7200528383255005,
+          0.7591890096664429,
+          0.6938897371292114,
+          0.762535810470581
+        ]
+      },
+      "validation_predictions_sha": "2c8be2d03659f56e7fa8f77643e1f141a13a1510f7e3e248d12179ee010c043b"
+    },
+    "E2-openvino-one-640": {
+      "run": "E2",
+      "model": "E",
+      "seed": 2,
+      "head": "one",
+      "side": 640,
+      "artifact_sha": "9c4268fd7cd42179ec323b2d1cb8c4eb50e1b353ced775b9af708a29e3b38ea1",
+      "checkpoint_sha": "b7a410c025be9f42b37ce4e91374977b5feabee82daabe522cc7d0d69c40e3cc",
+      "thresholds": {
+        "global": [
+          0.7796364426612854,
+          0.7796364426612854,
+          0.7796364426612854,
+          0.7796364426612854,
+          0.7796364426612854,
+          0.7796364426612854
+        ]
+      },
+      "validation_predictions_sha": "040ac184f27e13b7f6a2e7ce82e051cec2cc4340fc49f12cce74eea7618fa3cb"
+    },
+    "yolov5s-0-openvino-dense-480": {
+      "run": "yolov5s-0",
+      "model": "yolov5s",
+      "seed": 0,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "79f9ebada63f380759178ea8a84c1057428798c46e66f0cfe9b1bd8f393bb00d",
+      "checkpoint_sha": "6efba699a7b0b31e18383a9933ef7c580880d9ddb379f841ad0adc563a7d4136",
+      "thresholds": {
+        "global": [
+          0.8149219751358032,
+          0.8149219751358032,
+          0.8149219751358032,
+          0.8149219751358032,
+          0.8149219751358032,
+          0.8149219751358032
+        ],
+        "class_macro": [
+          0.905796229839325,
+          0.8035715222358704,
+          0.8149511814117432,
+          0.5146657824516296,
+          0.6828340291976929,
+          0.6374660134315491
+        ],
+        "class_minimum": [
+          0.6749327778816223,
+          0.8786527514457703,
+          0.9079350829124451,
+          0.831475555896759,
+          0.8167287707328796,
+          0.8603848814964294
+        ]
+      },
+      "validation_predictions_sha": "f454304b6d6551ccd6958d846cc49f2e28d632b977ddf840aa9787ac6a2d1f68"
+    },
+    "yolov5s-1-openvino-dense-480": {
+      "run": "yolov5s-1",
+      "model": "yolov5s",
+      "seed": 1,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "1560fcd186b61f39d022ea56eeffbd06a2ade146800e4e5bc6c286c29a1a18e1",
+      "checkpoint_sha": "27893f0f4fdc6f890d2f359160f6a44e898aee8a75961116283e70931565c212",
+      "thresholds": {
+        "global": [
+          0.6765427589416504,
+          0.6765427589416504,
+          0.6765427589416504,
+          0.6765427589416504,
+          0.6765427589416504,
+          0.6765427589416504
+        ],
+        "class_macro": [
+          1.0000001192092896,
+          0.7061106562614441,
+          0.6982004642486572,
+          0.4860992729663849,
+          0.5458266735076904,
+          0.5876682996749878
+        ],
+        "class_minimum": [
+          0.3207450807094574,
+          0.7599450945854187,
+          0.7748137712478638,
+          0.7079526782035828,
+          0.6009567379951477,
+          0.7654886245727539
+        ]
+      },
+      "validation_predictions_sha": "8634cdc0e812a61492f4fa88a75561a582b4852bed6c2dfa1e625f9860aefb90"
+    },
+    "yolov5s-2-openvino-dense-480": {
+      "run": "yolov5s-2",
+      "model": "yolov5s",
+      "seed": 2,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "c1d4977c1ee14b03c7017be1d0b8b89cda6c00b072a9b1b22e9d1caf46947973",
+      "checkpoint_sha": "c97575dafab9b5cc6c5d04c0edea77a8f81d990bd429545a9ef5f11fc98da8de",
+      "thresholds": {
+        "global": [
+          0.6281307339668274,
+          0.6281307339668274,
+          0.6281307339668274,
+          0.6281307339668274,
+          0.6281307339668274,
+          0.6281307339668274
+        ],
+        "class_macro": [
+          0.6545441746711731,
+          0.7156593799591064,
+          0.6394656300544739,
+          0.362489253282547,
+          0.6570219993591309,
+          0.3463728129863739
+        ],
+        "class_minimum": [
+          0.32396453619003296,
+          0.8014361262321472,
+          0.8372401595115662,
+          0.6232209801673889,
+          0.6990686058998108,
+          0.7739646434783936
+        ]
+      },
+      "validation_predictions_sha": "510c1eabf2faee37a2f9ba60fe6c01c8f13f0ce55f0ba56b1aa14ef21ea3d939"
+    },
+    "yolov8n-0-openvino-dense-480": {
+      "run": "yolov8n-0",
+      "model": "yolov8n",
+      "seed": 0,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "46db2a9a306c3bd90244d31270f14929eefa85a9ab6e23df3d65bac4838f2a3a",
+      "checkpoint_sha": "e46a2fb7424a3d3a80245ffd93863db89093dd1f9c4c10dc382a38ebf828eb4b",
+      "thresholds": {
+        "global": [
+          0.8428676724433899,
+          0.8428676724433899,
+          0.8428676724433899,
+          0.8428676724433899,
+          0.8428676724433899,
+          0.8428676724433899
+        ],
+        "class_macro": [
+          0.9130876064300537,
+          0.7802647948265076,
+          0.7996707558631897,
+          0.7318216562271118,
+          0.8472040295600891,
+          0.7209141254425049
+        ],
+        "class_minimum": [
+          0.7602875828742981,
+          0.8714922666549683,
+          0.9106333255767822,
+          0.9201025366783142,
+          0.8505355715751648,
+          0.8374378681182861
+        ]
+      },
+      "validation_predictions_sha": "82f6d488d1545e11cd7a5d982f75dfc10d8e14c5b267dea264092676cb9a6e8c"
+    },
+    "yolov8n-1-openvino-dense-480": {
+      "run": "yolov8n-1",
+      "model": "yolov8n",
+      "seed": 1,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "2537af078bd4583d8bdfda593974ab8019604c35cde56a0c56000bbe87682c53",
+      "checkpoint_sha": "8cb93fc6e75b2214f63cf9d0f7416f56f7a945716ba0d1421122f76c2f2b3f8d",
+      "thresholds": {
+        "global": [
+          0.6125167608261108,
+          0.6125167608261108,
+          0.6125167608261108,
+          0.6125167608261108,
+          0.6125167608261108,
+          0.6125167608261108
+        ],
+        "class_macro": [
+          0.4721948802471161,
+          0.4790472984313965,
+          0.706462025642395,
+          0.621874213218689,
+          0.6486936807632446,
+          0.6017987728118896
+        ],
+        "class_minimum": [
+          0.3269146978855133,
+          0.6052447557449341,
+          0.723572850227356,
+          0.8463580012321472,
+          0.5580388903617859,
+          0.7107199430465698
+        ]
+      },
+      "validation_predictions_sha": "9f1c5b604c35bbdba47e2ae8a09b8ce6c324c8ad3ae1e0d41fa6ba8bfbfa04b6"
+    },
+    "yolov8n-2-openvino-dense-480": {
+      "run": "yolov8n-2",
+      "model": "yolov8n",
+      "seed": 2,
+      "head": "dense",
+      "side": 480,
+      "artifact_sha": "d34524e54254965a1d017162118761a8ee552459183518290c185d61db1991ea",
+      "checkpoint_sha": "2765e788f579354739b7532e6edfb153d5a2e32c689af0c820680c9ecb7db067",
+      "thresholds": {
+        "global": [
+          0.8329743146896362,
+          0.8329743146896362,
+          0.8329743146896362,
+          0.8329743146896362,
+          0.8329743146896362,
+          0.8329743146896362
+        ],
+        "class_macro": [
+          0.8880112767219543,
+          0.7927764654159546,
+          0.8257790803909302,
+          0.7550753951072693,
+          0.8357111811637878,
+          0.7233229875564575
+        ],
+        "class_minimum": [
+          0.7910478115081787,
+          0.8699091672897339,
+          0.8971459865570068,
+          0.9062246680259705,
+          0.8630838394165039,
+          0.8266878128051758
+        ]
+      },
+      "validation_predictions_sha": "c4360525777d921ed7f167076f0317ac2c654fd31ac4a6099d9b4d91a014f99f"
+    }
+  }
+}

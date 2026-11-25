@@ -1,11 +1,13 @@
 # Steel surface defect detection on a CPU
 
-**Lee Ting Sen · MLR 512, Advanced Computer Vision**
+**Lee Ting Sen and Khalifa Alshamsi · MLR 512, Advanced Computer Vision**
 
 <!-- cpu-study-results -->
-At 480 pixels on four performance cores, **YOLO26n** recorded the lowest mean validation pipeline p95 across three seeds (15.28 ms). It also met every prespecified mAP and per-class recall limit. Its held-out mean was **14.58 ms**, with **37.59% mAP50–95** and **41.63% macro recall**. YOLOv8n had the highest held-out mAP (38.19%). The compared stock paths are YOLO26n, YOLOv10n, YOLOv8n and original anchor-based YOLOv5s.
+Among the four default stock paths at 480 pixels on four performance cores, **YOLO26n** recorded the lowest mean validation pipeline p95 across three seeds (15.28 ms). It also met every prespecified mAP and per-class recall limit. Its held-out mean was **14.58 ms**, with **37.59% mAP50–95** and **41.63% macro recall**. YOLOv8n had the highest held-out mAP (38.19%). The compared stock paths are YOLO26n, YOLOv10n, YOLOv8n and original anchor-based YOLOv5s.
 
 When each YOLO26n head chose its own threshold at a validation allowance of 36 false boxes per 360 images, the dense head achieved **46.38%** mean test macro recall and one-to-one achieved **41.63%**. Their fresh test pipeline p95 values were 13.87 and 14.58 ms, respectively. On validation the corresponding values were 16.39 and 15.28 ms. [CPU comparison and replay commands](cpu_study/README.md) · [Validation ranking](artifacts/cpu-extension/stock/selection.json) · [Test results](artifacts/cpu-extension/tables/test-families.csv)
+
+Across 12 architecture/head options, validation selected **PConv YOLO26n with its dense head**. At its frozen global cutoffs, it reached 47.56% test macro recall and 12.99 ms test pipeline p95. Stock one-to-one was faster in the repeat test timing. The eligible validation timing ranges overlap. Allowing a one-point class-recall loss instead of two selected stock one-to-one. The follow-up reuses a previously inspected test split. [Joint selection and tolerance sensitivity](artifacts/cpu-extension/policies/recall-tolerance.csv) · [Class-specific results](artifacts/cpu-extension/policies/operating-results.csv)
 <!-- /cpu-study-results -->
 
 Can a lighter detector inspect hot-rolled steel faster while retaining defects that are hard to see? The original architecture experiment compares five detectors on NEU-DET, with three paired training seeds per detector. Validation selected stock YOLO26n (A), one-to-one detection, at 480 pixels. On 360 held-out images, A0 achieved **38.29% mAP50–95** and a **15.59 ms pipeline p95**. It detected 20 of 137 crazing annotations and 43 of 126 rolled-in-scale annotations at the frozen cutoff, with 37 false-positive boxes overall. The latency is the median of three session p95s on an Intel Core i9-13900HX using four CPU cores, batch one and OpenVINO FP32. [Measured exhibits (PDF)](artifacts/study/report/MLR512-experimental-materials.pdf) · [Per-configuration results](artifacts/study/report/cells.csv)
@@ -27,7 +29,7 @@ $py = (Resolve-Path .\.venv\Scripts\python.exe).Path
 - **Replay** performs fresh CPU inference on the bundled held-out image `inclusion_11`. The default A0 model returns one inclusion box. It checks the class, coordinates and score against the stored operating detections.
 - **Verify** runs the unit tests, rebuilds ten primary tables in a fresh directory and compares every byte. It reopens all 75 graphs, checks the reuse of the same 480-pixel one-to-one graph in both comparisons, recalculates latency percentiles, and independently evaluates all 174 measured cells with the COCO evaluator. The grouped factorial and recall interval checks are included. New validation receipts are written under `.review/` and `artifacts/audit/factorial-check.json`. [Original verification counts](artifacts/study/report/verification.json) · [Independent evaluator results](validation/research-metrics-check.json)
 
-The software installation needs network access or an existing wheel collection. Once installed, all three checks above work offline. CPU timing reported in the paper comes from the recorded benchmark sessions. The value in the live viewer measures one frame on the current machine.
+The same verification command also checks the six added historical-model graphs, 288,000 head-specific timings, the joint validation decision and 108,000 supplementary timings. An independent integer program checks the two class-threshold objectives for every OpenVINO path at 480 pixels. Setup needs network access or a wheel collection. After setup, all three checks above work offline. The live viewer shows one frame on the current machine.
 
 ## Run any checkpoint or graph
 

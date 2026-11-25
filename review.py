@@ -147,6 +147,10 @@ def verify(index):
     print("Verified the 174 quality cells, 522 timing sessions and independent metric and factorial checks.")
     if (ROOT / "bundles/cpu-extension/index.json").is_file():
         run_python("-m", "cpu_study.review", "verify")
+    if (ARTIFACTS / "cpu-extension/policies/freeze.json").is_file():
+        run_python("-m", "cpu_study.verify_policies")
+        run_python("-m", "cpu_study.policy_timing", "verify")
+        print("Verified the joint selection, six-class threshold fits and 108,000 supplementary timings.")
 
 
 def replay(args, index):
