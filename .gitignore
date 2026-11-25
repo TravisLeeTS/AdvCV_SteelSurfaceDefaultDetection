@@ -27,3 +27,6 @@ artifacts/cpu-extension/**/*.lock
 artifacts/cpu-repeat/
 artifacts/cpu-extension/policy-timing/*/
 artifacts/policy-repeat/
+artifacts/cpu-extension/dense-sizes/val/
+artifacts/cpu-extension/dense-sizes/test/
+artifacts/dense-size-repeat/

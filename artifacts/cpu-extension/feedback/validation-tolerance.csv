@@ -1,0 +1,337 @@
+path,reference,seed,metric,candidate_pct,reference_pct,difference_pp,loss_limit_pp,passes_this_metric,used_in_gate,eligible_under_registered_gate,passes_at_every_seed
+A/dense,A/one,0,map5095,42.32318275973655,40.44403861227081,1.8791441474657375,1,True,True,False,False
+A/dense,A/one,1,map5095,42.27646438643095,40.10558383731221,2.170880549118742,1,True,False,False,False
+A/dense,A/one,2,map5095,43.090726714147564,40.21514586207176,2.8755808520758066,1,True,False,False,False
+A/dense,A/one,paired mean,map5095,42.56345795343835,40.254922770551595,2.3085351828867573,1,True,True,False,False
+A/dense,A/one,0,recall_crazing,13.23529411764706,9.558823529411764,3.6764705882352953,2,True,True,False,False
+A/dense,A/one,1,recall_crazing,14.705882352941178,15.441176470588236,-0.735294117647058,2,True,False,False,False
+A/dense,A/one,2,recall_crazing,11.76470588235294,8.088235294117647,3.6764705882352935,2,True,False,False,False
+A/dense,A/one,paired mean,recall_crazing,13.23529411764706,11.029411764705882,2.2058823529411775,2,True,True,False,False
+A/dense,A/one,0,recall_inclusion,38.69346733668342,42.71356783919598,-4.0201005025125625,2,False,True,False,False
+A/dense,A/one,1,recall_inclusion,51.75879396984925,49.74874371859296,2.0100502512562883,2,True,False,False,False
+A/dense,A/one,2,recall_inclusion,56.78391959798995,45.7286432160804,11.05527638190955,2,True,False,False,False
+A/dense,A/one,paired mean,recall_inclusion,49.07872696817421,46.06365159128978,3.0150753768844254,2,True,True,False,False
+A/dense,A/one,0,recall_patches,75.14124293785311,61.5819209039548,13.559322033898304,2,True,True,False,False
+A/dense,A/one,1,recall_patches,73.44632768361582,63.2768361581921,10.169491525423723,2,True,False,False,False
+A/dense,A/one,2,recall_patches,74.57627118644068,61.016949152542374,13.559322033898304,2,True,False,False,False
+A/dense,A/one,paired mean,recall_patches,74.3879472693032,61.95856873822976,12.42937853107344,2,True,True,False,False
+A/dense,A/one,0,recall_pitted_surface,67.05882352941175,50.588235294117645,16.47058823529411,2,True,True,False,False
+A/dense,A/one,1,recall_pitted_surface,64.70588235294117,51.76470588235295,12.941176470588225,2,True,False,False,False
+A/dense,A/one,2,recall_pitted_surface,68.23529411764706,52.94117647058824,15.294117647058819,2,True,False,False,False
+A/dense,A/one,paired mean,recall_pitted_surface,66.66666666666666,51.76470588235294,14.901960784313715,2,True,True,False,False
+A/dense,A/one,0,recall_rolled_in_scale,36.29032258064516,31.451612903225808,4.838709677419352,2,True,True,False,False
+A/dense,A/one,1,recall_rolled_in_scale,37.096774193548384,32.25806451612903,4.838709677419352,2,True,False,False,False
+A/dense,A/one,2,recall_rolled_in_scale,34.67741935483871,29.838709677419356,4.838709677419356,2,True,False,False,False
+A/dense,A/one,paired mean,recall_rolled_in_scale,36.02150537634409,31.182795698924732,4.838709677419356,2,True,True,False,False
+A/dense,A/one,0,recall_scratches,55.85585585585585,60.36036036036037,-4.504504504504517,2,False,True,False,False
+A/dense,A/one,1,recall_scratches,65.76576576576578,50.45045045045045,15.315315315315331,2,True,False,False,False
+A/dense,A/one,2,recall_scratches,64.86486486486487,53.153153153153156,11.711711711711715,2,True,False,False,False
+A/dense,A/one,paired mean,recall_scratches,62.16216216216217,54.65465465465466,7.507507507507512,2,True,True,False,False
+A/one,A/one,0,map5095,40.44403861227081,40.44403861227081,0.0,1,True,True,True,True
+A/one,A/one,1,map5095,40.10558383731221,40.10558383731221,0.0,1,True,False,True,True
+A/one,A/one,2,map5095,40.21514586207176,40.21514586207176,0.0,1,True,False,True,True
+A/one,A/one,paired mean,map5095,40.254922770551595,40.254922770551595,0.0,1,True,True,True,True
+A/one,A/one,0,recall_crazing,9.558823529411764,9.558823529411764,0.0,2,True,True,True,True
+A/one,A/one,1,recall_crazing,15.441176470588236,15.441176470588236,0.0,2,True,False,True,True
+A/one,A/one,2,recall_crazing,8.088235294117647,8.088235294117647,0.0,2,True,False,True,True
+A/one,A/one,paired mean,recall_crazing,11.029411764705882,11.029411764705882,0.0,2,True,True,True,True
+A/one,A/one,0,recall_inclusion,42.71356783919598,42.71356783919598,0.0,2,True,True,True,True
+A/one,A/one,1,recall_inclusion,49.74874371859296,49.74874371859296,0.0,2,True,False,True,True
+A/one,A/one,2,recall_inclusion,45.7286432160804,45.7286432160804,0.0,2,True,False,True,True
+A/one,A/one,paired mean,recall_inclusion,46.06365159128978,46.06365159128978,0.0,2,True,True,True,True
+A/one,A/one,0,recall_patches,61.5819209039548,61.5819209039548,0.0,2,True,True,True,True
+A/one,A/one,1,recall_patches,63.2768361581921,63.2768361581921,0.0,2,True,False,True,True
+A/one,A/one,2,recall_patches,61.016949152542374,61.016949152542374,0.0,2,True,False,True,True
+A/one,A/one,paired mean,recall_patches,61.95856873822976,61.95856873822976,0.0,2,True,True,True,True
+A/one,A/one,0,recall_pitted_surface,50.588235294117645,50.588235294117645,0.0,2,True,True,True,True
+A/one,A/one,1,recall_pitted_surface,51.76470588235295,51.76470588235295,0.0,2,True,False,True,True
+A/one,A/one,2,recall_pitted_surface,52.94117647058824,52.94117647058824,0.0,2,True,False,True,True
+A/one,A/one,paired mean,recall_pitted_surface,51.76470588235294,51.76470588235294,0.0,2,True,True,True,True
+A/one,A/one,0,recall_rolled_in_scale,31.451612903225808,31.451612903225808,0.0,2,True,True,True,True
+A/one,A/one,1,recall_rolled_in_scale,32.25806451612903,32.25806451612903,0.0,2,True,False,True,True
+A/one,A/one,2,recall_rolled_in_scale,29.838709677419356,29.838709677419356,0.0,2,True,False,True,True
+A/one,A/one,paired mean,recall_rolled_in_scale,31.182795698924732,31.182795698924732,0.0,2,True,True,True,True
+A/one,A/one,0,recall_scratches,60.36036036036037,60.36036036036037,0.0,2,True,True,True,True
+A/one,A/one,1,recall_scratches,50.45045045045045,50.45045045045045,0.0,2,True,False,True,True
+A/one,A/one,2,recall_scratches,53.153153153153156,53.153153153153156,0.0,2,True,False,True,True
+A/one,A/one,paired mean,recall_scratches,54.65465465465466,54.65465465465466,0.0,2,True,True,True,True
+B/dense,A/one,0,map5095,42.2797135428432,40.44403861227081,1.835674930572388,1,True,True,True,False
+B/dense,A/one,1,map5095,41.2816521257347,40.10558383731221,1.176068288422492,1,True,False,True,False
+B/dense,A/one,2,map5095,42.65655655662192,40.21514586207176,2.4414106945501644,1,True,False,True,False
+B/dense,A/one,paired mean,map5095,42.072640741733274,40.254922770551595,1.817717971181679,1,True,True,True,False
+B/dense,A/one,0,recall_crazing,13.970588235294118,9.558823529411764,4.411764705882353,2,True,True,True,False
+B/dense,A/one,1,recall_crazing,8.823529411764707,15.441176470588236,-6.617647058823529,2,False,False,True,False
+B/dense,A/one,2,recall_crazing,9.558823529411764,8.088235294117647,1.4705882352941178,2,True,False,True,False
+B/dense,A/one,paired mean,recall_crazing,10.784313725490197,11.029411764705882,-0.2450980392156854,2,True,True,True,False
+B/dense,A/one,0,recall_inclusion,51.75879396984925,42.71356783919598,9.045226130653269,2,True,True,True,False
+B/dense,A/one,1,recall_inclusion,51.256281407035175,49.74874371859296,1.5075376884422127,2,True,False,True,False
+B/dense,A/one,2,recall_inclusion,49.246231155778894,45.7286432160804,3.517587939698494,2,True,False,True,False
+B/dense,A/one,paired mean,recall_inclusion,50.753768844221106,46.06365159128978,4.690117252931323,2,True,True,True,False
+B/dense,A/one,0,recall_patches,79.66101694915254,61.5819209039548,18.079096045197737,2,True,True,True,False
+B/dense,A/one,1,recall_patches,77.96610169491525,63.2768361581921,14.689265536723155,2,True,False,True,False
+B/dense,A/one,2,recall_patches,74.01129943502825,61.016949152542374,12.994350282485875,2,True,False,True,False
+B/dense,A/one,paired mean,recall_patches,77.21280602636534,61.95856873822976,15.254237288135585,2,True,True,True,False
+B/dense,A/one,0,recall_pitted_surface,65.88235294117646,50.588235294117645,15.294117647058819,2,True,True,True,False
+B/dense,A/one,1,recall_pitted_surface,61.1764705882353,51.76470588235295,9.411764705882348,2,True,False,True,False
+B/dense,A/one,2,recall_pitted_surface,65.88235294117646,52.94117647058824,12.941176470588225,2,True,False,True,False
+B/dense,A/one,paired mean,recall_pitted_surface,64.31372549019608,51.76470588235294,12.549019607843135,2,True,True,True,False
+B/dense,A/one,0,recall_rolled_in_scale,33.064516129032256,31.451612903225808,1.6129032258064484,2,True,True,True,False
+B/dense,A/one,1,recall_rolled_in_scale,25.0,32.25806451612903,-7.258064516129032,2,False,False,True,False
+B/dense,A/one,2,recall_rolled_in_scale,31.451612903225808,29.838709677419356,1.612903225806452,2,True,False,True,False
+B/dense,A/one,paired mean,recall_rolled_in_scale,29.838709677419356,31.182795698924732,-1.344086021505376,2,True,True,True,False
+B/dense,A/one,0,recall_scratches,71.17117117117117,60.36036036036037,10.8108108108108,2,True,True,True,False
+B/dense,A/one,1,recall_scratches,72.97297297297297,50.45045045045045,22.52252252252252,2,True,False,True,False
+B/dense,A/one,2,recall_scratches,76.57657657657657,53.153153153153156,23.423423423423415,2,True,False,True,False
+B/dense,A/one,paired mean,recall_scratches,73.57357357357357,54.65465465465466,18.918918918918912,2,True,True,True,False
+B/one,A/one,0,map5095,40.35222368117427,40.44403861227081,-0.09181493109653616,1,True,True,False,False
+B/one,A/one,1,map5095,40.33287232884835,40.10558383731221,0.22728849153614306,1,True,False,False,False
+B/one,A/one,2,map5095,40.23970266107272,40.21514586207176,0.02455679900096186,1,True,False,False,False
+B/one,A/one,paired mean,map5095,40.308266223698446,40.254922770551595,0.053343453146851516,1,True,True,False,False
+B/one,A/one,0,recall_crazing,13.23529411764706,9.558823529411764,3.6764705882352953,2,True,True,False,False
+B/one,A/one,1,recall_crazing,8.088235294117647,15.441176470588236,-7.352941176470589,2,False,False,False,False
+B/one,A/one,2,recall_crazing,15.441176470588236,8.088235294117647,7.352941176470589,2,True,False,False,False
+B/one,A/one,paired mean,recall_crazing,12.254901960784315,11.029411764705882,1.2254901960784323,2,True,True,False,False
+B/one,A/one,0,recall_inclusion,43.21608040201005,42.71356783919598,0.5025125628140685,2,True,True,False,False
+B/one,A/one,1,recall_inclusion,53.266331658291456,49.74874371859296,3.517587939698494,2,True,False,False,False
+B/one,A/one,2,recall_inclusion,42.211055276381906,45.7286432160804,-3.517587939698494,2,False,False,False,False
+B/one,A/one,paired mean,recall_inclusion,46.23115577889447,46.06365159128978,0.16750418760468477,2,True,True,False,False
+B/one,A/one,0,recall_patches,66.10169491525424,61.5819209039548,4.51977401129944,2,True,True,False,False
+B/one,A/one,1,recall_patches,68.92655367231639,63.2768361581921,5.649717514124291,2,True,False,False,False
+B/one,A/one,2,recall_patches,68.92655367231639,61.016949152542374,7.909604519774014,2,True,False,False,False
+B/one,A/one,paired mean,recall_patches,67.98493408662901,61.95856873822976,6.026365348399253,2,True,True,False,False
+B/one,A/one,0,recall_pitted_surface,48.23529411764706,50.588235294117645,-2.352941176470587,2,False,True,False,False
+B/one,A/one,1,recall_pitted_surface,47.05882352941176,51.76470588235295,-4.705882352941188,2,False,False,False,False
+B/one,A/one,2,recall_pitted_surface,55.294117647058826,52.94117647058824,2.352941176470587,2,True,False,False,False
+B/one,A/one,paired mean,recall_pitted_surface,50.19607843137255,51.76470588235294,-1.5686274509803937,2,True,True,False,False
+B/one,A/one,0,recall_rolled_in_scale,33.87096774193548,31.451612903225808,2.4193548387096726,2,True,True,False,False
+B/one,A/one,1,recall_rolled_in_scale,36.29032258064516,32.25806451612903,4.032258064516128,2,True,False,False,False
+B/one,A/one,2,recall_rolled_in_scale,30.64516129032258,29.838709677419356,0.8064516129032242,2,True,False,False,False
+B/one,A/one,paired mean,recall_rolled_in_scale,33.60215053763441,31.182795698924732,2.419354838709676,2,True,True,False,False
+B/one,A/one,0,recall_scratches,60.36036036036037,60.36036036036037,0.0,2,True,True,False,False
+B/one,A/one,1,recall_scratches,63.06306306306306,50.45045045045045,12.612612612612615,2,True,False,False,False
+B/one,A/one,2,recall_scratches,62.16216216216216,53.153153153153156,9.009009009009006,2,True,False,False,False
+B/one,A/one,paired mean,recall_scratches,61.86186186186186,54.65465465465466,7.207207207207205,2,True,True,False,False
+C/dense,A/one,0,map5095,41.6178241983726,40.44403861227081,1.1737855861017934,1,True,True,False,False
+C/dense,A/one,1,map5095,41.56247375615229,40.10558383731221,1.4568899188400835,1,True,False,False,False
+C/dense,A/one,2,map5095,41.75851704856744,40.21514586207176,1.5433711864956834,1,True,False,False,False
+C/dense,A/one,paired mean,map5095,41.64627166769745,40.254922770551595,1.3913488971458534,1,True,True,False,False
+C/dense,A/one,0,recall_crazing,7.352941176470589,9.558823529411764,-2.2058823529411757,2,False,True,False,False
+C/dense,A/one,1,recall_crazing,13.23529411764706,15.441176470588236,-2.2058823529411757,2,False,False,False,False
+C/dense,A/one,2,recall_crazing,12.5,8.088235294117647,4.411764705882353,2,True,False,False,False
+C/dense,A/one,paired mean,recall_crazing,11.029411764705882,11.029411764705882,0.0,2,True,True,False,False
+C/dense,A/one,0,recall_inclusion,50.25125628140703,42.71356783919598,7.537688442211049,2,True,True,False,False
+C/dense,A/one,1,recall_inclusion,40.7035175879397,49.74874371859296,-9.045226130653262,2,False,False,False,False
+C/dense,A/one,2,recall_inclusion,59.2964824120603,45.7286432160804,13.5678391959799,2,True,False,False,False
+C/dense,A/one,paired mean,recall_inclusion,50.083752093802346,46.06365159128978,4.0201005025125625,2,True,True,False,False
+C/dense,A/one,0,recall_patches,76.8361581920904,61.5819209039548,15.254237288135592,2,True,True,False,False
+C/dense,A/one,1,recall_patches,71.1864406779661,63.2768361581921,7.909604519774007,2,True,False,False,False
+C/dense,A/one,2,recall_patches,77.96610169491525,61.016949152542374,16.94915254237288,2,True,False,False,False
+C/dense,A/one,paired mean,recall_patches,75.32956685499059,61.95856873822976,13.37099811676083,2,True,True,False,False
+C/dense,A/one,0,recall_pitted_surface,64.70588235294117,50.588235294117645,14.117647058823529,2,True,True,False,False
+C/dense,A/one,1,recall_pitted_surface,63.52941176470588,51.76470588235295,11.764705882352928,2,True,False,False,False
+C/dense,A/one,2,recall_pitted_surface,68.23529411764706,52.94117647058824,15.294117647058819,2,True,False,False,False
+C/dense,A/one,paired mean,recall_pitted_surface,65.49019607843137,51.76470588235294,13.725490196078425,2,True,True,False,False
+C/dense,A/one,0,recall_rolled_in_scale,34.67741935483871,31.451612903225808,3.225806451612904,2,True,True,False,False
+C/dense,A/one,1,recall_rolled_in_scale,29.838709677419356,32.25806451612903,-2.419354838709676,2,False,False,False,False
+C/dense,A/one,2,recall_rolled_in_scale,37.903225806451616,29.838709677419356,8.06451612903226,2,True,False,False,False
+C/dense,A/one,paired mean,recall_rolled_in_scale,34.13978494623656,31.182795698924732,2.956989247311828,2,True,True,False,False
+C/dense,A/one,0,recall_scratches,55.85585585585585,60.36036036036037,-4.504504504504517,2,False,True,False,False
+C/dense,A/one,1,recall_scratches,58.55855855855856,50.45045045045045,8.108108108108112,2,True,False,False,False
+C/dense,A/one,2,recall_scratches,72.97297297297297,53.153153153153156,19.819819819819813,2,True,False,False,False
+C/dense,A/one,paired mean,recall_scratches,62.46246246246246,54.65465465465466,7.807807807807805,2,True,True,False,False
+C/one,A/one,0,map5095,39.25505880693778,40.44403861227081,-1.1889798053330267,1,False,True,False,False
+C/one,A/one,1,map5095,40.44392888691644,40.10558383731221,0.3383450496042286,1,True,False,False,False
+C/one,A/one,2,map5095,39.85334810021957,40.21514586207176,-0.3617977618521877,1,True,False,False,False
+C/one,A/one,paired mean,map5095,39.8507785980246,40.254922770551595,-0.40414417252699764,1,True,True,False,False
+C/one,A/one,0,recall_crazing,9.558823529411764,9.558823529411764,0.0,2,True,True,False,False
+C/one,A/one,1,recall_crazing,15.441176470588236,15.441176470588236,0.0,2,True,False,False,False
+C/one,A/one,2,recall_crazing,11.76470588235294,8.088235294117647,3.6764705882352935,2,True,False,False,False
+C/one,A/one,paired mean,recall_crazing,12.254901960784313,11.029411764705882,1.2254901960784306,2,True,True,False,False
+C/one,A/one,0,recall_inclusion,43.71859296482412,42.71356783919598,1.005025125628137,2,True,True,False,False
+C/one,A/one,1,recall_inclusion,46.733668341708544,49.74874371859296,-3.0150753768844183,2,False,False,False,False
+C/one,A/one,2,recall_inclusion,51.256281407035175,45.7286432160804,5.527638190954775,2,True,False,False,False
+C/one,A/one,paired mean,recall_inclusion,47.23618090452261,46.06365159128978,1.172529313232829,2,True,True,False,False
+C/one,A/one,0,recall_patches,57.6271186440678,61.5819209039548,-3.9548022598870034,2,False,True,False,False
+C/one,A/one,1,recall_patches,62.14689265536724,63.2768361581921,-1.1299435028248581,2,True,False,False,False
+C/one,A/one,2,recall_patches,62.71186440677966,61.016949152542374,1.6949152542372872,2,True,False,False,False
+C/one,A/one,paired mean,recall_patches,60.8286252354049,61.95856873822976,-1.1299435028248581,2,True,True,False,False
+C/one,A/one,0,recall_pitted_surface,54.11764705882353,50.588235294117645,3.529411764705884,2,True,True,False,False
+C/one,A/one,1,recall_pitted_surface,56.470588235294116,51.76470588235295,4.705882352941167,2,True,False,False,False
+C/one,A/one,2,recall_pitted_surface,68.23529411764706,52.94117647058824,15.294117647058819,2,True,False,False,False
+C/one,A/one,paired mean,recall_pitted_surface,59.6078431372549,51.76470588235294,7.843137254901961,2,True,True,False,False
+C/one,A/one,0,recall_rolled_in_scale,30.64516129032258,31.451612903225808,-0.8064516129032278,2,True,True,False,False
+C/one,A/one,1,recall_rolled_in_scale,34.67741935483871,32.25806451612903,2.4193548387096797,2,True,False,False,False
+C/one,A/one,2,recall_rolled_in_scale,30.64516129032258,29.838709677419356,0.8064516129032242,2,True,False,False,False
+C/one,A/one,paired mean,recall_rolled_in_scale,31.989247311827956,31.182795698924732,0.8064516129032242,2,True,True,False,False
+C/one,A/one,0,recall_scratches,57.65765765765766,60.36036036036037,-2.702702702702709,2,False,True,False,False
+C/one,A/one,1,recall_scratches,57.65765765765766,50.45045045045045,7.207207207207212,2,True,False,False,False
+C/one,A/one,2,recall_scratches,55.85585585585585,53.153153153153156,2.7027027027026946,2,True,False,False,False
+C/one,A/one,paired mean,recall_scratches,57.05705705705706,54.65465465465466,2.4024024024024015,2,True,True,False,False
+D/dense,A/one,0,map5095,42.53195769425702,40.44403861227081,2.0879190819862075,1,True,True,True,False
+D/dense,A/one,1,map5095,41.65928760261982,40.10558383731221,1.5537037653076098,1,True,False,True,False
+D/dense,A/one,2,map5095,40.485389485681495,40.21514586207176,0.27024362360973697,1,True,False,True,False
+D/dense,A/one,paired mean,map5095,41.55887826085278,40.254922770551595,1.3039554903011847,1,True,True,True,False
+D/dense,A/one,0,recall_crazing,12.5,9.558823529411764,2.9411764705882355,2,True,True,True,False
+D/dense,A/one,1,recall_crazing,15.441176470588236,15.441176470588236,0.0,2,True,False,True,False
+D/dense,A/one,2,recall_crazing,3.6764705882352944,8.088235294117647,-4.411764705882352,2,False,False,True,False
+D/dense,A/one,paired mean,recall_crazing,10.53921568627451,11.029411764705882,-0.4901960784313726,2,True,True,True,False
+D/dense,A/one,0,recall_inclusion,49.74874371859296,42.71356783919598,7.035175879396981,2,True,True,True,False
+D/dense,A/one,1,recall_inclusion,45.7286432160804,49.74874371859296,-4.0201005025125625,2,False,False,True,False
+D/dense,A/one,2,recall_inclusion,48.24120603015075,45.7286432160804,2.5125628140703498,2,True,False,True,False
+D/dense,A/one,paired mean,recall_inclusion,47.90619765494137,46.06365159128978,1.8425460636515893,2,True,True,True,False
+D/dense,A/one,0,recall_patches,79.09604519774011,61.5819209039548,17.514124293785308,2,True,True,True,False
+D/dense,A/one,1,recall_patches,72.31638418079096,63.2768361581921,9.039548022598865,2,True,False,True,False
+D/dense,A/one,2,recall_patches,66.66666666666666,61.016949152542374,5.6497175141242835,2,True,False,True,False
+D/dense,A/one,paired mean,recall_patches,72.69303201506591,61.95856873822976,10.734463276836152,2,True,True,True,False
+D/dense,A/one,0,recall_pitted_surface,56.470588235294116,50.588235294117645,5.882352941176471,2,True,True,True,False
+D/dense,A/one,1,recall_pitted_surface,58.82352941176471,51.76470588235295,7.058823529411761,2,True,False,True,False
+D/dense,A/one,2,recall_pitted_surface,63.52941176470588,52.94117647058824,10.588235294117638,2,True,False,True,False
+D/dense,A/one,paired mean,recall_pitted_surface,59.6078431372549,51.76470588235294,7.843137254901961,2,True,True,True,False
+D/dense,A/one,0,recall_rolled_in_scale,32.25806451612903,31.451612903225808,0.8064516129032242,2,True,True,True,False
+D/dense,A/one,1,recall_rolled_in_scale,29.03225806451613,32.25806451612903,-3.2258064516129004,2,False,False,True,False
+D/dense,A/one,2,recall_rolled_in_scale,29.838709677419356,29.838709677419356,0.0,2,True,False,True,False
+D/dense,A/one,paired mean,recall_rolled_in_scale,30.376344086021508,31.182795698924732,-0.8064516129032242,2,True,True,True,False
+D/dense,A/one,0,recall_scratches,66.66666666666666,60.36036036036037,6.30630630630629,2,True,True,True,False
+D/dense,A/one,1,recall_scratches,58.55855855855856,50.45045045045045,8.108108108108112,2,True,False,True,False
+D/dense,A/one,2,recall_scratches,57.65765765765766,53.153153153153156,4.504504504504503,2,True,False,True,False
+D/dense,A/one,paired mean,recall_scratches,60.96096096096096,54.65465465465466,6.306306306306304,2,True,True,True,False
+D/one,A/one,0,map5095,40.47602089333475,40.44403861227081,0.03198228106393941,1,True,True,False,False
+D/one,A/one,1,map5095,39.976194059347044,40.10558383731221,-0.12938977796516582,1,True,False,False,False
+D/one,A/one,2,map5095,39.534133653108405,40.21514586207176,-0.6810122089633524,1,True,False,False,False
+D/one,A/one,paired mean,map5095,39.9954495352634,40.254922770551595,-0.25947323528819766,1,True,True,False,False
+D/one,A/one,0,recall_crazing,13.23529411764706,9.558823529411764,3.6764705882352953,2,True,True,False,False
+D/one,A/one,1,recall_crazing,16.176470588235293,15.441176470588236,0.735294117647058,2,True,False,False,False
+D/one,A/one,2,recall_crazing,10.294117647058822,8.088235294117647,2.2058823529411757,2,True,False,False,False
+D/one,A/one,paired mean,recall_crazing,13.235294117647058,11.029411764705882,2.2058823529411757,2,True,True,False,False
+D/one,A/one,0,recall_inclusion,50.25125628140703,42.71356783919598,7.537688442211049,2,True,True,False,False
+D/one,A/one,1,recall_inclusion,48.743718592964825,49.74874371859296,-1.005025125628137,2,True,False,False,False
+D/one,A/one,2,recall_inclusion,47.73869346733669,45.7286432160804,2.0100502512562883,2,True,False,False,False
+D/one,A/one,paired mean,recall_inclusion,48.91122278056952,46.06365159128978,2.8475711892797335,2,True,True,False,False
+D/one,A/one,0,recall_patches,66.66666666666666,61.5819209039548,5.084745762711854,2,True,True,False,False
+D/one,A/one,1,recall_patches,67.2316384180791,63.2768361581921,3.9548022598870034,2,True,False,False,False
+D/one,A/one,2,recall_patches,58.19209039548022,61.016949152542374,-2.8248587570621524,2,False,False,False,False
+D/one,A/one,paired mean,recall_patches,64.030131826742,61.95856873822976,2.071563088512235,2,True,True,False,False
+D/one,A/one,0,recall_pitted_surface,45.88235294117647,50.588235294117645,-4.705882352941174,2,False,True,False,False
+D/one,A/one,1,recall_pitted_surface,56.470588235294116,51.76470588235295,4.705882352941167,2,True,False,False,False
+D/one,A/one,2,recall_pitted_surface,57.647058823529406,52.94117647058824,4.705882352941167,2,True,False,False,False
+D/one,A/one,paired mean,recall_pitted_surface,53.33333333333333,51.76470588235294,1.5686274509803866,2,True,True,False,False
+D/one,A/one,0,recall_rolled_in_scale,33.87096774193548,31.451612903225808,2.4193548387096726,2,True,True,False,False
+D/one,A/one,1,recall_rolled_in_scale,27.419354838709676,32.25806451612903,-4.838709677419356,2,False,False,False,False
+D/one,A/one,2,recall_rolled_in_scale,29.838709677419356,29.838709677419356,0.0,2,True,False,False,False
+D/one,A/one,paired mean,recall_rolled_in_scale,30.376344086021504,31.182795698924732,-0.8064516129032278,2,True,True,False,False
+D/one,A/one,0,recall_scratches,59.45945945945946,60.36036036036037,-0.9009009009009077,2,True,True,False,False
+D/one,A/one,1,recall_scratches,62.16216216216216,50.45045045045045,11.711711711711715,2,True,False,False,False
+D/one,A/one,2,recall_scratches,56.75675675675676,53.153153153153156,3.6036036036036023,2,True,False,False,False
+D/one,A/one,paired mean,recall_scratches,59.45945945945946,54.65465465465466,4.804804804804803,2,True,True,False,False
+E/dense,A/one,0,map5095,39.4303681723535,40.44403861227081,-1.0136704399173126,1,False,True,False,False
+E/dense,A/one,1,map5095,41.512872286452954,40.10558383731221,1.4072884491407436,1,True,False,False,False
+E/dense,A/one,2,map5095,39.854606614155,40.21514586207176,-0.36053924791675485,1,True,False,False,False
+E/dense,A/one,paired mean,map5095,40.265949024320484,40.254922770551595,0.01102625376888966,1,True,True,False,False
+E/dense,A/one,0,recall_crazing,16.911764705882355,9.558823529411764,7.3529411764705905,2,True,True,False,False
+E/dense,A/one,1,recall_crazing,14.705882352941178,15.441176470588236,-0.735294117647058,2,True,False,False,False
+E/dense,A/one,2,recall_crazing,4.411764705882353,8.088235294117647,-3.6764705882352935,2,False,False,False,False
+E/dense,A/one,paired mean,recall_crazing,12.00980392156863,11.029411764705882,0.9803921568627469,2,True,True,False,False
+E/dense,A/one,0,recall_inclusion,33.66834170854271,42.71356783919598,-9.045226130653269,2,False,True,False,False
+E/dense,A/one,1,recall_inclusion,47.73869346733669,49.74874371859296,-2.010050251256274,2,False,False,False,False
+E/dense,A/one,2,recall_inclusion,41.20603015075377,45.7286432160804,-4.522613065326631,2,False,False,False,False
+E/dense,A/one,paired mean,recall_inclusion,40.87102177554439,46.06365159128978,-5.192629815745391,2,False,True,False,False
+E/dense,A/one,0,recall_patches,68.92655367231639,61.5819209039548,7.344632768361585,2,True,True,False,False
+E/dense,A/one,1,recall_patches,72.31638418079096,63.2768361581921,9.039548022598865,2,True,False,False,False
+E/dense,A/one,2,recall_patches,64.40677966101694,61.016949152542374,3.3898305084745672,2,True,False,False,False
+E/dense,A/one,paired mean,recall_patches,68.54990583804143,61.95856873822976,6.591337099811668,2,True,True,False,False
+E/dense,A/one,0,recall_pitted_surface,61.1764705882353,50.588235294117645,10.588235294117652,2,True,True,False,False
+E/dense,A/one,1,recall_pitted_surface,62.35294117647059,51.76470588235295,10.588235294117638,2,True,False,False,False
+E/dense,A/one,2,recall_pitted_surface,55.294117647058826,52.94117647058824,2.352941176470587,2,True,False,False,False
+E/dense,A/one,paired mean,recall_pitted_surface,59.6078431372549,51.76470588235294,7.843137254901961,2,True,True,False,False
+E/dense,A/one,0,recall_rolled_in_scale,26.61290322580645,31.451612903225808,-4.838709677419359,2,False,True,False,False
+E/dense,A/one,1,recall_rolled_in_scale,28.225806451612907,32.25806451612903,-4.032258064516125,2,False,False,False,False
+E/dense,A/one,2,recall_rolled_in_scale,28.225806451612907,29.838709677419356,-1.6129032258064484,2,True,False,False,False
+E/dense,A/one,paired mean,recall_rolled_in_scale,27.688172043010756,31.182795698924732,-3.4946236559139763,2,False,True,False,False
+E/dense,A/one,0,recall_scratches,43.24324324324324,60.36036036036037,-17.117117117117125,2,False,True,False,False
+E/dense,A/one,1,recall_scratches,46.846846846846844,50.45045045045045,-3.6036036036036023,2,False,False,False,False
+E/dense,A/one,2,recall_scratches,39.63963963963964,53.153153153153156,-13.513513513513516,2,False,False,False,False
+E/dense,A/one,paired mean,recall_scratches,43.24324324324324,54.65465465465466,-11.411411411411414,2,False,True,False,False
+E/one,A/one,0,map5095,38.6505361127155,40.44403861227081,-1.7935024995553093,1,False,True,False,False
+E/one,A/one,1,map5095,38.79774395752124,40.10558383731221,-1.3078398797909685,1,False,False,False,False
+E/one,A/one,2,map5095,39.06531214179,40.21514586207176,-1.1498337202817552,1,False,False,False,False
+E/one,A/one,paired mean,map5095,38.83786407067558,40.254922770551595,-1.4170586998760157,1,False,True,False,False
+E/one,A/one,0,recall_crazing,12.5,9.558823529411764,2.9411764705882355,2,True,True,False,False
+E/one,A/one,1,recall_crazing,13.23529411764706,15.441176470588236,-2.2058823529411757,2,False,False,False,False
+E/one,A/one,2,recall_crazing,11.029411764705882,8.088235294117647,2.9411764705882355,2,True,False,False,False
+E/one,A/one,paired mean,recall_crazing,12.254901960784315,11.029411764705882,1.2254901960784323,2,True,True,False,False
+E/one,A/one,0,recall_inclusion,40.7035175879397,42.71356783919598,-2.0100502512562812,2,False,True,False,False
+E/one,A/one,1,recall_inclusion,44.221105527638194,49.74874371859296,-5.527638190954768,2,False,False,False,False
+E/one,A/one,2,recall_inclusion,45.22613065326633,45.7286432160804,-0.5025125628140685,2,True,False,False,False
+E/one,A/one,paired mean,recall_inclusion,43.38358458961474,46.06365159128978,-2.6800670016750416,2,False,True,False,False
+E/one,A/one,0,recall_patches,63.2768361581921,61.5819209039548,1.6949152542372943,2,True,True,False,False
+E/one,A/one,1,recall_patches,59.887005649717516,63.2768361581921,-3.3898305084745814,2,False,False,False,False
+E/one,A/one,2,recall_patches,54.80225988700565,61.016949152542374,-6.214689265536727,2,False,False,False,False
+E/one,A/one,paired mean,recall_patches,59.32203389830509,61.95856873822976,-2.6365348399246713,2,False,True,False,False
+E/one,A/one,0,recall_pitted_surface,41.17647058823529,50.588235294117645,-9.411764705882355,2,False,True,False,False
+E/one,A/one,1,recall_pitted_surface,62.35294117647059,51.76470588235295,10.588235294117638,2,True,False,False,False
+E/one,A/one,2,recall_pitted_surface,44.70588235294118,52.94117647058824,-8.235294117647058,2,False,False,False,False
+E/one,A/one,paired mean,recall_pitted_surface,49.411764705882355,51.76470588235294,-2.352941176470587,2,False,True,False,False
+E/one,A/one,0,recall_rolled_in_scale,25.0,31.451612903225808,-6.451612903225808,2,False,True,False,False
+E/one,A/one,1,recall_rolled_in_scale,28.225806451612907,32.25806451612903,-4.032258064516125,2,False,False,False,False
+E/one,A/one,2,recall_rolled_in_scale,29.838709677419356,29.838709677419356,0.0,2,True,False,False,False
+E/one,A/one,paired mean,recall_rolled_in_scale,27.688172043010756,31.182795698924732,-3.4946236559139763,2,False,True,False,False
+E/one,A/one,0,recall_scratches,59.45945945945946,60.36036036036037,-0.9009009009009077,2,True,True,False,False
+E/one,A/one,1,recall_scratches,55.85585585585585,50.45045045045045,5.4054054054054035,2,True,False,False,False
+E/one,A/one,2,recall_scratches,62.16216216216216,53.153153153153156,9.009009009009006,2,True,False,False,False
+E/one,A/one,paired mean,recall_scratches,59.15915915915916,54.65465465465466,4.504504504504503,2,True,True,False,False
+yolov5s/dense,A/one,0,map5095,36.04864449071128,40.44403861227081,-4.3953941215595265,1,False,True,False,False
+yolov5s/dense,A/one,1,map5095,36.30721489597439,40.10558383731221,-3.79836894133782,1,False,False,False,False
+yolov5s/dense,A/one,2,map5095,36.45255040488474,40.21514586207176,-3.762595457187018,1,False,False,False,False
+yolov5s/dense,A/one,paired mean,map5095,36.26946993052347,40.254922770551595,-3.985452840028124,1,False,True,False,False
+yolov5s/dense,A/one,0,recall_crazing,7.352941176470589,9.558823529411764,-2.2058823529411757,2,False,True,False,False
+yolov5s/dense,A/one,1,recall_crazing,0.0,15.441176470588236,-15.441176470588236,2,False,False,False,False
+yolov5s/dense,A/one,2,recall_crazing,0.7352941176470588,8.088235294117647,-7.352941176470588,2,False,False,False,False
+yolov5s/dense,A/one,paired mean,recall_crazing,2.696078431372549,11.029411764705882,-8.333333333333332,2,False,True,False,False
+yolov5s/dense,A/one,0,recall_inclusion,39.19597989949749,42.71356783919598,-3.517587939698494,2,False,True,False,False
+yolov5s/dense,A/one,1,recall_inclusion,54.2713567839196,49.74874371859296,4.522613065326638,2,True,False,False,False
+yolov5s/dense,A/one,2,recall_inclusion,55.778894472361806,45.7286432160804,10.050251256281406,2,True,False,False,False
+yolov5s/dense,A/one,paired mean,recall_inclusion,49.74874371859296,46.06365159128978,3.6850921273031787,2,True,True,False,False
+yolov5s/dense,A/one,0,recall_patches,67.79661016949152,61.5819209039548,6.2146892655367125,2,True,True,False,False
+yolov5s/dense,A/one,1,recall_patches,66.10169491525424,63.2768361581921,2.8248587570621453,2,True,False,False,False
+yolov5s/dense,A/one,2,recall_patches,68.36158192090396,61.016949152542374,7.344632768361585,2,True,False,False,False
+yolov5s/dense,A/one,paired mean,recall_patches,67.41996233521657,61.95856873822976,5.4613935969868095,2,True,True,False,False
+yolov5s/dense,A/one,0,recall_pitted_surface,20.0,50.588235294117645,-30.588235294117645,2,False,True,False,False
+yolov5s/dense,A/one,1,recall_pitted_surface,34.11764705882353,51.76470588235295,-17.64705882352942,2,False,False,False,False
+yolov5s/dense,A/one,2,recall_pitted_surface,30.58823529411765,52.94117647058824,-22.35294117647059,2,False,False,False,False
+yolov5s/dense,A/one,paired mean,recall_pitted_surface,28.235294117647058,51.76470588235294,-23.529411764705884,2,False,True,False,False
+yolov5s/dense,A/one,0,recall_rolled_in_scale,19.35483870967742,31.451612903225808,-12.096774193548388,2,False,True,False,False
+yolov5s/dense,A/one,1,recall_rolled_in_scale,10.483870967741936,32.25806451612903,-21.774193548387096,2,False,False,False,False
+yolov5s/dense,A/one,2,recall_rolled_in_scale,29.03225806451613,29.838709677419356,-0.8064516129032242,2,True,False,False,False
+yolov5s/dense,A/one,paired mean,recall_rolled_in_scale,19.623655913978496,31.182795698924732,-11.559139784946236,2,False,True,False,False
+yolov5s/dense,A/one,0,recall_scratches,39.63963963963964,60.36036036036037,-20.720720720720728,2,False,True,False,False
+yolov5s/dense,A/one,1,recall_scratches,33.33333333333333,50.45045045045045,-17.117117117117118,2,False,False,False,False
+yolov5s/dense,A/one,2,recall_scratches,45.04504504504504,53.153153153153156,-8.108108108108112,2,False,False,False,False
+yolov5s/dense,A/one,paired mean,recall_scratches,39.33933933933934,54.65465465465466,-15.315315315315317,2,False,True,False,False
+yolov8n/dense,A/one,0,map5095,40.00128777989083,40.44403861227081,-0.4427508323799785,1,True,True,False,False
+yolov8n/dense,A/one,1,map5095,39.85567859917532,40.10558383731221,-0.2499052381368898,1,True,False,False,False
+yolov8n/dense,A/one,2,map5095,39.440335455318994,40.21514586207176,-0.7748104067527635,1,True,False,False,False
+yolov8n/dense,A/one,paired mean,map5095,39.76576727812838,40.254922770551595,-0.4891554924232153,1,True,True,False,False
+yolov8n/dense,A/one,0,recall_crazing,14.705882352941178,9.558823529411764,5.147058823529413,2,True,True,False,False
+yolov8n/dense,A/one,1,recall_crazing,2.941176470588235,15.441176470588236,-12.5,2,False,False,False,False
+yolov8n/dense,A/one,2,recall_crazing,13.23529411764706,8.088235294117647,5.147058823529413,2,True,False,False,False
+yolov8n/dense,A/one,paired mean,recall_crazing,10.294117647058824,11.029411764705882,-0.735294117647058,2,True,True,False,False
+yolov8n/dense,A/one,0,recall_inclusion,42.211055276381906,42.71356783919598,-0.5025125628140756,2,True,True,False,False
+yolov8n/dense,A/one,1,recall_inclusion,31.65829145728643,49.74874371859296,-18.09045226130653,2,False,False,False,False
+yolov8n/dense,A/one,2,recall_inclusion,43.71859296482412,45.7286432160804,-2.0100502512562812,2,False,False,False,False
+yolov8n/dense,A/one,paired mean,recall_inclusion,39.19597989949749,46.06365159128978,-6.867671691792296,2,False,True,False,False
+yolov8n/dense,A/one,0,recall_patches,70.62146892655367,61.5819209039548,9.039548022598872,2,True,True,False,False
+yolov8n/dense,A/one,1,recall_patches,76.8361581920904,63.2768361581921,13.559322033898297,2,True,False,False,False
+yolov8n/dense,A/one,2,recall_patches,71.1864406779661,61.016949152542374,10.16949152542373,2,True,False,False,False
+yolov8n/dense,A/one,paired mean,recall_patches,72.88135593220339,61.95856873822976,10.922787193973633,2,True,True,False,False
+yolov8n/dense,A/one,0,recall_pitted_surface,56.470588235294116,50.588235294117645,5.882352941176471,2,True,True,False,False
+yolov8n/dense,A/one,1,recall_pitted_surface,68.23529411764706,51.76470588235295,16.47058823529411,2,True,False,False,False
+yolov8n/dense,A/one,2,recall_pitted_surface,56.470588235294116,52.94117647058824,3.529411764705877,2,True,False,False,False
+yolov8n/dense,A/one,paired mean,recall_pitted_surface,60.3921568627451,51.76470588235294,8.627450980392155,2,True,True,False,False
+yolov8n/dense,A/one,0,recall_rolled_in_scale,29.03225806451613,31.451612903225808,-2.419354838709676,2,False,True,False,False
+yolov8n/dense,A/one,1,recall_rolled_in_scale,14.516129032258066,32.25806451612903,-17.741935483870968,2,False,False,False,False
+yolov8n/dense,A/one,2,recall_rolled_in_scale,30.64516129032258,29.838709677419356,0.8064516129032242,2,True,False,False,False
+yolov8n/dense,A/one,paired mean,recall_rolled_in_scale,24.731182795698928,31.182795698924732,-6.451612903225804,2,False,True,False,False
+yolov8n/dense,A/one,0,recall_scratches,36.03603603603604,60.36036036036037,-24.32432432432433,2,False,True,False,False
+yolov8n/dense,A/one,1,recall_scratches,71.17117117117117,50.45045045045045,20.72072072072072,2,True,False,False,False
+yolov8n/dense,A/one,2,recall_scratches,44.14414414414414,53.153153153153156,-9.009009009009013,2,False,False,False,False
+yolov8n/dense,A/one,paired mean,recall_scratches,50.45045045045045,54.65465465465466,-4.20420420420421,2,False,True,False,False

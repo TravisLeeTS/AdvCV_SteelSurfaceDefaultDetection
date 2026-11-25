@@ -1,0 +1,12 @@
+{
+  "freeze_sha": "342d04d86c858b47179e58b4ebdd19f7dbe15e5e38bcbf753ceffa8fbbd5e273",
+  "graphs": 6,
+  "new_graphs": 3,
+  "splits": 2,
+  "sessions": 36,
+  "timed_calls": 36000,
+  "results_sha": "a12ac65913925d670777da7612dbd6f74b28b2488743035e8dfe85a9a69195ed",
+  "sessions_sha": "03734a3883ac38dceff8eda23e8fa8e19b123358be47f839a8d6c7a3555b13c8",
+  "effects_sha": "c921087e39d5995ffeb3da0503a855bd4911ba49f7c4d96fd09851bda04aeeb2",
+  "coco_cells": 12
+}

@@ -1,0 +1,6 @@
+\begin{tabular}{@{}p{.13\textwidth}p{.19\textwidth}p{.225\textwidth}p{.153\textwidth}p{.198\textwidth}@{}}\hline
+Decision & Candidates & Cutoff and validation rule & Selected path & Pipeline $p_{95}$ (ms) \\ \hline
+Stock family & Default heads of YOLO26n, v10n, v8n and v5s at 480. & A global cutoff per head and seed. Fastest eligible three-seed mean. & Stock YOLO26n, one-to-one, 480. & Head-specific run, val. 15.28 and test 14.58. \\
+Original architecture and size & One-to-one A--E at 480, then four sizes of the selected architecture. & One native 480 cutoff per checkpoint across sizes. Seed-0 speed with range-overlap tie rule. & Stock YOLO26n, one-to-one, 480. & Fixed-cutoff run, seed 0, val. 16.59 and test 15.59. \\
+Exploratory joint choice & Both heads of A--E and dense v8n and v5s, all at 480 (12 paths). & A global cutoff per head and seed. Fastest eligible three-seed mean with a 2~pp class tolerance. & PConv YOLO26n, dense + NMS, 480. & Val. 14.70. Test B/stock, first 12.99/14.58, repeat 13.88/13.41. \\
+\hline\end{tabular}

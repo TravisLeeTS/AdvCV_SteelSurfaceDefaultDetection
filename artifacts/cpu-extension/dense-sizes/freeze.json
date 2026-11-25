@@ -1,0 +1,121 @@
+{
+  "rule": "Per seed and size, maximize six-class macro recall at IoU 0.50 with at most 36 false boxes on 360 defective validation images. Whole score ties, fewer FP, then higher cutoff.",
+  "selection": "Exploratory paired-size comparison. The separate supervised candidate remains fixed at 480.",
+  "validation_sha": "98d75c8b9a5aed0d1d63a1edc8a2073f33c9b999e6272067eac52ae3ddc6ff11",
+  "fits": {
+    "B0-openvino-dense-320": {
+      "graph": "B0-openvino-dense-320",
+      "seed": 0,
+      "run": "B0",
+      "side": 320,
+      "head": "dense",
+      "policy": "global",
+      "artifact_sha": "38147d41479f29bfc7dfb4359dd20505333874e61d3dcd10f88314d1daf51edb",
+      "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+      "thresholds": [
+        0.6980709433555603,
+        0.6980709433555603,
+        0.6980709433555603,
+        0.6980709433555603,
+        0.6980709433555603,
+        0.6980709433555603
+      ],
+      "val_boxes_sha": "8133dc46ce35cedc250d53f2a9865cd0f443edf5a40da829f48b258cc620c304"
+    },
+    "B0-openvino-dense-480": {
+      "graph": "B0-openvino-dense-480",
+      "seed": 0,
+      "run": "B0",
+      "side": 480,
+      "head": "dense",
+      "policy": "global",
+      "artifact_sha": "5d84b9d078c1a376d8363cc752b53d1a78d7ce84fd46eccbded772a3a1d460b4",
+      "checkpoint_sha": "87df27afc88222bf44325472acfcd5df393116b4b11a8ca26f97ba716a53f6e9",
+      "thresholds": [
+        0.723431408405304,
+        0.723431408405304,
+        0.723431408405304,
+        0.723431408405304,
+        0.723431408405304,
+        0.723431408405304
+      ],
+      "val_boxes_sha": "cc2669c723e2c9cc76342a0716a735cdfda7da7f99a05d70b3198d7d29944d16"
+    },
+    "B1-openvino-dense-320": {
+      "graph": "B1-openvino-dense-320",
+      "seed": 1,
+      "run": "B1",
+      "side": 320,
+      "head": "dense",
+      "policy": "global",
+      "artifact_sha": "731c7810a2b005e004ccf7cb4746fb2f8b8cc2aef6423cabb7913e4d81c80bd6",
+      "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+      "thresholds": [
+        0.6998720765113831,
+        0.6998720765113831,
+        0.6998720765113831,
+        0.6998720765113831,
+        0.6998720765113831,
+        0.6998720765113831
+      ],
+      "val_boxes_sha": "e6a86a8911345a04edad21b347abbefa47b1df0ffe217a15ce9c4f7cd9713992"
+    },
+    "B1-openvino-dense-480": {
+      "graph": "B1-openvino-dense-480",
+      "seed": 1,
+      "run": "B1",
+      "side": 480,
+      "head": "dense",
+      "policy": "global",
+      "artifact_sha": "983adadd5e56936f1a5f3f32e1f8f73ae4c2cf5110128519f67debb2d9c01c76",
+      "checkpoint_sha": "dd85de0eb1bafe4872aca5fab4b9238289cb40dba31621145c89df94bc616b25",
+      "thresholds": [
+        0.7176007032394409,
+        0.7176007032394409,
+        0.7176007032394409,
+        0.7176007032394409,
+        0.7176007032394409,
+        0.7176007032394409
+      ],
+      "val_boxes_sha": "985bc941dca5b52d1125f5172a3a5c8c9bbc57787b6ddd735a447ec02bec3777"
+    },
+    "B2-openvino-dense-320": {
+      "graph": "B2-openvino-dense-320",
+      "seed": 2,
+      "run": "B2",
+      "side": 320,
+      "head": "dense",
+      "policy": "global",
+      "artifact_sha": "8efe83434aa83b90174e884512362f7f98c6ee07aff690223b501d3ffb77b49c",
+      "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+      "thresholds": [
+        0.6367776393890381,
+        0.6367776393890381,
+        0.6367776393890381,
+        0.6367776393890381,
+        0.6367776393890381,
+        0.6367776393890381
+      ],
+      "val_boxes_sha": "e9c743998270726797c4cb899e6762e170ac806c61d957494c627b84976bfd76"
+    },
+    "B2-openvino-dense-480": {
+      "graph": "B2-openvino-dense-480",
+      "seed": 2,
+      "run": "B2",
+      "side": 480,
+      "head": "dense",
+      "policy": "global",
+      "artifact_sha": "2b22a3a5222f85226d6686216b07a00102aa279c0609ca689fea3c2b3c4c209d",
+      "checkpoint_sha": "bd45d18df944289ca1bd5698e7ed4be613ab9a6e02f526e5bd868c0f257f8b42",
+      "thresholds": [
+        0.6800620555877686,
+        0.6800620555877686,
+        0.6800620555877686,
+        0.6800620555877686,
+        0.6800620555877686,
+        0.6800620555877686
+      ],
+      "val_boxes_sha": "85ba22562da27bdac54c3f00f581d780c3f39dab8420c7f98e0fd0e91ccf569d"
+    }
+  }
+}

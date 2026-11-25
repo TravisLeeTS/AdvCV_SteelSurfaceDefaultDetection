@@ -83,7 +83,7 @@ def unpack(index):
             require_digest(archive, entry["sha256"])
             restore_archive(archive, entry)
     if extra.is_file():
-        print("Verified and restored 21 checkpoints, 81 OpenVINO graphs and both CPU timing studies.", flush=True)
+        print(f"Verified and restored 21 checkpoints, {75 + indices[1]['graphs']} OpenVINO graphs and the CPU measurement archives.", flush=True)
     else:
         print("Verified and restored 15 checkpoints, 75 OpenVINO graphs and 174 measured cells.", flush=True)
 
@@ -151,6 +151,12 @@ def verify(index):
         run_python("-m", "cpu_study.verify_policies")
         run_python("-m", "cpu_study.policy_timing", "verify")
         print("Verified the joint selection, six-class threshold fits and 108,000 supplementary timings.")
+    if (ARTIFACTS / "cpu-extension/feedback/verification.json").is_file():
+        run_python("-m", "cpu_study.feedback_audit", "--verify")
+        run_python("-m", "cpu_study.dense_sizes", "verify")
+        run_python("-m", "cpu_study.confirmation", "verify")
+        print("Verified per-seed frame and class results, paired intervals, both timing rotations, "
+              "36,000 dense-size calls and the frozen supervised policy.")
 
 
 def replay(args, index):
@@ -230,7 +236,8 @@ def main():
     play.add_argument("--image", default="inclusion_11")
     args = parser.parse_args()
     if args.action == "replay" and not args.all and args.head == "dense" and args.side != 480:
-        parser.error("The dense head has a saved graph at 480 pixels. Use --side 480.")
+        parser.error("The original shared-cutoff replay uses dense at 480. For the B dense 320 result use "
+                     "python -m cpu_study.review replay --family B --head dense --side 320 --policy global.")
     os.environ.setdefault("YOLO_CONFIG_DIR", str(ROOT / ".ultralytics"))
     index = read_json(ROOT / "bundles" / "index.json")
     if args.action == "images":

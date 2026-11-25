@@ -12,6 +12,7 @@ from steel.bench import Engine, image_order, read_predictions
 from steel.common import CLASSES, read, sha
 from steel.data import gray_image
 from steel.export import PARITY, paired_boxes
+from steel.geometry import prepare
 from steel.hardware import pin_cpu
 from steel.metrics import choose_threshold, events, match_image, summarize
 from .benchmark import live_engine, matrix, name, pipeline, predictions
@@ -127,10 +128,13 @@ def verify(data, artifacts):
 
 
 @torch.inference_mode()
-def replay(data, artifacts, family, seed, head, image_id, split, save=None, runtime="openvino", policy="global"):
+def replay(data, artifacts, family, seed, head, image_id, split, save=None, runtime="openvino", policy="global", side=480):
     out=artifacts / "cpu-extension"
     model={"YOLO26n":"A","YOLOv10n":"E","YOLOv8n":"yolov8n","YOLOv5s":"yolov5s"}.get(family,family)
     head=head or ("one" if model in ("A","B","C","D","E") else "dense")
+    smaller = side == 320
+    if smaller and (model,head,runtime,policy) != ("B","dense","openvino","global"):
+        raise ValueError("The supplementary 320-pixel replay uses PConv B, OpenVINO dense and its size-specific global cutoff.")
     if policy != "global" and runtime != "openvino":
         raise ValueError("Class-specific thresholds were fitted on the OpenVINO paths.")
     candidates=[e for e in matrix(out) if (e["model"],e["seed"],e["head"])==(model,seed,head)]
@@ -146,7 +150,15 @@ def replay(data, artifacts, family, seed, head, image_id, split, save=None, runt
     native_run=(out if model.startswith("yolo") else artifacts)/"runs"/entry["run"]
     if parity_only and sha(native_run/"best.pt") != entry["checkpoint_sha"]:
         raise ValueError("Native checkpoint and validation freeze have different SHA-256 values.")
-    if parity_only and model.startswith("yolo"):
+    if smaller:
+        from steel.ir import checked_bundle
+        selected=read(out/"dense-sizes/freeze.json")["fits"][f"B{seed}-openvino-dense-320"]
+        _,graph=checked_bundle(native_run,head,side)
+        if (selected["artifact_sha"],selected["checkpoint_sha"]) != (graph["bundle_sha"],entry["checkpoint_sha"]):
+            raise ValueError("Wrong graph for the 320-pixel dense-size freeze.")
+        entry=dict(entry,cutoff=selected["thresholds"][0])
+        engine=Engine(native_run,runtime,head,side,4)
+    elif parity_only and model.startswith("yolo"):
         view=restore(native_run,out)
         class NativeHistorical:
             tensor=staticmethod(torch.from_numpy)
@@ -158,12 +170,19 @@ def replay(data, artifacts, family, seed, head, image_id, split, save=None, runt
     else:
         engine=live_engine(artifacts,out,entry)
     gray=gray_image(data,row)
-    source=read_predictions(predictions(artifacts,out,split,entry))
+    source_path=(out/"dense-sizes"/split/f"B{seed}-openvino-dense-320"/"predictions.jsonl.gz" if smaller
+                 else predictions(artifacts,out,split,entry))
+    source=read_predictions(source_path)
     saved=next(low for i,low in source if i==image_id)
     if policy == "global":
-        boxes,counts=pipeline(engine,gray,entry)
+        if smaller:
+            from steel.post import finish
+            array,transform=prepare(gray,side)
+            boxes,counts=finish(engine.forward(engine.tensor(array)),head,entry["cutoff"],transform,gray.shape)
+        else:
+            boxes,counts=pipeline(engine,gray,entry)
         expected=saved[saved[:,4]>=entry["cutoff"]]
-        setting=f"Cutoff {entry['cutoff']:.6f}"
+        setting=f"Global validation cutoff {entry['cutoff']:.6f}"
         details=f"{counts[0]} raw candidates, {counts[1]} above cutoff, {counts[2]} final boxes."
     else:
         from .policy_timing import pipeline as apply_thresholds
@@ -184,14 +203,14 @@ def replay(data, artifacts, family, seed, head, image_id, split, save=None, runt
               f"Unpaired scores within the cutoff tolerance: {len(boundary)}.")
     else:
         np.testing.assert_allclose(boxes,expected,atol=.0001,rtol=0)
-    print(f"{family} seed {seed}, {runtime}, {head}, {image_id}. {setting}. {details}")
+    print(f"{family} seed {seed}, {runtime}, {head}, {side} px, {policy}, {image_id}. {setting}. {details}")
     for x1,y1,x2,y2,score,cls in boxes:
         print(f"  {CLASSES[int(cls)]} {score:.5f} at ({x1:.1f}, {y1:.1f}) to ({x2:.1f}, {y2:.1f})")
     hits=int(match_image(row,boxes)[2][:,0].sum())
     print(f"Matched {hits}/{len(row['classes'])} annotated objects at IoU 0.50. Unmatched detections: {len(boxes)-hits}.")
     if save:
         from steel.demo import pair_image
-        title=f"{family} | seed {seed} | {runtime} | {head} | 480 px | {image_id}"
+        title=f"{family} | seed {seed} | {runtime} | {head} | {side} px | {image_id}"
         footer=f"{setting} | {hits}/{len(row['classes'])} matched | {len(boxes)-hits} false boxes"
         save.parent.mkdir(parents=True,exist_ok=True)
         pair_image(row,gray,boxes,title,footer).save(save)
@@ -209,6 +228,7 @@ if __name__=="__main__":
     parser.add_argument("--seed",type=int,default=0,choices=[0,1,2])
     parser.add_argument("--head",choices=["one","dense"])
     parser.add_argument("--runtime",choices=["openvino","pytorch"],default="openvino")
+    parser.add_argument("--side",type=int,choices=[320,480],default=480)
     parser.add_argument("--policy",choices=["global","class_macro","class_minimum"],default="global")
     parser.add_argument("--image",default="inclusion_11")
     parser.add_argument("--split",default="test",choices=["test","val"])
@@ -218,4 +238,4 @@ if __name__=="__main__":
     if args.action=="verify":
         verify(args.data,args.artifacts)
     else:
-        replay(args.data,args.artifacts,args.family,args.seed,args.head,args.image,args.split,args.save,args.runtime,args.policy)
+        replay(args.data,args.artifacts,args.family,args.seed,args.head,args.image,args.split,args.save,args.runtime,args.policy,args.side)

@@ -1,0 +1,289 @@
+split,condition,model,head,policy,side,seed,defect,cutoff,gt_objects,matched_objects,missed_objects,false_boxes,recall_pct
+val,stock_one_global,A,one,global,480,0,crazing,0.6858373880386353,136,13,123,7,9.558823529411764
+val,stock_one_global,A,one,global,480,1,crazing,0.844358503818512,136,21,115,10,15.441176470588236
+val,stock_one_global,A,one,global,480,2,crazing,0.7360886335372925,136,11,125,4,8.088235294117647
+val,stock_one_global,A,one,global,480,paired mean,crazing,,136,15,121,7,11.029411764705882
+val,stock_one_global,A,one,global,480,0,inclusion,0.6858373880386353,199,85,114,9,42.71356783919598
+val,stock_one_global,A,one,global,480,1,inclusion,0.844358503818512,199,99,100,8,49.74874371859296
+val,stock_one_global,A,one,global,480,2,inclusion,0.7360886335372925,199,91,108,9,45.7286432160804
+val,stock_one_global,A,one,global,480,paired mean,inclusion,,199,91.66666666666667,107.33333333333333,8.666666666666666,46.06365159128978
+val,stock_one_global,A,one,global,480,0,patches,0.6858373880386353,177,109,68,6,61.5819209039548
+val,stock_one_global,A,one,global,480,1,patches,0.844358503818512,177,112,65,3,63.27683615819209
+val,stock_one_global,A,one,global,480,2,patches,0.7360886335372925,177,108,69,7,61.016949152542374
+val,stock_one_global,A,one,global,480,paired mean,patches,,177,109.66666666666667,67.33333333333333,5.333333333333333,61.95856873822976
+val,stock_one_global,A,one,global,480,0,pitted_surface,0.6858373880386353,85,43,42,3,50.588235294117645
+val,stock_one_global,A,one,global,480,1,pitted_surface,0.844358503818512,85,44,41,5,51.76470588235294
+val,stock_one_global,A,one,global,480,2,pitted_surface,0.7360886335372925,85,45,40,5,52.94117647058823
+val,stock_one_global,A,one,global,480,paired mean,pitted_surface,,85,44,41,4.333333333333333,51.76470588235294
+val,stock_one_global,A,one,global,480,0,rolled_in_scale,0.6858373880386353,124,39,85,9,31.451612903225808
+val,stock_one_global,A,one,global,480,1,rolled_in_scale,0.844358503818512,124,40,84,7,32.25806451612903
+val,stock_one_global,A,one,global,480,2,rolled_in_scale,0.7360886335372925,124,37,87,11,29.838709677419356
+val,stock_one_global,A,one,global,480,paired mean,rolled_in_scale,,124,38.666666666666664,85.33333333333333,9,31.182795698924732
+val,stock_one_global,A,one,global,480,0,scratches,0.6858373880386353,111,67,44,2,60.36036036036036
+val,stock_one_global,A,one,global,480,1,scratches,0.844358503818512,111,56,55,2,50.450450450450454
+val,stock_one_global,A,one,global,480,2,scratches,0.7360886335372925,111,59,52,0,53.153153153153156
+val,stock_one_global,A,one,global,480,paired mean,scratches,,111,60.666666666666664,50.333333333333336,1.3333333333333333,54.65465465465466
+val,stock_dense_global,A,dense,global,480,0,crazing,0.6662965416908264,136,18,118,6,13.235294117647058
+val,stock_dense_global,A,dense,global,480,1,crazing,0.7815216779708862,136,20,116,9,14.705882352941176
+val,stock_dense_global,A,dense,global,480,2,crazing,0.6900452971458435,136,16,120,5,11.764705882352942
+val,stock_dense_global,A,dense,global,480,paired mean,crazing,,136,18,118,6.666666666666667,13.235294117647058
+val,stock_dense_global,A,dense,global,480,0,inclusion,0.6662965416908264,199,77,122,2,38.69346733668342
+val,stock_dense_global,A,dense,global,480,1,inclusion,0.7815216779708862,199,103,96,6,51.75879396984924
+val,stock_dense_global,A,dense,global,480,2,inclusion,0.6900452971458435,199,113,86,11,56.78391959798995
+val,stock_dense_global,A,dense,global,480,paired mean,inclusion,,199,97.66666666666667,101.33333333333333,6.333333333333333,49.0787269681742
+val,stock_dense_global,A,dense,global,480,0,patches,0.6662965416908264,177,133,44,9,75.14124293785311
+val,stock_dense_global,A,dense,global,480,1,patches,0.7815216779708862,177,130,47,5,73.44632768361582
+val,stock_dense_global,A,dense,global,480,2,patches,0.6900452971458435,177,132,45,8,74.57627118644068
+val,stock_dense_global,A,dense,global,480,paired mean,patches,,177,131.66666666666666,45.333333333333336,7.333333333333333,74.3879472693032
+val,stock_dense_global,A,dense,global,480,0,pitted_surface,0.6662965416908264,85,57,28,5,67.05882352941177
+val,stock_dense_global,A,dense,global,480,1,pitted_surface,0.7815216779708862,85,55,30,5,64.70588235294117
+val,stock_dense_global,A,dense,global,480,2,pitted_surface,0.6900452971458435,85,58,27,5,68.23529411764706
+val,stock_dense_global,A,dense,global,480,paired mean,pitted_surface,,85,56.666666666666664,28.333333333333332,5,66.66666666666667
+val,stock_dense_global,A,dense,global,480,0,rolled_in_scale,0.6662965416908264,124,45,79,11,36.29032258064516
+val,stock_dense_global,A,dense,global,480,1,rolled_in_scale,0.7815216779708862,124,46,78,8,37.096774193548384
+val,stock_dense_global,A,dense,global,480,2,rolled_in_scale,0.6900452971458435,124,43,81,5,34.67741935483871
+val,stock_dense_global,A,dense,global,480,paired mean,rolled_in_scale,,124,44.666666666666664,79.33333333333333,8,36.02150537634409
+val,stock_dense_global,A,dense,global,480,0,scratches,0.6662965416908264,111,62,49,3,55.85585585585586
+val,stock_dense_global,A,dense,global,480,1,scratches,0.7815216779708862,111,73,38,3,65.76576576576576
+val,stock_dense_global,A,dense,global,480,2,scratches,0.6900452971458435,111,72,39,2,64.86486486486487
+val,stock_dense_global,A,dense,global,480,paired mean,scratches,,111,69,42,2.6666666666666665,62.16216216216216
+val,pconv_one_global,B,one,global,480,0,crazing,0.772908627986908,136,18,118,10,13.235294117647058
+val,pconv_one_global,B,one,global,480,1,crazing,0.723358690738678,136,11,125,7,8.088235294117647
+val,pconv_one_global,B,one,global,480,2,crazing,0.6531714200973511,136,21,115,10,15.441176470588236
+val,pconv_one_global,B,one,global,480,paired mean,crazing,,136,16.666666666666668,119.33333333333333,9,12.254901960784313
+val,pconv_one_global,B,one,global,480,0,inclusion,0.772908627986908,199,86,113,10,43.21608040201005
+val,pconv_one_global,B,one,global,480,1,inclusion,0.723358690738678,199,106,93,10,53.266331658291456
+val,pconv_one_global,B,one,global,480,2,inclusion,0.6531714200973511,199,84,115,4,42.21105527638191
+val,pconv_one_global,B,one,global,480,paired mean,inclusion,,199,92,107,8,46.231155778894475
+val,pconv_one_global,B,one,global,480,0,patches,0.772908627986908,177,117,60,6,66.10169491525424
+val,pconv_one_global,B,one,global,480,1,patches,0.723358690738678,177,122,55,9,68.92655367231639
+val,pconv_one_global,B,one,global,480,2,patches,0.6531714200973511,177,122,55,9,68.92655367231639
+val,pconv_one_global,B,one,global,480,paired mean,patches,,177,120.33333333333333,56.666666666666664,8,67.98493408662901
+val,pconv_one_global,B,one,global,480,0,pitted_surface,0.772908627986908,85,41,44,5,48.23529411764706
+val,pconv_one_global,B,one,global,480,1,pitted_surface,0.723358690738678,85,40,45,3,47.05882352941177
+val,pconv_one_global,B,one,global,480,2,pitted_surface,0.6531714200973511,85,47,38,2,55.294117647058826
+val,pconv_one_global,B,one,global,480,paired mean,pitted_surface,,85,42.666666666666664,42.333333333333336,3.3333333333333335,50.19607843137255
+val,pconv_one_global,B,one,global,480,0,rolled_in_scale,0.772908627986908,124,42,82,5,33.87096774193548
+val,pconv_one_global,B,one,global,480,1,rolled_in_scale,0.723358690738678,124,45,79,4,36.29032258064516
+val,pconv_one_global,B,one,global,480,2,rolled_in_scale,0.6531714200973511,124,38,86,7,30.64516129032258
+val,pconv_one_global,B,one,global,480,paired mean,rolled_in_scale,,124,41.666666666666664,82.33333333333333,5.333333333333333,33.60215053763441
+val,pconv_one_global,B,one,global,480,0,scratches,0.772908627986908,111,67,44,0,60.36036036036036
+val,pconv_one_global,B,one,global,480,1,scratches,0.723358690738678,111,70,41,3,63.06306306306306
+val,pconv_one_global,B,one,global,480,2,scratches,0.6531714200973511,111,69,42,4,62.16216216216216
+val,pconv_one_global,B,one,global,480,paired mean,scratches,,111,68.66666666666667,42.333333333333336,2.3333333333333335,61.86186186186186
+val,pconv_dense_global,B,dense,global,480,0,crazing,0.723431408405304,136,19,117,6,13.970588235294118
+val,pconv_dense_global,B,dense,global,480,1,crazing,0.7176007032394409,136,12,124,4,8.823529411764707
+val,pconv_dense_global,B,dense,global,480,2,crazing,0.6800620555877686,136,13,123,7,9.558823529411764
+val,pconv_dense_global,B,dense,global,480,paired mean,crazing,,136,14.666666666666666,121.33333333333333,5.666666666666667,10.784313725490197
+val,pconv_dense_global,B,dense,global,480,0,inclusion,0.723431408405304,199,103,96,9,51.75879396984924
+val,pconv_dense_global,B,dense,global,480,1,inclusion,0.7176007032394409,199,102,97,9,51.256281407035175
+val,pconv_dense_global,B,dense,global,480,2,inclusion,0.6800620555877686,199,98,101,5,49.246231155778894
+val,pconv_dense_global,B,dense,global,480,paired mean,inclusion,,199,101,98,7.666666666666667,50.753768844221106
+val,pconv_dense_global,B,dense,global,480,0,patches,0.723431408405304,177,141,36,9,79.66101694915254
+val,pconv_dense_global,B,dense,global,480,1,patches,0.7176007032394409,177,138,39,7,77.96610169491525
+val,pconv_dense_global,B,dense,global,480,2,patches,0.6800620555877686,177,131,46,10,74.01129943502825
+val,pconv_dense_global,B,dense,global,480,paired mean,patches,,177,136.66666666666666,40.333333333333336,8.666666666666666,77.21280602636534
+val,pconv_dense_global,B,dense,global,480,0,pitted_surface,0.723431408405304,85,56,29,4,65.88235294117646
+val,pconv_dense_global,B,dense,global,480,1,pitted_surface,0.7176007032394409,85,52,33,2,61.1764705882353
+val,pconv_dense_global,B,dense,global,480,2,pitted_surface,0.6800620555877686,85,56,29,1,65.88235294117646
+val,pconv_dense_global,B,dense,global,480,paired mean,pitted_surface,,85,54.666666666666664,30.333333333333332,2.3333333333333335,64.31372549019608
+val,pconv_dense_global,B,dense,global,480,0,rolled_in_scale,0.723431408405304,124,41,83,4,33.064516129032256
+val,pconv_dense_global,B,dense,global,480,1,rolled_in_scale,0.7176007032394409,124,31,93,6,25.0
+val,pconv_dense_global,B,dense,global,480,2,rolled_in_scale,0.6800620555877686,124,39,85,9,31.451612903225808
+val,pconv_dense_global,B,dense,global,480,paired mean,rolled_in_scale,,124,37,87,6.333333333333333,29.838709677419356
+val,pconv_dense_global,B,dense,global,480,0,scratches,0.723431408405304,111,79,32,4,71.17117117117117
+val,pconv_dense_global,B,dense,global,480,1,scratches,0.7176007032394409,111,81,30,7,72.97297297297297
+val,pconv_dense_global,B,dense,global,480,2,scratches,0.6800620555877686,111,85,26,4,76.57657657657657
+val,pconv_dense_global,B,dense,global,480,paired mean,scratches,,111,81.66666666666667,29.333333333333332,5,73.57357357357357
+val,pconv_dense_macro,B,dense,class_macro,480,0,crazing,0.7252044677734375,136,19,117,6,13.970588235294118
+val,pconv_dense_macro,B,dense,class_macro,480,1,crazing,0.7580381035804749,136,9,127,2,6.617647058823529
+val,pconv_dense_macro,B,dense,class_macro,480,2,crazing,0.693162202835083,136,13,123,5,9.558823529411764
+val,pconv_dense_macro,B,dense,class_macro,480,paired mean,crazing,,136,13.666666666666666,122.33333333333333,4.333333333333333,10.049019607843137
+val,pconv_dense_macro,B,dense,class_macro,480,0,inclusion,0.6387795209884644,199,129,70,13,64.82412060301507
+val,pconv_dense_macro,B,dense,class_macro,480,1,inclusion,0.6666799783706665,199,121,78,13,60.80402010050251
+val,pconv_dense_macro,B,dense,class_macro,480,2,inclusion,0.615312933921814,199,120,79,10,60.301507537688444
+val,pconv_dense_macro,B,dense,class_macro,480,paired mean,inclusion,,199,123.33333333333333,75.66666666666667,12,61.97654941373534
+val,pconv_dense_macro,B,dense,class_macro,480,0,patches,0.7682514786720276,177,128,49,3,72.31638418079096
+val,pconv_dense_macro,B,dense,class_macro,480,1,patches,0.7501813769340515,177,131,46,2,74.01129943502825
+val,pconv_dense_macro,B,dense,class_macro,480,2,patches,0.6934952735900879,177,131,46,7,74.01129943502825
+val,pconv_dense_macro,B,dense,class_macro,480,paired mean,patches,,177,130,47,4,73.44632768361582
+val,pconv_dense_macro,B,dense,class_macro,480,0,pitted_surface,0.5919119119644165,85,62,23,6,72.94117647058823
+val,pconv_dense_macro,B,dense,class_macro,480,1,pitted_surface,0.6807184219360352,85,58,27,2,68.23529411764706
+val,pconv_dense_macro,B,dense,class_macro,480,2,pitted_surface,0.6727997064590454,85,58,27,1,68.23529411764706
+val,pconv_dense_macro,B,dense,class_macro,480,paired mean,pitted_surface,,85,59.333333333333336,25.666666666666668,3,69.80392156862744
+val,pconv_dense_macro,B,dense,class_macro,480,0,rolled_in_scale,0.7315629720687866,124,41,83,4,33.064516129032256
+val,pconv_dense_macro,B,dense,class_macro,480,1,rolled_in_scale,0.6195650696754456,124,62,62,9,50.0
+val,pconv_dense_macro,B,dense,class_macro,480,2,rolled_in_scale,0.649439811706543,124,50,74,9,40.32258064516129
+val,pconv_dense_macro,B,dense,class_macro,480,paired mean,rolled_in_scale,,124,51,73,7.333333333333333,41.12903225806451
+val,pconv_dense_macro,B,dense,class_macro,480,0,scratches,0.6829327344894409,111,87,24,4,78.37837837837837
+val,pconv_dense_macro,B,dense,class_macro,480,1,scratches,0.6964322328567505,111,84,27,8,75.67567567567568
+val,pconv_dense_macro,B,dense,class_macro,480,2,scratches,0.6518439650535583,111,90,21,4,81.08108108108108
+val,pconv_dense_macro,B,dense,class_macro,480,paired mean,scratches,,111,87,24,5.333333333333333,78.37837837837837
+val,pconv_dense_minimum,B,dense,class_minimum,480,0,crazing,0.6050180196762085,136,34,102,28,25.0
+val,pconv_dense_minimum,B,dense,class_minimum,480,1,crazing,0.4711689054965973,136,35,101,24,25.735294117647058
+val,pconv_dense_minimum,B,dense,class_minimum,480,2,crazing,0.49224331974983215,136,42,94,30,30.88235294117647
+val,pconv_dense_minimum,B,dense,class_minimum,480,paired mean,crazing,,136,37,99,27.333333333333332,27.205882352941178
+val,pconv_dense_minimum,B,dense,class_minimum,480,0,inclusion,0.7563748359680176,199,77,122,4,38.69346733668342
+val,pconv_dense_minimum,B,dense,class_minimum,480,1,inclusion,0.7550225257873535,199,64,135,4,32.1608040201005
+val,pconv_dense_minimum,B,dense,class_minimum,480,2,inclusion,0.7423065900802612,199,67,132,1,33.66834170854271
+val,pconv_dense_minimum,B,dense,class_minimum,480,paired mean,inclusion,,199,69.33333333333333,129.66666666666666,3,34.84087102177554
+val,pconv_dense_minimum,B,dense,class_minimum,480,0,patches,0.8151153922080994,177,112,65,0,63.27683615819209
+val,pconv_dense_minimum,B,dense,class_minimum,480,1,patches,0.7501813769340515,177,131,46,2,74.01129943502825
+val,pconv_dense_minimum,B,dense,class_minimum,480,2,patches,0.8246228098869324,177,69,108,0,38.983050847457626
+val,pconv_dense_minimum,B,dense,class_minimum,480,paired mean,patches,,177,104,73,0.6666666666666666,58.75706214689266
+val,pconv_dense_minimum,B,dense,class_minimum,480,0,pitted_surface,0.8093171119689941,85,49,36,0,57.64705882352941
+val,pconv_dense_minimum,B,dense,class_minimum,480,1,pitted_surface,0.8266335725784302,85,30,55,0,35.294117647058826
+val,pconv_dense_minimum,B,dense,class_minimum,480,2,pitted_surface,0.8346238136291504,85,39,46,0,45.88235294117647
+val,pconv_dense_minimum,B,dense,class_minimum,480,paired mean,pitted_surface,,85,39.333333333333336,45.666666666666664,0,46.27450980392157
+val,pconv_dense_minimum,B,dense,class_minimum,480,0,rolled_in_scale,0.7609807252883911,124,32,92,3,25.806451612903224
+val,pconv_dense_minimum,B,dense,class_minimum,480,1,rolled_in_scale,0.6625603437423706,124,49,75,6,39.516129032258064
+val,pconv_dense_minimum,B,dense,class_minimum,480,2,rolled_in_scale,0.7083795070648193,124,37,87,5,29.838709677419356
+val,pconv_dense_minimum,B,dense,class_minimum,480,paired mean,rolled_in_scale,,124,39.333333333333336,84.66666666666667,4.666666666666667,31.72043010752688
+val,pconv_dense_minimum,B,dense,class_minimum,480,0,scratches,0.7511700391769409,111,71,40,1,63.96396396396396
+val,pconv_dense_minimum,B,dense,class_minimum,480,1,scratches,0.769908607006073,111,52,59,0,46.846846846846844
+val,pconv_dense_minimum,B,dense,class_minimum,480,2,scratches,0.8108051419258118,111,31,80,0,27.92792792792793
+val,pconv_dense_minimum,B,dense,class_minimum,480,paired mean,scratches,,111,51.333333333333336,59.666666666666664,0.3333333333333333,46.246246246246244
+test,stock_one_global,A,one,global,480,0,crazing,0.6858373880386353,137,20,117,4,14.598540145985401
+test,stock_one_global,A,one,global,480,1,crazing,0.844358503818512,137,19,118,11,13.86861313868613
+test,stock_one_global,A,one,global,480,2,crazing,0.7360886335372925,137,9,128,4,6.569343065693431
+test,stock_one_global,A,one,global,480,paired mean,crazing,,137,16,121,6.333333333333333,11.678832116788321
+test,stock_one_global,A,one,global,480,0,inclusion,0.6858373880386353,200,87,113,9,43.5
+test,stock_one_global,A,one,global,480,1,inclusion,0.844358503818512,200,88,112,10,44.0
+test,stock_one_global,A,one,global,480,2,inclusion,0.7360886335372925,200,94,106,8,47.0
+test,stock_one_global,A,one,global,480,paired mean,inclusion,,200,89.66666666666667,110.33333333333333,9,44.833333333333336
+test,stock_one_global,A,one,global,480,0,patches,0.6858373880386353,175,111,64,10,63.42857142857143
+test,stock_one_global,A,one,global,480,1,patches,0.844358503818512,175,109,66,3,62.285714285714285
+test,stock_one_global,A,one,global,480,2,patches,0.7360886335372925,175,115,60,3,65.71428571428571
+test,stock_one_global,A,one,global,480,paired mean,patches,,175,111.66666666666667,63.333333333333336,5.333333333333333,63.80952380952381
+test,stock_one_global,A,one,global,480,0,pitted_surface,0.6858373880386353,86,45,41,3,52.325581395348834
+test,stock_one_global,A,one,global,480,1,pitted_surface,0.844358503818512,86,33,53,6,38.372093023255815
+test,stock_one_global,A,one,global,480,2,pitted_surface,0.7360886335372925,86,37,49,3,43.02325581395349
+test,stock_one_global,A,one,global,480,paired mean,pitted_surface,,86,38.333333333333336,47.666666666666664,4,44.57364341085271
+test,stock_one_global,A,one,global,480,0,rolled_in_scale,0.6858373880386353,126,43,83,8,34.12698412698413
+test,stock_one_global,A,one,global,480,1,rolled_in_scale,0.844358503818512,126,37,89,8,29.365079365079364
+test,stock_one_global,A,one,global,480,2,rolled_in_scale,0.7360886335372925,126,35,91,17,27.77777777777778
+test,stock_one_global,A,one,global,480,paired mean,rolled_in_scale,,126,38.333333333333336,87.66666666666667,11,30.423280423280424
+test,stock_one_global,A,one,global,480,0,scratches,0.6858373880386353,109,65,44,3,59.63302752293578
+test,stock_one_global,A,one,global,480,1,scratches,0.844358503818512,109,56,53,6,51.37614678899082
+test,stock_one_global,A,one,global,480,2,scratches,0.7360886335372925,109,57,52,3,52.293577981651374
+test,stock_one_global,A,one,global,480,paired mean,scratches,,109,59.333333333333336,49.666666666666664,4,54.43425076452599
+test,stock_dense_global,A,dense,global,480,0,crazing,0.6662965416908264,137,18,119,4,13.138686131386862
+test,stock_dense_global,A,dense,global,480,1,crazing,0.7815216779708862,137,16,121,11,11.678832116788321
+test,stock_dense_global,A,dense,global,480,2,crazing,0.6900452971458435,137,12,125,12,8.75912408759124
+test,stock_dense_global,A,dense,global,480,paired mean,crazing,,137,15.333333333333334,121.66666666666667,9,11.19221411192214
+test,stock_dense_global,A,dense,global,480,0,inclusion,0.6662965416908264,200,75,125,5,37.5
+test,stock_dense_global,A,dense,global,480,1,inclusion,0.7815216779708862,200,101,99,7,50.5
+test,stock_dense_global,A,dense,global,480,2,inclusion,0.6900452971458435,200,107,93,8,53.5
+test,stock_dense_global,A,dense,global,480,paired mean,inclusion,,200,94.33333333333333,105.66666666666667,6.666666666666667,47.166666666666664
+test,stock_dense_global,A,dense,global,480,0,patches,0.6662965416908264,175,127,48,10,72.57142857142857
+test,stock_dense_global,A,dense,global,480,1,patches,0.7815216779708862,175,127,48,4,72.57142857142857
+test,stock_dense_global,A,dense,global,480,2,patches,0.6900452971458435,175,128,47,7,73.14285714285714
+test,stock_dense_global,A,dense,global,480,paired mean,patches,,175,127.33333333333333,47.666666666666664,7,72.76190476190476
+test,stock_dense_global,A,dense,global,480,0,pitted_surface,0.6662965416908264,86,44,42,4,51.16279069767442
+test,stock_dense_global,A,dense,global,480,1,pitted_surface,0.7815216779708862,86,44,42,4,51.16279069767442
+test,stock_dense_global,A,dense,global,480,2,pitted_surface,0.6900452971458435,86,47,39,4,54.651162790697676
+test,stock_dense_global,A,dense,global,480,paired mean,pitted_surface,,86,45,41,4,52.325581395348834
+test,stock_dense_global,A,dense,global,480,0,rolled_in_scale,0.6662965416908264,126,48,78,11,38.095238095238095
+test,stock_dense_global,A,dense,global,480,1,rolled_in_scale,0.7815216779708862,126,42,84,14,33.333333333333336
+test,stock_dense_global,A,dense,global,480,2,rolled_in_scale,0.6900452971458435,126,43,83,19,34.12698412698413
+test,stock_dense_global,A,dense,global,480,paired mean,rolled_in_scale,,126,44.333333333333336,81.66666666666667,14.666666666666666,35.18518518518518
+test,stock_dense_global,A,dense,global,480,0,scratches,0.6662965416908264,109,59,50,5,54.12844036697248
+test,stock_dense_global,A,dense,global,480,1,scratches,0.7815216779708862,109,71,38,4,65.13761467889908
+test,stock_dense_global,A,dense,global,480,2,scratches,0.6900452971458435,109,65,44,3,59.63302752293578
+test,stock_dense_global,A,dense,global,480,paired mean,scratches,,109,65,44,4,59.63302752293578
+test,pconv_one_global,B,one,global,480,0,crazing,0.772908627986908,137,14,123,11,10.218978102189782
+test,pconv_one_global,B,one,global,480,1,crazing,0.723358690738678,137,13,124,3,9.489051094890511
+test,pconv_one_global,B,one,global,480,2,crazing,0.6531714200973511,137,17,120,9,12.408759124087592
+test,pconv_one_global,B,one,global,480,paired mean,crazing,,137,14.666666666666666,122.33333333333333,7.666666666666667,10.705596107055962
+test,pconv_one_global,B,one,global,480,0,inclusion,0.772908627986908,200,97,103,10,48.5
+test,pconv_one_global,B,one,global,480,1,inclusion,0.723358690738678,200,105,95,17,52.5
+test,pconv_one_global,B,one,global,480,2,inclusion,0.6531714200973511,200,75,125,5,37.5
+test,pconv_one_global,B,one,global,480,paired mean,inclusion,,200,92.33333333333333,107.66666666666667,10.666666666666666,46.166666666666664
+test,pconv_one_global,B,one,global,480,0,patches,0.772908627986908,175,114,61,13,65.14285714285714
+test,pconv_one_global,B,one,global,480,1,patches,0.723358690738678,175,124,51,12,70.85714285714286
+test,pconv_one_global,B,one,global,480,2,patches,0.6531714200973511,175,117,58,15,66.85714285714286
+test,pconv_one_global,B,one,global,480,paired mean,patches,,175,118.33333333333333,56.666666666666664,13.333333333333334,67.61904761904762
+test,pconv_one_global,B,one,global,480,0,pitted_surface,0.772908627986908,86,39,47,1,45.348837209302324
+test,pconv_one_global,B,one,global,480,1,pitted_surface,0.723358690738678,86,35,51,8,40.69767441860465
+test,pconv_one_global,B,one,global,480,2,pitted_surface,0.6531714200973511,86,37,49,5,43.02325581395349
+test,pconv_one_global,B,one,global,480,paired mean,pitted_surface,,86,37,49,4.666666666666667,43.02325581395349
+test,pconv_one_global,B,one,global,480,0,rolled_in_scale,0.772908627986908,126,39,87,11,30.952380952380953
+test,pconv_one_global,B,one,global,480,1,rolled_in_scale,0.723358690738678,126,35,91,12,27.77777777777778
+test,pconv_one_global,B,one,global,480,2,rolled_in_scale,0.6531714200973511,126,43,83,15,34.12698412698413
+test,pconv_one_global,B,one,global,480,paired mean,rolled_in_scale,,126,39,87,12.666666666666666,30.952380952380953
+test,pconv_one_global,B,one,global,480,0,scratches,0.772908627986908,109,57,52,4,52.293577981651374
+test,pconv_one_global,B,one,global,480,1,scratches,0.723358690738678,109,64,45,6,58.71559633027523
+test,pconv_one_global,B,one,global,480,2,scratches,0.6531714200973511,109,68,41,2,62.38532110091743
+test,pconv_one_global,B,one,global,480,paired mean,scratches,,109,63,46,4,57.79816513761468
+test,pconv_dense_global,B,dense,global,480,0,crazing,0.723431408405304,137,16,121,10,11.678832116788321
+test,pconv_dense_global,B,dense,global,480,1,crazing,0.7176007032394409,137,9,128,3,6.569343065693431
+test,pconv_dense_global,B,dense,global,480,2,crazing,0.6800620555877686,137,16,121,6,11.678832116788321
+test,pconv_dense_global,B,dense,global,480,paired mean,crazing,,137,13.666666666666666,123.33333333333333,6.333333333333333,9.975669099756692
+test,pconv_dense_global,B,dense,global,480,0,inclusion,0.723431408405304,200,104,96,13,52.0
+test,pconv_dense_global,B,dense,global,480,1,inclusion,0.7176007032394409,200,97,103,11,48.5
+test,pconv_dense_global,B,dense,global,480,2,inclusion,0.6800620555877686,200,81,119,5,40.5
+test,pconv_dense_global,B,dense,global,480,paired mean,inclusion,,200,94,106,9.666666666666666,47.0
+test,pconv_dense_global,B,dense,global,480,0,patches,0.723431408405304,175,133,42,14,76.0
+test,pconv_dense_global,B,dense,global,480,1,patches,0.7176007032394409,175,131,44,14,74.85714285714286
+test,pconv_dense_global,B,dense,global,480,2,patches,0.6800620555877686,175,132,43,12,75.42857142857143
+test,pconv_dense_global,B,dense,global,480,paired mean,patches,,175,132,43,13.333333333333334,75.42857142857143
+test,pconv_dense_global,B,dense,global,480,0,pitted_surface,0.723431408405304,86,56,30,5,65.11627906976744
+test,pconv_dense_global,B,dense,global,480,1,pitted_surface,0.7176007032394409,86,36,50,7,41.86046511627907
+test,pconv_dense_global,B,dense,global,480,2,pitted_surface,0.6800620555877686,86,48,38,3,55.81395348837209
+test,pconv_dense_global,B,dense,global,480,paired mean,pitted_surface,,86,46.666666666666664,39.333333333333336,5,54.26356589147287
+test,pconv_dense_global,B,dense,global,480,0,rolled_in_scale,0.723431408405304,126,38,88,14,30.158730158730158
+test,pconv_dense_global,B,dense,global,480,1,rolled_in_scale,0.7176007032394409,126,31,95,9,24.603174603174605
+test,pconv_dense_global,B,dense,global,480,2,rolled_in_scale,0.6800620555877686,126,44,82,16,34.92063492063492
+test,pconv_dense_global,B,dense,global,480,paired mean,rolled_in_scale,,126,37.666666666666664,88.33333333333333,13,29.894179894179892
+test,pconv_dense_global,B,dense,global,480,0,scratches,0.723431408405304,109,72,37,4,66.05504587155963
+test,pconv_dense_global,B,dense,global,480,1,scratches,0.7176007032394409,109,76,33,3,69.72477064220183
+test,pconv_dense_global,B,dense,global,480,2,scratches,0.6800620555877686,109,77,32,2,70.64220183486239
+test,pconv_dense_global,B,dense,global,480,paired mean,scratches,,109,75,34,3,68.80733944954129
+test,pconv_dense_macro,B,dense,class_macro,480,0,crazing,0.7252044677734375,137,16,121,10,11.678832116788321
+test,pconv_dense_macro,B,dense,class_macro,480,1,crazing,0.7580381035804749,137,8,129,1,5.839416058394161
+test,pconv_dense_macro,B,dense,class_macro,480,2,crazing,0.693162202835083,137,13,124,6,9.489051094890511
+test,pconv_dense_macro,B,dense,class_macro,480,paired mean,crazing,,137,12.333333333333334,124.66666666666667,5.666666666666667,9.002433090024331
+test,pconv_dense_macro,B,dense,class_macro,480,0,inclusion,0.6387795209884644,200,125,75,17,62.5
+test,pconv_dense_macro,B,dense,class_macro,480,1,inclusion,0.6666799783706665,200,128,72,16,64.0
+test,pconv_dense_macro,B,dense,class_macro,480,2,inclusion,0.615312933921814,200,110,90,11,55.0
+test,pconv_dense_macro,B,dense,class_macro,480,paired mean,inclusion,,200,121,79,14.666666666666666,60.5
+test,pconv_dense_macro,B,dense,class_macro,480,0,patches,0.7682514786720276,175,123,52,11,70.28571428571429
+test,pconv_dense_macro,B,dense,class_macro,480,1,patches,0.7501813769340515,175,123,52,11,70.28571428571429
+test,pconv_dense_macro,B,dense,class_macro,480,2,patches,0.6934952735900879,175,128,47,12,73.14285714285714
+test,pconv_dense_macro,B,dense,class_macro,480,paired mean,patches,,175,124.66666666666667,50.333333333333336,11.333333333333334,71.23809523809524
+test,pconv_dense_macro,B,dense,class_macro,480,0,pitted_surface,0.5919119119644165,86,61,25,9,70.93023255813954
+test,pconv_dense_macro,B,dense,class_macro,480,1,pitted_surface,0.6807184219360352,86,40,46,7,46.51162790697674
+test,pconv_dense_macro,B,dense,class_macro,480,2,pitted_surface,0.6727997064590454,86,48,38,3,55.81395348837209
+test,pconv_dense_macro,B,dense,class_macro,480,paired mean,pitted_surface,,86,49.666666666666664,36.333333333333336,6.333333333333333,57.751937984496124
+test,pconv_dense_macro,B,dense,class_macro,480,0,rolled_in_scale,0.7315629720687866,126,36,90,13,28.571428571428573
+test,pconv_dense_macro,B,dense,class_macro,480,1,rolled_in_scale,0.6195650696754456,126,49,77,17,38.888888888888886
+test,pconv_dense_macro,B,dense,class_macro,480,2,rolled_in_scale,0.649439811706543,126,49,77,18,38.888888888888886
+test,pconv_dense_macro,B,dense,class_macro,480,paired mean,rolled_in_scale,,126,44.666666666666664,81.33333333333333,16,35.44973544973545
+test,pconv_dense_macro,B,dense,class_macro,480,0,scratches,0.6829327344894409,109,80,29,5,73.39449541284404
+test,pconv_dense_macro,B,dense,class_macro,480,1,scratches,0.6964322328567505,109,82,27,4,75.22935779816514
+test,pconv_dense_macro,B,dense,class_macro,480,2,scratches,0.6518439650535583,109,84,25,4,77.06422018348624
+test,pconv_dense_macro,B,dense,class_macro,480,paired mean,scratches,,109,82,27,4.333333333333333,75.22935779816514
+test,pconv_dense_minimum,B,dense,class_minimum,480,0,crazing,0.6050180196762085,137,31,106,35,22.62773722627737
+test,pconv_dense_minimum,B,dense,class_minimum,480,1,crazing,0.4711689054965973,137,37,100,26,27.00729927007299
+test,pconv_dense_minimum,B,dense,class_minimum,480,2,crazing,0.49224331974983215,137,49,88,37,35.76642335766423
+test,pconv_dense_minimum,B,dense,class_minimum,480,paired mean,crazing,,137,39,98,32.666666666666664,28.467153284671532
+test,pconv_dense_minimum,B,dense,class_minimum,480,0,inclusion,0.7563748359680176,200,83,117,7,41.5
+test,pconv_dense_minimum,B,dense,class_minimum,480,1,inclusion,0.7550225257873535,200,68,132,7,34.0
+test,pconv_dense_minimum,B,dense,class_minimum,480,2,inclusion,0.7423065900802612,200,40,160,1,20.0
+test,pconv_dense_minimum,B,dense,class_minimum,480,paired mean,inclusion,,200,63.666666666666664,136.33333333333334,5,31.833333333333332
+test,pconv_dense_minimum,B,dense,class_minimum,480,0,patches,0.8151153922080994,175,97,78,4,55.42857142857143
+test,pconv_dense_minimum,B,dense,class_minimum,480,1,patches,0.7501813769340515,175,123,52,11,70.28571428571429
+test,pconv_dense_minimum,B,dense,class_minimum,480,2,patches,0.8246228098869324,175,75,100,2,42.857142857142854
+test,pconv_dense_minimum,B,dense,class_minimum,480,paired mean,patches,,175,98.33333333333333,76.66666666666667,5.666666666666667,56.19047619047619
+test,pconv_dense_minimum,B,dense,class_minimum,480,0,pitted_surface,0.8093171119689941,86,42,44,3,48.83720930232558
+test,pconv_dense_minimum,B,dense,class_minimum,480,1,pitted_surface,0.8266335725784302,86,18,68,3,20.930232558139537
+test,pconv_dense_minimum,B,dense,class_minimum,480,2,pitted_surface,0.8346238136291504,86,30,56,2,34.883720930232556
+test,pconv_dense_minimum,B,dense,class_minimum,480,paired mean,pitted_surface,,86,30,56,2.6666666666666665,34.883720930232556
+test,pconv_dense_minimum,B,dense,class_minimum,480,0,rolled_in_scale,0.7609807252883911,126,28,98,8,22.22222222222222
+test,pconv_dense_minimum,B,dense,class_minimum,480,1,rolled_in_scale,0.6625603437423706,126,43,83,13,34.12698412698413
+test,pconv_dense_minimum,B,dense,class_minimum,480,2,rolled_in_scale,0.7083795070648193,126,39,87,13,30.952380952380953
+test,pconv_dense_minimum,B,dense,class_minimum,480,paired mean,rolled_in_scale,,126,36.666666666666664,89.33333333333333,11.333333333333334,29.1005291005291
+test,pconv_dense_minimum,B,dense,class_minimum,480,0,scratches,0.7511700391769409,109,64,45,3,58.71559633027523
+test,pconv_dense_minimum,B,dense,class_minimum,480,1,scratches,0.769908607006073,109,49,60,1,44.95412844036697
+test,pconv_dense_minimum,B,dense,class_minimum,480,2,scratches,0.8108051419258118,109,32,77,0,29.357798165137616
+test,pconv_dense_minimum,B,dense,class_minimum,480,paired mean,scratches,,109,48.333333333333336,60.666666666666664,1.3333333333333333,44.34250764525994

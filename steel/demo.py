@@ -109,7 +109,7 @@ def demo(args):
             elapsed=(perf_counter_ns()-start)/1e6
         label="one-to-one" if head=="one" else "dense + NMS"
         title=f"{row['id']}   |   {model_id}{seed}   {label}   {side} px   OpenVINO FP32"
-        footer=f"Decoded image to final boxes   {elapsed:.2f} ms  (one frame)     Cutoff {cutoff:.4f}     {args.phase} / {args.split}"
+        footer=f"Decoded image to final boxes   {elapsed:.2f} ms (one frame)     Cutoff {cutoff:.4f} (shared native 480)     {args.split}"
         return pair_image(row,gray,pred,title,footer)
     if args.output:
         args.output.parent.mkdir(parents=True,exist_ok=True)
