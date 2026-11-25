@@ -1,0 +1,202 @@
+{
+  "evaluator": "pycocotools 2.0.11",
+  "cells": 12,
+  "class_count_rows": 72,
+  "max_standard_map5095_difference": 1.1102230246251565e-16,
+  "max_standard_difference": 1.1102230246251565e-16,
+  "operating_counts_match": true,
+  "results": [
+    {
+      "split": "val",
+      "run": "yolov8n-0",
+      "predictions_sha": "82f6d488d1545e11cd7a5d982f75dfc10d8e14c5b267dea264092676cb9a6e8c",
+      "standard_coco_minus_study": {
+        "map50": 0.0,
+        "map5095": -5.551115123125783e-17,
+        "crazing_ap50": 0.0,
+        "inclusion_ap50": 0.0,
+        "patches_ap50": 0.0,
+        "pitted_surface_ap50": 0.0,
+        "rolled_in_scale_ap50": 0.0,
+        "scratches_ap50": 0.0
+      },
+      "fp32_aligned_max_abs_delta": 5.551115123125783e-17
+    },
+    {
+      "split": "val",
+      "run": "yolov5s-0",
+      "predictions_sha": "f454304b6d6551ccd6958d846cc49f2e28d632b977ddf840aa9787ac6a2d1f68",
+      "standard_coco_minus_study": {
+        "map50": -1.1102230246251565e-16,
+        "map5095": 0.0,
+        "crazing_ap50": 0.0,
+        "inclusion_ap50": 0.0,
+        "patches_ap50": 0.0,
+        "pitted_surface_ap50": 0.0,
+        "rolled_in_scale_ap50": 0.0,
+        "scratches_ap50": 0.0
+      },
+      "fp32_aligned_max_abs_delta": 1.1102230246251565e-16
+    },
+    {
+      "split": "val",
+      "run": "yolov8n-1",
+      "predictions_sha": "9f1c5b604c35bbdba47e2ae8a09b8ce6c324c8ad3ae1e0d41fa6ba8bfbfa04b6",
+      "standard_coco_minus_study": {
+        "map50": 0.0,
+        "map5095": -5.551115123125783e-17,
+        "crazing_ap50": 0.0,
+        "inclusion_ap50": 0.0,
+        "patches_ap50": 0.0,
+        "pitted_surface_ap50": 0.0,
+        "rolled_in_scale_ap50": 0.0,
+        "scratches_ap50": 0.0
+      },
+      "fp32_aligned_max_abs_delta": 5.551115123125783e-17
+    },
+    {
+      "split": "val",
+      "run": "yolov5s-1",
+      "predictions_sha": "8634cdc0e812a61492f4fa88a75561a582b4852bed6c2dfa1e625f9860aefb90",
+      "standard_coco_minus_study": {
+        "map50": -1.1102230246251565e-16,
+        "map5095": 0.0,
+        "crazing_ap50": 0.0,
+        "inclusion_ap50": 0.0,
+        "patches_ap50": 0.0,
+        "pitted_surface_ap50": 0.0,
+        "rolled_in_scale_ap50": 0.0,
+        "scratches_ap50": 0.0
+      },
+      "fp32_aligned_max_abs_delta": 1.1102230246251565e-16
+    },
+    {
+      "split": "val",
+      "run": "yolov8n-2",
+      "predictions_sha": "c4360525777d921ed7f167076f0317ac2c654fd31ac4a6099d9b4d91a014f99f",
+      "standard_coco_minus_study": {
+        "map50": 0.0,
+        "map5095": 0.0,
+        "crazing_ap50": 0.0,
+        "inclusion_ap50": 0.0,
+        "patches_ap50": 0.0,
+        "pitted_surface_ap50": 0.0,
+        "rolled_in_scale_ap50": 0.0,
+        "scratches_ap50": 0.0
+      },
+      "fp32_aligned_max_abs_delta": 0.0
+    },
+    {
+      "split": "val",
+      "run": "yolov5s-2",
+      "predictions_sha": "510c1eabf2faee37a2f9ba60fe6c01c8f13f0ce55f0ba56b1aa14ef21ea3d939",
+      "standard_coco_minus_study": {
+        "map50": 1.1102230246251565e-16,
+        "map5095": 5.551115123125783e-17,
+        "crazing_ap50": 0.0,
+        "inclusion_ap50": 0.0,
+        "patches_ap50": 0.0,
+        "pitted_surface_ap50": 0.0,
+        "rolled_in_scale_ap50": 0.0,
+        "scratches_ap50": 0.0
+      },
+      "fp32_aligned_max_abs_delta": 1.1102230246251565e-16
+    },
+    {
+      "split": "test",
+      "run": "yolov8n-0",
+      "predictions_sha": "113d4d1985df0a6d7acc4dc5608949b18c8541a9653da48e483b3c8661da8e5a",
+      "standard_coco_minus_study": {
+        "map50": -1.1102230246251565e-16,
+        "map5095": -5.551115123125783e-17,
+        "crazing_ap50": 0.0,
+        "inclusion_ap50": 0.0,
+        "patches_ap50": 0.0,
+        "pitted_surface_ap50": 0.0,
+        "rolled_in_scale_ap50": 0.0,
+        "scratches_ap50": 0.0
+      },
+      "fp32_aligned_max_abs_delta": 1.1102230246251565e-16
+    },
+    {
+      "split": "test",
+      "run": "yolov5s-0",
+      "predictions_sha": "701f3032d98b5b0c10adfd513a94d4cae5301e8751fbdb42024e99caad1d4531",
+      "standard_coco_minus_study": {
+        "map50": 0.0,
+        "map5095": 5.551115123125783e-17,
+        "crazing_ap50": 0.0,
+        "inclusion_ap50": 0.0,
+        "patches_ap50": 0.0,
+        "pitted_surface_ap50": 0.0,
+        "rolled_in_scale_ap50": 0.0,
+        "scratches_ap50": 0.0
+      },
+      "fp32_aligned_max_abs_delta": 5.551115123125783e-17
+    },
+    {
+      "split": "test",
+      "run": "yolov8n-1",
+      "predictions_sha": "903c3695709b35806f0fef0c38bc255a3da6e5065984468595e7e9849cdb5a12",
+      "standard_coco_minus_study": {
+        "map50": 0.0,
+        "map5095": -5.551115123125783e-17,
+        "crazing_ap50": 0.0,
+        "inclusion_ap50": 0.0,
+        "patches_ap50": 0.0,
+        "pitted_surface_ap50": 0.0,
+        "rolled_in_scale_ap50": 0.0,
+        "scratches_ap50": 0.0
+      },
+      "fp32_aligned_max_abs_delta": 5.551115123125783e-17
+    },
+    {
+      "split": "test",
+      "run": "yolov5s-1",
+      "predictions_sha": "64cb6be4e7c1c84fad158825c6ab085d652a9c48ca310797ffbe9098d5f4eb08",
+      "standard_coco_minus_study": {
+        "map50": 0.0,
+        "map5095": 0.0,
+        "crazing_ap50": 0.0,
+        "inclusion_ap50": 0.0,
+        "patches_ap50": 0.0,
+        "pitted_surface_ap50": 0.0,
+        "rolled_in_scale_ap50": 0.0,
+        "scratches_ap50": 0.0
+      },
+      "fp32_aligned_max_abs_delta": 0.0
+    },
+    {
+      "split": "test",
+      "run": "yolov8n-2",
+      "predictions_sha": "a5ded6c91e6c5d9774bb37315bc02b2aaebd38f6290a4e468d7b22037ac24ec6",
+      "standard_coco_minus_study": {
+        "map50": -1.1102230246251565e-16,
+        "map5095": 1.1102230246251565e-16,
+        "crazing_ap50": 0.0,
+        "inclusion_ap50": 0.0,
+        "patches_ap50": 0.0,
+        "pitted_surface_ap50": 0.0,
+        "rolled_in_scale_ap50": 0.0,
+        "scratches_ap50": 0.0
+      },
+      "fp32_aligned_max_abs_delta": 1.1102230246251565e-16
+    },
+    {
+      "split": "test",
+      "run": "yolov5s-2",
+      "predictions_sha": "c26ba82194760219b0310d1727861e4798a3699cfd979ac5eccd3b22cf0dcf2b",
+      "standard_coco_minus_study": {
+        "map50": 0.0,
+        "map5095": -5.551115123125783e-17,
+        "crazing_ap50": 0.0,
+        "inclusion_ap50": 0.0,
+        "patches_ap50": 0.0,
+        "pitted_surface_ap50": 0.0,
+        "rolled_in_scale_ap50": 0.0,
+        "scratches_ap50": 0.0
+      },
+      "fp32_aligned_max_abs_delta": 5.551115123125783e-17
+    }
+  ]
+}

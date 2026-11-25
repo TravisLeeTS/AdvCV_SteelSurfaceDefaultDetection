@@ -1,0 +1,17 @@
+{
+  "selection_sha": "cfc4b4585d43c2e9389697d9cdf91064f245abd8026fa2381d7a94ff2e8a2567",
+  "tables": {
+    "test-families.csv": "b158271814325a7b3734cba1e5e160e130caac9e891017ecb713a6dc7fd2ce54",
+    "test-heads.csv": "9580501f49ffd328e36e16798e12e6a43fb7124c89b2d3d3fb8d0522c51e1916",
+    "test-paths.csv": "6dd5b45afe4a935efd5649544fd2fe78184f7e9bdc9d7ec5a7d5290978beb665",
+    "val-families.csv": "2d1ec83adfa728f37a3919865a4949290458ae5d078e62f2f5cc9d659bc6a1aa",
+    "val-heads.csv": "aef13faab2f262b712cf2227a948e9a9796572a0c0d1d544134767de8624acb3",
+    "val-paths.csv": "8a1d25f17e72792c0e5a2971ae783c5138285c12b8cb8d3b4860f12ddb861e91"
+  },
+  "paths": 48,
+  "splits": 2,
+  "sessions_per_path": 3,
+  "training_runs": 6,
+  "tested_checkpoints": 21,
+  "completed_utc": "2026-11-25T10:36:56.961117+00:00"
+}

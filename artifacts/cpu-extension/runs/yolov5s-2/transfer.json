@@ -1,0 +1,14 @@
+{
+  "url": "https://github.com/ultralytics/yolov5/releases/download/v7.0/yolov5s.pt",
+  "pretrained_sha256": "8b3b748c1e592ddd8868022e8732fde20025197328490623cc16c6f24d0782ee",
+  "matching_tensors": 343,
+  "fresh_tensors": [
+    "model.24.m.0.weight",
+    "model.24.m.0.bias",
+    "model.24.m.1.weight",
+    "model.24.m.1.bias",
+    "model.24.m.2.weight",
+    "model.24.m.2.bias"
+  ],
+  "initialization_sha256": "7deb7a1532ae23a0d6f2b7527e6e5e5d96f6f12517729b374b85d3712797b2d4"
+}

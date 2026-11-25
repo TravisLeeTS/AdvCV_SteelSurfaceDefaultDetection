@@ -1,0 +1,7 @@
+{
+  "run": "yolov8n-2",
+  "epochs": 200,
+  "config_id": "a636d7eb50f40e875cb34309d4d755a39fbca21bd8d853018ad88d36c04ec00b",
+  "best_sha": "2765e788f579354739b7532e6edfb153d5a2e32c689af0c820680c9ecb7db067",
+  "best_map5095": 0.39440324998100934
+}

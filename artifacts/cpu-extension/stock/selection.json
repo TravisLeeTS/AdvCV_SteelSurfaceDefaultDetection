@@ -1,0 +1,230 @@
+{
+  "source_split": "val",
+  "frozen_heads_sha": "04f1f00f755232d0726680628d022dee442f704dcda5d4959cddc6e1746f8151",
+  "historical_freeze_sha": "0b86914a764ad731ed0aaa8eb7efec8568e336f40c0b1e30b2303cf72009a99f",
+  "registration_sha": "4201d24041f75e1c4b31c040334002562b83a1632f08ff908555d34259e8facf",
+  "validation_table_sha": "8a1d25f17e72792c0e5a2971ae783c5138285c12b8cb8d3b4860f12ddb861e91",
+  "quality_gates": {
+    "A": {
+      "eligible": true,
+      "checks": {
+        "map5095": {
+          "seed0_delta": 0.0,
+          "mean_delta": 0.0,
+          "limit": 0.01,
+          "passed": true
+        },
+        "recall_crazing": {
+          "seed0_delta": 0.0,
+          "mean_delta": 0.0,
+          "limit": 0.02,
+          "passed": true
+        },
+        "recall_inclusion": {
+          "seed0_delta": 0.0,
+          "mean_delta": 0.0,
+          "limit": 0.02,
+          "passed": true
+        },
+        "recall_patches": {
+          "seed0_delta": 0.0,
+          "mean_delta": 0.0,
+          "limit": 0.02,
+          "passed": true
+        },
+        "recall_pitted_surface": {
+          "seed0_delta": 0.0,
+          "mean_delta": 0.0,
+          "limit": 0.02,
+          "passed": true
+        },
+        "recall_rolled_in_scale": {
+          "seed0_delta": 0.0,
+          "mean_delta": 0.0,
+          "limit": 0.02,
+          "passed": true
+        },
+        "recall_scratches": {
+          "seed0_delta": 0.0,
+          "mean_delta": 0.0,
+          "limit": 0.02,
+          "passed": true
+        }
+      }
+    },
+    "E": {
+      "eligible": false,
+      "checks": {
+        "map5095": {
+          "seed0_delta": -0.017935024995553106,
+          "mean_delta": -0.014170586998760115,
+          "limit": 0.01,
+          "passed": false
+        },
+        "recall_crazing": {
+          "seed0_delta": 0.02941176470588236,
+          "mean_delta": 0.012254901960784312,
+          "limit": 0.02,
+          "passed": true
+        },
+        "recall_inclusion": {
+          "seed0_delta": -0.020100502512562846,
+          "mean_delta": -0.026800670016750405,
+          "limit": 0.02,
+          "passed": false
+        },
+        "recall_patches": {
+          "seed0_delta": 0.016949152542372947,
+          "mean_delta": -0.02636534839924672,
+          "limit": 0.02,
+          "passed": false
+        },
+        "recall_pitted_surface": {
+          "seed0_delta": -0.09411764705882353,
+          "mean_delta": -0.023529411764705892,
+          "limit": 0.02,
+          "passed": false
+        },
+        "recall_rolled_in_scale": {
+          "seed0_delta": -0.06451612903225806,
+          "mean_delta": -0.034946236559139775,
+          "limit": 0.02,
+          "passed": false
+        },
+        "recall_scratches": {
+          "seed0_delta": -0.009009009009009028,
+          "mean_delta": 0.04504504504504503,
+          "limit": 0.02,
+          "passed": true
+        }
+      }
+    },
+    "yolov8n": {
+      "eligible": false,
+      "checks": {
+        "map5095": {
+          "seed0_delta": -0.004427508323799789,
+          "mean_delta": -0.004891554924232118,
+          "limit": 0.01,
+          "passed": true
+        },
+        "recall_crazing": {
+          "seed0_delta": 0.05147058823529413,
+          "mean_delta": -0.0073529411764705855,
+          "limit": 0.02,
+          "passed": true
+        },
+        "recall_inclusion": {
+          "seed0_delta": -0.005025125628140725,
+          "mean_delta": -0.06867671691792294,
+          "limit": 0.02,
+          "passed": false
+        },
+        "recall_patches": {
+          "seed0_delta": 0.09039548022598876,
+          "mean_delta": 0.10922787193973633,
+          "limit": 0.02,
+          "passed": true
+        },
+        "recall_pitted_surface": {
+          "seed0_delta": 0.05882352941176472,
+          "mean_delta": 0.08627450980392155,
+          "limit": 0.02,
+          "passed": true
+        },
+        "recall_rolled_in_scale": {
+          "seed0_delta": -0.024193548387096753,
+          "mean_delta": -0.06451612903225805,
+          "limit": 0.02,
+          "passed": false
+        },
+        "recall_scratches": {
+          "seed0_delta": -0.2432432432432433,
+          "mean_delta": -0.04204204204204207,
+          "limit": 0.02,
+          "passed": false
+        }
+      }
+    },
+    "yolov5s": {
+      "eligible": false,
+      "checks": {
+        "map5095": {
+          "seed0_delta": -0.04395394121559526,
+          "mean_delta": -0.03985452840028122,
+          "limit": 0.01,
+          "passed": false
+        },
+        "recall_crazing": {
+          "seed0_delta": -0.022058823529411756,
+          "mean_delta": -0.08333333333333333,
+          "limit": 0.02,
+          "passed": false
+        },
+        "recall_inclusion": {
+          "seed0_delta": -0.035175879396984966,
+          "mean_delta": 0.03685092127303182,
+          "limit": 0.02,
+          "passed": false
+        },
+        "recall_patches": {
+          "seed0_delta": 0.062146892655367214,
+          "mean_delta": 0.05461393596986815,
+          "limit": 0.02,
+          "passed": true
+        },
+        "recall_pitted_surface": {
+          "seed0_delta": -0.30588235294117644,
+          "mean_delta": -0.23529411764705882,
+          "limit": 0.02,
+          "passed": false
+        },
+        "recall_rolled_in_scale": {
+          "seed0_delta": -0.12096774193548387,
+          "mean_delta": -0.11559139784946236,
+          "limit": 0.02,
+          "passed": false
+        },
+        "recall_scratches": {
+          "seed0_delta": -0.20720720720720726,
+          "mean_delta": -0.15315315315315317,
+          "limit": 0.02,
+          "passed": false
+        }
+      }
+    }
+  },
+  "fastest_eligible": "YOLO26n",
+  "overlapping_eligible": [],
+  "fastest_observed": "YOLO26n",
+  "speed_order": [
+    "YOLO26n",
+    "YOLOv10n",
+    "YOLOv8n",
+    "YOLOv5s"
+  ],
+  "seed_speed_order": [
+    [
+      "YOLO26n",
+      "YOLOv8n",
+      "YOLOv10n",
+      "YOLOv5s"
+    ],
+    [
+      "YOLO26n",
+      "YOLOv10n",
+      "YOLOv8n",
+      "YOLOv5s"
+    ],
+    [
+      "YOLO26n",
+      "YOLOv8n",
+      "YOLOv10n",
+      "YOLOv5s"
+    ]
+  ],
+  "fastest_overlaps": [
+    "YOLOv10n",
+    "YOLOv8n"
+  ]
+}

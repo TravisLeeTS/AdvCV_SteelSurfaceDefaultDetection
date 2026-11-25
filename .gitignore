@@ -17,3 +17,11 @@ artifacts/study/val/
 artifacts/audit/factorial-check.json
 artifacts/study/report/demo-check.json
 weights/
+artifacts/cpu-extension/runs/*/exports/
+artifacts/cpu-extension/runs/*/last.pt
+artifacts/cpu-extension/stock/val/
+artifacts/cpu-extension/stock/test/
+artifacts/cpu-extension/timing/
+artifacts/cpu-extension/vendor/yolov5-*/
+artifacts/cpu-extension/**/*.lock
+artifacts/cpu-repeat/

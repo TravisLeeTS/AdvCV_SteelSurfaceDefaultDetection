@@ -1,0 +1,85 @@
+{
+  "registration_sha": "4201d24041f75e1c4b31c040334002562b83a1632f08ff908555d34259e8facf",
+  "validation_sha": "98d75c8b9a5aed0d1d63a1edc8a2073f33c9b999e6272067eac52ae3ddc6ff11",
+  "original_heads_sha": "04f1f00f755232d0726680628d022dee442f704dcda5d4959cddc6e1746f8151",
+  "entries": [
+    {
+      "run": "yolov8n-0",
+      "model": "yolov8n",
+      "seed": 0,
+      "head": "dense",
+      "side": 480,
+      "runtime": "openvino",
+      "cutoff": 0.8428676724433899,
+      "checkpoint_sha": "e46a2fb7424a3d3a80245ffd93863db89093dd1f9c4c10dc382a38ebf828eb4b",
+      "artifact_sha": "46db2a9a306c3bd90244d31270f14929eefa85a9ab6e23df3d65bac4838f2a3a",
+      "validation_fp": 36,
+      "validation_source_sha": "1b48402d8d9b37c6fe8a2099ed8c568d8243094db8c0e36167f7f5d0cdd32406"
+    },
+    {
+      "run": "yolov5s-0",
+      "model": "yolov5s",
+      "seed": 0,
+      "head": "dense",
+      "side": 480,
+      "runtime": "openvino",
+      "cutoff": 0.8149219751358032,
+      "checkpoint_sha": "6efba699a7b0b31e18383a9933ef7c580880d9ddb379f841ad0adc563a7d4136",
+      "artifact_sha": "79f9ebada63f380759178ea8a84c1057428798c46e66f0cfe9b1bd8f393bb00d",
+      "validation_fp": 36,
+      "validation_source_sha": "1771be44193de4b6538b071c557872ae4ab374b13b529015f9b9c9223620aa8d"
+    },
+    {
+      "run": "yolov8n-1",
+      "model": "yolov8n",
+      "seed": 1,
+      "head": "dense",
+      "side": 480,
+      "runtime": "openvino",
+      "cutoff": 0.6125167608261108,
+      "checkpoint_sha": "8cb93fc6e75b2214f63cf9d0f7416f56f7a945716ba0d1421122f76c2f2b3f8d",
+      "artifact_sha": "2537af078bd4583d8bdfda593974ab8019604c35cde56a0c56000bbe87682c53",
+      "validation_fp": 36,
+      "validation_source_sha": "5be4989297433d242ddd232044d4dc41812333806c9dc18d71a0f9a6a069656d"
+    },
+    {
+      "run": "yolov5s-1",
+      "model": "yolov5s",
+      "seed": 1,
+      "head": "dense",
+      "side": 480,
+      "runtime": "openvino",
+      "cutoff": 0.6765427589416504,
+      "checkpoint_sha": "27893f0f4fdc6f890d2f359160f6a44e898aee8a75961116283e70931565c212",
+      "artifact_sha": "1560fcd186b61f39d022ea56eeffbd06a2ade146800e4e5bc6c286c29a1a18e1",
+      "validation_fp": 35,
+      "validation_source_sha": "01bafa33abc25c61d731c4ec06d443176d591e44011995d4060c18e61927bb54"
+    },
+    {
+      "run": "yolov8n-2",
+      "model": "yolov8n",
+      "seed": 2,
+      "head": "dense",
+      "side": 480,
+      "runtime": "openvino",
+      "cutoff": 0.8329743146896362,
+      "checkpoint_sha": "2765e788f579354739b7532e6edfb153d5a2e32c689af0c820680c9ecb7db067",
+      "artifact_sha": "d34524e54254965a1d017162118761a8ee552459183518290c185d61db1991ea",
+      "validation_fp": 36,
+      "validation_source_sha": "3655bf3816b1bfb8ae53480f80ae5274ec2f4f449602cdd07908f152b446e188"
+    },
+    {
+      "run": "yolov5s-2",
+      "model": "yolov5s",
+      "seed": 2,
+      "head": "dense",
+      "side": 480,
+      "runtime": "openvino",
+      "cutoff": 0.6281307339668274,
+      "checkpoint_sha": "c97575dafab9b5cc6c5d04c0edea77a8f81d990bd429545a9ef5f11fc98da8de",
+      "artifact_sha": "c1d4977c1ee14b03c7017be1d0b8b89cda6c00b072a9b1b22e9d1caf46947973",
+      "validation_fp": 36,
+      "validation_source_sha": "216c9c09354ee6652492d7195f1297e5b68cc0d410cf644b7dd2143d9ba1ca8a"
+    }
+  ]
+}

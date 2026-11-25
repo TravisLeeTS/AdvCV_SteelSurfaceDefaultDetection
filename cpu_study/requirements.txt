@@ -1,0 +1,8 @@
+# Install from the repository root after (or together with) requirements.lock.txt.
+-r ../requirements.lock.txt
+# The frozen original YOLOv5 v7.0 imports these during native model loading and training.
+ipython==8.26.0
+tqdm==4.66.5
+pandas==2.2.2
+seaborn==0.13.2
+GitPython==3.1.44

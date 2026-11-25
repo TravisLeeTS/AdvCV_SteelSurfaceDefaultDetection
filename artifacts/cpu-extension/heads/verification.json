@@ -1,0 +1,560 @@
+{
+  "freeze_sha": "04f1f00f755232d0726680628d022dee442f704dcda5d4959cddc6e1746f8151",
+  "protocol_sha": "376b3f5b7edc903f8a24b1772b620778d8a68048ab89d20cb46fbb666b1cbc69",
+  "analysis_sources_sha256": {
+    "cpu_study/head_calibration.py": "9df3a517fc55e2eb84d3508985f053a9005433dc96ea171bbfa8104ea0f76c7f",
+    "cpu_study/heads.py": "7d0e16ba95ed51954b93dc1bae45665ac4a8f44bd24936104e684131ec54f826",
+    "cpu_study/head_figure.py": "59de25711cc5044c4f2795c72e63b931d1740cab214b6365341bc99beb7b8a43",
+    "scripts/verify_research_metrics.py": "2e4ad03116ed6e1cd8af79486bf389808a6758dab830136f2c948a01f4488819",
+    "scripts/survey_evidence.py": "259abdab0cb2fc0b3a583a489800a16649ec312a92fcf116c85b55697a87e73a",
+    "steel/metrics.py": "72944ed726524d7551f2f2c75ec62131ee9389af4f92c162d3cad9b476c8f55f",
+    "steel/common.py": "9905a20347168d86de3989a51bb379fb1cf9740b13631d619c7588497e3b02be"
+  },
+  "original_study_freeze_sha": "7473543d2af3962819fdbde60f4eff6744ff55a5d45c2f116b68ecd0b9127735",
+  "split_sha": "091bf58a97f2aabe6ab417f4f2c395e676d58ac8c4e8e051b25ea7232c99436a",
+  "input_sources": {
+    "val/A0-openvino-one-480": {
+      "predictions_sha": "0f698a374c7d7670cf8e147cd240ab04ca7bc768cf7288babaab6887cd1efdcc",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 89
+    },
+    "val/A0-openvino-dense-480": {
+      "predictions_sha": "aabd1a5ac7407386326849c512c387d6aadfcdacea658eee732c6552a7f3ab05",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 77
+    },
+    "val/A0-pytorch-one-480": {
+      "predictions_sha": "3fb7375a5a08b7c0c22a3ddf74b3c7cec08b306aeeaca95c21f56cd64daa2eac",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 89
+    },
+    "val/A0-pytorch-dense-480": {
+      "predictions_sha": "a95b398d5d43538a0c8cbf6a3386d5718044b5e9b26bd5143dd4d35ec45b92d7",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 77
+    },
+    "val/A1-openvino-one-480": {
+      "predictions_sha": "c0def6b1eca4545e9343cbb041eae79bf66f6de72d94e29995da01202831e04d",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 48
+    },
+    "val/A1-openvino-dense-480": {
+      "predictions_sha": "5b96c7e88195c47c6d3a94ee0ba885190fde0cca5458520ea12acc2c5f4ccf04",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 70
+    },
+    "val/A1-pytorch-one-480": {
+      "predictions_sha": "7b9ee36dbf7914e3a79127d63c54e6786647bac450442e32eb0632c598c79710",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 48
+    },
+    "val/A1-pytorch-dense-480": {
+      "predictions_sha": "cffd8dd39b49a3b032f3782662c6c5172be0b620d752e32f556047127f204d7b",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 70
+    },
+    "val/A2-openvino-one-480": {
+      "predictions_sha": "3dbaad30fc3b4a280ba78ce56fc2fbc013bd702dc824f5cba26a5c4f0d405b52",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 72
+    },
+    "val/A2-openvino-dense-480": {
+      "predictions_sha": "83b4a2abfa2a02537f00fb179e4234683c7e7a00c83656c22379f88f22e78a17",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 69
+    },
+    "val/A2-pytorch-one-480": {
+      "predictions_sha": "cc84f9d1d31a55c4028bb8ee500c44328d7c2ed66aed6360ed27edcfec38123f",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 72
+    },
+    "val/A2-pytorch-dense-480": {
+      "predictions_sha": "95c778d2cad58c7f2772be27ec1da584e5fbbbdc336885bb02b2d64de4c1e0ca",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 69
+    },
+    "val/B0-openvino-one-480": {
+      "predictions_sha": "1b31a296f6196b6c6f223b2f50508bbd74227b8892e6eb79ace77d73a745aeab",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 57
+    },
+    "val/B0-openvino-dense-480": {
+      "predictions_sha": "cc2669c723e2c9cc76342a0716a735cdfda7da7f99a05d70b3198d7d29944d16",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 65
+    },
+    "val/B1-openvino-one-480": {
+      "predictions_sha": "81713b368305b94d1a71aff2b0eb9344e31e76499d6923857047b1a33ae5b709",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 63
+    },
+    "val/B1-openvino-dense-480": {
+      "predictions_sha": "985bc941dca5b52d1125f5172a3a5c8c9bbc57787b6ddd735a447ec02bec3777",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 75
+    },
+    "val/B2-openvino-one-480": {
+      "predictions_sha": "02912ee648cef4eaa60fc8032d1c26242d1a677ece5e1c9121636da71735b370",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 76
+    },
+    "val/B2-openvino-dense-480": {
+      "predictions_sha": "85ba22562da27bdac54c3f00f581d780c3f39dab8420c7f98e0fd0e91ccf569d",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 90
+    },
+    "val/C0-openvino-one-480": {
+      "predictions_sha": "75f727177d866250560228d6bc19e72ea3eec2419302ae8fa61508f19f84089d",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 100
+    },
+    "val/C0-openvino-dense-480": {
+      "predictions_sha": "fd42b79ab0c25deec23d92cbea89094f49b29cf6bbd7954712928fa475bf67b3",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 74
+    },
+    "val/C1-openvino-one-480": {
+      "predictions_sha": "9d067593528a9d37fe6e9eef3ca74ef22a57a5f7c93c893a1c40d0ed63e8adf7",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 49
+    },
+    "val/C1-openvino-dense-480": {
+      "predictions_sha": "1b5fc204de5dc0ffe99e08c45d3220c43a083ebf3730dfc6899c9eb847feb5e1",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 55
+    },
+    "val/C2-openvino-one-480": {
+      "predictions_sha": "0e75d8bc13e2ac0f9be0ea80bc1ae75945e3853baedceb887fb5be0f36f835a2",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 47
+    },
+    "val/C2-openvino-dense-480": {
+      "predictions_sha": "03f0e348f5101067a0ca1dc6dd55b5f02686dc0077d9ba860766323ab2463478",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 49
+    },
+    "val/D0-openvino-one-480": {
+      "predictions_sha": "00abfaccc35149c85d99e52c14a066fd76e470590db4415114434ca38b5b9e9e",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 46
+    },
+    "val/D0-openvino-dense-480": {
+      "predictions_sha": "858392239757acf5429eb458efb4defd50cdd9bf2f226d12096d3229c6f714d6",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 53
+    },
+    "val/D1-openvino-one-480": {
+      "predictions_sha": "a79afcf840b05aad1211584a340b226d88cd7013f00240a64b6b79d7ee57051c",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 62
+    },
+    "val/D1-openvino-dense-480": {
+      "predictions_sha": "2e0704bc35b0a719ec936361c26bdc653889cb135be6bb4234c5110aef640548",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 60
+    },
+    "val/D2-openvino-one-480": {
+      "predictions_sha": "42876aa6f1748310a8e9cef00c6cda7a9f15c43ab0351ed7b2a3f0c3fa6c5256",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 69
+    },
+    "val/D2-openvino-dense-480": {
+      "predictions_sha": "c580ec322a958dda1f12af2f01d501370cad966e43d03f016210a91288412b56",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 68
+    },
+    "val/E0-openvino-one-480": {
+      "predictions_sha": "36a581018386b5e86ef266f2cd64e40fbf023bb0ca9a78d8d5ef033847adcdd8",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 56
+    },
+    "val/E0-openvino-dense-480": {
+      "predictions_sha": "4fc781ba31dea3390dad5fb99cf54f6357999f55a8f484cb631aff7616335310",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 62
+    },
+    "val/E0-pytorch-one-480": {
+      "predictions_sha": "443f6aabc85bb1d46c806c91b1f790ace71a33b9fbebac6e5d2fb40df4fcbaae",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 56
+    },
+    "val/E0-pytorch-dense-480": {
+      "predictions_sha": "c88e1bc8dd030e80880f61b0f4977d160566290101974ccfa5a1371b59534d03",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 62
+    },
+    "val/E1-openvino-one-480": {
+      "predictions_sha": "bd6343691be7d4ceb99a62148ffc1f1055c4c45f146c16b32b2d7ff43cf52f58",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 118
+    },
+    "val/E1-openvino-dense-480": {
+      "predictions_sha": "55cffcb60f2c728c077f5345e0603eff4fce63483838384743bdaa99b126ecee",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 110
+    },
+    "val/E1-pytorch-one-480": {
+      "predictions_sha": "0e3b8708556f94de5b9faba99a005c8a58dc5bcd982fc169c71392932a4b8b51",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 118
+    },
+    "val/E1-pytorch-dense-480": {
+      "predictions_sha": "60cea5e700dbba00dc9b26d3b39c3fc69f7d53a950f7970a65a83c02a9e07ef2",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 110
+    },
+    "val/E2-openvino-one-480": {
+      "predictions_sha": "2c8be2d03659f56e7fa8f77643e1f141a13a1510f7e3e248d12179ee010c043b",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 75
+    },
+    "val/E2-openvino-dense-480": {
+      "predictions_sha": "ff08ba021f62dcfa3d86e23f574f132cc654d8be8a375f9a87d38695376f2149",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 72
+    },
+    "val/E2-pytorch-one-480": {
+      "predictions_sha": "00c7f46f6b0dc5a05e83590cb1b8559410f7bc0c13260a02a6f18ec4ad13d31a",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 75
+    },
+    "val/E2-pytorch-dense-480": {
+      "predictions_sha": "f0dbf51ba3a9b55cef4703de10bfbf1eb58ca4aea89e726db9f33fadeb8e1cb9",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 72
+    },
+    "test/A0-openvino-one-480": {
+      "predictions_sha": "090a461499e78b8d6f91a53cd5950b6f975b536109ec6f88c3a1ad5030c1391e",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 76
+    },
+    "test/A0-openvino-dense-480": {
+      "predictions_sha": "e83dcb35ab9df27c31d7e4fd6f0f4c733412745629bfee6ce267ff4e855027c6",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 83
+    },
+    "test/A0-pytorch-one-480": {
+      "predictions_sha": "4cd8a1a3a5165398c76b0afcad0f70d045c018d3d3d02d761511b51a4778beba",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 76
+    },
+    "test/A0-pytorch-dense-480": {
+      "predictions_sha": "8e6109319045c6227b4cb816a473cc9ce5ece8d6ca5e35e48a4ebd14c1b0010e",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 83
+    },
+    "test/A1-openvino-one-480": {
+      "predictions_sha": "82cf48307161235740bcb546310807659ef88075de7f527743d4fd2dac514f50",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 46
+    },
+    "test/A1-openvino-dense-480": {
+      "predictions_sha": "1149f23b520a9cfe405e94dae7074adbc9ef554680436c78fd5ca6e2bdf03e86",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 70
+    },
+    "test/A1-pytorch-one-480": {
+      "predictions_sha": "6ecb00fb6fe77a183868741a5fcdef8d1e444f9a0f776f7c9ba51e828092d348",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 46
+    },
+    "test/A1-pytorch-dense-480": {
+      "predictions_sha": "2b093340c68d9c01aa74c2424b541ad2f3e75ce5111cec5c78b3dfe36571ea3e",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 70
+    },
+    "test/A2-openvino-one-480": {
+      "predictions_sha": "03cc01fce7dfdb1d5a4ec8d8cd3ec882da1667658c4ab245df821bba88637ef0",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 98
+    },
+    "test/A2-openvino-dense-480": {
+      "predictions_sha": "9f5d82b0902d276092453a04d0be43bfd98f42a28e1017e4c43d0907fefd658f",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 92
+    },
+    "test/A2-pytorch-one-480": {
+      "predictions_sha": "eaf7402078f85a5d06b742005f5dbdef366b43958653eaf16d046af6a144059c",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 98
+    },
+    "test/A2-pytorch-dense-480": {
+      "predictions_sha": "c04c2f241a3f85ebf6123134d504a8056c387b677c6ba8966ce9a96969bee3f1",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 92
+    },
+    "test/B0-openvino-one-480": {
+      "predictions_sha": "b7e3e6b5aa1472f382ffc5325b842a4f087f3e160d39e0d98b86409ee55f5575",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 58
+    },
+    "test/B0-openvino-dense-480": {
+      "predictions_sha": "368cbff3f748ecf68d877435afeb7e4ac724a5d08b1699a4efd9aa29fe91068c",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 49
+    },
+    "test/B1-openvino-one-480": {
+      "predictions_sha": "9f16eb111775ce8c4c5c19b55090f2893d054c0c7a760c1f25b06c5e0d1abd58",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 67
+    },
+    "test/B1-openvino-dense-480": {
+      "predictions_sha": "e67387f217cb216c9cf0fd8e993976b687c39c5204d9a3a109a4b66654d29cf6",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 72
+    },
+    "test/B2-openvino-one-480": {
+      "predictions_sha": "e04f94a080eadc7a28a09df738aa70b559579fe49850ff486343a989940f3d42",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 111
+    },
+    "test/B2-openvino-dense-480": {
+      "predictions_sha": "b2feaf70742221cd5a83938fc9b7ee36b654159002a560c4a2c2bcd85e528647",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 122
+    },
+    "test/C0-openvino-one-480": {
+      "predictions_sha": "0cdab31c74ff6cc68c2b6e117d97b6f4dce152a9a59e2ed0e6425482a357876d",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 92
+    },
+    "test/C0-openvino-dense-480": {
+      "predictions_sha": "d324ac99bfadd20c8cd0b570eb0168b26b72572b5c384d5042fdc7f1f6d405d9",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 66
+    },
+    "test/C1-openvino-one-480": {
+      "predictions_sha": "1a32a5e708106306a9a375fb5ed07063f45f907478db9287c5f7a99036c2c52f",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 58
+    },
+    "test/C1-openvino-dense-480": {
+      "predictions_sha": "46ed7cc5b8d8ed93098d57938acc5044292897bf9a849b8b79cd7f5083762828",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 66
+    },
+    "test/C2-openvino-one-480": {
+      "predictions_sha": "bd9c923cd61af770e6e7bf4e2d2032236dc3895b39a9df38c909ebd414262021",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 44
+    },
+    "test/C2-openvino-dense-480": {
+      "predictions_sha": "029364e1cf39f4e6055e3a96cc44e25c0a7c9f6b95a1fc8e5b8777f0fcc70844",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 58
+    },
+    "test/D0-openvino-one-480": {
+      "predictions_sha": "5560396471f5a84972f39d85cd939194270eff5e80326549eac2b72d340596f5",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 60
+    },
+    "test/D0-openvino-dense-480": {
+      "predictions_sha": "f7b1eb694917edc6592c5dd64ecb2a248b64ecfc4330b0cc8a08edb2696d1af1",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 68
+    },
+    "test/D1-openvino-one-480": {
+      "predictions_sha": "1ec0bb35205593f71cba6726637c823b7ef15043a25e6c6d710514bdc0f26398",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 93
+    },
+    "test/D1-openvino-dense-480": {
+      "predictions_sha": "602dfcbde3a688a78acb2e7a05cbfb75156eefcdba399351874aeb33a1c1674c",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 76
+    },
+    "test/D2-openvino-one-480": {
+      "predictions_sha": "7b23d1de2ed4722abebbfa385f15b22ae093c229f5484da2c3a03574c1abc904",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 67
+    },
+    "test/D2-openvino-dense-480": {
+      "predictions_sha": "8f20b5cc86ef2cb63b06743fcef45547ba025e7d01708de15a393b8c0242af10",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 73
+    },
+    "test/E0-openvino-one-480": {
+      "predictions_sha": "e5cd1fe46e2034c77b1b7ebb733690ae831aa851aeed67d0aeb493af320106bd",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 81
+    },
+    "test/E0-openvino-dense-480": {
+      "predictions_sha": "738e4445249d8faeaab60a0583fec72c403bbbf84590e312024f68d6e49ba90c",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 66
+    },
+    "test/E0-pytorch-one-480": {
+      "predictions_sha": "b1d369e9e3fd121d165e72a7efb813a96f501646ee5c997d509f93cee5e7dd88",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 81
+    },
+    "test/E0-pytorch-dense-480": {
+      "predictions_sha": "e2279cd7930cfa04f211b215c9217bf10c26f9c583ead5b0510bba1ffab0541b",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 66
+    },
+    "test/E1-openvino-one-480": {
+      "predictions_sha": "83d133e1a75b3e4c364acdd22e38b6e5798a0615ac4b6ef74cc9dbde3d6e74e2",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 116
+    },
+    "test/E1-openvino-dense-480": {
+      "predictions_sha": "23744b999055f2f456e65eccd4b3feba9761297964a8a418c6ec0776dd47d040",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 125
+    },
+    "test/E1-pytorch-one-480": {
+      "predictions_sha": "4f529f355ac94e32601d165b77d036ca25a36b6b4a98052dcbaa26037963b0ad",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 116
+    },
+    "test/E1-pytorch-dense-480": {
+      "predictions_sha": "15ca44bfe0ca7b40b40a796058be5abbc0c8694fbbc4d1b74717d87673cc6747",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 126
+    },
+    "test/E2-openvino-one-480": {
+      "predictions_sha": "7f4306d3b36565c4e52b754cb58a741d57fcdb8171bbf5a3016a3ea0fced4592",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 67
+    },
+    "test/E2-openvino-dense-480": {
+      "predictions_sha": "a68cee8a69dd53066af1765ad872c600063ed979ac11dad7d1219cdd71c97c1e",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 76
+    },
+    "test/E2-pytorch-one-480": {
+      "predictions_sha": "78d9d5dca9cc5f69ee95695dcc1f2f0d3c05865ac3b5d771a7f646347510a5e9",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 67
+    },
+    "test/E2-pytorch-dense-480": {
+      "predictions_sha": "c9e4aca91d4cb4e91b6d72f8cfe139aa7de08ac31f5de7f2248ea2aa0b548ade",
+      "floor": 0.001,
+      "images": 360,
+      "max_retained_boxes": 76
+    }
+  },
+  "split_files": {
+    "val": "98d75c8b9a5aed0d1d63a1edc8a2073f33c9b999e6272067eac52ae3ddc6ff11",
+    "test": "0e0ce6666994cc4af1684744683c0656e87f1113e213bf12a054c33602835561"
+  },
+  "calibration": "Separate cutoff for each checkpoint, runtime and deployed head. Validation only.",
+  "matching": "Scalar and vectorized same-class greedy matches agree for every image and operating point.",
+  "coverage": "All retained boxes are sorted by descending score. The archived 0.001 floor, 300-box cap and ordered records cover every chosen cutoff. Filtering low-score records reproduced the directly executed shared operating predictions image-by-image.",
+  "uncertainty": "1,000 paired whole-group resamples conditional on the fitted cutoffs and three trained seeds. Per-class recall denominators are recomputed per draw and the six recalls have equal weight. Difference = one-to-one minus dense. FP/image counts alarm boxes on annotated images.",
+  "timing": "The separate CPU timing matrix must use each frozen primary cutoff.",
+  "tables": {
+    "operating_points": {
+      "rows": 84,
+      "sha256": "16dcfd7f2fb14906e51ba803b4dea8ceaf188032a1b2973691e06e6cae122054"
+    },
+    "budget_sensitivity": {
+      "rows": 336,
+      "sha256": "632b4cc53de63d6169c1edd66f75cab0b7b32d402de96c36fc03490edb33fa53"
+    },
+    "paired_objects": {
+      "rows": 252,
+      "sha256": "822dee3cd244f9d948f95d23b69e53056751553ad7dc555e7aa6b02703245ef7"
+    },
+    "paired_effects": {
+      "rows": 448,
+      "sha256": "1e544bdc3b6fb4c680298ea71521c542a55b8bc45799c6a8399c06c7733cde10"
+    }
+  },
+  "figure": {
+    "file": "budget_sensitivity.pdf",
+    "sha256": "ab892e1465fbd090c0e34467673bc48157e778e2d89703bacd3a201ac1746a8f",
+    "source": "budget_sensitivity.csv",
+    "population": "OpenVINO FP32, 480 pixels, test split, stock A/E, mean of seeds 0/1/2.",
+    "allowances": [
+      0.05,
+      0.1,
+      0.2,
+      0.3
+    ]
+  }
+}

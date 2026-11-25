@@ -2,7 +2,13 @@
 
 **Lee Ting Sen · MLR 512, Advanced Computer Vision**
 
-Can a lighter detector inspect hot-rolled steel faster while retaining defects that are hard to see? This study compares five detectors on NEU-DET, with three paired training seeds per detector. Validation selected stock YOLO26n (A), one-to-one detection, at 480 pixels. On 360 held-out images, A0 achieved **38.29% mAP50–95** and a **15.59 ms pipeline p95**. It detected 20 of 137 crazing annotations and 43 of 126 rolled-in-scale annotations at the frozen cutoff, with 37 false-positive boxes overall. The latency is the median of three session p95s on an Intel Core i9-13900HX using four CPU cores, batch one and OpenVINO FP32. [Measured exhibits (PDF)](artifacts/study/report/MLR512-experimental-materials.pdf) · [Per-configuration results](artifacts/study/report/cells.csv)
+<!-- cpu-study-results -->
+At 480 pixels on four performance cores, **YOLO26n** recorded the lowest mean validation pipeline p95 across three seeds (15.28 ms). It also met every prespecified mAP and per-class recall limit. Its held-out mean was **14.58 ms**, with **37.59% mAP50–95** and **41.63% macro recall**. YOLOv8n had the highest held-out mAP (38.19%). The compared stock paths are YOLO26n, YOLOv10n, YOLOv8n and original anchor-based YOLOv5s.
+
+When each YOLO26n head chose its own threshold at a validation allowance of 36 false boxes per 360 images, the dense head achieved **46.38%** mean test macro recall and one-to-one achieved **41.63%**. Their fresh test pipeline p95 values were 13.87 and 14.58 ms, respectively. On validation the corresponding values were 16.39 and 15.28 ms. [CPU comparison and replay commands](cpu_study/README.md) · [Validation ranking](artifacts/cpu-extension/stock/selection.json) · [Test results](artifacts/cpu-extension/tables/test-families.csv)
+<!-- /cpu-study-results -->
+
+Can a lighter detector inspect hot-rolled steel faster while retaining defects that are hard to see? The original architecture experiment compares five detectors on NEU-DET, with three paired training seeds per detector. Validation selected stock YOLO26n (A), one-to-one detection, at 480 pixels. On 360 held-out images, A0 achieved **38.29% mAP50–95** and a **15.59 ms pipeline p95**. It detected 20 of 137 crazing annotations and 43 of 126 rolled-in-scale annotations at the frozen cutoff, with 37 false-positive boxes overall. The latency is the median of three session p95s on an Intel Core i9-13900HX using four CPU cores, batch one and OpenVINO FP32. [Measured exhibits (PDF)](artifacts/study/report/MLR512-experimental-materials.pdf) · [Per-configuration results](artifacts/study/report/cells.csv)
 
 ## Run the faculty check
 
@@ -12,7 +18,7 @@ In PowerShell, open the root of this checkout. The reference environment is Wind
 py -3.12 review.py unpack
 py -3.12 -m venv .venv
 $py = (Resolve-Path .\.venv\Scripts\python.exe).Path
-& $py -m pip install -r requirements.lock.txt
+& $py -m pip install -r cpu_study/requirements.txt
 & $py review.py replay
 & $py review.py verify
 ```

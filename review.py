@@ -73,13 +73,19 @@ def restore_archive(archive_path, entry):
 
 
 def unpack(index):
-    for name, digest in index["files"].items():
-        require_digest(ROOT / name, digest)
-    for name, entry in index["archives"].items():
-        archive = ROOT / name
-        require_digest(archive, entry["sha256"])
-        restore_archive(archive, entry)
-    print("Verified and restored all 15 checkpoints, 75 OpenVINO graphs and 174 measured cells.", flush=True)
+    extra = ROOT / "bundles/cpu-extension/index.json"
+    indices = [index, read_json(extra)] if extra.is_file() else [index]
+    for manifest in indices:
+        for name, digest in manifest["files"].items():
+            require_digest(ROOT / name, digest)
+        for name, entry in manifest["archives"].items():
+            archive = ROOT / name
+            require_digest(archive, entry["sha256"])
+            restore_archive(archive, entry)
+    if extra.is_file():
+        print("Verified and restored 21 checkpoints, 81 OpenVINO graphs and both CPU timing studies.", flush=True)
+    else:
+        print("Verified and restored 15 checkpoints, 75 OpenVINO graphs and 174 measured cells.", flush=True)
 
 
 def install_images(local_zip):
@@ -139,6 +145,8 @@ def verify(index):
         if read_json(fresh) != read_json(ROOT / "validation" / name):
             raise ValueError(f"Independent evaluation differs from the archived {name}.")
     print("Verified the 174 quality cells, 522 timing sessions and independent metric and factorial checks.")
+    if (ROOT / "bundles/cpu-extension/index.json").is_file():
+        run_python("-m", "cpu_study.review", "verify")
 
 
 def replay(args, index):
